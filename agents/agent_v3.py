@@ -191,11 +191,10 @@ class ConductorAgent(AgentABC):
     def data_integration(self, question, agents_result: list[str] = None, rethink:int=1):
         # Could be hardcoded function or LLM based question.
         prompt = f"""You're a helpful data scientist. You'll be given few datasets and a question, please join the data 
-        reasonably in a good way to answer the question, please note:
+        reasonably to answer the question, please note:
         1. There is no repeated information. 
         2. You need to understand all the dataset to solve the question.
-        3. You should naturally merge the data instead of just appending the
-         the data together. 
+        3. You should naturally merge the data instead of just appending the the data together. 
         4. Please provide a new insight based on the integrated data. 
         5. Please return the final answer, no code is needed.
         The question is {question}
@@ -207,8 +206,8 @@ class ConductorAgent(AgentABC):
         return self.aggregator(prompt,rethink=rethink)
 
     def if_accept_answer(self, question, answer, rethink:int=1):
-        prompt = f"Do you think the answer is good enough for the question? " \
-                 f"Please answer in the JSON format: good_enough:\"YES/NO\", msg:\"\""
+        prompt = "Do you think the answer is good enough to answer the question? " \
+                 "Please return the result in the JSON format: good_enough:\"YES/NO\", reason:\"\""
 
         prompt += "\nQuestion: " + question + "\nAnswer: " + answer
         ans = self.ask(prompt, rethink=rethink)
@@ -241,7 +240,7 @@ def read_xlsx(file_path):
 
 
 def parse_advice(msg):
-    return {"good_enough": False, "msg": "it cannot find the information for room A."}
+    return {"good_enough": False, "msg": "The answer cannot be accepted. Please try again."}
 
 
 # No summary needed, just query data and return answer
@@ -251,6 +250,7 @@ def test1_simple_flow(file1, file2, question):
     dataAgent2 = DataAgent([Model.MIXTRAL], Model.QWEN, file2)
     name_map = {dataAgent1.agent_name: dataAgent1, dataAgent2.agent_name: dataAgent2}
 
+     # all_agents = conductor.get_related_data_agent([dataAgent1, dataAgent2], question)
     all_agents = [dataAgent1.agent_name, dataAgent2.agent_name]
     data = []
     for agent_name in all_agents:
@@ -281,7 +281,7 @@ def test2_complex_flow(file1, file2, question):
     print("##############final (1): ", final)
 
 
-    print("\n\n\n\n\n\n")
+    print("\n\n\n")
     ####### Another Round #############################
     ######### Then agent decides if it should continue to discuss the problem and return possible better results.
     advice = conductor.if_accept_answer(question, final)

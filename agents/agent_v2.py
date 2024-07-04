@@ -7,7 +7,7 @@ from typing import Optional
 import os
 
 # Get a specific environment variable
-api_key = os.environ.get('TOGETHER_API_KEY')
+api_key = os.environ.get("TOGETHER_API_KEY")
 if api_key is None:
     print("NO API IS PROVIDED!")
 
@@ -24,15 +24,18 @@ class Model(str, Enum):
     QWEN = "Qwen/Qwen2-72B-Instruct"
 
     def __repr__(self):
-        return f'{self.name}'
+        return f"{self.name}"
 
 
 class ModelFactory:
-
     def __init__(self):
         self.all_models = [model.value for model in Model]
-        self.proposers = [model for model in self.all_models if self._is_proposer(model)]
-        self.aggregators = [model for model in self.all_models if self._is_aggregator(model)]
+        self.proposers = [
+            model for model in self.all_models if self._is_proposer(model)
+        ]
+        self.aggregators = [
+            model for model in self.all_models if self._is_aggregator(model)
+        ]
 
     def _is_proposer(self, model):
         # How to choose models from models pool
@@ -49,7 +52,7 @@ class ModelFactory:
         return [Model.MIXTRAL]
 
 
-PRPOSER_PROMPT = """Imagine you're a helpful assistant, you need to answer user questions {question}. Please explore multiple possibilities and generate diverse perspectives. And please don't repeat yourself."""
+PROPOSER_PROMPT = """Imagine you're a helpful assistant, you need to answer user questions {question}. Please explore multiple possibilities and generate diverse perspectives. And please don't repeat yourself."""
 AGGREGATOR_PROMPT = """You have been provided with a set of responses from various open-source models to the latest user query: {question}. Your
 task is to synthesize these responses into a single, high-quality response. It is crucial to critically evaluate the
 information provided in these responses, recognizing that some of it may be biased or incorrect. Your response
@@ -65,7 +68,13 @@ Responses from models:
 # the instruction prompt should be learned values.
 class Agent:
     default_temperature = 0.7
-    def __init__(self, proposers: list[str], aggregator: str, temperature_list: list[float] = None):
+
+    def __init__(
+        self,
+        proposers: list[str],
+        aggregator: str,
+        temperature_list: list[float] = None,
+    ):
         self.proposer_models = []
         for i, proposer in enumerate(proposers):
             temperature = self.default_temperature
@@ -79,9 +88,11 @@ class Agent:
 
     def answer(self, question, context: str):
         params = {"question": question}
-        prompt = PRPOSER_PROMPT.format(**params)
+        prompt = PROPOSER_PROMPT.format(**params)
         if context != "":
-            prompt += f"\n Below is previous answers for the same question: " + context + "\n"
+            prompt += (
+                f"\n Below is previous answers for the same question: " + context + "\n"
+            )
             prompt += "Please based on the all available information and provide answer for this same question again. Please be concise. The response limitation is 300 words.\n"
 
         final = []
@@ -104,23 +115,26 @@ class Agent:
 
 def test():
     modelFactory = ModelFactory()
-    agent = Agent(modelFactory.getProposers(), modelFactory.getAggregators()[0], [0.7, 3, 1])
+    agent = Agent(
+        modelFactory.getProposers(), modelFactory.getAggregators()[0], [0.7, 3, 1]
+    )
     context = ""
     question1 = "what's the answer of this equation: (4+5)*2*(9-1)?"
     question2 = "What is the capital of the country where the Taj Mahal is located?"
     question3 = "Calculate (3/5)*(4/7)"
     # right answer for question4 is 7/15 = 0.4667
-    # Using
     question4 = """There are 6 identical balls, each marked with a number from 1 to 6. 
     Three balls are randomly drawn without replacement from these 6 balls, one at a time. 
     Let m denote the average of the numbers on the first two balls drawn, and n denote the average of the numbers on all
     three balls drawn. What is the probability that the absolute difference between  m  and n does not exceed 1/2?"""
 
-    question5="""In a cage, there are chickens and rabbits with a total of 35 heads and 94 feet. 
+    question5 = """In a cage, there are chickens and rabbits with a total of 35 heads and 94 feet. 
     How many chickens and how many rabbits are there?"""
     for i in range(3):
         answers = agent.answer(question5, context)
-        joined = [f"{i}. {answer}\n" for i, answer in enumerate(answers)]  # Feed all answers to each model.
+        joined = [
+            f"{i}. {answer}\n" for i, answer in enumerate(answers)
+        ]  # Feed all answers to each model.
         context += "".join(joined)
 
     print(context)
