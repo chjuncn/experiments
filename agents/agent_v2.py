@@ -64,7 +64,7 @@ Responses from models:
 
 # The goal of an agent is not about the Model, but the objective of this agent, so model can be configured, and
 # the instruction prompt should be learned values.
-class Agents:
+class Agent:
     default_temperature = 0.7
     def __init__(self, proposers: list[str], aggregator: str, temperature_list: list[float] = None):
         self.proposer_models = []
@@ -105,7 +105,7 @@ class Agents:
 
 def test():
     modelFactory = ModelFactory()
-    agents = Agents(modelFactory.getProposers(), modelFactory.getAggregators()[0], [0.7, 3, 1])
+    agent = Agent(modelFactory.getProposers(), modelFactory.getAggregators()[0], [0.7, 3, 1])
     context = ""
     question1 = "what's the answer of this equation: (4+5)*2*(9-1)?"
     question2 = "What is the capital of the country where the Taj Mahal is located?"
@@ -120,12 +120,12 @@ def test():
     question5="""In a cage, there are chickens and rabbits with a total of 35 heads and 94 feet. 
     How many chickens and how many rabbits are there?"""
     for i in range(3):
-        answers = agents.answer(question5, context)
+        answers = agent.answer(question5, context)
         joined = [f"{i}. {answer}\n" for i, answer in enumerate(answers)]  # Feed all answers to each model.
         context += "".join(joined)
 
     print(context)
-    final = agents.aggregate_answers(question5, context)
+    final = agent.aggregate_answers(question5, context)
     print("The final answer >>>>>>>>>>>>>>>>>>>\n", final)
 
 

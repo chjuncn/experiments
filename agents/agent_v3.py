@@ -55,7 +55,7 @@ class ModelFactory:
         return [Model.MIXTRAL]
 
 
-PRPOSER_PROMPT = """You're a helpful data scientist, you need to answer user questions: {question} based on the information provided to you. 
+PROPOSER_PROMPT = """You're a helpful data scientist, you need to answer user questions: {question} based on the information provided to you. 
 Please try to think this problem in different perspectives. Please don't explain and don't repeat yourself."""
 
 AGGREGATOR_PROMPT = """You have been provided with a set of responses from various open-source models to the latest user query: {question}. Your
@@ -88,7 +88,7 @@ class AgentABC:
 
     def _answer(self, question, context: str, data_memory:str=""):
         params = {"question": question}
-        prompt = PRPOSER_PROMPT.format(**params)
+        prompt = PROPOSER_PROMPT.format(**params)
         if context != "":
             prompt += f"\n Below is previous answers for the same question: " + context + "\n"
             prompt += "Please based on the all available information and provide answer for this same question again. Please be concise. The response limitation is 300 words.\n"
@@ -122,6 +122,9 @@ class AgentABC:
         if len(self.proposer_models) > 1:
             return self._aggregate_answers(question, context)
         return answers[0]
+    
+    def aggregate_answer(self, question, context:str):
+        return self._aggregate_answers(question, context)
 
 
 # Finetuning model looks like a better approach when we need an agent for a specific dataset.
@@ -202,7 +205,7 @@ class ConductorAgent(AgentABC):
         for i, res in enumerate(agents_result):
             prompt += "\n" + "The dataset " + str(i) + ": " + str(res)
 
-        return self.ask(prompt,rethink=rethink)
+        return self.aggregator(prompt,rethink=rethink)
 
     def if_accept_answer(self, question, answer, rethink:int=1):
         prompt = f"Do you think the answer is good enough for the question? " \
@@ -274,7 +277,7 @@ def test2_complex_flow(file1, file2, question):
     for agent_name in all_agents:
         agent = name_map[agent_name]
         ans.append(agent.ask(question, data_memory=agent.query_data()))
-    final = conductor.data_integration(question, ans, rethink=3)
+    final = conductor.aggregate_answer(question, ans, rethink=1)
 
     print("##############final (1): ", final)
 
@@ -283,7 +286,7 @@ def test2_complex_flow(file1, file2, question):
     ####### Another Round #############################
     ######### Then agent decides if it should continue to discuss the problem and return possible better results.
     advice = conductor.if_accept_answer(question, final)
-    result = parse_advice(advice)
+    result = parse_advice(advice) # hardcoded results
 
     if not result["good_enough"]:
         actions_for_agents = conductor.assign_tasks_to_data_agents(question, result["msg"], [dataAgent1, dataAgent2])
