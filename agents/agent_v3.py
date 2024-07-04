@@ -13,7 +13,6 @@ import openpyxl
 
 # Get a specific environment variable
 api_key = os.environ.get('TOGETHER_API_KEY')
-api_key = "bacc34a6ef17118ebba27682e5bc71f484a409b54d30f7eb500134622239e0bb"
 if api_key is None:
     print("NO API IS PROVIDED!")
 
