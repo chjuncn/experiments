@@ -1,0 +1,3 @@
+In room A, a person is in a locked room. The door is locked. She needs to fina a key. But she can see a ladder in the room.
+
+In room B, a person is in a locked room. She can see a key on a table.
