@@ -68,9 +68,27 @@ Responses from models:
 {context}"""
 
 
-# The goal of an agent is not about the Model, but the objective of this agent, so model can be configured, and
-# the instruction prompt should be learned values.
 
+# Data collection、
+# Memory、
+# Reflection: collect what you've done, and the feedback from the system/human, and reflect on it.
+# Task planning: plan the task, and the sub-tasks, and the order of the tasks.
+### action planning: based on the task, plan the actions, and the order of the actions.
+# Tool management: when to use pre-defined tools, and when to use the LLMs.
+
+
+# 1. reflect on the past logs
+# 2. understand the current situation
+# 3. plan the next steps
+
+
+# NOTE: Change proposers from 1 to 2, the agent has higher chance to get the right answer for the simpl flow.
+# NOTE: When the question is simple, we shouldn't use the complex flow, it will mess up the information pool.
+# NOTE: When the question is simple, we shouldn't use too many proposers, as it will waste the resources.
+
+
+# The goal of an agent is not about the Model, but the objective of this agent, so model can be configured, and
+# the instruction prompt could be learned values.
 class AgentABC:
     def __init__(self, proposers, aggregator, temperature_list: list[float] = None):
         self.proposer_models = []
@@ -85,13 +103,14 @@ class AgentABC:
 
         self.aggregator = TogetherHFAdaptor(aggregator, apiKey=api_key)
 
-    def _answer(self, question, context: str, data_memory:str=""):
+    def _answer(self, question, context: str, data_memory:str="", verbose:bool=False):
         params = {"question": question}
         prompt = PROPOSER_PROMPT.format(**params)
         if context != "":
             prompt += f"\n Below is previous answers for the same question: " + context + "\n"
-            prompt += "Please based on the all available information and provide answer for this same question again. Please be concise. The response limitation is 300 words.\n"
+            prompt += "Please based on all the available information and provide answer for this same question again. Please be concise. The response limitation is 300 words.\n"
 
+        # When we use API, this model just don't remember anything about this agent.
         if data_memory != "":
             prompt += "\n\n Below is the data memory for this agent:\n" \
                       f"{data_memory}"
@@ -100,7 +119,8 @@ class AgentABC:
         for model in self.proposer_models:
             response = model.request(prompt=prompt)
             answer_str = response["choices"][0]["text"]
-            print(self.__class__.__name__, model.model, answer_str)
+            if verbose:
+                print(self.__class__.__name__, model.model, answer_str)
             final.append(answer_str)
         return final
 
@@ -160,6 +180,14 @@ class DataAgent(AgentABC):
 
         # assume the response is query_data
         return self.query_data
+    
+    def predict_future_data(self):
+        prompt = "Please predict the future data based on the current data you have.\n The current data is: " + self.data_base
+        return self.ask(prompt)
+    
+    def exam_data(self):
+        prompt = "Please exam the data you have, and find the possible corrupted data in the dataset, and provide the exam result and explanation.\n The current data is: " + self.data_base
+        return self.ask(prompt)
 
 
 # ConductorAgent also could be mixed hardcoded+LLM, the goal of
@@ -174,7 +202,7 @@ class ConductorAgent(AgentABC):
     def __init__(self, proposers, aggregator):
         super().__init__(proposers, aggregator)
 
-    def get_related_data_agent(self, avaliable_data_agents: list[DataAgent], question: str, rethink:int=1):
+    def get_related_data_agent(self, avaliable_data_agents: list[DataAgent], question: str, rethink:int=1, verbose:bool=False):
         prompt = """You're a helpful data scientist. You're given a question and available information summary from multiple data agents to solve the question. Please
         use all the available information to decide which data agents might be useful for us to solve the question. 
         You should think step by step, and you can check if there're useful informaiton from different data agents. Please only return the data
@@ -185,7 +213,8 @@ class ConductorAgent(AgentABC):
             summary = agent.get_data_summary()
             prompt += "\n\nAGENT_NAME: " + agent.agent_name + "\nSUMMARY:" + summary
 
-        print(self.__class__.__name__, prompt)
+        if verbose: 
+            print(self.__class__.__name__, prompt)
         return self.ask(question, rethink=rethink)
 
     def data_integration(self, question, agents_result: list[str] = None, rethink:int=1):
@@ -203,11 +232,12 @@ class ConductorAgent(AgentABC):
         for i, res in enumerate(agents_result):
             prompt += "\n" + "The dataset " + str(i) + ": " + str(res)
 
-        return self.aggregator(prompt,rethink=rethink)
+        return self.ask(prompt,rethink=rethink)
 
     def if_accept_answer(self, question, answer, rethink:int=1):
-        prompt = "Do you think the answer is good enough to answer the question? " \
+        prompt = "Do you think the answer is correct to answer the question? " \
                  "Please return the result in the JSON format: good_enough:\"YES/NO\", reason:\"\""
+
 
         prompt += "\nQuestion: " + question + "\nAnswer: " + answer
         ans = self.ask(prompt, rethink=rethink)
@@ -243,8 +273,9 @@ def parse_advice(msg):
     return {"good_enough": False, "msg": "The answer cannot be accepted. Please try again."}
 
 
-# No summary needed, just query data and return answer
+# No summary needed, just query data, put them in a list and answer the question.
 def test1_simple_flow(file1, file2, question):
+
     conductor = ConductorAgent([Model.MIXTRAL], Model.QWEN)
     dataAgent1 = DataAgent([Model.MIXTRAL], Model.QWEN, file1)
     dataAgent2 = DataAgent([Model.MIXTRAL], Model.QWEN, file2)
@@ -258,7 +289,8 @@ def test1_simple_flow(file1, file2, question):
         data.append(agent.query_data())
     final = conductor.data_integration(question, data)
 
-    print("##############final (0): ", final)
+    print("##############final (0) #########: ", final)
+
 
 
 def test2_complex_flow(file1, file2, question):
@@ -268,7 +300,7 @@ def test2_complex_flow(file1, file2, question):
     name_map = {dataAgent1.agent_name: dataAgent1, dataAgent2.agent_name: dataAgent2}
     context = ""
 
-    ############## !!!!!!!get_related_data_agent never success.
+    ############## !!!!!!!get_related_data_agent never succeed.
     ############# Gemini can return the right answer.
     # related_agents = conductor.get_related_data_agent([dataAgent1, dataAgent2], question)
     all_agents = [dataAgent1.agent_name, dataAgent2.agent_name]
@@ -276,14 +308,14 @@ def test2_complex_flow(file1, file2, question):
     for agent_name in all_agents:
         agent = name_map[agent_name]
         ans.append(agent.ask(question, data_memory=agent.query_data()))
-    final = conductor.aggregate_answer(question, ans, rethink=1)
-
-    print("##############final (1): ", final)
+    final = conductor.data_integration(question, ans)
+    print("##############final (1) #########: ", final)
 
 
     print("\n\n\n")
     ####### Another Round #############################
     ######### Then agent decides if it should continue to discuss the problem and return possible better results.
+    #########  1. The agent can learn from previous failed experiences.
     advice = conductor.if_accept_answer(question, final)
     result = parse_advice(advice) # hardcoded results
 
@@ -295,7 +327,22 @@ def test2_complex_flow(file1, file2, question):
             responses.append(name_map[agent_name].ask(actions_for_agents.get(key), data_memory=name_map[agent_name].query_data()))
         final = conductor.data_integration(question, responses)
 
-    print("##############final (2): ", final)
+    print("##############final (2) #########: ", final)
+
+
+
+
+def data_agent_test():
+    data1 = read_xlsx("data/num_game_1.txt")
+    data3 = read_xlsx("data/num_game_3.txt")
+    dataAgent1 = DataAgent([Model.MIXTRAL], Model.QWEN, data1)
+    dataAgent3 = DataAgent([Model.MIXTRAL], Model.QWEN, data3)
+    print("######### predict_future_data #########", dataAgent1.predict_future_data())
+    print("######### exam_data #########", dataAgent3.exam_data())
+
+
+data_agent_test()
+
 
 
 ## successed case
@@ -303,6 +350,8 @@ def test2_complex_flow(file1, file2, question):
 ## we cannot use get_summary.
 #  1. read data from all agents
 #  2.
+
+
 # test1_simple_flow(read_xlsx("data/data1.txt"), read_xlsx("data/data2.txt"), "How does the person in room A to get out?")
 
 ######## Failed Case
@@ -324,13 +373,17 @@ def test2_complex_flow(file1, file2, question):
 ## It's hard for the system to get right. Sometimes it will just mess up the simple calculations.
 ## we don't know where is wrong, and no fixing mechanism.
 test1_simple_flow(read_xlsx("data/num_game_1.txt"), read_xlsx("data/num_game_2.txt"),
-                  "The average of all the numbers from all of the data agents?")
+                  "what is the average number of all the numbers from all of the data agents?")
 
 
-# Most of the time, Success case
+
+# Most of the time, successed case
 ### Conductor gives suggestions for what questions to ask to the data agents to answer the final questions.
 ### finally it can get it right (kind-of).
 
 ## self-correction mechanism
 test2_complex_flow(read_xlsx("data/num_game_1.txt"), read_xlsx("data/num_game_2.txt"),
-                  "The average of all the numbers from all of the data agents?")
+                  "what is the average number of all the numbers from all of the data agents?")
+
+
+
