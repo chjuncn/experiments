@@ -1,3 +1,4 @@
+@ -0,0 +1,320 @@
 import numpy as np
 import pandas as pd
 import io
@@ -81,348 +82,64 @@ def shorten_model_name(model_name):
 
 
 def showgraph_claude(df_final, query_hop_num=1, shot_num=0):
-    print(df_final)
     models = df_final['model_name'].unique()
-    for i, model in enumerate(models):
-        if isinstance(model, str):
-            models[i] = shorten_model_name(model)
     representations = df_final['representation'].unique()
-    representation_colors = sns.color_palette("pastel", n_colors=7)
-    color_dict = {}
-    for i, color in enumerate(representation_colors):
-        color_dict[i] = color
+    representation_colors = sns.color_palette("pastel")
+    color_dict = {i: color for i, color in enumerate(representation_colors)}
 
-    # models = df['model_name'].unique()
-    models = ["Mistral7BInstructv0.3.log", "MetaLlama3.18BInstructTurbo.log", "gemma29bit.log", "gemma227bit.log", "Mixtral8x7BInstructv0.1.log", "MetaLlama370BInstructLite.log"]
+    models = ["Mistral7BInstructv0.3.log", "MetaLlama3.18BInstructTurbo.log", "gemma29bit.log", 
+            "gemma227bit.log", "Mixtral8x7BInstructv0.1.log", "MetaLlama370BInstructLite.log"]
     representations = df_final['representation'].unique()
     graph_files = sorted(df_final['graph_file'].unique(), key=extract_xy, reverse=False)
 
     # Set up the plot
-    fig, axs = plt.subplots(2, 3, figsize=(10, 10))
+    fig, axs = plt.subplots(2, 3, figsize=(20, 12))
     axs_list = [axs[0][0], axs[0][1], axs[0][2], axs[1][0], axs[1][1], axs[1][2]]
-    # Set width of bar
-    bar_width = 0.1
+    bar_width = 0.15  # Increased bar width for better visibility
 
-    # Set position of bar on X axis
-    r = np.arange(len(models))
-    # Make the plot
-    for i , graph_file in enumerate(graph_files):
+    # Calculate x positions once
+    x = np.arange(len(models))
+
+    for i, graph_file in enumerate(graph_files):
         ax = axs_list[i]
-        for j, rep in enumerate(representations):
-            color = color_dict[j]
-            accuracies = df_final[((df_final['representation'] == rep) & (df_final['graph_file'] == graph_file) 
-                                   & (df_final['query_hop_num'] == query_hop_num) 
-                                   & (df_final['shot_num'] == shot_num))]['accuracy']
-            position = [x + bar_width*j for x in r]
-            print(accuracies)
-            pad_length = 6 - len(accuracies)
-            if pad_length > 0:
-                accuracies = np.concatenate([accuracies, np.zeros(pad_length)])
-            # ax.bar(position, accuracies, width=bar_width, label=rep, color=color)
-            ax.bar(position, accuracies, width=bar_width, label=rep, color=color)
-
-            
         
-        # Add xticks on the middle of the group bars
+        for j, rep in enumerate(representations):
+            accuracies_list = []
+            for model in models:
+                accuracy = df_final[
+                    (df_final['representation'] == rep) & 
+                    (df_final['graph_file'] == graph_file) & 
+                    (df_final['query_hop_num'] == query_hop_num) & 
+                    (df_final['shot_num'] == shot_num) & 
+                    (df_final['model_name'] == model)
+                ]['accuracy']
+                accuracies_list.append(accuracy.iloc[0] if not accuracy.empty else 0)
+            
+            # Plot bars for this representation
+            ax.bar(x + j*bar_width, 
+                accuracies_list,
+                bar_width,
+                label=rep,
+                color=color_dict[j])
+        
+        # Customize each subplot
         ax.set_xlabel(f'gnp_random_graph({graph_file})')
         ax.set_ylabel('Accuracy')
         ax.set_ylim(0, 1.1)
-        ax.set_title('Model Accuracy by Representation')
-        ax.set_xticks([r + bar_width for r in range(len(models))], models, rotation=45, ha='right')
-        handles, labels = ax.get_legend_handles_labels()
+        ax.set_title(f'Graph: {graph_file}')
         
-    fig.legend(handles, labels, loc='upper center', ncols=7)
+        # Set x-ticks in the middle of each group
+        ax.set_xticks(x + bar_width * (len(representations)-1)/2)
+        ax.set_xticklabels(models, rotation=45, ha='right')
 
-    # Create legend & Show graphic
-    # plt.legend(title='Representation', bbox_to_anchor=(1.05, 1), loc='best', ncols=7)
+    # Add single legend for entire figure
+    handles, labels = axs_list[0].get_legend_handles_labels()
+    fig.legend(handles, labels, loc='upper center', bbox_to_anchor=(0.5, 0.98), 
+            ncol=min(4, len(representations)))
+
+    # Adjust layout
     plt.tight_layout()
-    # plt.legend(title='Representation', loc='upper left', ncols=7)
-
     plt.show()
-
-
-def plot_combined_data_claude(df_final_1, df_final_2, df_final_3):
-    # Combine the two dataframes
-    df_combined = pd.concat([df_final_1, df_final_2, df_final_3])
-    
-    # Create a color palette for representations
-    representation_colors = sns.color_palette("husl", n_colors=7)
-    color_dict = {}
-    for i, color in enumerate(representation_colors):
-        color_dict[representation_names[i]] = color
-
-    # Create the plot
-    fig, axs = plt.subplots(2, 3, figsize=(10, 10))
-    axs_list = [axs[0][0], axs[0][1], axs[0][2], axs[1][0], axs[1][1], axs[1][2]]
-    
-    # Plot for graph complexity 20
-    size = 5
-    for i, model in enumerate(df_final_1['model'].unique()):
-        ax = axs_list[i]
-        for rep in df_final_1['representation'].unique():
-            data = df_final_1[(df_final_1['model'] == model) & (df_final_1['representation'] == rep) & (df_final_1['size'] == size)]
-            ax.plot(data['representation'], data['accuracy'], marker='o', linestyle='none', label=rep, color=color_dict[rep])
-    
-    # Plot for graph complexity 30
-            data = df_final_2[(df_final_2['model'] == model) & (df_final_2['representation'] == rep) & (df_final_2['size'] == size)]
-            ax.plot(data['representation'], data['accuracy'], marker='>', linestyle='none', label=rep, color=color_dict[rep])
-            data = df_final_3[(df_final_3['model'] == model) & (df_final_3['representation'] == rep) & (df_final_3['size'] == size)]
-            ax.plot(data['representation'], data['accuracy'], marker='<', linestyle='none', label=rep, color=color_dict[rep])
-        
-        ax.set_title(f'{model}')
-        ax.set_xlabel('Representations')
-        ax.set_ylabel('Accuracy')
-        ax.set_xticks([r  for r in range(len(representation_names))], representation_names, rotation=45, ha='right')
-        ax.set_ylim(0, 1.1)  # Set y-axis limit from 0 to 1.1 for better visibility    
-
-    plt.tight_layout()
-    plt.savefig('combined_accuracy_plot.png', dpi=300, bbox_inches='tight')
-    plt.show()
-
-
-def plot_combined_data_3d(df_final_1, df_final_2, df_final_3):
-    # Create a color palette for representations
-    representation_colors = sns.color_palette("husl", n_colors=7)
-    color_dict = {}
-    for i, color in enumerate(representation_colors):
-        color_dict[representation_names[i]] = color
-
-    # Create the plot
-    fig, axs = plt.subplots(2, 3, figsize=(10, 10))
-    axs_list = [axs[0][0], axs[0][1], axs[0][2], axs[1][0], axs[1][1], axs[1][2]]
-    
-    # Plot for graph complexity 20
-    size = 5
-    for i, model in enumerate(df_final_1['model'].unique()):
-        ax = axs_list[i]
-        X, Y, Z = [], [], []
-        for rep in df_final_1['representation'].unique():
-            data = df_final_1[(df_final_1['model'] == model) & (df_final_1['representation'] == rep) & (df_final_1['size'] == size)]
-            Z.append(data['accuracy'])
-    # Plot for graph complexity 30
-            data = df_final_2[(df_final_2['model'] == model) & (df_final_2['representation'] == rep) & (df_final_2['size'] == size)]
-            ax.plot(data['representation'], data['accuracy'], marker='>', linestyle='none', label=rep, color=color_dict[rep])
-            X.append(data['accuracy'])  
-            data = df_final_3[(df_final_3['model'] == model) & (df_final_3['representation'] == rep) & (df_final_3['size'] == size)]
-            Y.append(data['accuracy'])
-        
-        ax.set_title(f'{model}')
-        ax.set_xlabel('Representations')
-        ax.set_ylabel('Accuracy')
-        # ax.set_xticks([r  for r in range(len(representation_names))], representation_names, rotation=45, ha='right')
-        ax.set_ylim(0, 1.1)  # Set y-axis limit from 0 to 1.1 for better visibility    
-        ax.scatter(X, Y, Z)
-
-    plt.tight_layout()
-    plt.savefig('combined_accuracy_plot.png', dpi=300, bbox_inches='tight')
-    plt.show()
-
-
-def plot_combined_data_3d_claude(df_final_1, df_final_2, df_final_3):
-    # Create a color palette for representations
-    representation_names = df_final_1['representation'].unique()
-    representation_colors = sns.color_palette("husl", n_colors=len(representation_names))
-    color_dict = dict(zip(representation_names, representation_colors))
-
-    # Create the plot
-    fig = plt.figure(figsize=(20, 15))
-    
-    for i, model in enumerate(df_final_1['model'].unique()):
-        ax = fig.add_subplot(2, 3, i+1, projection='3d')
-        
-        X, Y, Z = [], [], []
-        C = []  # For colors
-        
-        for rep in representation_names:
-            data1 = df_final_1[(df_final_1['model'] == model) & (df_final_1['representation'] == rep)]
-            data2 = df_final_2[(df_final_2['model'] == model) & (df_final_2['representation'] == rep)]
-            data3 = df_final_3[(df_final_3['model'] == model) & (df_final_3['representation'] == rep)]
-            
-            if not (data1.empty or data2.empty or data3.empty):
-                X.append(data1['accuracy'].values[0])
-                Y.append(data2['accuracy'].values[0])
-                Z.append(data3['accuracy'].values[0])
-                C.append(color_dict[rep])
-        
-        scatter = ax.scatter(X, Y, Z, c=C, s=100)
-        
-        ax.set_title(f'{model}')
-        ax.set_xlabel('Dataset 1 Accuracy')
-        ax.set_ylabel('Dataset 2 Accuracy')
-        ax.set_zlabel('Dataset 3 Accuracy')
-        ax.set_xlim(0, 1)
-        ax.set_ylim(0, 1)
-        ax.set_zlim(0, 1)
-
-    # Add a color bar
-    cbar = plt.colorbar(plt.cm.ScalarMappable(cmap=plt.cm.hsv), ax=fig.axes)
-    cbar.set_ticks(np.linspace(0, 1, len(representation_names)))
-    cbar.set_ticklabels(representation_names)
-    
-    plt.tight_layout()
-    plt.savefig('combined_3d_accuracy_plot.png', dpi=300, bbox_inches='tight')
-    plt.show()
-
-def create_impact_heatmap(df_final_1, df_final_2, df_final_3):
-    models = df_final_1['model'].unique()
-    representations = df_final_1['representation'].unique()
-    sizes = df_final_1['size'].unique()
-
-    fig = make_subplots(rows=2, cols=3, 
-                        subplot_titles=models,
-                        x_title="Sizes",
-                        y_title="Representations",
-                        shared_xaxes=True,
-                        shared_yaxes=True)
-
-    for i, model in enumerate(models):
-        row = i // 3 + 1
-        col = i % 3 + 1
-
-        # Create impact matrices
-        impact_complexity = pd.DataFrame(index=representations, columns=sizes)
-        impact_hop = pd.DataFrame(index=representations, columns=sizes)
-
-        for rep in representations:
-            for size in sizes:
-                # if size != 5:
-                #     break
-                base_acc = df_final_1[(df_final_1['model'] == model) & 
-                                      (df_final_1['representation'] == rep) & 
-                                      (df_final_1['size'] == size)]['accuracy'].values[0]
-                
-                complex_acc = df_final_2[(df_final_2['model'] == model) & 
-                                         (df_final_2['representation'] == rep) & 
-                                         (df_final_2['size'] == size)]['accuracy'].values[0]
-                
-                hop_acc = df_final_3[(df_final_3['model'] == model) & 
-                                     (df_final_3['representation'] == rep) & 
-                                     (df_final_3['size'] == size)]['accuracy'].values[0]
-                
-                impact_complexity.loc[rep, size] = complex_acc - base_acc
-                impact_hop.loc[rep, size] = hop_acc - base_acc
-
-        # Create heatmaps
-        heatmap_complexity = go.Heatmap(
-            z=impact_complexity.values,
-            x=sizes,
-            y=representations,
-            colorscale='RdBu',
-            zmin=-1,
-            zmax=1,
-            name='Graph Complexity Impact'
-        )
-
-        heatmap_hop = go.Heatmap(
-            z=impact_hop.values,
-            x=sizes,
-            y=representations,
-            colorscale='RdBu',
-            zmin=-1,
-            zmax=1,
-            name='Hop Number Impact'
-        )
-
-        fig.add_trace(heatmap_complexity, row=row, col=col)
-        fig.add_trace(heatmap_hop, row=row, col=col)
-
-    # Update layout
-    fig.update_layout(
-        title_text="Impact of Graph Complexity and Hop Number on Accuracy",
-        height=1000,
-        width=1500
-    )
-
-    # Show the plot
-    fig.show()
-
-
-
-def create_impact_comparison_heatmap(df_final_1, df_final_2, df_final_3):
-    models = df_final_1['model'].unique()
-    representations = df_final_1['representation'].unique()
-    sizes = df_final_1['size'].unique()
-
-    fig = make_subplots(rows=2, cols=3, 
-                        subplot_titles=models,
-                        x_title="Sizes",
-                        y_title="Representations",
-                        shared_xaxes=True,
-                        shared_yaxes=True)
-
-    for i, model in enumerate(models):
-        row = i // 3 + 1
-        col = i % 3 + 1
-
-        # Create impact comparison matrix
-        impact_comparison = pd.DataFrame(index=representations, columns=sizes)
-
-        for rep in representations:
-            for size in sizes:
-                base_acc = df_final_1[(df_final_1['model'] == model) & 
-                                      (df_final_1['representation'] == rep) & 
-                                      (df_final_1['size'] == size)]['accuracy'].values[0]
-                
-                complex_acc = df_final_2[(df_final_2['model'] == model) & 
-                                         (df_final_2['representation'] == rep) & 
-                                         (df_final_2['size'] == size)]['accuracy'].values[0]
-                
-                hop_acc = df_final_3[(df_final_3['model'] == model) & 
-                                     (df_final_3['representation'] == rep) & 
-                                     (df_final_3['size'] == size)]['accuracy'].values[0]
-                
-                complexity_impact = abs(complex_acc - base_acc)
-                hop_impact = abs(hop_acc - base_acc)
-                
-                # Positive values indicate complexity has more impact
-                # Negative values indicate hop number has more impact
-                impact_comparison.loc[rep, size] = complexity_impact - hop_impact
-
-        # Create heatmap
-        heatmap = go.Heatmap(
-            z=impact_comparison.values,
-            x=sizes,
-            y=representations,
-            colorscale=[
-                [0, 'blue'],
-                [0.5, 'white'],
-                [1, 'red']
-            ],
-            zmin=-1,
-            zmax=1,
-            colorbar=dict(
-                title="Impact Difference",
-                tickvals=[-1, 0, 1],
-                ticktext=["Hop Number", "Equal", "Complexity"]
-            )
-        )
-
-        fig.add_trace(heatmap, row=row, col=col)
-
-        # Add annotations for the most significant impacts
-        for rep in representations:
-            for size in sizes:
-                value = impact_comparison.loc[rep, size]
-                if abs(value) > 0.1:  # Adjust this threshold as needed
-                    annotation_text = "C" if value > 0 else "H"
-                    fig.add_annotation(
-                        x=size, y=rep,
-                        text=annotation_text,
-                        showarrow=False,
-                        font=dict(color="black", size=10),
-                        row=row, col=col
-                    )
-
-    # Update layout
-    fig.update_layout(
-        title_text="Impact Comparison: Graph Complexity vs Hop Number",
-        height=1000,
-        width=1500
-    )
-
-    # Show the plot
-    fig.show()
-
 
 
 # Load the d
@@ -600,5 +317,4 @@ if __name__ == "__main__":
     # create_impact_comparison_heatmap(df_final_1, df_final_2, df_final_3)
     # showgraph_claude(df_final_3)
     plot_token_utilization_heatmap()
-
 
