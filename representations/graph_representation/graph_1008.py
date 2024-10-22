@@ -226,6 +226,33 @@ def different_tokens_edge(file_name, representation_names, position="before"):
                         new_sub_dict[unique_string + updated_sub_key + unique_string] = value[sub_key]
                 random_token_json[key] = new_sub_dict
             final_list.append(random_token_json.copy())
+        elif representation_name == "[node_id[:8]]_edge_id":
+            primary_key_substring_key_json = {}
+            for key in raw_keys:
+                value = json_graph[key]
+                new_sub_dict = {}
+                for sub_key in value.keys():
+                    new_sub_dict["["+key[0:8]+"]_"+sub_key] = value[sub_key]
+                primary_key_substring_key_json[key] = new_sub_dict
+            final_list.append(primary_key_substring_key_json.copy())
+        elif representation_name == "node_id[:8]-edge_id":
+            primary_key_substring_key_json = {}
+            for key in raw_keys:
+                value = json_graph[key]
+                new_sub_dict = {}
+                for sub_key in value.keys():
+                    new_sub_dict[key[0:8]+"-"+sub_key] = value[sub_key]
+                primary_key_substring_key_json[key] = new_sub_dict
+            final_list.append(primary_key_substring_key_json.copy())
+        elif representation_name == "node_id[:8]-edge_id_v2":
+            primary_key_substring_key_json = {}
+            for key in raw_keys:
+                value = json_graph[key]
+                new_sub_dict = {}
+                for sub_key in value.keys():
+                    new_sub_dict[key[0:8]+"-"+sub_key.replace("_", "")] = value[sub_key]
+                primary_key_substring_key_json[key] = new_sub_dict
+            final_list.append(primary_key_substring_key_json.copy())
         else:
             print("Unknown representation name: ", representation_name)
             exit(1)
