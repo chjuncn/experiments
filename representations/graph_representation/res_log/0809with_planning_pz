@@ -1,0 +1,134 @@
+////Filter///////////////////////////////////////////////// LLAMA3 70B without example
+///////////////// This is different from depend_on="", as users may use "rows", but actually "header" is enough.
+In order to know if {The table contains the patient age}., which fields from the data do we need? There could be one or more field.
+    Here is every input field name and a description: 
+        filename: The name of the file the table was extracted
+        header: The header of the table
+        name: The name of the table
+        rows: The rows of the table
+    Please return the answer in JSON format, e.g. Filed:confidence_percentage, reason:"the reason why made such decision.
+
+
+{"Field": "rows", "confidence_percentage": 80, "reason": "The rows of the table are the most likely place to find patient age information."}
+
+
+////Filter////////////////////////////////////////////////// LLAMA3 70B with example
+In order to know if {The table contains the patient age.}, which fields from the data do we need? There could be one or more field.
+    Here is every input field name and a description: 
+        filename: The name of the file the table was extracted from, e.g. "/data/my_data.xlsx"
+        header: The header of the table, for example, "columanA,columanB,columanC,columanD,columanE"
+        name: The name of the table, for example, "private_table_1"
+        rows: The rows of the table, for example, "[[1,2,3,4,5],[10,20,30,40,50]]"
+    Please return the answer in JSON format, e.g. Filed:confidence_percentage, reason:"the reason why made such decision.
+
+{"Fields": ["header"], "confidence_percentage": 80, "reason": "The header field contains the column names of the table, and one of these columns might be named 'age' or something similar, indicating the presence of patient age."}
+
+// figure out how to add this feature into physical optimization. 
+
+///////// CONVERT SCAN  failed ////////////////////////////////
+Prompt:
+
+I would like you to create an output array of zero or more JSON objects that describe objects of type Rows.
+You will use the information in an input JSON object that I will provide. The input object has type Table.
+If fields in the output objects cannot be derived using information from the input object, please use None. 
+Here is a description of the input object: A Table is an object composed of a header and rows..
+
+Here is every input field name and a description: 
+filename: The name of the file the table was extracted from
+header: The header of the table
+name: The name of the table
+rows: The rows of the table
+
+Here is every output field name and a description:
+ages: The patient age of all rows.
+
+Be sure to emit a JSON object only. The root-level JSON object should have a single field, called 'items' that is a dictoionary of the output objects. The key of each output object should be one of the output fields described above, the value is a list of values for this key. You must decide the correct number of output objects.
+
+Please scan the input section by section.
+
+{
+  "rows": [
+    "S001,C3L-00006,No,2,5,128N,C3L-00006-01,CPT0001460012,Tumor,No,United States,FIGO grade 1,under 50 %,Endometrioid,YES,Normal,pT1a (FIGO IA),pN0,cM0,Staging Incomplete,Stage I,IA,1.0,38.88,64.0,No,White,Not-Hispanic or Latino,Female,Anterior endometrium,nan,Unifocal,2.9,Cannot be determined,nan,Cannot be determined,nan,Intact nuclear expression,Intact nuclear expression,Loss of nuclear expression,Intact nuclear expression,Cannot be determined,nan,Cannot be determined,1,0.004595748,0.045125791,0.075643165,0.034381469,0.047247678,0.002878929,6.39e-10,0.79012722,0.010443511,0.0,0.017867521,0.036816257,0.0,0.088247615,0.0,0.035408717,0.0,0.0,0.0,0.020942068,0.0,0.024896194,0.047057934,0.072523873,0.0,0.00612096,0.0,0.0,0.0,0.00967535,0.37,2821.088429,4885.608881,7706.69731,0.767043727,0.769,0.253,-1.17,0.09,0.93,-0.7,0.04,1.67,-0.75,-0.01,-1.09,1.14,-0.67,0.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,1.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,1.0,0.0,0.0,0.0,1.43e-05,0.038877665,CNV_LOW,1.292639933,-0.016886191,-0.023339852,-0.023494917,0.005761569,0.009796749,0.014250962,0.060494906,0.730880164,0.208624931,MSI-H,No,WT,WT,5.090218957,5.014858245,1.450879273,10.06204614,9.984418459,5.832890014,MSI-H,8.300395257,1.482213439,72.52964427,14.42687747,1.383399209,1.877470356,Blood_normal,92b5e534-6cb0-43eb-8147-ce7d18526f5e_gdc_realn.bam,53dbb4d6-ce9d-4145-a33a-0c4d67e655df,Tumor,d9975c5f-288d-417d-bdb3-f490d9a36401_gdc_realn.bam,96c07fe5-d530-4c9b-92ce-49408feacb2c,Blood_normal,9f29ebe1-de5d-47a8-a54d-d1e8441409c6,Tumor,457f2c4d-ddf3-416e-bb50-b112eede02d5,Tumor,170802_UNC31-K00269_0072_AHK3GVBBXX_TAGCTT_S17_L005_R1_001.fastq.gz,8a1efc47-1c29-417f-a425-cdbd09565dcb,Tumor,170802_UNC31-K00269_0072_AHK3GVBBXX_TAGCTT_S17_L005_R2_001.fastq.gz,8c3fe9b7-7acd-4867-8d9c-a8e5d1516eda,Tumor,37bcba98-1094-459e-83ae-c23a602416fb,YES,PASS\n",
+    "S002,C3L-00008,No,4,16,130N,C3L-00008-01,CPT0001300009,Tumor,No,United States,FIGO grade 1,under 50 %,Endometrioid,YES,Normal,pT1a (FIGO IA),pNX,cM0,Staging Incomplete,Stage IV,IA,0.0,39.76,58.0,No,White,Not-Hispanic or Latino,Female,Posterior endometrium,nan,Unifocal,3.5,Cannot be determined,nan,Cannot be determined,nan,Intact nuclear expression,Intact nuclear expression,Intact nuclear expression,Loss of nuclear expression,Cannot be determined,nan,Cannot be determined,1,0.005666428,0.056677626,0.100222966,0.041562969,0.056081262,0.001627258,4.15e-09,0.738161488,0.004411131,0.0,0.00176099,0.002130758,0.0,0.026435753,0.0,0.014944149,0.0,0.0,0.0,0.004934448,0.00385161,0.016040522,0.00394293,0.027211297,0.010407182,0.007160341,0.0,0.015087431,0.011681456,0.0,0.15,2714.248104,3632.199987,6346.448091,0.752796065,-0.302,-0.0242,0.17,-0.32,-0.91,0.65,-0.54,2.41,-0.87,-0.07,-1.6,2.14,-0.53,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,1.0,0.0,0.0,0.0,9.31e-06,1.17e-05,CNV_LOW,0.118480401,0.0,-0.002698584,-0.01112554,0.000978501,0.0,0.0,0.082629765,0.715223373,0.202146861,MSI-H,No,WT,WT,3.941606385,3.451287679,2.440219926,8.861086906,8.330916878,7.169925001,MSI-H,14.64174455,2.803738318,64.48598131,15.26479751,0.934579439,1.869158879,Blood_normal,243bfb3c-d06b-4de5-a6c3-7fa7e2c5fb74_gdc_realn.bam,90257622-6bcc-43e7-a04f-f7397975d038,Tumor,f6924a26-a14f-45a3-b4bd-7a4592d34065_gdc_realn.bam,4501f315-bf8f-4611-821a-797ef180e25b,Blood_normal,846bf455-89b4-4840-b113-e529ffa13277,Tumor,1c0e0f84-4caf-4493-9b2f-8f5f9ef9231b,Tumor,170802_UNC31-K00269_0072_AHK3GVBBXX_GGCTAC_S22_L007_R1_001.fastq.gz,555725e8-cba5-4676-9b0a-80100cbf9f47,Tumor,170802_UNC31-K00269_0072_AHK3GVBBXX_GGCTAC_S22_L007_R2_001.fastq.gz,15235b12-b67a-4678-acc4-ed03d642bd5e,Tumor,492b50d8-ec35-46e7-a65d-06512aaee394,YES,PASS\n"
+  ],
+  "filename": "dou_mmc1.xlsx",
+  "header": "idx,Proteomics_Participant_ID,Case_excluded,Proteomics_TMT_batch,Proteomics_TMT_plex,Proteomics_TMT_channel,Proteomics_Parent_Sample_IDs,Proteomics_Aliquot_ID,Proteomics_Tumor_Normal,Proteomics_OCT,Country,Histologic_Grade_FIGO,Myometrial_invasion_Specify,Histologic_type,Treatment_naive,Tumor_purity,Path_Stage_Primary_Tumor-pT,Path_Stage_Reg_Lymph_Nodes-pN,Clin_Stage_Dist_Mets-cM,Path_Stage_Dist_Mets-pM,tumor_Stage-Pathological,FIGO_stage,LVSI,BMI,Age,Diabetes,Race,Ethnicity,Gender,Tumor_Site,Tumor_Site_Other,Tumor_Focality,Tumor_Size_cm,Estrogen_Receptor,Estrogen_Receptor_%,Progesterone_Receptor,Progesterone_Receptor_%,MLH1,MLH2,MSH6,PMS2,p53,Other_IHC_specify,MLH1_Promoter_Hypermethylation,Num_full_term_pregnancies,EPIC_Bcells,EPIC_CAFs,EPIC_CD4_Tcells,EPIC_CD8_Tcells,EPIC_Endothelial,EPIC_Macrophages,EPIC_NKcells,EPIC_otherCells,CIBERSORT_B _cells _naive,CIBERSORT_B _cells _memory,CIBERSORT_Plasma _cells,CIBERSORT_T _cells _CD8,CIBERSORT_T _cells _CD4 _naive,CIBERSORT_T _cells _CD4 _memory _resting,CIBERSORT_T _cells _CD4 _memory _activated,CIBERSORT_T _cells _follicular _helper,CIBERSORT_T _cells _regulatory _(Tregs),CIBERSORT_T _cells _gamma _delta,CIBERSORT_NK _cells _resting,CIBERSORT_NK _cells _activated,CIBERSORT_Monocytes,CIBERSORT_Macrophages _M0,CIBERSORT_Macrophages _M1,CIBERSORT_Macrophages _M2,CIBERSORT_Dendritic _cells _resting,CIBERSORT_Dendritic _cells _activated,CIBERSORT_Mast _cells _resting,CIBERSORT_Mast _cells _activated,CIBERSORT_Eosinophils,CIBERSORT_Neutrophils,CIBERSORT_Absolute _score,ESTIMATE_StromalScore,ESTIMATE_ImmuneScore,ESTIMATE_ESTIMATEScore,Stemness_score,ER_ESR1,PR_PGR,Pathway_activity_EGFR,Pathway_activity_Hypoxia,Pathway_activity_JAK.STAT,Pathway_activity_MAPK,Pathway_activity_NFkB,Pathway_activity_PI3K,Pathway_activity_TGFb,Pathway_activity_TNFa,Pathway_activity_Trail,Pathway_activity_VEGF,Pathway_activity_p53,TP53_ATM,TP53_CHEK2,TP53_MDM4,TP53_RPS6KA3,TP53_TP53,TP53_pathway,PI3K_AKT1,PI3K_AKT2,PI3K_AKT3,PI3K_DEPDC5,PI3K_DEPTOR,PI3K_INPP4B,PI3K_MAPKAP1,PI3K_MLST8,PI3K_MTOR,PI3K_NPRL2,PI3K_NPRL3,PI3K_PDK1,PI3K_PIK3CA,PI3K_PIK3CB,PI3K_PIK3R1,PI3K_PIK3R2,PI3K_PPP2R1A,PI3K_PTEN,PI3K_RHEB,PI3K_RICTOR,PI3K_RPS6,PI3K_RPS6KB1,PI3K_RPTOR,PI3K_STK11,PI3K_TSC1,PI3K_TSC2,PI3K_pathway,HRD_BRCA1,HRD_BRCA2,HRD_BRCA1_or_BRCA2,CNV_DEL,CNV_AMP,CNV_class,CNV_idx,CNV_1q_DEL,CNV_3q_DEL,CNV_4q_DEL,CNV_1q_AMP,CNV_3q_AMP,CNV_4q_AMP,Purity_Immune,Purity_Cancer,Purity_Stroma,MSI_status,POLE_subtype,JAK1_MS_INDEL,JAK1_Mutation,Log2_variant_per_Mbp,Log2_SNP_per_Mbp,Log2_INDEL_per_Mbp,Log2_variant_total,Log2_SNP_total,Log2_INDEL_total,Genomics_subtype,Mutation_signature_C>A,Mutation_signature_C>G,Mutation_signature_C>T,Mutation_signature_T>C,Mutation_signature_T>A,Mutation_signature_T>G,WXS_normal_sample_type,WXS_normal_filename,WXS_normal_UUID,WXS_tumor_sample_type,WXS_tumor_filename,WXS_tumor_UUID,WGS_normal_sample_type,WGS_normal_UUID,WGS_tumor_sample_type,WGS_tumor_UUID,RNAseq_R1_sample_type,RNAseq_R1_filename,RNAseq_R1_UUID,RNAseq_R2_sample_type,RNAseq_R2_filename,RNAseq_R2_UUID,miRNAseq_sample_type,miRNAseq_UUID,Methylation_available,Methylation_quality",
+  "name": "dou_mmc1.xlsx_UCEC_CPTAC3_meta_table_V2.1",
+  "data type": "Table",
+  "data type description": "A Table is an object composed of a header and rows."
+}
+
+// "items": {
+// "ages": [
+// "38.88",
+// "39.76"
+// ]
+// }
+
+///////// CONVERT SCAN  succeded when Age is in the second column////////////////////////////////
+/////////////////// reranker? 1. reoder the data sections in random ways --> generate multiple answers --> aggregate to one final answer /////////////////////////////////////////
+/////////////////       1. Semantic Connections between sections in the given data might be a factor. 
+////////////////            e.g a story; a semi-strucutred document; column-based rows.
+///////////////             
+///////////////             Experiments on: 1) (semi-structured)Movie Business Report, 3/10; 2) 2 paragraphs of PZ paper: 8/10
+///////////////             3) 4 paragraphs of PZ paper: 9/10; 4) table_name, rows, header of clinical data: 0/10
+
+///////////////             which seems to be able to help the system decide when to use LLM calls and when to use code.
+///////////////         2. The content order matters (already research papers on: Lost in the Middle: How Language Models Use Long Contexts)
+//////////////          3. Key words (terminolgy) consistency in prompts. Inconsistency will give 
+/////////////              extra burden for LLM understanding. Language input from human might be bad at this,
+/////////////              and the program can take care of this.
+////////////                    e.g. "data source" VS "content" VS "data" VS "data sources"
+
+// can we encode this spreadsheet 
+{
+  "rows": [
+    "S001","64.0","C3L-00006","No","2","5","128N","C3L-00006-01","CPT0001460012","Tumor","No","United States","FIGO grade 1","under 50 %","Endometrioid","YES","Normal","pT1a (FIGO IA)","pN0","cM0","Staging Incomplete","Stage I","IA","1.0","38.88","No","White","Not-Hispanic or Latino","Female","Anterior endometrium","nan","Unifocal","2.9","Cannot be determined","nan","Cannot be determined","nan","Intact nuclear expression","Intact nuclear expression","Loss of nuclear expression","Intact nuclear expression","Cannot be determined","nan","Cannot be determined","1","0.004595748","0.045125791","0.075643165","0.034381469","0.047247678","0.002878929","6.39e-10","0.79012722","0.010443511","0.0","0.017867521","0.036816257","0.0","0.088247615","0.0","0.035408717","0.0","0.0","0.0","0.020942068","0.0","0.024896194","0.047057934","0.072523873","0.0","0.00612096","0.0","0.0","0.0","0.00967535","0.37","2821.088429","4885.608881","7706.69731","0.767043727","0.769","0.253","-1.17","0.09","0.93","-0.7","0.04","1.67","-0.75","-0.01","-1.09","1.14","-0.67","0.0","0.0","0.0","0.0","1.0","1.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","1.0","0.0","0.0","0.0","1.0","1.0","0.0","0.0","0.0","0.0","0.0","0.0","1.0","0.0","1.0","0.0","0.0","0.0","1.43e-05","0.038877665","CNV_LOW","1.292639933","-0.016886191","-0.023339852","-0.023494917","0.005761569","0.009796749","0.014250962","0.060494906","0.730880164","0.208624931","MSI-H","No","WT","WT","5.090218957","5.014858245","1.450879273","10.06204614","9.984418459","5.832890014","MSI-H","8.300395257","1.482213439","72.52964427","14.42687747","1.383399209","1.877470356","Blood_normal","92b5e534-6cb0-43eb-8147-ce7d18526f5e_gdc_realn.bam","53dbb4d6-ce9d-4145-a33a-0c4d67e655df","Tumor","d9975c5f-288d-417d-bdb3-f490d9a36401_gdc_realn.bam","96c07fe5-d530-4c9b-92ce-49408feacb2c","Blood_normal","9f29ebe1-de5d-47a8-a54d-d1e8441409c6","Tumor","457f2c4d-ddf3-416e-bb50-b112eede02d5","Tumor","170802_UNC31-K00269_0072_AHK3GVBBXX_TAGCTT_S17_L005_R1_001.fastq.gz","8a1efc47-1c29-417f-a425-cdbd09565dcb","Tumor","170802_UNC31-K00269_0072_AHK3GVBBXX_TAGCTT_S17_L005_R2_001.fastq.gz","8c3fe9b7-7acd-4867-8d9c-a8e5d1516eda","Tumor","37bcba98-1094-459e-83ae-c23a602416fb","YES","PASS\n"","
+    "S002","58.0","C3L-00008","No","4","16","130N","C3L-00008-01","CPT0001300009","Tumor","No","United States","FIGO grade 1","under 50 %","Endometrioid","YES","Normal","pT1a (FIGO IA)","pNX","cM0","Staging Incomplete","Stage IV","IA","0.0","39.76","No","White","Not-Hispanic or Latino","Female","Posterior endometrium","nan","Unifocal","3.5","Cannot be determined","nan","Cannot be determined","nan","Intact nuclear expression","Intact nuclear expression","Intact nuclear expression","Loss of nuclear expression","Cannot be determined","nan","Cannot be determined","1","0.005666428","0.056677626","0.100222966","0.041562969","0.056081262","0.001627258","4.15e-09","0.738161488","0.004411131","0.0","0.00176099","0.002130758","0.0","0.026435753","0.0","0.014944149","0.0","0.0","0.0","0.004934448","0.00385161","0.016040522","0.00394293","0.027211297","0.010407182","0.007160341","0.0","0.015087431","0.011681456","0.0","0.15","2714.248104","3632.199987","6346.448091","0.752796065","-0.302","-0.0242","0.17","-0.32","-0.91","0.65","-0.54","2.41","-0.87","-0.07","-1.6","2.14","-0.53","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","1.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","1.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","0.0","1.0","0.0","0.0","0.0","9.31e-06","1.17e-05","CNV_LOW","0.118480401","0.0","-0.002698584","-0.01112554","0.000978501","0.0","0.0","0.082629765","0.715223373","0.202146861","MSI-H","No","WT","WT","3.941606385","3.451287679","2.440219926","8.861086906","8.330916878","7.169925001","MSI-H","14.64174455","2.803738318","64.48598131","15.26479751","0.934579439","1.869158879","Blood_normal","243bfb3c-d06b-4de5-a6c3-7fa7e2c5fb74_gdc_realn.bam","90257622-6bcc-43e7-a04f-f7397975d038","Tumor","f6924a26-a14f-45a3-b4bd-7a4592d34065_gdc_realn.bam","4501f315-bf8f-4611-821a-797ef180e25b","Blood_normal","846bf455-89b4-4840-b113-e529ffa13277","Tumor","1c0e0f84-4caf-4493-9b2f-8f5f9ef9231b","Tumor","170802_UNC31-K00269_0072_AHK3GVBBXX_GGCTAC_S22_L007_R1_001.fastq.gz","555725e8-cba5-4676-9b0a-80100cbf9f47","Tumor","170802_UNC31-K00269_0072_AHK3GVBBXX_GGCTAC_S22_L007_R2_001.fastq.gz","15235b12-b67a-4678-acc4-ed03d642bd5e","Tumor","492b50d8-ec35-46e7-a65d-06512aaee394","YES","PASS\n"
+  ],
+  "filename": "dou_mmc1.xlsx",
+"header": "idx","Age","Proteomics_Participant_ID","Case_excluded","Proteomics_TMT_batch","Proteomics_TMT_plex","Proteomics_TMT_channel","Proteomics_Parent_Sample_IDs","Proteomics_Aliquot_ID","Proteomics_Tumor_Normal","Proteomics_OCT","Country","Histologic_Grade_FIGO","Myometrial_invasion_Specify","Histologic_type","Treatment_naive","Tumor_purity","Path_Stage_Primary_Tumor-pT","Path_Stage_Reg_Lymph_Nodes-pN","Clin_Stage_Dist_Mets-cM","Path_Stage_Dist_Mets-pM","tumor_Stage-Pathological","FIGO_stage","LVSI","BMI","Diabetes","Race","Ethnicity","Gender","Tumor_Site","Tumor_Site_Other","Tumor_Focality","Tumor_Size_cm","Estrogen_Receptor","Estrogen_Receptor_%","Progesterone_Receptor","Progesterone_Receptor_%","MLH1","MLH2","MSH6","PMS2","p53","Other_IHC_specify","MLH1_Promoter_Hypermethylation","Num_full_term_pregnancies","EPIC_Bcells","EPIC_CAFs","EPIC_CD4_Tcells","EPIC_CD8_Tcells","EPIC_Endothelial","EPIC_Macrophages","EPIC_NKcells","EPIC_otherCells","CIBERSORT_B _cells _naive","CIBERSORT_B _cells _memory","CIBERSORT_Plasma _cells","CIBERSORT_T _cells _CD8","CIBERSORT_T _cells _CD4 _naive","CIBERSORT_T _cells _CD4 _memory _resting","CIBERSORT_T _cells _CD4 _memory _activated","CIBERSORT_T _cells _follicular _helper","CIBERSORT_T _cells _regulatory _(Tregs)","CIBERSORT_T _cells _gamma _delta","CIBERSORT_NK _cells _resting","CIBERSORT_NK _cells _activated","CIBERSORT_Monocytes","CIBERSORT_Macrophages _M0","CIBERSORT_Macrophages _M1","CIBERSORT_Macrophages _M2","CIBERSORT_Dendritic _cells _resting","CIBERSORT_Dendritic _cells _activated","CIBERSORT_Mast _cells _resting","CIBERSORT_Mast _cells _activated","CIBERSORT_Eosinophils","CIBERSORT_Neutrophils","CIBERSORT_Absolute _score","ESTIMATE_StromalScore","ESTIMATE_ImmuneScore","ESTIMATE_ESTIMATEScore","Stemness_score","ER_ESR1","PR_PGR","Pathway_activity_EGFR","Pathway_activity_Hypoxia","Pathway_activity_JAK.STAT","Pathway_activity_MAPK","Pathway_activity_NFkB","Pathway_activity_PI3K","Pathway_activity_TGFb","Pathway_activity_TNFa","Pathway_activity_Trail","Pathway_activity_VEGF","Pathway_activity_p53","TP53_ATM","TP53_CHEK2","TP53_MDM4","TP53_RPS6KA3","TP53_TP53","TP53_pathway","PI3K_AKT1","PI3K_AKT2","PI3K_AKT3","PI3K_DEPDC5","PI3K_DEPTOR","PI3K_INPP4B","PI3K_MAPKAP1","PI3K_MLST8","PI3K_MTOR","PI3K_NPRL2","PI3K_NPRL3","PI3K_PDK1","PI3K_PIK3CA","PI3K_PIK3CB","PI3K_PIK3R1","PI3K_PIK3R2","PI3K_PPP2R1A","PI3K_PTEN","PI3K_RHEB","PI3K_RICTOR","PI3K_RPS6","PI3K_RPS6KB1","PI3K_RPTOR","PI3K_STK11","PI3K_TSC1","PI3K_TSC2","PI3K_pathway","HRD_BRCA1","HRD_BRCA2","HRD_BRCA1_or_BRCA2","CNV_DEL","CNV_AMP","CNV_class","CNV_idx","CNV_1q_DEL","CNV_3q_DEL","CNV_4q_DEL","CNV_1q_AMP","CNV_3q_AMP","CNV_4q_AMP","Purity_Immune","Purity_Cancer","Purity_Stroma","MSI_status","POLE_subtype","JAK1_MS_INDEL","JAK1_Mutation","Log2_variant_per_Mbp","Log2_SNP_per_Mbp","Log2_INDEL_per_Mbp","Log2_variant_total","Log2_SNP_total","Log2_INDEL_total","Genomics_subtype","Mutation_signature_C>A","Mutation_signature_C>G","Mutation_signature_C>T","Mutation_signature_T>C","Mutation_signature_T>A","Mutation_signature_T>G","WXS_normal_sample_type","WXS_normal_filename","WXS_normal_UUID","WXS_tumor_sample_type","WXS_tumor_filename","WXS_tumor_UUID","WGS_normal_sample_type","WGS_normal_UUID","WGS_tumor_sample_type","WGS_tumor_UUID","RNAseq_R1_sample_type","RNAseq_R1_filename","RNAseq_R1_UUID","RNAseq_R2_sample_type","RNAseq_R2_filename","RNAseq_R2_UUID","miRNAseq_sample_type","miRNAseq_UUID","Methylation_available","Methylation_quality"","
+  "name": "dou_mmc1.xlsx_UCEC_CPTAC3_meta_table_V2.1",
+  "data type": "Table"
+  "data type description": "A Table is an object composed of a header and rows."
+}
+
+//////////// with indexing
+EPIC_Bcells, col_45, : yes
+"CIBERSORT_T _cells _CD4 _memory _resting", col_58, : yes
+
+
+
+
+
+
+
+
+
+
+////////////////// Logical Plan Generation //////////////////////////
+0. BaseScan(biofabric-tiny,XLSFile(contents, filename, number_sheets, sheet_names))
+1. ConvertScan(XLSFile(contents, filename, number_sheets, sheet_names) -> Table(filename, header, name, rows),None)
+2. FilteredScan(Table(filename, header, name, rows), Filter(The table contains the patient age.))
+3. ConvertScan(Table(filename, header, name, rows) -> Rows(ages),None)
+
+0. BaseScan(biofabric-tiny,XLSFile(contents, filename, number_sheets, sheet_names))
+1. ConvertScan(XLSFile(contents, filename, number_sheets, sheet_names) -> Table(filename, header, name, rows),None)
+2. ConvertScan(Table(filename, header, name, rows) -> Rows(ages),None)
+3. FilteredScan(Rows(ages), Filter(The table contains the patient age.))
+
+FilteredScan depends on Table.rows/header
+ConvertScan(Table(filename, header, name, rows) -> Rows(ages),None) depends on Table.rows/header
+
+Theoretically, FilteredScan and ConvertScan don't have guaranteed oders. Currently we're using execution data from
+sentinel plan to know which order will cost less. 
+1) planner knows for FilteredScan we only need to send Header to LLM to determine if this table contains Ages.
+2) so that FilteredScan can be executed first.
+3) Just one logical plan will be generated.
+
+If reasoning doesn't work here, it will fallback to the original brute force way:
+1) can we make good abstract data example when asking LLM for FilteredScan/ConvertScan?
+2) When nothing is generated from LLM (filter, convert) by leveraging LLM planning/reasoning, we should fallback to the brute force way and truct the results.
+3) We should work on how to operators, then expand this kind of optimization to Plan level.
+    Q: In order to implement X operator on Y data, what part of Y data do we really need?
+

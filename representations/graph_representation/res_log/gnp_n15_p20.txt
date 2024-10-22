@@ -1,0 +1,80 @@
+{
+  "dadca0c7-f963-4cba-8c3c-cfd5e37eda12": {
+    "edge_0": "f26331e4-b5db-4572-961d-043da8d4847b",
+    "edge_1": "d0eb46e2-96e4-4440-854f-0e4eb74df69c"
+  },
+  "d0eb46e2-96e4-4440-854f-0e4eb74df69c": {
+    "edge_0": "f26331e4-b5db-4572-961d-043da8d4847b",
+    "edge_1": "b6e314ec-4680-423c-88b6-fdeb4f72e47b",
+    "edge_2": "384e0cf6-d8c9-4b73-8aae-0983486666ea",
+    "edge_3": "ce897bbf-603b-4e37-bf21-0c6ce8494277"
+  },
+  "8e4ec3f6-e2e1-4869-a0de-9eb9f404e92e": {
+    "edge_0": "530d96bc-f74d-4597-b9f1-e88a2cf0ae24",
+    "edge_1": "568ba7b2-6e74-4488-862d-03dc477429e3"
+  },
+  "da16901d-7fd0-4a05-aa5e-071b06f42d18": {
+    "edge_0": "eb5f2e0a-f84c-4f13-8984-31d26774fdf0",
+    "edge_1": "07d933f0-09d7-429b-b575-62953c1c36d1"
+  },
+  "ce897bbf-603b-4e37-bf21-0c6ce8494277": {
+    "edge_0": "530d96bc-f74d-4597-b9f1-e88a2cf0ae24",
+    "edge_1": "dadca0c7-f963-4cba-8c3c-cfd5e37eda12",
+    "edge_2": "f26331e4-b5db-4572-961d-043da8d4847b",
+    "edge_3": "d0eb46e2-96e4-4440-854f-0e4eb74df69c",
+    "edge_4": "568ba7b2-6e74-4488-862d-03dc477429e3"
+  },
+  "d0508a59-353e-4f0e-ac7c-67c85dce065e": {
+    "edge_0": "b6e314ec-4680-423c-88b6-fdeb4f72e47b",
+    "edge_1": "eb5f2e0a-f84c-4f13-8984-31d26774fdf0",
+    "edge_2": "568ba7b2-6e74-4488-862d-03dc477429e3",
+    "edge_3": "ce897bbf-603b-4e37-bf21-0c6ce8494277"
+  },
+  "5ce5e811-9304-426c-9672-b74b560bdf50": {
+    "edge_0": "f26331e4-b5db-4572-961d-043da8d4847b",
+    "edge_1": "d0eb46e2-96e4-4440-854f-0e4eb74df69c",
+    "edge_2": "da16901d-7fd0-4a05-aa5e-071b06f42d18",
+    "edge_3": "07d933f0-09d7-429b-b575-62953c1c36d1"
+  },
+  "eb5f2e0a-f84c-4f13-8984-31d26774fdf0": {
+    "edge_0": "530d96bc-f74d-4597-b9f1-e88a2cf0ae24"
+  },
+  "7618201a-2b9c-49bf-9f13-70d6b42006a8": {
+    "edge_0": "d0eb46e2-96e4-4440-854f-0e4eb74df69c",
+    "edge_1": "07d933f0-09d7-429b-b575-62953c1c36d1"
+  },
+  "07d933f0-09d7-429b-b575-62953c1c36d1": {
+    "edge_0": "7618201a-2b9c-49bf-9f13-70d6b42006a8",
+    "edge_1": "568ba7b2-6e74-4488-862d-03dc477429e3"
+  },
+  "f26331e4-b5db-4572-961d-043da8d4847b": {
+    "edge_0": "530d96bc-f74d-4597-b9f1-e88a2cf0ae24",
+    "edge_1": "d0508a59-353e-4f0e-ac7c-67c85dce065e",
+    "edge_2": "eb5f2e0a-f84c-4f13-8984-31d26774fdf0",
+    "edge_3": "5ce5e811-9304-426c-9672-b74b560bdf50",
+    "edge_4": "568ba7b2-6e74-4488-862d-03dc477429e3"
+  },
+  "b6e314ec-4680-423c-88b6-fdeb4f72e47b": {
+    "edge_0": "dadca0c7-f963-4cba-8c3c-cfd5e37eda12",
+    "edge_1": "d0508a59-353e-4f0e-ac7c-67c85dce065e"
+  },
+  "384e0cf6-d8c9-4b73-8aae-0983486666ea": {
+    "edge_0": "d0508a59-353e-4f0e-ac7c-67c85dce065e",
+    "edge_1": "f26331e4-b5db-4572-961d-043da8d4847b",
+    "edge_2": "b6e314ec-4680-423c-88b6-fdeb4f72e47b",
+    "edge_3": "eb5f2e0a-f84c-4f13-8984-31d26774fdf0"
+  },
+  "568ba7b2-6e74-4488-862d-03dc477429e3": {
+    "edge_0": "530d96bc-f74d-4597-b9f1-e88a2cf0ae24",
+    "edge_1": "dadca0c7-f963-4cba-8c3c-cfd5e37eda12",
+    "edge_2": "8e4ec3f6-e2e1-4869-a0de-9eb9f404e92e",
+    "edge_3": "07d933f0-09d7-429b-b575-62953c1c36d1",
+    "edge_4": "ce897bbf-603b-4e37-bf21-0c6ce8494277"
+  },
+  "530d96bc-f74d-4597-b9f1-e88a2cf0ae24": {
+    "edge_0": "d0508a59-353e-4f0e-ac7c-67c85dce065e",
+    "edge_1": "eb5f2e0a-f84c-4f13-8984-31d26774fdf0",
+    "edge_2": "d0eb46e2-96e4-4440-854f-0e4eb74df69c",
+    "edge_3": "da16901d-7fd0-4a05-aa5e-071b06f42d18"
+  }
+}

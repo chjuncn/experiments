@@ -1,0 +1,57 @@
+I use LLAMA3.1 for planner, LLAMA3 for executor
+
+1. pz code only returns 2 records per data source, and the result has some fake data, for example, score and user reviews.
+    1.1 why each file has 2 records, bug or coincidence.
+    1.2 when pz code doesn't return the good data, it seems to me we couldn't do anything for it? 
+        This should be the work for DSPY?
+    1.3 Apperantly, we don't have JOIN operator currently.
+
+2. planner gives a plan based on {question, data source, available operators}, and executor implements the plan.
+    1.1 the result is better than PZ code.
+    1.2 Most of the times the error is missing some movie entry, when the task is OUTTER JOIN movie data.
+    1.3 LLM seems to understand EXTRACT better than CONVERT. 
+
+3.  3.1 Most of the times it will return the right answer.
+    3.2 Learning: each question/user request has some kind of "key" or "backbone" information to suppor the whole question.
+        meaning, if these information gets right, it will be much easier to answer the later questions, otherwise, the whole answer will
+        be off.
+
+        This might especially true for data tasks, JOIN, AGGR, CONVERT, EXTRACT, GROUPBY
+        For this example a whole list of movie names could be the "key" information.
+
+4.  4.1 planner can tell me the most important information is "movie names"
+    4.2 once this step is right, the following steps will get right. otherwise it's wrong.
+    4.3 Learning: If I ask for 2 most important information, LLM could get wrong for one of them or both, 
+        if I only ask for 1 most important information, most of the times it will get right.
+
+
+5. Ask random question, e.g. what do you recommendation for a 10 years old?
+    I'm happy to see that LLM says "the most important information" we need to check is genre and score. 
+
+6. I use the planner to make plan for legal-discovery case:
+    good thing: it seems like the planner can give me the general plan.
+    bad thing:  1. It doesn't totally understand PZ operators; 
+                2. In Filter: it tries to use keyword matching to filter content.
+                3. If I don't mention about "quote information", it never figure out this is another filter condition. 
+                    3.1 actually it might be easy for human to forget as well, but when we see verification results, we know we need to add more conditions to this process.
+
+
+7. real estate: I didn't give any soure data, just let LLM imagine it will be given images and descriptions about houses.   
+    good think: it can figure out it needs to extract information from images and text separately.
+
+
+Other thoughts:
+    1. when the inputs are all from pre-defined strucutred schema, it will be easier to do it in traditional way. 
+        Otherwise, LLM way.
+    2. PZ workflow: 1. convert data to pre-defined schema (strucutred)
+                       1.1 convert could be image-->image
+                    2. Join or integrate strucutred data from previous steps. 
+                        2.1 we could provide "JOIN --> new insight" + traditional JOIN
+                        2.2 Join can happen between images+text --> match breed to each breadID.
+                        
+    
+
+
+
+
+

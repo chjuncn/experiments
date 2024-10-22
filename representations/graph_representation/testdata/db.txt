@@ -1,0 +1,6 @@
+name, year, score
+('The Godfather', 1972, 9.2)
+('The Godfather: Part II', 1974, 9.0)
+('The Shawshank Redemption', 1994, 9.3)
+('The Lord of the Rings: The Return of the King', 2003, 8.9)
+('The Dark Knight', 2008, 9.0)

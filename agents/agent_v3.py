@@ -249,6 +249,7 @@ class ConductorAgent(AgentABC):
         data_summaries = [ agent.agent_name +": " + agent.get_data_summary() + "\n" for i, agent in
                           enumerate(available_agents)]
 
+
         goal = "Please solve the question: " + global_question
         prompt = f"You have data agents {agents}, their data summaries are\n {data_summaries}.\n" \
                  f"You have goal: {goal}, and suggestion: {suggestion}. Please generate prompts for all the related data agents." \

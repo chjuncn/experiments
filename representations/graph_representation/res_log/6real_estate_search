@@ -1,0 +1,40 @@
+1================
+ 
+
+
+========suggestion========
+ assistant
+
+Based on the request, I will decompose the tasks into minimal atomic steps and provide a plan to find the houses that meet the conditions.
+
+**Task 1: Extract house information from text descriptions**
+
+* Step 1.1: READ_SOURCE(source_id="house_descriptions.txt")
+* Step 1.2: EXTRACT(source="house_descriptions.txt", target_schema="House")
+
+**Task 2: Extract house information from images**
+
+* Step 2.1: READ_SOURCE(source_id="house_images")
+* Step 2.2: CONVERT(source_schema="image", target_schema="House")
+
+**Task 3: Merge house information from text and images**
+
+* Step 3.1: MERGE(left="House", right="House", key="home_id")
+
+**Task 4: Filter houses that are modern and attractive**
+
+* Step 4.1: FILTER(source="House", condition="is_modern and is_attractive")
+
+**Task 5: Filter houses within two miles of work**
+
+* Step 5.1: FILTER(source="House", condition="distance_to_work <= 2 miles")
+
+**Task 6: Append filtered houses to output**
+
+* Step 6.1: APPEND(source="House", target="output")
+
+The output schema is: House(home_id)
+
+The plan is to first extract house information from text descriptions and images, then merge the information, filter the houses that meet the conditions, and finally append the filtered houses to the output.
+
+Note: The condition "is_modern and is_attractive" and "distance_to_work <= 2 miles" are assumed to be implemented as lambda functions or semantic conditions. The actual implementation may vary depending on the specific requirements.

@@ -1,0 +1,1676 @@
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+ 
+LEN(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+    ++++++ Raw output:{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+}[/INST]
+
+[INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": {
+    "edge_0": "8bc59f11-23a7-468d-bf6a-d6e78f851ac8"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "0daa350b-c036-4a8a-9e7c-49915d2a6321",
+    "edge_1": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  },
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": {
+    "edge_0": "8bc59f11-23a7-468d-bf6a-d6e78f851ac8"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    [/INST]{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+}[/INST]}
+[INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": {
+    "edge_0": "8bc59f11-23a7-468d-bf6a-d6e78f851ac8"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "0daa350b-c036-4a8a-9e7c-49915d2a6321",
+    "edge_1": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  },
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": {
+    "edge_0": "8bc
+    ++++++ Parsed answer:{'edge_0': '1e301885-ff50-43aa-80a1-7e9e781a2f3d'}
+    ++++++ Expected:585690f9-37d8-486d-89cd-df9a7dfe24fe
+    ++++++ Got Score:0
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Score: 0
+    ++++++ Raw output:{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "FINAL_VALUE_1"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": "FINAL_VALUE_2"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "FINAL_VALUE_1",
+  "1e301885
+    ++++++ Parsed answer:{'585690f9-37d8-486d-89cd-df9a7dfe24fe': 'FINAL_VALUE_1', '1e301885-ff50-43aa-80a1-7e9e781a2f3d': 'FINAL_VALUE_2'}
+    ++++++ Expected:585690f9-37d8-486d-89cd-df9a7dfe24fe
+    ++++++ Got Score:0
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: [], Score: 0
+    ++++++ Raw output:{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e
+    ++++++ Parsed answer:{'8bc59f11-23a7-468d-bf6a-d6e78f851ac8': {'edge_0': '585690f9-37d8-486d-89cd-df9a7dfe24fe', 'edge_1': '0daa350b-c036-4a8a-9e7c-49915d2a6321'}, '0daa350b-c036-4a8a-9e7c-49915d2a6321': {'edge_0': '1e301885-ff50-43aa-80a1-7e9e781a2f3d'}}
+    ++++++ Expected:0daa350b-c036-4a8a-9e7c-49915d2a6321
+    ++++++ Got Score:0
+++++++ Expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, Real: ['585690f9-37d8-486d-89cd-df9a7dfe24fe', '0daa350b-c036-4a8a-9e7c-49915d2a6321'], Score: 0
+    ++++++ Raw output:{
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  }
+}[/INST]
+
+{
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": "1e301885-ff50-43aa-80a1-7e9e781a2f3
+    ++++++ Parsed answer:{'585690f9-37d8-486d-89cd-df9a7dfe24fe': '1e301885-ff50-43aa-80a1-7e9e781a2f3d'}
+    ++++++ Expected:1e301885-ff50-43aa-80a1-7e9e781a2f3d
+    ++++++ Got Score:0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+ 
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 329, 'completion_tokens': 1000, 'total_tokens': 1329}
+Usage: {'prompt_tokens': 323, 'completion_tokens': 1000, 'total_tokens': 1323}
+Usage: {'prompt_tokens': 323, 'completion_tokens': 1000, 'total_tokens': 1323}
+Usage: {'prompt_tokens': 325, 'completion_tokens': 1000, 'total_tokens': 1325}
+Total_score:0, Full_score:4, Accuracy:0.0
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "1ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "1ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Score: 1
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Score: 1
+    ++++++ Raw output:{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "1ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  }
+}[/INST]
+
+{"8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "0daa350b-c036-4a8a-9e7c-49915d2a6321"}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}
+    ++++++ Parsed answer:{}
+    ++++++ Expected:0daa350b-c036-4a8a-9e7c-49915d2a6321
+    ++++++ Got Score:0
+++++++ Expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, Real: [], Score: 0
+    ++++++ Raw output:{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]
+
+{
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2a3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+  "6321edge_0": "1e301885-ff50-43aa
+    ++++++ Parsed answer:{'6321edge_0': '1e301885-ff50-43aa-80a1-7e9e781a2f3d'}
+    ++++++ Expected:1e301885-ff50-43aa-80a1-7e9e781a2f3d
+    ++++++ Got Score:0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 341, 'completion_tokens': 1000, 'total_tokens': 1341}
+Usage: {'prompt_tokens': 335, 'completion_tokens': 1000, 'total_tokens': 1335}
+Usage: {'prompt_tokens': 335, 'completion_tokens': 1000, 'total_tokens': 1335}
+Usage: {'prompt_tokens': 337, 'completion_tokens': 1000, 'total_tokens': 1337}
+Total_score:2, Full_score:4, Accuracy:0.5
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585
+LEN(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daa350b-c036-4a8a-9e7c-49915d2a6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+    ++++++ Raw output:{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daa350b-c036-4a8a-9e7c-49915d2a6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+
+    ++++++ Parsed answer:{}
+    ++++++ Expected:585690f9-37d8-486d-89cd-df9a7dfe24fe
+    ++++++ Got Score:0
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: [], Score: 0
+    ++++++ Raw output:{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": {
+    "585690f9-37d8-486d-89cd-df9a7dfe24feedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": {
+    "1e301885-ff50-43aa-80a1-7e9e781a2f3dedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daa350b-c036-4a8a-9e7c-49915d2a6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}[/INST]
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": {
+    "585690f9-37d8-486d-89cd-df9a7dfe24feedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": {
+    "1e301885-ff50-43aa-80a1-7e9e781a2f3dedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daa350b-c036-4a8a-9e7c-49915d2a6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": {
+    "585690f9-37d8-486d-89cd-df9a7dfe24feedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": {
+    "1e301885-ff50-43aa-80a1-7e9e781a2f3dedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daa350b-c036-4a8a-9e7c-49915d2a6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}[/INST]{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": {
+    "585690f9-37d8-486d-89cd-df9a7dfe24feedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": {
+    "1e301885-ff50-43aa-80a1-7e9e781a2f3dedge_0": "
+    ++++++ Parsed answer:{'585690f9-37d8-486d-89cd-df9a7dfe24feedge_0': '585690f9-37d8-486d-89cd-df9a7dfe24fe'}
+    ++++++ Expected:585690f9-37d8-486d-89cd-df9a7dfe24fe
+    ++++++ Got Score:0
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: [], Score: 0
+    ++++++ Raw output:{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daa350b-c036-4a8a-9e7c-49915d2a6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/
+    ++++++ Parsed answer:{}
+    ++++++ Expected:0daa350b-c036-4a8a-9e7c-49915d2a6321
+    ++++++ Got Score:0
+++++++ Expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, Real: [], Score: 0
+    ++++++ Raw output:{
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+
+}[/INST]{"0daa350b-c036-4a8a-9e7c-49915d2a6321": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/
+    ++++++ Parsed answer:{}
+    ++++++ Expected:1e301885-ff50-43aa-80a1-7e9e781a2f3d
+    ++++++ Got Score:0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 429, 'completion_tokens': 1000, 'total_tokens': 1429}
+Usage: {'prompt_tokens': 423, 'completion_tokens': 1000, 'total_tokens': 1423}
+Usage: {'prompt_tokens': 423, 'completion_tokens': 1000, 'total_tokens': 1423}
+Usage: {'prompt_tokens': 425, 'completion_tokens': 1000, 'total_tokens': 1425}
+Total_score:0, Full_score:4, Accuracy:0.0
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ofepedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ofepedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "lnmgedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "lnmgedge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "fnsbedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Score: 1
+    ++++++ Raw output:{
+  "585690f9-37d8-486d-89cd-df9a7dfe24fe": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  },
+  "1e301885-ff50-43aa-80a1-7e9e781a2f3d": {
+    "edge_0": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "8bc59f11-23a7-468d-bf6a-d6e78f851ac8"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  }
+}[/INST]{
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}
+    ++++++ Parsed answer:{}
+    ++++++ Expected:585690f9-37d8-486d-89cd-df9a7dfe24fe
+    ++++++ Got Score:0
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: [], Score: 0
+    ++++++ Raw output:{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "lnmgedge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  }
+}[/INST]
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/
+    ++++++ Parsed answer:{}
+    ++++++ Expected:0daa350b-c036-4a8a-9e7c-49915d2a6321
+    ++++++ Got Score:0
+++++++ Expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, Real: [], Score: 0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Score: 1
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ofepedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 340, 'completion_tokens': 1000, 'total_tokens': 1340}
+Usage: {'prompt_tokens': 334, 'completion_tokens': 1000, 'total_tokens': 1334}
+Usage: {'prompt_tokens': 334, 'completion_tokens': 1000, 'total_tokens': 1334}
+Usage: {'prompt_tokens': 336, 'completion_tokens': 1000, 'total_tokens': 1336}
+Total_score:2, Full_score:4, Accuracy:0.5
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+LEN(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "<edge_1>": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "<edge_0>": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Score: 1
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Score: 1
+    ++++++ Raw output:{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "<edge_1>": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "<edge_0>": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "<edge_1>": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "<edge_0>": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "<edge_1>": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "<edge_0>": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "<edge_1>": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "<edge_0>": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "<edge_1>": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "<edge_0>": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "<edge_1>": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "<edge_0>": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8
+    ++++++ Parsed answer:{'8bc59f11-23a7-468d-bf6a-d6e78f851ac8': {'<edge_0>': '585690f9-37d8-486d-89cd-df9a7dfe24fe', '<edge_1>': '0daa350b-c036-4a8a-9e7c-49915d2a6321'}, '0daa350b-c036-4a8a-9e7c-49915d2a6321': {'<edge_0>': '1e301885-ff50-43aa-80a1-7e9e781a2f3d'}}
+    ++++++ Expected:0daa350b-c036-4a8a-9e7c-49915d2a6321
+    ++++++ Got Score:0
+++++++ Expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, Real: ['585690f9-37d8-486d-89cd-df9a7dfe24fe', '0daa350b-c036-4a8a-9e7c-49915d2a6321'], Score: 0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Score: 1
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 333, 'completion_tokens': 1000, 'total_tokens': 1333}
+Usage: {'prompt_tokens': 327, 'completion_tokens': 1000, 'total_tokens': 1327}
+Usage: {'prompt_tokens': 327, 'completion_tokens': 1000, 'total_tokens': 1327}
+Usage: {'prompt_tokens': 329, 'completion_tokens': 149, 'total_tokens': 478}
+Total_score:3, Full_score:4, Accuracy:0.75
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: ['585690f9-37d8-486d-89cd-df9a7dfe24fe'], Score: 1
+    ++++++ Raw output:{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78-851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}[/INST]{
+
+}
+    ++++++ Parsed answer:{}
+    ++++++ Expected:585690f9-37d8-486d-89cd-df9a7dfe24fe
+    ++++++ Got Score:0
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: [], Score: 0
+    ++++++ Raw output:{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+[INST]{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "
+    ++++++ Parsed answer:{'8bc5edge_0': '585690f9-37d8-486d-89cd-df9a7dfe24fe', '8bc5edge_1': '0daa350b-c036-4a8a-9e7c-49915d2a6321'}
+    ++++++ Expected:0daa350b-c036-4a8a-9e7c-49915d2a6321
+    ++++++ Got Score:0
+++++++ Expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, Real: [], Score: 0
+    ++++++ Raw output:{
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]{
+
+}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST]{}[/INST
+    ++++++ Parsed answer:{}
+    ++++++ Expected:1e301885-ff50-43aa-80a1-7e9e781a2f3d
+    ++++++ Got Score:0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 341, 'completion_tokens': 1000, 'total_tokens': 1341}
+Usage: {'prompt_tokens': 335, 'completion_tokens': 1000, 'total_tokens': 1335}
+Usage: {'prompt_tokens': 335, 'completion_tokens': 1000, 'total_tokens': 1335}
+Usage: {'prompt_tokens': 337, 'completion_tokens': 1000, 'total_tokens': 1337}
+Total_score:1, Full_score:4, Accuracy:0.25
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7
+LEN(raw_json_graph)=3
+
+{
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "<key>=8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "<key>=0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Score: 1
+++++++ Expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, Score: 1
+++++++ Expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, Real: 0daa350b-c036-4a8a-9e7c-49915d2a6321, Score: 1
+    ++++++ Raw output:{
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST]="0daa350b-c036-4a8a-9e7c-49915d2a6321" > 0daaedge_0 = 1e301885-ff50-43aa-80a1-7e9e781a2f3d
+}[/RESPONSE]
+    ++++++ Parsed answer:{}
+    ++++++ Expected:1e301885-ff50-43aa-80a1-7e9e781a2f3d
+    ++++++ Got Score:0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 347, 'completion_tokens': 1000, 'total_tokens': 1347}
+Usage: {'prompt_tokens': 341, 'completion_tokens': 1000, 'total_tokens': 1341}
+Usage: {'prompt_tokens': 341, 'completion_tokens': 1000, 'total_tokens': 1341}
+Usage: {'prompt_tokens': 343, 'completion_tokens': 131, 'total_tokens': 474}
+Total_score:3, Full_score:4, Accuracy:0.75
+
+
+
+
+     Basic info: MetaLlama3.18BInstructTurbo.log, gnp_n5_p20, baseline, shot_num=0, query_hop_num=1
+Total failed_num=4, wrong_edge_problem=0, possibly_not_found=2, total_score=0, full_score=4
+Summary Token Usage: {'prompt_tokens': 325, 'completion_tokens': 1000, 'total_tokens': 1325}
+
+     Basic info: MetaLlama3.18BInstructTurbo.log, gnp_n5_p20, node_id[-4:]+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=4, wrong_edge_problem=0, possibly_not_found=4, total_score=0, full_score=4
+Summary Token Usage: {'prompt_tokens': 425, 'completion_tokens': 1000, 'total_tokens': 1425}
+
+     Basic info: MetaLlama3.18BInstructTurbo.log, gnp_n5_p20, node_id+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=1, wrong_edge_problem=0, possibly_not_found=0, total_score=3, full_score=4
+Summary Token Usage: {'prompt_tokens': 329, 'completion_tokens': 787, 'total_tokens': 1116}
+
+     Basic info: MetaLlama3.18BInstructTurbo.log, gnp_n5_p20, randomStr+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=3, wrong_edge_problem=0, possibly_not_found=1, total_score=1, full_score=4
+Summary Token Usage: {'prompt_tokens': 337, 'completion_tokens': 1000, 'total_tokens': 1337}

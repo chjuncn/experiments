@@ -1,0 +1,301 @@
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+ 
+len(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+    ++++++ raw output: {"8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"}
+    parsed answer:{'8bc59f11-23a7-468d-bf6a-d6e78f851ac8': '1e301885-ff50-43aa-80a1-7e9e781a2f3d'}
+    expected:0daa350b-c036-4a8a-9e7c-49915d2a6321
+    Got Score:0
+++++++ expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, score: 0
+++++++ expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+ 
+len(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 421, 'completion_tokens': 70, 'total_tokens': 491}
+Usage: {'prompt_tokens': 421, 'completion_tokens': 70, 'total_tokens': 491}
+Usage: {'prompt_tokens': 421, 'completion_tokens': 72, 'total_tokens': 493}
+Usage: {'prompt_tokens': 425, 'completion_tokens': 74, 'total_tokens': 499}
+total_score:3, full_score:4, accuracy:0.75
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+len(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "1ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "1ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+++++++ expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, real: 0daa350b-c036-4a8a-9e7c-49915d2a6321, score: 1
+++++++ expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+len(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 435, 'completion_tokens': 70, 'total_tokens': 505}
+Usage: {'prompt_tokens': 435, 'completion_tokens': 70, 'total_tokens': 505}
+Usage: {'prompt_tokens': 435, 'completion_tokens': 73, 'total_tokens': 508}
+Usage: {'prompt_tokens': 439, 'completion_tokens': 74, 'total_tokens': 513}
+total_score:4, full_score:4, accuracy:1.0
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585
+len(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daa350b-c036-4a8a-9e7c-49915d2a6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+++++++ expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, real: 0daa350b-c036-4a8a-9e7c-49915d2a6321, score: 1
+++++++ expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585
+len(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 555, 'completion_tokens': 70, 'total_tokens': 625}
+Usage: {'prompt_tokens': 555, 'completion_tokens': 70, 'total_tokens': 625}
+Usage: {'prompt_tokens': 555, 'completion_tokens': 73, 'total_tokens': 628}
+Usage: {'prompt_tokens': 559, 'completion_tokens': 74, 'total_tokens': 633}
+total_score:4, full_score:4, accuracy:1.0
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "nphyedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+len(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "nphyedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "bjkaedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "bjkaedge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "fkjeedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+    ++++++ raw output: {"8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "0daa350b-c036-4a8a-9e7c-49915d2a6321"}
+    parsed answer:{'8bc59f11-23a7-468d-bf6a-d6e78f851ac8': '0daa350b-c036-4a8a-9e7c-49915d2a6321'}
+    expected:585690f9-37d8-486d-89cd-df9a7dfe24fe
+    Got Score:0
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 0daa350b-c036-4a8a-9e7c-49915d2a6321, score: 0
+++++++ expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, real: 0daa350b-c036-4a8a-9e7c-49915d2a6321, score: 1
+++++++ expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "nphyedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+len(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 432, 'completion_tokens': 70, 'total_tokens': 502}
+Usage: {'prompt_tokens': 432, 'completion_tokens': 73, 'total_tokens': 505}
+Usage: {'prompt_tokens': 432, 'completion_tokens': 73, 'total_tokens': 505}
+Usage: {'prompt_tokens': 436, 'completion_tokens': 74, 'total_tokens': 510}
+total_score:3, full_score:4, accuracy:0.75
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+len(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "<edge_1>": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "<edge_0>": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+    ++++++ raw output: {"8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"}
+    parsed answer:{'8bc59f11-23a7-468d-bf6a-d6e78f851ac8': '1e301885-ff50-43aa-80a1-7e9e781a2f3d'}
+    expected:0daa350b-c036-4a8a-9e7c-49915d2a6321
+    Got Score:0
+++++++ expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, score: 0
+++++++ expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+len(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 425, 'completion_tokens': 70, 'total_tokens': 495}
+Usage: {'prompt_tokens': 425, 'completion_tokens': 70, 'total_tokens': 495}
+Usage: {'prompt_tokens': 425, 'completion_tokens': 72, 'total_tokens': 497}
+Usage: {'prompt_tokens': 429, 'completion_tokens': 74, 'total_tokens': 503}
+total_score:3, full_score:4, accuracy:0.75
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+len(raw_json_graph)=3
+
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+++++++ expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, real: 0daa350b-c036-4a8a-9e7c-49915d2a6321, score: 1
+++++++ expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+len(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 433, 'completion_tokens': 70, 'total_tokens': 503}
+Usage: {'prompt_tokens': 433, 'completion_tokens': 70, 'total_tokens': 503}
+Usage: {'prompt_tokens': 433, 'completion_tokens': 73, 'total_tokens': 506}
+Usage: {'prompt_tokens': 437, 'completion_tokens': 74, 'total_tokens': 511}
+total_score:4, full_score:4, accuracy:1.0
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7
+len(raw_json_graph)=3
+
+{
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "<key>=8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "<key>=0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": $FINAL_VALUE}.
+    
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+++++++ expected: 585690f9-37d8-486d-89cd-df9a7dfe24fe, real: 585690f9-37d8-486d-89cd-df9a7dfe24fe, score: 1
+++++++ expected: 0daa350b-c036-4a8a-9e7c-49915d2a6321, real: 0daa350b-c036-4a8a-9e7c-49915d2a6321, score: 1
+++++++ expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7
+len(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 439, 'completion_tokens': 70, 'total_tokens': 509}
+Usage: {'prompt_tokens': 439, 'completion_tokens': 70, 'total_tokens': 509}
+Usage: {'prompt_tokens': 439, 'completion_tokens': 73, 'total_tokens': 512}
+Usage: {'prompt_tokens': 443, 'completion_tokens': 74, 'total_tokens': 517}
+total_score:4, full_score:4, accuracy:1.0
+
+
+

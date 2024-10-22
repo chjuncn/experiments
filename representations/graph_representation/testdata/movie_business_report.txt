@@ -1,0 +1,115 @@
+
+Movie Business Report
+
+Report Date: July 22, 2024
+
+Introduction
+
+This report analyzes the performance of 100 films across various categories, assessing their financial success and other relevant factors.
+
+##Report Scope
+
+The report includes films released between January 1, 1990 and December 31, 2023.  
+
+##Data Sources
+
+* Box Office Mojo
+* The Numbers
+* IMDb
+* Other reputable industry sources
+
+##Report Sections
+
+1. Top-Grossing Films:
+    * Lists the top 10 grossing films in the dataset, including:
+        * Title
+        * Worldwide Gross Revenue
+        * Domestic Gross Revenue
+        * Budget 
+        * Profitability (if available)
+        * Release Year
+    * Visual representation (e.g., bar chart)
+2. Film Category Analysis:
+    * Breakdown of film performance by genre:
+        * Average Gross Revenue per Genre
+        * Number of Films per Genre
+        * Top-Performing Film per Genre
+    * Visual representation (e.g., pie chart of genre distribution)
+3. Actor Analysis:
+    * Top 10 actors with the highest-grossing films (cumulative)
+    * Analysis of individual actor's box office impact (if sufficient data)
+4. Return on Investment (ROI):
+    * Analysis of the top 10 films with the highest ROI, including:
+        * Title
+        * ROI (calculated as (Worldwide Gross - Budget) / Budget)
+        * Budget
+        * Worldwide Gross Revenue
+        * Genre
+        * Release Year
+    * Factors influencing ROI (if data allows), such as:
+        * Genre trends in ROI
+        * Impact of critical acclaim on ROI
+        * Influence of marketing budget (if available)
+5. Case Studies:
+    In-depth analysis of 3 specific films:
+    5.1 The Shawshank Redemption
+        Genre: Drama
+        Release Date: September 23, 1994 (USA)
+        Budget: $25 million
+        Box Office Performance:
+        Domestic Gross: $28.3 million
+        Worldwide Gross: $58.3 million (initial release)
+        Critical Reception: Highly acclaimed for its story, acting, and direction. Considered one of the greatest films ever made.
+        Awards: 7 Academy Award nominations (no wins)
+    5.2 The Godfather:
+        Genre: Crime, Drama
+        Release Date: March 24, 1972 (USA)
+        Budget: $6 million
+        Box Office Performance:
+        Domestic Gross: $134.9 million
+        Worldwide Gross: $245 million (initial release)
+        Critical Reception: Widely considered one of the greatest films ever made, praised for its performances, direction, screenplay, and score.
+        Awards: 3 Academy Awards (including Best Picture), 5 Golden Globe Awards.
+    5.3 The Lord of the Rings: The Return of the King:
+        Genre: Adventure, Drama, Fantasy
+        Release Date: December 17, 2003 (USA)
+        Budget: $94 million
+        Box Office Performance:
+        Domestic Gross: $377.8 million
+        Worldwide Gross: $1.146 billion
+        Critical Reception: Universal acclaim, praised for its epic scale, visual effects, performances, and emotional depth.
+        Awards: 11 Academy Awards (including Best Picture), 4 Golden Globe Awards.
+    5.4 Avatar (2009)
+        Genre: Science Fiction, Action, Adventure
+        Release Date: December 18, 2009 (USA)
+        Budget: $237 million (estimated)
+        Box Office Performance:
+        Domestic Gross: $760.5 million
+        Worldwide Gross: $2.923 billion
+        Critical Reception: Mixed to positive reviews. Praised for its groundbreaking visual effects and immersive 3D experience, but criticized for its familiar story and characters.
+        Awards: 3 Academy Awards (Best Art Direction, Best Cinematography, Best Visual Effects), 2 Golden Globe Awards.
+    5.5 Titanic (1997)
+        Genre: Romance, Drama, Disaster
+        Release Date: December 19, 1997 (USA)
+        Budget: $200 million
+        Box Office Performance:
+        Domestic Gross: $659.4 million
+        Worldwide Gross: $2.202 billion
+        Critical Reception: Generally positive reviews. Praised for its epic scale, visual effects, performances (particularly Leonardo DiCaprio and Kate Winslet), and emotional impact.
+        Awards: 11 Academy Awards (including Best Picture and Best Director), 4 Golden Globe Awards.
+6. Conclusions:
+    * Summary of key findings, including insights from the ROI analysis
+    * Trends and patterns observed
+    * Potential areas for further research
+
+
+| Rank | Title                        | ROI       | Budget    | Worldwide Gross | Genre     | Release Year |
+|-------|-----------------------------|------------|------------|-----------------|------------|--------------|
+| 1     | Paranormal Activity         | 19,759.6% | $15,000    | $193.4 million   | Horror    | 2007         |
+| 2     | The Blair Witch Project     | 21,359.5% | $60,000    | $248.6 million   | Horror    | 1999         |
+| 3     | Mad Max                     | 9,612.1%   | $350,000   | $378.4 million   | Action    | 2016         |
+
+
+* Horror films tend to have higher ROIs due to lower production budgets.
+* Critical acclaim can boost ROI, but it's not always the determining factor.
+* Marketing budget data would provide more insight into its effect on ROI.

@@ -1,0 +1,542 @@
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+
+LEN(raw_json_graph)=5
+
+{
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "edge_1": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "edge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "1fa93507-0131-4f64-a3d4-136eab0068c6": {
+    "edge_0": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "6fdc9920-ff54-4064-b8c1-042d9d491cd4": {
+    "edge_0": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "edge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "edge_2": "1fa93507-0131-4f64-a3d4-136eab0068c6"
+  },
+  "f0315e80-c27c-4165-836b-f1335b279bf1": {
+    "edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "edge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "edge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "8981252a-b39a-4add-ba70-01d224a6595e": {
+    "edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4"
+  }
+}
+
+Please extract the $FINAL_VALUE for "1708be30-e89a-48a0-a7e7-bd3cb5642ae9" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"1708be30-e89a-48a0-a7e7-bd3cb5642ae9": $FINAL_VALUE}.
+    
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+    ++++++ Raw output: {
+  "6fdc9920-ff54-4064-b8c1-042d9d491cd4": "f0315e80-c27c-4165-836b-f1335b279bf1"
+}
+
+The $FINAL\_VALUE for "6fdc9920-ff54-4064-b8c1-042d9d491cd4" following edge "edge\_1" is "f0315e80-c27c-4165-836b-f1335b279bf1".
+    ++++++ Parsed answer:{'6fdc9920-ff54-4064-b8c1-042d9d491cd4': 'f0315e80-c27c-4165-836b-f1335b279bf1'}
+    ++++++ Expected:1708be30-e89a-48a0-a7e7-bd3cb5642ae9
+    ++++++ Got Score:0
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 0
+++++++ Expected: 1fa93507-0131-4f64-a3d4-136eab0068c6, Real: 1fa93507-0131-4f64-a3d4-136eab0068c6, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+
+LEN(raw_json_graph)=5
+
+Usage: {'prompt_tokens': 801, 'completion_tokens': 78, 'total_tokens': 879}
+Usage: {'prompt_tokens': 801, 'completion_tokens': 165, 'total_tokens': 966}
+Usage: {'prompt_tokens': 801, 'completion_tokens': 168, 'total_tokens': 969}
+Usage: {'prompt_tokens': 805, 'completion_tokens': 76, 'total_tokens': 881}
+Usage: {'prompt_tokens': 803, 'completion_tokens': 167, 'total_tokens': 970}
+Usage: {'prompt_tokens': 803, 'completion_tokens': 167, 'total_tokens': 970}
+Usage: {'prompt_tokens': 803, 'completion_tokens': 165, 'total_tokens': 968}
+Usage: {'prompt_tokens': 807, 'completion_tokens': 77, 'total_tokens': 884}
+Usage: {'prompt_tokens': 807, 'completion_tokens': 76, 'total_tokens': 883}
+Usage: {'prompt_tokens': 807, 'completion_tokens': 77, 'total_tokens': 884}
+Usage: {'prompt_tokens': 803, 'completion_tokens': 76, 'total_tokens': 879}
+Total_score:10, Full_score:11, Accuracy:0.9090909090909091
+
+
+
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "2ae9edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd
+LEN(raw_json_graph)=5
+
+{
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "2ae9edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "2ae9edge_1": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "2ae9edge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "1fa93507-0131-4f64-a3d4-136eab0068c6": {
+    "68c6edge_0": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "6fdc9920-ff54-4064-b8c1-042d9d491cd4": {
+    "1cd4edge_0": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "1cd4edge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "1cd4edge_2": "1fa93507-0131-4f64-a3d4-136eab0068c6"
+  },
+  "f0315e80-c27c-4165-836b-f1335b279bf1": {
+    "9bf1edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "9bf1edge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "9bf1edge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "8981252a-b39a-4add-ba70-01d224a6595e": {
+    "595eedge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4"
+  }
+}
+
+Please extract the $FINAL_VALUE for "1708be30-e89a-48a0-a7e7-bd3cb5642ae9" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"1708be30-e89a-48a0-a7e7-bd3cb5642ae9": $FINAL_VALUE}.
+    
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+    ++++++ Raw output: {
+"6fdc9920-ff54-4064-b8c1-042d9d491cd4": "f0315e80-c27c-4165-836b-f1335b279bf1"
+}
+    ++++++ Parsed answer:{'6fdc9920-ff54-4064-b8c1-042d9d491cd4': 'f0315e80-c27c-4165-836b-f1335b279bf1'}
+    ++++++ Expected:1708be30-e89a-48a0-a7e7-bd3cb5642ae9
+    ++++++ Got Score:0
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 0
+++++++ Expected: 1fa93507-0131-4f64-a3d4-136eab0068c6, Real: 1fa93507-0131-4f64-a3d4-136eab0068c6, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "2ae9edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd
+LEN(raw_json_graph)=5
+
+Usage: {'prompt_tokens': 836, 'completion_tokens': 161, 'total_tokens': 997}
+Usage: {'prompt_tokens': 836, 'completion_tokens': 80, 'total_tokens': 916}
+Usage: {'prompt_tokens': 836, 'completion_tokens': 168, 'total_tokens': 1004}
+Usage: {'prompt_tokens': 840, 'completion_tokens': 76, 'total_tokens': 916}
+Usage: {'prompt_tokens': 838, 'completion_tokens': 77, 'total_tokens': 915}
+Usage: {'prompt_tokens': 838, 'completion_tokens': 77, 'total_tokens': 915}
+Usage: {'prompt_tokens': 838, 'completion_tokens': 76, 'total_tokens': 914}
+Usage: {'prompt_tokens': 842, 'completion_tokens': 77, 'total_tokens': 919}
+Usage: {'prompt_tokens': 842, 'completion_tokens': 76, 'total_tokens': 918}
+Usage: {'prompt_tokens': 842, 'completion_tokens': 77, 'total_tokens': 919}
+Usage: {'prompt_tokens': 838, 'completion_tokens': 76, 'total_tokens': 914}
+Total_score:10, Full_score:11, Accuracy:0.9090909090909091
+
+
+
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "1708be30-e89a-48a0-a7e7-bd3cb5642ae9edge_0": "6fd
+LEN(raw_json_graph)=5
+
+{
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "1708be30-e89a-48a0-a7e7-bd3cb5642ae9edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "1708be30-e89a-48a0-a7e7-bd3cb5642ae9edge_1": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "1708be30-e89a-48a0-a7e7-bd3cb5642ae9edge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "1fa93507-0131-4f64-a3d4-136eab0068c6": {
+    "1fa93507-0131-4f64-a3d4-136eab0068c6edge_0": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "6fdc9920-ff54-4064-b8c1-042d9d491cd4": {
+    "6fdc9920-ff54-4064-b8c1-042d9d491cd4edge_0": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "6fdc9920-ff54-4064-b8c1-042d9d491cd4edge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "6fdc9920-ff54-4064-b8c1-042d9d491cd4edge_2": "1fa93507-0131-4f64-a3d4-136eab0068c6"
+  },
+  "f0315e80-c27c-4165-836b-f1335b279bf1": {
+    "f0315e80-c27c-4165-836b-f1335b279bf1edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "f0315e80-c27c-4165-836b-f1335b279bf1edge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "f0315e80-c27c-4165-836b-f1335b279bf1edge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "8981252a-b39a-4add-ba70-01d224a6595e": {
+    "8981252a-b39a-4add-ba70-01d224a6595eedge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4"
+  }
+}
+
+Please extract the $FINAL_VALUE for "1708be30-e89a-48a0-a7e7-bd3cb5642ae9" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"1708be30-e89a-48a0-a7e7-bd3cb5642ae9": $FINAL_VALUE}.
+    
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Score: 1
+++++++ Expected: 1fa93507-0131-4f64-a3d4-136eab0068c6, Real: 1fa93507-0131-4f64-a3d4-136eab0068c6, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+    ++++++ Raw output: {
+"f0315e80-c27c-4165-836b-f1335b279bf1edge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9"
+}
+    ++++++ Parsed answer:{'f0315e80-c27c-4165-836b-f1335b279bf1edge_1': '1708be30-e89a-48a0-a7e7-bd3cb5642ae9'}
+    ++++++ Expected:1708be30-e89a-48a0-a7e7-bd3cb5642ae9
+    ++++++ Got Score:0
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: [], Score: 0
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "1708be30-e89a-48a0-a7e7-bd3cb5642ae9edge_0": "6fd
+LEN(raw_json_graph)=5
+
+Usage: {'prompt_tokens': 1168, 'completion_tokens': 168, 'total_tokens': 1336}
+Usage: {'prompt_tokens': 1168, 'completion_tokens': 165, 'total_tokens': 1333}
+Usage: {'prompt_tokens': 1168, 'completion_tokens': 78, 'total_tokens': 1246}
+Usage: {'prompt_tokens': 1172, 'completion_tokens': 76, 'total_tokens': 1248}
+Usage: {'prompt_tokens': 1170, 'completion_tokens': 77, 'total_tokens': 1247}
+Usage: {'prompt_tokens': 1170, 'completion_tokens': 75, 'total_tokens': 1245}
+Usage: {'prompt_tokens': 1170, 'completion_tokens': 80, 'total_tokens': 1250}
+Usage: {'prompt_tokens': 1174, 'completion_tokens': 77, 'total_tokens': 1251}
+Usage: {'prompt_tokens': 1174, 'completion_tokens': 79, 'total_tokens': 1253}
+Usage: {'prompt_tokens': 1174, 'completion_tokens': 166, 'total_tokens': 1340}
+Usage: {'prompt_tokens': 1170, 'completion_tokens': 75, 'total_tokens': 1245}
+Total_score:10, Full_score:11, Accuracy:0.9090909090909091
+
+
+
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "etzkedge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd
+LEN(raw_json_graph)=5
+
+{
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "etzkedge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "etzkedge_1": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "etzkedge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "1fa93507-0131-4f64-a3d4-136eab0068c6": {
+    "tokyedge_0": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "6fdc9920-ff54-4064-b8c1-042d9d491cd4": {
+    "vwapedge_0": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "vwapedge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "vwapedge_2": "1fa93507-0131-4f64-a3d4-136eab0068c6"
+  },
+  "f0315e80-c27c-4165-836b-f1335b279bf1": {
+    "uetbedge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "uetbedge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "uetbedge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "8981252a-b39a-4add-ba70-01d224a6595e": {
+    "bjrnedge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4"
+  }
+}
+
+Please extract the $FINAL_VALUE for "1708be30-e89a-48a0-a7e7-bd3cb5642ae9" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"1708be30-e89a-48a0-a7e7-bd3cb5642ae9": $FINAL_VALUE}.
+    
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+    ++++++ Raw output: {
+  "6fdc9920-ff54-4064-b8c1-042d9d491cd4": "f0315e80-c27c-4165-836b-f1335b279bf1"
+}
+
+The $FINAL\_VALUE for "6fdc9920-ff54-4064-b8c1-042d9d491cd4" following edge "edge\_1" is "f0315e80-c27c-4165-836b-f1335b279bf1".
+    ++++++ Parsed answer:{'6fdc9920-ff54-4064-b8c1-042d9d491cd4': 'f0315e80-c27c-4165-836b-f1335b279bf1'}
+    ++++++ Expected:1708be30-e89a-48a0-a7e7-bd3cb5642ae9
+    ++++++ Got Score:0
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 0
+++++++ Expected: 1fa93507-0131-4f64-a3d4-136eab0068c6, Real: 1fa93507-0131-4f64-a3d4-136eab0068c6, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Score: 1
+    ++++++ Raw output: {
+"f0315e80-c27c-4165-836b-f1335b279bf1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9"
+}
+    ++++++ Parsed answer:{'f0315e80-c27c-4165-836b-f1335b279bf1': '1708be30-e89a-48a0-a7e7-bd3cb5642ae9'}
+    ++++++ Expected:8981252a-b39a-4add-ba70-01d224a6595e
+    ++++++ Got Score:0
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Score: 0
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "etzkedge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd
+LEN(raw_json_graph)=5
+
+Usage: {'prompt_tokens': 830, 'completion_tokens': 169, 'total_tokens': 999}
+Usage: {'prompt_tokens': 830, 'completion_tokens': 172, 'total_tokens': 1002}
+Usage: {'prompt_tokens': 830, 'completion_tokens': 169, 'total_tokens': 999}
+Usage: {'prompt_tokens': 834, 'completion_tokens': 76, 'total_tokens': 910}
+Usage: {'prompt_tokens': 832, 'completion_tokens': 167, 'total_tokens': 999}
+Usage: {'prompt_tokens': 832, 'completion_tokens': 167, 'total_tokens': 999}
+Usage: {'prompt_tokens': 832, 'completion_tokens': 172, 'total_tokens': 1004}
+Usage: {'prompt_tokens': 836, 'completion_tokens': 77, 'total_tokens': 913}
+Usage: {'prompt_tokens': 836, 'completion_tokens': 76, 'total_tokens': 912}
+Usage: {'prompt_tokens': 836, 'completion_tokens': 76, 'total_tokens': 912}
+Usage: {'prompt_tokens': 832, 'completion_tokens': 75, 'total_tokens': 907}
+Total_score:9, Full_score:11, Accuracy:0.8181818181818182
+
+
+
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "<edge_0>": "6fdc9920-ff54-4064-b8c1-042d9d491cd4"
+LEN(raw_json_graph)=5
+
+{
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "<edge_0>": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "<edge_1>": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "<edge_2>": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "1fa93507-0131-4f64-a3d4-136eab0068c6": {
+    "<edge_0>": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "6fdc9920-ff54-4064-b8c1-042d9d491cd4": {
+    "<edge_0>": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "<edge_1>": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "<edge_2>": "1fa93507-0131-4f64-a3d4-136eab0068c6"
+  },
+  "f0315e80-c27c-4165-836b-f1335b279bf1": {
+    "<edge_0>": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "<edge_1>": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "<edge_2>": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "8981252a-b39a-4add-ba70-01d224a6595e": {
+    "<edge_0>": "6fdc9920-ff54-4064-b8c1-042d9d491cd4"
+  }
+}
+
+Please extract the $FINAL_VALUE for "1708be30-e89a-48a0-a7e7-bd3cb5642ae9" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"1708be30-e89a-48a0-a7e7-bd3cb5642ae9": $FINAL_VALUE}.
+    
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+    ++++++ Raw output: {
+"1fa93507-0131-4f64-a3d4-136eab0068c6": "6fdc9920-ff54-4064-b8c1-042d9d491cd4"
+}
+    ++++++ Parsed answer:{'1fa93507-0131-4f64-a3d4-136eab0068c6': '6fdc9920-ff54-4064-b8c1-042d9d491cd4'}
+    ++++++ Expected:8981252a-b39a-4add-ba70-01d224a6595e
+    ++++++ Got Score:0
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 0
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+    ++++++ Raw output: {
+  "6fdc9920-ff54-4064-b8c1-042d9d491cd4": "f0315e80-c27c-4165-836b-f1335b279bf1"
+}
+
+The $FINAL\_VALUE for "6fdc9920-ff54-4064-b8c1-042d9d491cd4" following edge "edge\_1" is "f0315e80-c27c-4165-836b-f1335b279bf1".
+    ++++++ Parsed answer:{'6fdc9920-ff54-4064-b8c1-042d9d491cd4': 'f0315e80-c27c-4165-836b-f1335b279bf1'}
+    ++++++ Expected:1708be30-e89a-48a0-a7e7-bd3cb5642ae9
+    ++++++ Got Score:0
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 0
+++++++ Expected: 1fa93507-0131-4f64-a3d4-136eab0068c6, Real: 1fa93507-0131-4f64-a3d4-136eab0068c6, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Score: 1
+    ++++++ Raw output: {
+"f0315e80-c27c-4165-836b-f1335b279bf1": "1fa93507-0131-4f64-a3d4-136eab0068c6"
+}
+    ++++++ Parsed answer:{'f0315e80-c27c-4165-836b-f1335b279bf1': '1fa93507-0131-4f64-a3d4-136eab0068c6'}
+    ++++++ Expected:8981252a-b39a-4add-ba70-01d224a6595e
+    ++++++ Got Score:0
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 1fa93507-0131-4f64-a3d4-136eab0068c6, Score: 0
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "<edge_0>": "6fdc9920-ff54-4064-b8c1-042d9d491cd4"
+LEN(raw_json_graph)=5
+
+Usage: {'prompt_tokens': 812, 'completion_tokens': 161, 'total_tokens': 973}
+Usage: {'prompt_tokens': 812, 'completion_tokens': 165, 'total_tokens': 977}
+Usage: {'prompt_tokens': 812, 'completion_tokens': 75, 'total_tokens': 887}
+Usage: {'prompt_tokens': 816, 'completion_tokens': 76, 'total_tokens': 892}
+Usage: {'prompt_tokens': 814, 'completion_tokens': 167, 'total_tokens': 981}
+Usage: {'prompt_tokens': 814, 'completion_tokens': 167, 'total_tokens': 981}
+Usage: {'prompt_tokens': 814, 'completion_tokens': 80, 'total_tokens': 894}
+Usage: {'prompt_tokens': 818, 'completion_tokens': 77, 'total_tokens': 895}
+Usage: {'prompt_tokens': 818, 'completion_tokens': 76, 'total_tokens': 894}
+Usage: {'prompt_tokens': 818, 'completion_tokens': 78, 'total_tokens': 896}
+Usage: {'prompt_tokens': 814, 'completion_tokens': 76, 'total_tokens': 890}
+Total_score:8, Full_score:11, Accuracy:0.7272727272727273
+
+
+
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "1708edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd
+LEN(raw_json_graph)=5
+
+{
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "1708edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "1708edge_1": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "1708edge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "1fa93507-0131-4f64-a3d4-136eab0068c6": {
+    "1fa9edge_0": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "6fdc9920-ff54-4064-b8c1-042d9d491cd4": {
+    "6fdcedge_0": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "6fdcedge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "6fdcedge_2": "1fa93507-0131-4f64-a3d4-136eab0068c6"
+  },
+  "f0315e80-c27c-4165-836b-f1335b279bf1": {
+    "f031edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "f031edge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "f031edge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "8981252a-b39a-4add-ba70-01d224a6595e": {
+    "8981edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4"
+  }
+}
+
+Please extract the $FINAL_VALUE for "1708be30-e89a-48a0-a7e7-bd3cb5642ae9" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"1708be30-e89a-48a0-a7e7-bd3cb5642ae9": $FINAL_VALUE}.
+    
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+    ++++++ Raw output: {
+  "6fdc9920-ff54-4064-b8c1-042d9d491cd4": "f0315e80-c27c-4165-836b-f1335b279bf1"
+}
+
+The $FINAL\_VALUE for "6fdc9920-ff54-4064-b8c1-042d9d491cd4" following edge "edge\_1" is "f0315e80-c27c-4165-836b-f1335b279bf1".
+    ++++++ Parsed answer:{'6fdc9920-ff54-4064-b8c1-042d9d491cd4': 'f0315e80-c27c-4165-836b-f1335b279bf1'}
+    ++++++ Expected:1708be30-e89a-48a0-a7e7-bd3cb5642ae9
+    ++++++ Got Score:0
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 0
+++++++ Expected: 1fa93507-0131-4f64-a3d4-136eab0068c6, Real: 1fa93507-0131-4f64-a3d4-136eab0068c6, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+Model=Model.MIXTRAL
+Graph={
+  "1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "1708edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd
+LEN(raw_json_graph)=5
+
+Usage: {'prompt_tokens': 841, 'completion_tokens': 78, 'total_tokens': 919}
+Usage: {'prompt_tokens': 841, 'completion_tokens': 80, 'total_tokens': 921}
+Usage: {'prompt_tokens': 841, 'completion_tokens': 78, 'total_tokens': 919}
+Usage: {'prompt_tokens': 845, 'completion_tokens': 76, 'total_tokens': 921}
+Usage: {'prompt_tokens': 843, 'completion_tokens': 167, 'total_tokens': 1010}
+Usage: {'prompt_tokens': 843, 'completion_tokens': 167, 'total_tokens': 1010}
+Usage: {'prompt_tokens': 843, 'completion_tokens': 80, 'total_tokens': 923}
+Usage: {'prompt_tokens': 847, 'completion_tokens': 77, 'total_tokens': 924}
+Usage: {'prompt_tokens': 847, 'completion_tokens': 76, 'total_tokens': 923}
+Usage: {'prompt_tokens': 847, 'completion_tokens': 77, 'total_tokens': 924}
+Usage: {'prompt_tokens': 843, 'completion_tokens': 75, 'total_tokens': 918}
+Total_score:10, Full_score:11, Accuracy:0.9090909090909091
+
+
+
+Model=Model.MIXTRAL
+Graph={
+  "<key>=1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "1708edge_0": "6fdc9920-ff54-4064-b8c1-042d9
+LEN(raw_json_graph)=5
+
+{
+  "<key>=1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "1708edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "1708edge_1": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "1708edge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "<key>=1fa93507-0131-4f64-a3d4-136eab0068c6": {
+    "1fa9edge_0": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "<key>=6fdc9920-ff54-4064-b8c1-042d9d491cd4": {
+    "6fdcedge_0": "f0315e80-c27c-4165-836b-f1335b279bf1",
+    "6fdcedge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "6fdcedge_2": "1fa93507-0131-4f64-a3d4-136eab0068c6"
+  },
+  "<key>=f0315e80-c27c-4165-836b-f1335b279bf1": {
+    "f031edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4",
+    "f031edge_1": "1708be30-e89a-48a0-a7e7-bd3cb5642ae9",
+    "f031edge_2": "8981252a-b39a-4add-ba70-01d224a6595e"
+  },
+  "<key>=8981252a-b39a-4add-ba70-01d224a6595e": {
+    "8981edge_0": "6fdc9920-ff54-4064-b8c1-042d9d491cd4"
+  }
+}
+
+Please extract the $FINAL_VALUE for "1708be30-e89a-48a0-a7e7-bd3cb5642ae9" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"1708be30-e89a-48a0-a7e7-bd3cb5642ae9": $FINAL_VALUE}.
+    
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: f0315e80-c27c-4165-836b-f1335b279bf1, Real: f0315e80-c27c-4165-836b-f1335b279bf1, Score: 1
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Score: 1
+++++++ Expected: 1fa93507-0131-4f64-a3d4-136eab0068c6, Real: 1fa93507-0131-4f64-a3d4-136eab0068c6, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+++++++ Expected: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Real: 1708be30-e89a-48a0-a7e7-bd3cb5642ae9, Score: 1
+++++++ Expected: 8981252a-b39a-4add-ba70-01d224a6595e, Real: 8981252a-b39a-4add-ba70-01d224a6595e, Score: 1
+++++++ Expected: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Real: 6fdc9920-ff54-4064-b8c1-042d9d491cd4, Score: 1
+Model=Model.MIXTRAL
+Graph={
+  "<key>=1708be30-e89a-48a0-a7e7-bd3cb5642ae9": {
+    "1708edge_0": "6fdc9920-ff54-4064-b8c1-042d9
+LEN(raw_json_graph)=5
+
+Usage: {'prompt_tokens': 851, 'completion_tokens': 168, 'total_tokens': 1019}
+Usage: {'prompt_tokens': 851, 'completion_tokens': 165, 'total_tokens': 1016}
+Usage: {'prompt_tokens': 851, 'completion_tokens': 161, 'total_tokens': 1012}
+Usage: {'prompt_tokens': 855, 'completion_tokens': 76, 'total_tokens': 931}
+Usage: {'prompt_tokens': 853, 'completion_tokens': 77, 'total_tokens': 930}
+Usage: {'prompt_tokens': 853, 'completion_tokens': 74, 'total_tokens': 927}
+Usage: {'prompt_tokens': 853, 'completion_tokens': 76, 'total_tokens': 929}
+Usage: {'prompt_tokens': 857, 'completion_tokens': 77, 'total_tokens': 934}
+Usage: {'prompt_tokens': 857, 'completion_tokens': 76, 'total_tokens': 933}
+Usage: {'prompt_tokens': 857, 'completion_tokens': 77, 'total_tokens': 934}
+Usage: {'prompt_tokens': 853, 'completion_tokens': 163, 'total_tokens': 1016}
+Total_score:11, Full_score:11, Accuracy:1.0
+
+
+
+
+     Basic info: Mixtral8x7BInstructv0.1.log, gnp_n5_p50, baseline, shot_num=0, query_hop_num=1
+Total failed_num=1, wrong_edge_problem=1, possibly_not_found=0, total_score=10, full_score=11
+Summary Token Usage: {'prompt_tokens': 803, 'completion_tokens': 117, 'total_tokens': 921}
+
+     Basic info: Mixtral8x7BInstructv0.1.log, gnp_n5_p50, node_id[-4:]+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=1, wrong_edge_problem=0, possibly_not_found=1, total_score=10, full_score=11
+Summary Token Usage: {'prompt_tokens': 1170, 'completion_tokens': 101, 'total_tokens': 1272}
+
+     Basic info: Mixtral8x7BInstructv0.1.log, gnp_n5_p50, node_id+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=3, wrong_edge_problem=2, possibly_not_found=0, total_score=8, full_score=11
+Summary Token Usage: {'prompt_tokens': 814, 'completion_tokens': 108, 'total_tokens': 923}
+
+     Basic info: Mixtral8x7BInstructv0.1.log, gnp_n5_p50, randomStr+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=1, wrong_edge_problem=0, possibly_not_found=0, total_score=10, full_score=11
+Summary Token Usage: {}

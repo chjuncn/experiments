@@ -1,0 +1,982 @@
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+ 
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Score: 1
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+ 
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 624, 'completion_tokens': 1000, 'total_tokens': 1624}
+Total_score:1, Full_score:1, Accuracy:1.0
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "1ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "1ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+    ++++++ Raw output: 
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST] 
+
+[INST]
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "1ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "1ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}[/INST] 
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST] 
+
+```python
+def extract_value(data_source, key, edge1, edge2):
+    """
+    This function extracts the final value for a given key by following the edges.
+    
+    Parameters:
+    data_source (dict): The dictionary containing the data.
+    key (str): The initial key to start with.
+    edge1 (str): The first edge to follow.
+    edge2 (str): The second edge to follow.
+    
+    Returns:
+    dict: A dictionary containing the final value.
+    """
+    
+    # First, extract the value for the given key from the data source
+    dic_value = data_source.get(key)
+    
+    # If the key exists, extract the value for the first edge
+    if dic_value:
+        dic_value = dic_value.get(edge1)
+        
+        # If the first edge exists, extract the value for the second edge
+        if dic_value:
+            dic_value = data_source.get(dic_value).get(edge2)
+    
+    # Return the final value as a dictionary
+    return {key: dic_value}
+
+# Example usage:
+data_source = {
+  "ad6da25d-65b5-44a3-8d6a
+    ++++++ Parsed answer:{}
+    ++++++ Expected:1e301885-ff50-43aa-80a1-7e9e781a2f3d
+    ++++++ Got Score:0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 636, 'completion_tokens': 1000, 'total_tokens': 1636}
+Total_score:0, Full_score:1, Accuracy:0.0
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daa350b-c036-4a8a-9e7c-49915d2a6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+    ++++++ Raw output: 
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST] 
+
+def extract_value(data, key, edge1, edge2):
+    # Extract the value for the given key
+    dic_value_1 = data.get(key, {})
+    # Extract the value for the given edge
+    dic_value_2 = dic_value_1.get(edge1, {})
+    # Extract the value for the given edge
+    dic_value_3 = dic_value_2.get(edge2, {})
+    # Return the final value
+    return {key: dic_value_3}
+
+data = {
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daa350b-c036-4a8a-9e7c-49915d2a6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+
+print(extract_value(data, "8bc59f11-23a7-468d-bf6a-d6e78f851ac8", "edge_1", "edge_0"))[/INST] 
+
+{"8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"}[/INST] 
+
+[INST]
+def extract_value(data, key, edge1, edge2):
+    # Extract the value for the given key
+    dic_value_1 = data.get(key, {})
+    # Extract the value for the given edge
+    dic_value_2 = dic_value_1.get(edge1, {})
+    # Extract the value for the given edge
+    dic_value_3 = dic_value_2.get(edge2, {})
+    # Return the final value
+    return {key: dic_value_3}
+
+data = {
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daa350b-c036-4a8a-9e7c-49915d2a6321edge_0": "1e301885-ff50-
+    ++++++ Parsed answer:{'8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_0': '585690f9-37d8-486d-89cd-df9a7dfe24fe', '8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_1': '0daa350b-c036-4a8a-9e7c-49915d2a6321'}
+    ++++++ Expected:1e301885-ff50-43aa-80a1-7e9e781a2f3d
+    ++++++ Got Score:0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 724, 'completion_tokens': 1000, 'total_tokens': 1724}
+Total_score:0, Full_score:1, Accuracy:0.0
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "scenedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "scenedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "dnfiedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "dnfiedge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "xdfeedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+    ++++++ Raw output: 
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST] 
+
+[INST]
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "scenedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "dnfiedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "dnfiedge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "xdfeedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}[/INST] 
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST] 
+
+[INST]
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next
+    ++++++ Parsed answer:{'edge_15': 'node_34', 'edge_4': 'node_42', 'edge_10': 'node_7'}
+    ++++++ Expected:1e301885-ff50-43aa-80a1-7e9e781a2f3d
+    ++++++ Got Score:0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "scenedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 634, 'completion_tokens': 1000, 'total_tokens': 1634}
+Total_score:0, Full_score:1, Accuracy:0.0
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "<edge_1>": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "<edge_0>": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+    ++++++ Raw output: 
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST] 
+
+[INST]
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+       
+    ++++++ Parsed answer:{'edge_15': 'node_34', 'edge_4': 'node_42', 'edge_10': 'node_7'}
+    ++++++ Expected:1e301885-ff50-43aa-80a1-7e9e781a2f3d
+    ++++++ Got Score:0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 628, 'completion_tokens': 1000, 'total_tokens': 1628}
+Total_score:0, Full_score:1, Accuracy:0.0
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+    ++++++ Raw output: 
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST] 
+
+[INST]
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}[/INST] 
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST] 
+
+```python
+def extract_value(data_source, key, edge1, edge2):
+    """
+    This function extracts the final value for a given key by following the edges.
+    
+    Parameters:
+    data_source (dict): The dictionary containing the data.
+    key (str): The initial key to start with.
+    edge1 (str): The first edge to follow.
+    edge2 (str): The second edge to follow.
+    
+    Returns:
+    dict: A dictionary containing the final value.
+    """
+    
+    # Initialize an empty dictionary to store the final value
+    final_value = {}
+    
+    # Extract the value for the given key from the data source
+    value = data_source.get(key)
+    
+    # If the value exists, proceed with the edge extraction
+    if value:
+        # Extract the value for the first edge from the current value
+        value = value.get(edge1)
+        
+        # If the value exists, proceed with the second edge extraction
+        if value:
+            # Extract the value for the second edge from the current value
+            value = value.get(edge2)
+            
+            # Store the final value in the dictionary
+            final_value[key] = value
+    ++++++ Parsed answer:{}
+    ++++++ Expected:1e301885-ff50-43aa-80a1-7e9e781a2f3d
+    ++++++ Got Score:0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 636, 'completion_tokens': 1000, 'total_tokens': 1636}
+Total_score:0, Full_score:1, Accuracy:0.0
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "<key>=8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "<key>=0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+    ++++++ Raw output: 
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST] 
+
+[INST]
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "<key>=8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "<key>=0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}[/INST] 
+
+{
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+}[/INST] 
+
+```python
+def extract_value(data_source, key, edge1, edge2):
+    """
+    This function extracts the final value for a given key by following the edges.
+    
+    Parameters:
+    data_source (dict): The dictionary containing the data.
+    key (str): The initial key to start with.
+    edge1 (str): The first edge to follow.
+    edge2 (str): The second edge to follow.
+    
+    Returns:
+    dict: A dictionary containing the final value.
+    """
+    
+    # Initialize an empty dictionary to store the final value
+    final_value = {}
+    
+    # Extract the value for the given key from the data source
+    value = data_source.get(key)
+    
+    # If the value exists, proceed with the edge extraction
+    if value:
+        # Extract the value for the first edge from the current value
+        value = value.get(edge1)
+        
+        # If the value exists, proceed with the second edge extraction
+        if value:
+            # Extract the value for the second edge from the current value
+            value = value.get(edge2)
+            
+            # Store the final value in the dictionary
+           
+    ++++++ Parsed answer:{}
+    ++++++ Expected:1e301885-ff50-43aa-80a1-7e9e781a2f3d
+    ++++++ Got Score:0
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 642, 'completion_tokens': 1000, 'total_tokens': 1642}
+Total_score:0, Full_score:1, Accuracy:0.0
+
+
+
+
+     Basic info: MetaLlama3.18BInstructTurbo.log, gnp_n5_p20, baseline, shot_num=1, query_hop_num=2
+Total failed_num=0, wrong_edge_problem=0, possibly_not_found=0, total_score=1, full_score=1
+Summary Token Usage: {'prompt_tokens': 624, 'completion_tokens': 1000, 'total_tokens': 1624}
+
+     Basic info: MetaLlama3.18BInstructTurbo.log, gnp_n5_p20, node_id[-4:]+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=1, wrong_edge_problem=0, possibly_not_found=1, total_score=0, full_score=1
+Summary Token Usage: {'prompt_tokens': 724, 'completion_tokens': 1000, 'total_tokens': 1724}
+
+     Basic info: MetaLlama3.18BInstructTurbo.log, gnp_n5_p20, node_id+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=1, wrong_edge_problem=0, possibly_not_found=0, total_score=0, full_score=1
+Summary Token Usage: {}
+
+     Basic info: MetaLlama3.18BInstructTurbo.log, gnp_n5_p20, randomStr+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=1, wrong_edge_problem=0, possibly_not_found=1, total_score=0, full_score=1
+Summary Token Usage: {'prompt_tokens': 636, 'completion_tokens': 1000, 'total_tokens': 1636}

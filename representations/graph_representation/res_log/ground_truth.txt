@@ -1,0 +1,101 @@
+ [
+  {
+    "budget": 60000,
+    "genre": "Horror",
+    "global_gross": 193400000,
+    "name": "Paranormal Activity",
+    "releaseYear": 2007,
+    "score": null,
+    "user_review_summary": null
+  },
+  {
+    "budget": 60000,
+    "genre": "Horror",
+    "global_gross": 248600000,
+    "name": "The Blair Witch Project",
+    "releaseYear": 1999,
+    "score": null,
+    "user_review_summary": null
+  },
+  {
+    "budget": 350000,
+    "genre": "Action",
+    "global_gross": 378400000,
+    "name": "Mad Max: Fury Road",
+    "releaseYear": 2016,
+    "score": null,
+    "user_review_summary": null
+  },
+  {
+    "budget": 90000000,
+    "genre": "Crime, Drama",
+    "global_gross": 134860000,
+    "name": "The Godfather",
+    "releaseYear": 1972,
+    "score": 9.2,
+    "user_review_summary": null
+  },
+  {
+    "budget": 130000000,
+    "genre": "Crime, Drama",
+    "global_gross": 189700000,
+    "name": "The Godfather: Part II",
+    "releaseYear": 1974,
+    "score": 9.0,
+    "user_review_summary": null
+  },
+  {
+    "budget": 25000000,
+    "genre": "Drama",
+    "global_gross": 58300000,
+    "name": "The Shawshank Redemption",
+    "releaseYear": 1994,
+    "score": 9.3,
+    "user_review_summary": "Positive: 'This movie is a masterpiece. Every performance is perfect, and the story is so inspiring. I've watched it countless times and it never gets old.' Negative: 'Overrated! It's slow, boring, and predictable. I don't understand why people rave about it.' Neutral: 'It's a good movie, but not my favorite. The acting is solid, but the pacing felt a bit off for me."
+  },
+  {
+    "budget": 8000000,
+    "genre": "Crime, Drama",
+    "global_gross": 253000000,
+    "name": "Pulp Fiction",
+    "releaseYear": 1994,
+    "score": 8.9,
+    "user_review_summary": "Positive: 'Mind-blowing and hilarious! Tarantino at his best.' Negative: 'Too violent and disjointed. I couldn't follow the plot.' Neutral: 'It's definitely a unique film, but it's not for everyone."
+  },
+  {
+    "budget": 94000000,
+    "genre": "Adventure, Drama, Fantasy",
+    "global_gross": 1146000000,
+    "name": "The Lord of the Rings: The Return of the King",
+    "releaseYear": 2003,
+    "score": 8.9,
+    "user_review_summary": "Positive: 'An epic conclusion to a legendary trilogy! The battles are breathtaking, the emotions are raw, and the ending is perfect. A true masterpiece of fantasy cinema.' Negative: 'Too much CGI and too many endings. I felt like it was just dragging on and on. I prefer the first two movies in the trilogy.' Negative: 'Overly sentimental and drawn out. I found myself getting bored during some of the longer scenes."
+  },
+  {
+    "budget": 185000000,
+    "genre": "Action, Crime, Drama",
+    "global_gross": 533345061,
+    "name": "The Dark Knight",
+    "releaseYear": 2008,
+    "score": 9.0,
+    "user_review_summary": "Positive: 'Heath Ledger's Joker is iconic. This is the best superhero movie ever made.' Positive: 'A dark and gritty masterpiece that explores complex themes of morality and justice.' Negative: 'Too dark and violent. It's not a fun superhero movie.'"
+  },
+  {
+    "budget": 160000000,
+    "genre": "Action, Adventure, Sci-Fi",
+    "global_gross": 1031217112,
+    "name": "Avatar",
+    "releaseYear": 2009,
+    "score": null,
+    "user_review_summary": "Positive: 'Visually stunning and emotionally engaging. I felt like I was transported to another world. A must-see in 3D!' Negative: 'All style, no substance. The story is predictable and the characters are flat. It's basically Pocahontas in space.' Negative: 'The visuals are impressive, but the plot is unoriginal and the dialogue is cringeworthy."
+  },
+  {
+    "budget": 200000000,
+    "genre": "Romance, Drama",
+    "global_gross": 2202000000,
+    "name": "Titanic",
+    "releaseYear": 1997,
+    "score": null,
+    "user_review_summary": "Positive: 'A beautiful and heartbreaking love story set against the backdrop of a historical tragedy. Leonardo DiCaprio and Kate Winslet's chemistry is undeniable.' Positive: 'An epic romance that will stay with you long after the credits roll. The visuals are stunning, and the music is unforgettable.' Negative: 'Too long and too melodramatic. I found myself rolling my eyes at the cheesy dialogue and over-the-top emotions."
+  }
+ ]

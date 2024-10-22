@@ -1,0 +1,66 @@
+{
+    "student1": {
+        "studies_at": "university1",
+        "advised_by": "professor1",
+        "researches": "topic1",
+        "studies": "Computer Science",
+        "interested_in": "Artificial Intelligence",
+        "enrolled_in": "course1",
+        "published": "paper1"
+    },
+    "professor1": {
+        "works_at": "university1",
+        "researches": "topic1",
+        "collaborates_with": "professor2",
+        "published": "paper1"
+    },
+    "student2": {
+        "studies_at": "university2",
+        "studies": "Mathematics",
+        "interested_in": "Data Science",
+        "enrolled_in": "course2"
+    },
+    "student3": {
+        "studies_at": "university3",
+        "studies": "Physics",
+        "interested_in": "Quantum Mechanics",
+        "enrolled_in": "course3"
+    },
+    "course1": {
+        "offered_by": "university1"
+    },
+    "course2": {
+        "offered_by": "university2"
+    },
+    "course3": {
+        "offered_by": "university3"
+    },
+    "CityA": {
+        "located_in": "country1"
+    },
+    "company1": {
+        "based_in": "city1",
+        "partners_with": "university1"
+    },
+    "university1": {
+        "located_in": "CityA",
+        "offers_program_in": "Computer Science"
+    },
+    "university2": {
+        "located_in": "CityB",
+        "offers_program_in": "Mathematics"
+    },
+    "university3": {
+        "located_in": "CityC",
+        "offers_program_in": "Physics"
+    },
+    "professor2": {
+        "works_at": "university2"
+    },
+    "paper1": {
+        "cites": "paper2"
+    },
+    "paper2": {
+        "about": "topic2"
+    }
+}

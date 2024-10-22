@@ -1,0 +1,1545 @@
+0, b04cde07-c401-4de1-b8a9-88365d85862d, edge0, 9ba52921-3573-44af-a8e7-8dd5084eb253
+{
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "edge0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "9b76292e-83b6-44d0-927d-9d3c4ac0973d": {
+    "edge0": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "edge1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec",
+    "edge2": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": {
+    "edge0": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "edge1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "edge3": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "edge4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "c7a957fa-990e-4462-8a47-e66888725ae3": {
+    "edge0": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "edge1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": {
+    "edge0": "66c988b8-bc33-42ae-b946-10de63599e6d"
+  },
+  "a2878670-0571-4d2e-8a6e-f2baa768d30e": {
+    "edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge1": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "edge2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"
+  },
+  "12b6dd39-8a3b-4845-bd6a-c1487e646056": {
+    "edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "edge2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"
+  },
+  "66c988b8-bc33-42ae-b946-10de63599e6d": {
+    "edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "edge3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "edge4": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "ac587166-e004-4d7c-8b0d-3e2dae2c1fce": {
+    "edge0": "c7a957fa-990e-4462-8a47-e66888725ae3"
+  },
+  "9724a9cb-85fb-46e0-b85c-6bff9edc74ec": {
+    "edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"
+  },
+  "505f0933-9494-47c2-a1ff-db93e5e3501f": {
+    "edge0": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "edge1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "9ba52921-3573-44af-a8e7-8dd5084eb253": {
+    "edge0": "12b6dd39-8a3b-4845-bd6a-c1487e646056",
+    "edge1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5e49653b-6c6f-4899-90b6-902fd4d4ca49": {
+    "edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge1": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "edge2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "edge3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "edge4": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "4dddd26b-2b1c-40fd-a965-3eece97cc9f4": {
+    "edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge1": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "edge2": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge3": "a2878670-0571-4d2e-8a6e-f2baa768d30e"
+  },
+  "dcdb7910-0be9-402d-b14b-420926059615": {
+    "edge0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge2": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "edge3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "131a10b0-71d7-4803-871e-32c1d4d88c42": {
+    "edge0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "13cdcc23-bdcb-4b57-a14a-90f9a15eed75": {
+    "edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "edge2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "7f426851-06b3-4505-90eb-eb9f349851f1": {
+    "edge0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": {
+    "edge0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge1": "9b76292e-83b6-44d0-927d-9d3c4ac0973d",
+    "edge2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9",
+    "edge3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83",
+    "edge4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "558568a2-31d6-4d05-b4fc-e32caa3c43a9": {
+    "edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge1": "dcdb7910-0be9-402d-b14b-420926059615",
+    "edge2": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4",
+    "edge3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "b04cde07-c401-4de1-b8a9-88365d85862d" following edge "edge0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"b04cde07-c401-4de1-b8a9-88365d85862d": $FINAL_VALUE}.
+    
+Raw output: 
+```json
+{"b04cde07-c401-4de1-b8a9-88365d85862d": "9ba52921-3573-44af-a8e7-8dd5084eb253"}
+```
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d, edge0, b04cde07-c401-4de1-b8a9-88365d85862d
+Raw output: 
+```json
+{"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+```
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d, edge1, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d, edge2, 9ba52921-3573-44af-a8e7-8dd5084eb253
+Raw output: 
+```json
+{"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "9ba52921-3573-44af-a8e7-8dd5084eb253"}
+```
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge0, 7f426851-06b3-4505-90eb-eb9f349851f1
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "7f426851-06b3-4505-90eb-eb9f349851f1"}
+```
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 7f426851-06b3-4505-90eb-eb9f349851f1, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+```
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge2, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+```
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge3, c7a957fa-990e-4462-8a47-e66888725ae3
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"}
+```
+
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '5e49653b-6c6f-4899-90b6-902fd4d4ca49'}
+    ++++++ Expected:c7a957fa-990e-4462-8a47-e66888725ae3
+    ++++++ Got Score:0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 0
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge4, 5e49653b-6c6f-4899-90b6-902fd4d4ca49
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:5e49653b-6c6f-4899-90b6-902fd4d4ca49
+    ++++++ Got Score:0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+3, c7a957fa-990e-4462-8a47-e66888725ae3, edge0, 505f0933-9494-47c2-a1ff-db93e5e3501f
+Raw output: 
+```json
+{"c7a957fa-990e-4462-8a47-e66888725ae3": "505f0933-9494-47c2-a1ff-db93e5e3501f"}
+```
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+3, c7a957fa-990e-4462-8a47-e66888725ae3, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"c7a957fa-990e-4462-8a47-e66888725ae3": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+```
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+3, c7a957fa-990e-4462-8a47-e66888725ae3, edge2, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+Raw output: 
+```json
+{"c7a957fa-990e-4462-8a47-e66888725ae3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+4, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+5, a2878670-0571-4d2e-8a6e-f2baa768d30e, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"a2878670-0571-4d2e-8a6e-f2baa768d30e": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+5, a2878670-0571-4d2e-8a6e-f2baa768d30e, edge1, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75
+Raw output: 
+```json
+{"a2878670-0571-4d2e-8a6e-f2baa768d30e": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+```
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+5, a2878670-0571-4d2e-8a6e-f2baa768d30e, edge2, 558568a2-31d6-4d05-b4fc-e32caa3c43a9
+Raw output: 
+```json
+{"a2878670-0571-4d2e-8a6e-f2baa768d30e": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"}
+```
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Score: 1
+6, 12b6dd39-8a3b-4845-bd6a-c1487e646056, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"12b6dd39-8a3b-4845-bd6a-c1487e646056": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+6, 12b6dd39-8a3b-4845-bd6a-c1487e646056, edge1, b04cde07-c401-4de1-b8a9-88365d85862d
+Raw output: 
+```json
+{"12b6dd39-8a3b-4845-bd6a-c1487e646056": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+```
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+6, 12b6dd39-8a3b-4845-bd6a-c1487e646056, edge2, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"12b6dd39-8a3b-4845-bd6a-c1487e646056": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+```
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': 'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 0
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge2, a2878670-0571-4d2e-8a6e-f2baa768d30e
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': 'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 0
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge3, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge4, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+8, ac587166-e004-4d7c-8b0d-3e2dae2c1fce, edge0, c7a957fa-990e-4462-8a47-e66888725ae3
+Raw output: 
+```json
+{"ac587166-e004-4d7c-8b0d-3e2dae2c1fce": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+```
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+9, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"9724a9cb-85fb-46e0-b85c-6bff9edc74ec": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+10, 505f0933-9494-47c2-a1ff-db93e5e3501f, edge0, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75
+Raw output: 
+```json
+{"505f0933-9494-47c2-a1ff-db93e5e3501f": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+```
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+10, 505f0933-9494-47c2-a1ff-db93e5e3501f, edge1, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"505f0933-9494-47c2-a1ff-db93e5e3501f": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+11, 9ba52921-3573-44af-a8e7-8dd5084eb253, edge0, 12b6dd39-8a3b-4845-bd6a-c1487e646056
+Raw output: 
+```json
+{"9ba52921-3573-44af-a8e7-8dd5084eb253": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+```
+
+    ++++++ Parsed answer:{'9ba52921-3573-44af-a8e7-8dd5084eb253': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:12b6dd39-8a3b-4845-bd6a-c1487e646056
+    ++++++ Got Score:0
+++++++ Expected: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+11, 9ba52921-3573-44af-a8e7-8dd5084eb253, edge1, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+Raw output: 
+```json
+{"9ba52921-3573-44af-a8e7-8dd5084eb253": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+```
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge1, 505f0933-9494-47c2-a1ff-db93e5e3501f
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "505f0933-9494-47c2-a1ff-db93e5e3501f"}
+```
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge2, a2878670-0571-4d2e-8a6e-f2baa768d30e
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+```
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge3, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge4, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge1, 7f426851-06b3-4505-90eb-eb9f349851f1
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f'}
+    ++++++ Expected:7f426851-06b3-4505-90eb-eb9f349851f1
+    ++++++ Got Score:0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 0
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge2, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+```
+
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'a2878670-0571-4d2e-8a6e-f2baa768d30e'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 0
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge3, a2878670-0571-4d2e-8a6e-f2baa768d30e
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+```
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 1
+14, dcdb7910-0be9-402d-b14b-420926059615, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+14, dcdb7910-0be9-402d-b14b-420926059615, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+```
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+14, dcdb7910-0be9-402d-b14b-420926059615, edge2, c7a957fa-990e-4462-8a47-e66888725ae3
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:c7a957fa-990e-4462-8a47-e66888725ae3
+    ++++++ Got Score:0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+14, dcdb7910-0be9-402d-b14b-420926059615, edge3, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+15, 131a10b0-71d7-4803-871e-32c1d4d88c42, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"131a10b0-71d7-4803-871e-32c1d4d88c42": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+15, 131a10b0-71d7-4803-871e-32c1d4d88c42, edge1, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"131a10b0-71d7-4803-871e-32c1d4d88c42": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+16, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+16, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, edge1, b04cde07-c401-4de1-b8a9-88365d85862d
+Raw output: 
+```json
+{"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+```
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+16, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, edge2, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+Raw output: 
+```json
+{"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+17, 7f426851-06b3-4505-90eb-eb9f349851f1, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"7f426851-06b3-4505-90eb-eb9f349851f1": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+17, 7f426851-06b3-4505-90eb-eb9f349851f1, edge1, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+Raw output: 
+```json
+{"7f426851-06b3-4505-90eb-eb9f349851f1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+```
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge2, 558568a2-31d6-4d05-b4fc-e32caa3c43a9
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '2f78a7f4-a64e-42e3-b2ca-c75441ba3e83'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 0
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge3, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge4, 5e49653b-6c6f-4899-90b6-902fd4d4ca49
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"}
+```
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 1
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge1, dcdb7910-0be9-402d-b14b-420926059615
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+```
+++++++ Expected: dcdb7910-0be9-402d-b14b-420926059615, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 1
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge2, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge3, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+Model=google/gemma-2-9b-it
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "edge0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  
+LEN(raw_json_graph)=20
+
+Representation: baseline_v2
+Token Usage:{'prompt_tokens': 3330, 'completion_tokens': 76, 'total_tokens': 3407}
+Total_score:47, Full_score:59, Accuracy:0.7966101694915254
+
+
+
+0, b04cde07-c401-4de1-b8a9-88365d85862d, edge0, 9ba52921-3573-44af-a8e7-8dd5084eb253
+{
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04c_edge0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "9b76292e-83b6-44d0-927d-9d3c4ac0973d": {
+    "9b76_edge0": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "9b76_edge1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec",
+    "9b76_edge2": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": {
+    "f42e_edge0": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "f42e_edge1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "f42e_edge2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "f42e_edge3": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "f42e_edge4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "c7a957fa-990e-4462-8a47-e66888725ae3": {
+    "c7a9_edge0": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "c7a9_edge1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "c7a9_edge2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": {
+    "2f78_edge0": "66c988b8-bc33-42ae-b946-10de63599e6d"
+  },
+  "a2878670-0571-4d2e-8a6e-f2baa768d30e": {
+    "a287_edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "a287_edge1": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "a287_edge2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"
+  },
+  "12b6dd39-8a3b-4845-bd6a-c1487e646056": {
+    "12b6_edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "12b6_edge1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "12b6_edge2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"
+  },
+  "66c988b8-bc33-42ae-b946-10de63599e6d": {
+    "66c9_edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "66c9_edge1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "66c9_edge2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "66c9_edge3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "66c9_edge4": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "ac587166-e004-4d7c-8b0d-3e2dae2c1fce": {
+    "ac58_edge0": "c7a957fa-990e-4462-8a47-e66888725ae3"
+  },
+  "9724a9cb-85fb-46e0-b85c-6bff9edc74ec": {
+    "9724_edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"
+  },
+  "505f0933-9494-47c2-a1ff-db93e5e3501f": {
+    "505f_edge0": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "505f_edge1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "9ba52921-3573-44af-a8e7-8dd5084eb253": {
+    "9ba5_edge0": "12b6dd39-8a3b-4845-bd6a-c1487e646056",
+    "9ba5_edge1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5e49653b-6c6f-4899-90b6-902fd4d4ca49": {
+    "5e49_edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "5e49_edge1": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "5e49_edge2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "5e49_edge3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "5e49_edge4": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "4dddd26b-2b1c-40fd-a965-3eece97cc9f4": {
+    "4ddd_edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "4ddd_edge1": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "4ddd_edge2": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "4ddd_edge3": "a2878670-0571-4d2e-8a6e-f2baa768d30e"
+  },
+  "dcdb7910-0be9-402d-b14b-420926059615": {
+    "dcdb_edge0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "dcdb_edge1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "dcdb_edge2": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "dcdb_edge3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "131a10b0-71d7-4803-871e-32c1d4d88c42": {
+    "131a_edge0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "131a_edge1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "13cdcc23-bdcb-4b57-a14a-90f9a15eed75": {
+    "13cd_edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "13cd_edge1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "13cd_edge2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "7f426851-06b3-4505-90eb-eb9f349851f1": {
+    "7f42_edge0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "7f42_edge1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": {
+    "5db4_edge0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "5db4_edge1": "9b76292e-83b6-44d0-927d-9d3c4ac0973d",
+    "5db4_edge2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9",
+    "5db4_edge3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83",
+    "5db4_edge4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "558568a2-31d6-4d05-b4fc-e32caa3c43a9": {
+    "5585_edge0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "5585_edge1": "dcdb7910-0be9-402d-b14b-420926059615",
+    "5585_edge2": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4",
+    "5585_edge3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "b04cde07-c401-4de1-b8a9-88365d85862d" following edge "edge0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"b04cde07-c401-4de1-b8a9-88365d85862d": $FINAL_VALUE}.
+    
+Raw output: 
+```json
+{"b04cde07-c401-4de1-b8a9-88365d85862d": "9ba52921-3573-44af-a8e7-8dd5084eb253"}
+```
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d, edge0, b04cde07-c401-4de1-b8a9-88365d85862d
+Raw output: 
+```json
+{"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+```
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d, edge1, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d, edge2, 9ba52921-3573-44af-a8e7-8dd5084eb253
+Raw output: 
+```json
+{"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "9ba52921-3573-44af-a8e7-8dd5084eb253"}
+```
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge0, 7f426851-06b3-4505-90eb-eb9f349851f1
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "7f426851-06b3-4505-90eb-eb9f349851f1"}
+```
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 7f426851-06b3-4505-90eb-eb9f349851f1, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+```
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge2, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+```
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge3, c7a957fa-990e-4462-8a47-e66888725ae3
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+```
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge4, 5e49653b-6c6f-4899-90b6-902fd4d4ca49
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:5e49653b-6c6f-4899-90b6-902fd4d4ca49
+    ++++++ Got Score:0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+3, c7a957fa-990e-4462-8a47-e66888725ae3, edge0, 505f0933-9494-47c2-a1ff-db93e5e3501f
+Raw output: 
+```json
+{"c7a957fa-990e-4462-8a47-e66888725ae3": "505f0933-9494-47c2-a1ff-db93e5e3501f"}
+```
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+3, c7a957fa-990e-4462-8a47-e66888725ae3, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"c7a957fa-990e-4462-8a47-e66888725ae3": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+```
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+3, c7a957fa-990e-4462-8a47-e66888725ae3, edge2, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+Raw output: 
+```json
+{"c7a957fa-990e-4462-8a47-e66888725ae3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+4, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+5, a2878670-0571-4d2e-8a6e-f2baa768d30e, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"a2878670-0571-4d2e-8a6e-f2baa768d30e": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+5, a2878670-0571-4d2e-8a6e-f2baa768d30e, edge1, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75
+Raw output: 
+```json
+{"a2878670-0571-4d2e-8a6e-f2baa768d30e": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+```
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+5, a2878670-0571-4d2e-8a6e-f2baa768d30e, edge2, 558568a2-31d6-4d05-b4fc-e32caa3c43a9
+Raw output: 
+```json
+{"a2878670-0571-4d2e-8a6e-f2baa768d30e": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"}
+```
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Score: 1
+6, 12b6dd39-8a3b-4845-bd6a-c1487e646056, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"12b6dd39-8a3b-4845-bd6a-c1487e646056": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+6, 12b6dd39-8a3b-4845-bd6a-c1487e646056, edge1, b04cde07-c401-4de1-b8a9-88365d85862d
+Raw output: 
+```json
+{"12b6dd39-8a3b-4845-bd6a-c1487e646056": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+```
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+6, 12b6dd39-8a3b-4845-bd6a-c1487e646056, edge2, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"12b6dd39-8a3b-4845-bd6a-c1487e646056": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+```
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': 'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 0
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge2, a2878670-0571-4d2e-8a6e-f2baa768d30e
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge3, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge4, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+8, ac587166-e004-4d7c-8b0d-3e2dae2c1fce, edge0, c7a957fa-990e-4462-8a47-e66888725ae3
+Raw output: 
+```json
+{"ac587166-e004-4d7c-8b0d-3e2dae2c1fce": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+```
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+9, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"9724a9cb-85fb-46e0-b85c-6bff9edc74ec": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+10, 505f0933-9494-47c2-a1ff-db93e5e3501f, edge0, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75
+Raw output: 
+```json
+{"505f0933-9494-47c2-a1ff-db93e5e3501f": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+```
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+10, 505f0933-9494-47c2-a1ff-db93e5e3501f, edge1, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"505f0933-9494-47c2-a1ff-db93e5e3501f": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+11, 9ba52921-3573-44af-a8e7-8dd5084eb253, edge0, 12b6dd39-8a3b-4845-bd6a-c1487e646056
+Raw output: 
+```json
+{"9ba52921-3573-44af-a8e7-8dd5084eb253": "12b6dd39-8a3b-4845-bd6a-c1487e646056"}
+```
+++++++ Expected: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Real: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Score: 1
+11, 9ba52921-3573-44af-a8e7-8dd5084eb253, edge1, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+Raw output: 
+```json
+{"9ba52921-3573-44af-a8e7-8dd5084eb253": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+```
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge1, 505f0933-9494-47c2-a1ff-db93e5e3501f
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "505f0933-9494-47c2-a1ff-db93e5e3501f"}
+```
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge2, a2878670-0571-4d2e-8a6e-f2baa768d30e
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+```
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge3, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge4, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge1, 7f426851-06b3-4505-90eb-eb9f349851f1
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f'}
+    ++++++ Expected:7f426851-06b3-4505-90eb-eb9f349851f1
+    ++++++ Got Score:0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 0
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge2, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+```
+
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'a2878670-0571-4d2e-8a6e-f2baa768d30e'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 0
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge3, a2878670-0571-4d2e-8a6e-f2baa768d30e
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+```
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 1
+14, dcdb7910-0be9-402d-b14b-420926059615, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+14, dcdb7910-0be9-402d-b14b-420926059615, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+```
+
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': 'c7a957fa-990e-4462-8a47-e66888725ae3'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 0
+14, dcdb7910-0be9-402d-b14b-420926059615, edge2, c7a957fa-990e-4462-8a47-e66888725ae3
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+```
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+14, dcdb7910-0be9-402d-b14b-420926059615, edge3, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+15, 131a10b0-71d7-4803-871e-32c1d4d88c42, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"131a10b0-71d7-4803-871e-32c1d4d88c42": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+15, 131a10b0-71d7-4803-871e-32c1d4d88c42, edge1, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"131a10b0-71d7-4803-871e-32c1d4d88c42": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+16, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+16, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, edge1, b04cde07-c401-4de1-b8a9-88365d85862d
+Raw output: 
+```json
+{"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+```
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+16, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, edge2, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+Raw output: 
+```json
+{"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+17, 7f426851-06b3-4505-90eb-eb9f349851f1, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"7f426851-06b3-4505-90eb-eb9f349851f1": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+17, 7f426851-06b3-4505-90eb-eb9f349851f1, edge1, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+Raw output: 
+```json
+{"7f426851-06b3-4505-90eb-eb9f349851f1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+```
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge2, 558568a2-31d6-4d05-b4fc-e32caa3c43a9
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '2f78a7f4-a64e-42e3-b2ca-c75441ba3e83'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 0
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge3, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge4, 5e49653b-6c6f-4899-90b6-902fd4d4ca49
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:5e49653b-6c6f-4899-90b6-902fd4d4ca49
+    ++++++ Got Score:0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge1, dcdb7910-0be9-402d-b14b-420926059615
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+```
+++++++ Expected: dcdb7910-0be9-402d-b14b-420926059615, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 1
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge2, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+```
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge3, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+Model=google/gemma-2-9b-it
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04c_edge0": "9ba52921-3573-44af-a8e7-8dd5084eb25
+LEN(raw_json_graph)=20
+
+Representation: node_id[:4]_edge_id_v2
+Token Usage:{'prompt_tokens': 3598, 'completion_tokens': 76, 'total_tokens': 3675}
+Total_score:49, Full_score:59, Accuracy:0.8305084745762712
+
+
+
+0, b04cde07-c401-4de1-b8a9-88365d85862d, edge0, 9ba52921-3573-44af-a8e7-8dd5084eb253
+{
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04c_[edge0]": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "9b76292e-83b6-44d0-927d-9d3c4ac0973d": {
+    "9b76_[edge0]": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "9b76_[edge1]": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec",
+    "9b76_[edge2]": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": {
+    "f42e_[edge0]": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "f42e_[edge1]": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "f42e_[edge2]": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "f42e_[edge3]": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "f42e_[edge4]": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "c7a957fa-990e-4462-8a47-e66888725ae3": {
+    "c7a9_[edge0]": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "c7a9_[edge1]": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "c7a9_[edge2]": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": {
+    "2f78_[edge0]": "66c988b8-bc33-42ae-b946-10de63599e6d"
+  },
+  "a2878670-0571-4d2e-8a6e-f2baa768d30e": {
+    "a287_[edge0]": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "a287_[edge1]": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "a287_[edge2]": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"
+  },
+  "12b6dd39-8a3b-4845-bd6a-c1487e646056": {
+    "12b6_[edge0]": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "12b6_[edge1]": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "12b6_[edge2]": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"
+  },
+  "66c988b8-bc33-42ae-b946-10de63599e6d": {
+    "66c9_[edge0]": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "66c9_[edge1]": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "66c9_[edge2]": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "66c9_[edge3]": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "66c9_[edge4]": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "ac587166-e004-4d7c-8b0d-3e2dae2c1fce": {
+    "ac58_[edge0]": "c7a957fa-990e-4462-8a47-e66888725ae3"
+  },
+  "9724a9cb-85fb-46e0-b85c-6bff9edc74ec": {
+    "9724_[edge0]": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"
+  },
+  "505f0933-9494-47c2-a1ff-db93e5e3501f": {
+    "505f_[edge0]": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "505f_[edge1]": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "9ba52921-3573-44af-a8e7-8dd5084eb253": {
+    "9ba5_[edge0]": "12b6dd39-8a3b-4845-bd6a-c1487e646056",
+    "9ba5_[edge1]": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5e49653b-6c6f-4899-90b6-902fd4d4ca49": {
+    "5e49_[edge0]": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "5e49_[edge1]": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "5e49_[edge2]": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "5e49_[edge3]": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "5e49_[edge4]": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "4dddd26b-2b1c-40fd-a965-3eece97cc9f4": {
+    "4ddd_[edge0]": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "4ddd_[edge1]": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "4ddd_[edge2]": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "4ddd_[edge3]": "a2878670-0571-4d2e-8a6e-f2baa768d30e"
+  },
+  "dcdb7910-0be9-402d-b14b-420926059615": {
+    "dcdb_[edge0]": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "dcdb_[edge1]": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "dcdb_[edge2]": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "dcdb_[edge3]": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "131a10b0-71d7-4803-871e-32c1d4d88c42": {
+    "131a_[edge0]": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "131a_[edge1]": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "13cdcc23-bdcb-4b57-a14a-90f9a15eed75": {
+    "13cd_[edge0]": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "13cd_[edge1]": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "13cd_[edge2]": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "7f426851-06b3-4505-90eb-eb9f349851f1": {
+    "7f42_[edge0]": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "7f42_[edge1]": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": {
+    "5db4_[edge0]": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "5db4_[edge1]": "9b76292e-83b6-44d0-927d-9d3c4ac0973d",
+    "5db4_[edge2]": "558568a2-31d6-4d05-b4fc-e32caa3c43a9",
+    "5db4_[edge3]": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83",
+    "5db4_[edge4]": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "558568a2-31d6-4d05-b4fc-e32caa3c43a9": {
+    "5585_[edge0]": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "5585_[edge1]": "dcdb7910-0be9-402d-b14b-420926059615",
+    "5585_[edge2]": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4",
+    "5585_[edge3]": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "b04cde07-c401-4de1-b8a9-88365d85862d" following edge "edge0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"b04cde07-c401-4de1-b8a9-88365d85862d": $FINAL_VALUE}.
+    
+Raw output: 
+```json
+{"b04cde07-c401-4de1-b8a9-88365d85862d": "9ba52921-3573-44af-a8e7-8dd5084eb253"}
+```
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d, edge0, b04cde07-c401-4de1-b8a9-88365d85862d
+Raw output: 
+```json
+{"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+```
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d, edge1, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d, edge2, 9ba52921-3573-44af-a8e7-8dd5084eb253
+Raw output: 
+```json
+{"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "9ba52921-3573-44af-a8e7-8dd5084eb253"}
+```
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge0, 7f426851-06b3-4505-90eb-eb9f349851f1
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "7f426851-06b3-4505-90eb-eb9f349851f1"}
+```
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 7f426851-06b3-4505-90eb-eb9f349851f1, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+```
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge2, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+```
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge3, c7a957fa-990e-4462-8a47-e66888725ae3
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"}
+```
+
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '5e49653b-6c6f-4899-90b6-902fd4d4ca49'}
+    ++++++ Expected:c7a957fa-990e-4462-8a47-e66888725ae3
+    ++++++ Got Score:0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 0
+2, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, edge4, 5e49653b-6c6f-4899-90b6-902fd4d4ca49
+Raw output: 
+```json
+{"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:5e49653b-6c6f-4899-90b6-902fd4d4ca49
+    ++++++ Got Score:0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+3, c7a957fa-990e-4462-8a47-e66888725ae3, edge0, 505f0933-9494-47c2-a1ff-db93e5e3501f
+Raw output: 
+```json
+{"c7a957fa-990e-4462-8a47-e66888725ae3": "505f0933-9494-47c2-a1ff-db93e5e3501f"}
+```
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+3, c7a957fa-990e-4462-8a47-e66888725ae3, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"c7a957fa-990e-4462-8a47-e66888725ae3": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+```
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+3, c7a957fa-990e-4462-8a47-e66888725ae3, edge2, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+Raw output: 
+```json
+{"c7a957fa-990e-4462-8a47-e66888725ae3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+4, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+5, a2878670-0571-4d2e-8a6e-f2baa768d30e, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"a2878670-0571-4d2e-8a6e-f2baa768d30e": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+5, a2878670-0571-4d2e-8a6e-f2baa768d30e, edge1, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75
+Raw output: 
+```json
+{"a2878670-0571-4d2e-8a6e-f2baa768d30e": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+```
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+5, a2878670-0571-4d2e-8a6e-f2baa768d30e, edge2, 558568a2-31d6-4d05-b4fc-e32caa3c43a9
+Raw output: 
+```json
+{"a2878670-0571-4d2e-8a6e-f2baa768d30e": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"}
+```
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Score: 1
+6, 12b6dd39-8a3b-4845-bd6a-c1487e646056, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"12b6dd39-8a3b-4845-bd6a-c1487e646056": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+6, 12b6dd39-8a3b-4845-bd6a-c1487e646056, edge1, b04cde07-c401-4de1-b8a9-88365d85862d
+Raw output: 
+```json
+{"12b6dd39-8a3b-4845-bd6a-c1487e646056": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+```
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+6, 12b6dd39-8a3b-4845-bd6a-c1487e646056, edge2, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"12b6dd39-8a3b-4845-bd6a-c1487e646056": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+```
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': 'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 0
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge2, a2878670-0571-4d2e-8a6e-f2baa768d30e
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge3, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+7, 66c988b8-bc33-42ae-b946-10de63599e6d, edge4, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"66c988b8-bc33-42ae-b946-10de63599e6d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+8, ac587166-e004-4d7c-8b0d-3e2dae2c1fce, edge0, c7a957fa-990e-4462-8a47-e66888725ae3
+Raw output: 
+```json
+{"ac587166-e004-4d7c-8b0d-3e2dae2c1fce": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+```
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+9, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"9724a9cb-85fb-46e0-b85c-6bff9edc74ec": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+10, 505f0933-9494-47c2-a1ff-db93e5e3501f, edge0, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75
+Raw output: 
+```json
+{"505f0933-9494-47c2-a1ff-db93e5e3501f": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+```
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+10, 505f0933-9494-47c2-a1ff-db93e5e3501f, edge1, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"505f0933-9494-47c2-a1ff-db93e5e3501f": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+11, 9ba52921-3573-44af-a8e7-8dd5084eb253, edge0, 12b6dd39-8a3b-4845-bd6a-c1487e646056
+Raw output: 
+```json
+{"9ba52921-3573-44af-a8e7-8dd5084eb253": "12b6dd39-8a3b-4845-bd6a-c1487e646056"}
+```
+++++++ Expected: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Real: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Score: 1
+11, 9ba52921-3573-44af-a8e7-8dd5084eb253, edge1, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+Raw output: 
+```json
+{"9ba52921-3573-44af-a8e7-8dd5084eb253": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+```
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge1, 505f0933-9494-47c2-a1ff-db93e5e3501f
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "505f0933-9494-47c2-a1ff-db93e5e3501f"}
+```
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge2, a2878670-0571-4d2e-8a6e-f2baa768d30e
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+```
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 1
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge3, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+12, 5e49653b-6c6f-4899-90b6-902fd4d4ca49, edge4, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge1, 7f426851-06b3-4505-90eb-eb9f349851f1
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "7f426851-06b3-4505-90eb-eb9f349851f1"}
+```
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 7f426851-06b3-4505-90eb-eb9f349851f1, Score: 1
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge2, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+```
+
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'a2878670-0571-4d2e-8a6e-f2baa768d30e'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 0
+13, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, edge3, a2878670-0571-4d2e-8a6e-f2baa768d30e
+Raw output: 
+```json
+{"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+```
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 1
+14, dcdb7910-0be9-402d-b14b-420926059615, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+14, dcdb7910-0be9-402d-b14b-420926059615, edge1, 131a10b0-71d7-4803-871e-32c1d4d88c42
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+```
+
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': 'c7a957fa-990e-4462-8a47-e66888725ae3'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 0
+14, dcdb7910-0be9-402d-b14b-420926059615, edge2, c7a957fa-990e-4462-8a47-e66888725ae3
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+```
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+14, dcdb7910-0be9-402d-b14b-420926059615, edge3, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"dcdb7910-0be9-402d-b14b-420926059615": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+15, 131a10b0-71d7-4803-871e-32c1d4d88c42, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"131a10b0-71d7-4803-871e-32c1d4d88c42": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+15, 131a10b0-71d7-4803-871e-32c1d4d88c42, edge1, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+Raw output: 
+```json
+{"131a10b0-71d7-4803-871e-32c1d4d88c42": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+```
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+16, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+16, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, edge1, b04cde07-c401-4de1-b8a9-88365d85862d
+Raw output: 
+```json
+{"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+```
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+16, 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, edge2, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+Raw output: 
+```json
+{"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+17, 7f426851-06b3-4505-90eb-eb9f349851f1, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"7f426851-06b3-4505-90eb-eb9f349851f1": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+17, 7f426851-06b3-4505-90eb-eb9f349851f1, edge1, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+Raw output: 
+```json
+{"7f426851-06b3-4505-90eb-eb9f349851f1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+```
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge0, 66c988b8-bc33-42ae-b946-10de63599e6d
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+```
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge1, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge2, 558568a2-31d6-4d05-b4fc-e32caa3c43a9
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '2f78a7f4-a64e-42e3-b2ca-c75441ba3e83'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 0
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge3, 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+```
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+18, 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, edge4, 5e49653b-6c6f-4899-90b6-902fd4d4ca49
+Raw output: 
+```json
+{"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:5e49653b-6c6f-4899-90b6-902fd4d4ca49
+    ++++++ Got Score:0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge0, f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+```
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge1, dcdb7910-0be9-402d-b14b-420926059615
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+```
+++++++ Expected: dcdb7910-0be9-402d-b14b-420926059615, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 1
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge2, 4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+```
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+19, 558568a2-31d6-4d05-b4fc-e32caa3c43a9, edge3, 9b76292e-83b6-44d0-927d-9d3c4ac0973d
+Raw output: 
+```json
+{"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+```
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+Model=google/gemma-2-9b-it
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04c_[edge0]": "9ba52921-3573-44af-a8e7-8dd5084eb
+LEN(raw_json_graph)=20
+
+Representation: node_id[:4]_[edge_id]_v2
+Token Usage:{'prompt_tokens': 3657, 'completion_tokens': 76, 'total_tokens': 3734}
+Total_score:49, Full_score:59, Accuracy:0.8305084745762712
+
+
+

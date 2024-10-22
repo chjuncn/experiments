@@ -1,0 +1,101 @@
+{
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "edge_0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "9b76292e-83b6-44d0-927d-9d3c4ac0973d": {
+    "edge_0": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "edge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec",
+    "edge_2": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": {
+    "edge_0": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "edge_3": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "edge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "c7a957fa-990e-4462-8a47-e66888725ae3": {
+    "edge_0": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": {
+    "edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d"
+  },
+  "a2878670-0571-4d2e-8a6e-f2baa768d30e": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "edge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"
+  },
+  "12b6dd39-8a3b-4845-bd6a-c1487e646056": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "edge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"
+  },
+  "66c988b8-bc33-42ae-b946-10de63599e6d": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "edge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "edge_4": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "ac587166-e004-4d7c-8b0d-3e2dae2c1fce": {
+    "edge_0": "c7a957fa-990e-4462-8a47-e66888725ae3"
+  },
+  "9724a9cb-85fb-46e0-b85c-6bff9edc74ec": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"
+  },
+  "505f0933-9494-47c2-a1ff-db93e5e3501f": {
+    "edge_0": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "edge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "9ba52921-3573-44af-a8e7-8dd5084eb253": {
+    "edge_0": "12b6dd39-8a3b-4845-bd6a-c1487e646056",
+    "edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5e49653b-6c6f-4899-90b6-902fd4d4ca49": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "edge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "edge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "edge_4": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "4dddd26b-2b1c-40fd-a965-3eece97cc9f4": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "edge_2": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge_3": "a2878670-0571-4d2e-8a6e-f2baa768d30e"
+  },
+  "dcdb7910-0be9-402d-b14b-420926059615": {
+    "edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge_2": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "edge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "131a10b0-71d7-4803-871e-32c1d4d88c42": {
+    "edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "13cdcc23-bdcb-4b57-a14a-90f9a15eed75": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "edge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "7f426851-06b3-4505-90eb-eb9f349851f1": {
+    "edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": {
+    "edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge_1": "9b76292e-83b6-44d0-927d-9d3c4ac0973d",
+    "edge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9",
+    "edge_3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83",
+    "edge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "558568a2-31d6-4d05-b4fc-e32caa3c43a9": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "dcdb7910-0be9-402d-b14b-420926059615",
+    "edge_2": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4",
+    "edge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  }
+}

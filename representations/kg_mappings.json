@@ -1,0 +1,29 @@
+{
+    "node_mappings": {
+        "node_0": "city1",
+        "node_1": "company1",
+        "node_2": "country1",
+        "node_3": "paper1",
+        "node_4": "paper2",
+        "node_5": "professor1",
+        "node_6": "professor2",
+        "node_7": "student1",
+        "node_8": "topic1",
+        "node_9": "topic2",
+        "node_10": "university1",
+        "node_11": "university2"
+    },
+    "edge_mappings": {
+        "edge_0": "about",
+        "edge_1": "advised_by",
+        "edge_2": "based_in",
+        "edge_3": "cites",
+        "edge_4": "collaborates_with",
+        "edge_5": "located_in",
+        "edge_6": "partners_with",
+        "edge_7": "published",
+        "edge_8": "researches",
+        "edge_9": "studies_at",
+        "edge_10": "works_at"
+    }
+}

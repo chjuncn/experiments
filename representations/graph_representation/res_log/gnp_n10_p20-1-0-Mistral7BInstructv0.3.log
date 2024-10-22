@@ -1,0 +1,1236 @@
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+ 
+len(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+    ++++++ raw output: {"010ce2f9-278a-4104-a5fd-cb424bf248f1": "fd956936-3d44-4567-8066-341b51489641,385bc026-4da6-4fea-89e8-999e796d5a72"}
+    parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': 'fd956936-3d44-4567-8066-341b51489641,385bc026-4da6-4fea-89e8-999e796d5a72'}
+    expected:fd956936-3d44-4567-8066-341b51489641
+    Got Score:0
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641,385bc026-4da6-4fea-89e8-999e796d5a72, score: 0
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: d0022f62-b56b-4204-a47f-ada9758ebf82, real: d0022f62-b56b-4204-a47f-ada9758ebf82, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+++++++ expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, score: 1
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+ 
+len(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1092, 'completion_tokens': 73, 'total_tokens': 1165}
+Usage: {'prompt_tokens': 1092, 'completion_tokens': 73, 'total_tokens': 1165}
+Usage: {'prompt_tokens': 1090, 'completion_tokens': 70, 'total_tokens': 1160}
+Usage: {'prompt_tokens': 1096, 'completion_tokens': 72, 'total_tokens': 1168}
+Usage: {'prompt_tokens': 1090, 'completion_tokens': 106, 'total_tokens': 1196}
+Usage: {'prompt_tokens': 1090, 'completion_tokens': 70, 'total_tokens': 1160}
+Usage: {'prompt_tokens': 1094, 'completion_tokens': 74, 'total_tokens': 1168}
+Usage: {'prompt_tokens': 1090, 'completion_tokens': 70, 'total_tokens': 1160}
+Usage: {'prompt_tokens': 1090, 'completion_tokens': 69, 'total_tokens': 1159}
+Usage: {'prompt_tokens': 1096, 'completion_tokens': 72, 'total_tokens': 1168}
+Usage: {'prompt_tokens': 1092, 'completion_tokens': 73, 'total_tokens': 1165}
+Usage: {'prompt_tokens': 1092, 'completion_tokens': 71, 'total_tokens': 1163}
+Usage: {'prompt_tokens': 1092, 'completion_tokens': 71, 'total_tokens': 1163}
+total_score:12, full_score:13, accuracy:0.9230769230769231
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b5148964
+len(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "5a72edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "1360edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "262cedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "48f1edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "48f1edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3e12edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "10b3edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "10b3edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "9641edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "9f28edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "bf82edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "bf82edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+    ++++++ raw output: {"010ce2f9-278a-4104-a5fd-cb424bf248f1": ["fd956936-3d44-4567-8066-341b51489641", "385bc026-4da6-4fea-89e8-999e796d5a72"]}
+    parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72']}
+    expected:fd956936-3d44-4567-8066-341b51489641
+    Got Score:0
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72'], score: 0
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: d0022f62-b56b-4204-a47f-ada9758ebf82, real: d0022f62-b56b-4204-a47f-ada9758ebf82, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+    ++++++ raw output: {"fd956936-3d44-4567-8066-341b51489641": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"}
+    parsed answer:{'fd956936-3d44-4567-8066-341b51489641': '42ff35c9-eb6a-4493-bfc0-2c66f3689f28'}
+    expected:eee6a39e-e6f3-43f7-acc9-975d7bb41360
+    Got Score:0
+++++++ expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 0
+    ++++++ raw output: {"42ff35c9-eb6a-4493-bfc0-2c66f3689f28": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}
+    parsed answer:{'42ff35c9-eb6a-4493-bfc0-2c66f3689f28': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    expected:fd956936-3d44-4567-8066-341b51489641
+    Got Score:0
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 0
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b5148964
+len(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1142, 'completion_tokens': 73, 'total_tokens': 1215}
+Usage: {'prompt_tokens': 1142, 'completion_tokens': 73, 'total_tokens': 1215}
+Usage: {'prompt_tokens': 1140, 'completion_tokens': 70, 'total_tokens': 1210}
+Usage: {'prompt_tokens': 1146, 'completion_tokens': 72, 'total_tokens': 1218}
+Usage: {'prompt_tokens': 1140, 'completion_tokens': 108, 'total_tokens': 1248}
+Usage: {'prompt_tokens': 1140, 'completion_tokens': 70, 'total_tokens': 1210}
+Usage: {'prompt_tokens': 1144, 'completion_tokens': 74, 'total_tokens': 1218}
+Usage: {'prompt_tokens': 1140, 'completion_tokens': 70, 'total_tokens': 1210}
+Usage: {'prompt_tokens': 1140, 'completion_tokens': 69, 'total_tokens': 1209}
+Usage: {'prompt_tokens': 1146, 'completion_tokens': 73, 'total_tokens': 1219}
+Usage: {'prompt_tokens': 1142, 'completion_tokens': 70, 'total_tokens': 1212}
+Usage: {'prompt_tokens': 1142, 'completion_tokens': 71, 'total_tokens': 1213}
+Usage: {'prompt_tokens': 1142, 'completion_tokens': 71, 'total_tokens': 1213}
+total_score:10, full_score:13, accuracy:0.7692307692307693
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd9
+len(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bc026-4da6-4fea-89e8-999e796d5a72edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6a39e-e6f3-43f7-acc9-975d7bb41360edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b91299-f0e2-491c-8f1f-05dfb8a7262cedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010ce2f9-278a-4104-a5fd-cb424bf248f1edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010ce2f9-278a-4104-a5fd-cb424bf248f1edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53e08a-6edb-4f82-80d2-9c46b3de3e12edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fa540-6578-4573-a489-6aff13be10b3edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fa540-6578-4573-a489-6aff13be10b3edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "fd956936-3d44-4567-8066-341b51489641edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ff35c9-eb6a-4493-bfc0-2c66f3689f28edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d0022f62-b56b-4204-a47f-ada9758ebf82edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d0022f62-b56b-4204-a47f-ada9758ebf82edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: d0022f62-b56b-4204-a47f-ada9758ebf82, real: d0022f62-b56b-4204-a47f-ada9758ebf82, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+++++++ expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, score: 1
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd9
+len(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1521, 'completion_tokens': 73, 'total_tokens': 1594}
+Usage: {'prompt_tokens': 1521, 'completion_tokens': 73, 'total_tokens': 1594}
+Usage: {'prompt_tokens': 1519, 'completion_tokens': 70, 'total_tokens': 1589}
+Usage: {'prompt_tokens': 1525, 'completion_tokens': 72, 'total_tokens': 1597}
+Usage: {'prompt_tokens': 1519, 'completion_tokens': 72, 'total_tokens': 1591}
+Usage: {'prompt_tokens': 1519, 'completion_tokens': 70, 'total_tokens': 1589}
+Usage: {'prompt_tokens': 1523, 'completion_tokens': 74, 'total_tokens': 1597}
+Usage: {'prompt_tokens': 1519, 'completion_tokens': 70, 'total_tokens': 1589}
+Usage: {'prompt_tokens': 1519, 'completion_tokens': 69, 'total_tokens': 1588}
+Usage: {'prompt_tokens': 1525, 'completion_tokens': 72, 'total_tokens': 1597}
+Usage: {'prompt_tokens': 1521, 'completion_tokens': 73, 'total_tokens': 1594}
+Usage: {'prompt_tokens': 1521, 'completion_tokens': 71, 'total_tokens': 1592}
+Usage: {'prompt_tokens': 1521, 'completion_tokens': 71, 'total_tokens': 1592}
+total_score:13, full_score:13, accuracy:1.0
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "hiraedge_0": "fd956936-3d44-4567-8066-341b5148964
+len(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "hiraedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "ngmuedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "dvkmedge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "mvtzedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "ernredge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "ernredge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "gbstedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "czswedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "czswedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "wxbjedge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "sveyedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "riltedge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "riltedge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+    ++++++ raw output: {"eee6a39e-e6f3-43f7-acc9-975d7bb41360": "wxbjedge_0: fd956936-3d44-4567-8066-341b51489641"}
+    parsed answer:{'eee6a39e-e6f3-43f7-acc9-975d7bb41360': 'wxbjedge_0: fd956936-3d44-4567-8066-341b51489641'}
+    expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    Got Score:0
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: wxbjedge_0: fd956936-3d44-4567-8066-341b51489641, score: 0
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+    ++++++ raw output: {"010ce2f9-278a-4104-a5fd-cb424bf248f1": ["fd956936-3d44-4567-8066-341b51489641", "385bc026-4da6-4fea-89e8-999e796d5a72"]}
+    parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72']}
+    expected:fd956936-3d44-4567-8066-341b51489641
+    Got Score:0
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72'], score: 0
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: d0022f62-b56b-4204-a47f-ada9758ebf82, real: d0022f62-b56b-4204-a47f-ada9758ebf82, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+    ++++++ raw output: {"fd956936-3d44-4567-8066-341b51489641": "wxbjedge_0: eee6a39e-e6f3-43f7-acc9-975d7bb41360"}
+    parsed answer:{'fd956936-3d44-4567-8066-341b51489641': 'wxbjedge_0: eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    expected:eee6a39e-e6f3-43f7-acc9-975d7bb41360
+    Got Score:0
+++++++ expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, real: wxbjedge_0: eee6a39e-e6f3-43f7-acc9-975d7bb41360, score: 0
+    ++++++ raw output: {"42ff35c9-eb6a-4493-bfc0-2c66f3689f28": "sveyedge_0: fd956936-3d44-4567-8066-341b51489641"}
+    parsed answer:{'42ff35c9-eb6a-4493-bfc0-2c66f3689f28': 'sveyedge_0: fd956936-3d44-4567-8066-341b51489641'}
+    expected:fd956936-3d44-4567-8066-341b51489641
+    Got Score:0
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: sveyedge_0: fd956936-3d44-4567-8066-341b51489641, score: 0
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "hiraedge_0": "fd956936-3d44-4567-8066-341b5148964
+len(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1121, 'completion_tokens': 73, 'total_tokens': 1194}
+Usage: {'prompt_tokens': 1121, 'completion_tokens': 73, 'total_tokens': 1194}
+Usage: {'prompt_tokens': 1119, 'completion_tokens': 79, 'total_tokens': 1198}
+Usage: {'prompt_tokens': 1125, 'completion_tokens': 72, 'total_tokens': 1197}
+Usage: {'prompt_tokens': 1119, 'completion_tokens': 108, 'total_tokens': 1227}
+Usage: {'prompt_tokens': 1119, 'completion_tokens': 70, 'total_tokens': 1189}
+Usage: {'prompt_tokens': 1123, 'completion_tokens': 74, 'total_tokens': 1197}
+Usage: {'prompt_tokens': 1119, 'completion_tokens': 70, 'total_tokens': 1189}
+Usage: {'prompt_tokens': 1119, 'completion_tokens': 69, 'total_tokens': 1188}
+Usage: {'prompt_tokens': 1125, 'completion_tokens': 79, 'total_tokens': 1204}
+Usage: {'prompt_tokens': 1121, 'completion_tokens': 79, 'total_tokens': 1200}
+Usage: {'prompt_tokens': 1121, 'completion_tokens': 71, 'total_tokens': 1192}
+Usage: {'prompt_tokens': 1121, 'completion_tokens': 71, 'total_tokens': 1192}
+total_score:9, full_score:13, accuracy:0.6923076923076923
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+len(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "<edge_0>": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "<edge_0>": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "<edge_0>": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641",
+    "<edge_1>": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "<edge_0>": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "<edge_0>": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "<edge_1>": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "<edge_0>": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "<edge_0>": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "<edge_1>": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+    ++++++ raw output: {"010ce2f9-278a-4104-a5fd-cb424bf248f1": ["fd956936-3d44-4567-8066-341b51489641", "385bc026-4da6-4fea-89e8-999e796d5a72"]}
+    parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72']}
+    expected:fd956936-3d44-4567-8066-341b51489641
+    Got Score:0
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72'], score: 0
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: d0022f62-b56b-4204-a47f-ada9758ebf82, real: d0022f62-b56b-4204-a47f-ada9758ebf82, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+++++++ expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, real: ['eee6a39e-e6f3-43f7-acc9-975d7bb41360'], score: 1
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+len(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1105, 'completion_tokens': 73, 'total_tokens': 1178}
+Usage: {'prompt_tokens': 1105, 'completion_tokens': 73, 'total_tokens': 1178}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 70, 'total_tokens': 1173}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 72, 'total_tokens': 1181}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 108, 'total_tokens': 1211}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 70, 'total_tokens': 1173}
+Usage: {'prompt_tokens': 1107, 'completion_tokens': 74, 'total_tokens': 1181}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 70, 'total_tokens': 1173}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 69, 'total_tokens': 1172}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 73, 'total_tokens': 1182}
+Usage: {'prompt_tokens': 1105, 'completion_tokens': 73, 'total_tokens': 1178}
+Usage: {'prompt_tokens': 1105, 'completion_tokens': 71, 'total_tokens': 1176}
+Usage: {'prompt_tokens': 1105, 'completion_tokens': 71, 'total_tokens': 1176}
+total_score:12, full_score:13, accuracy:0.9230769230769231
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5148964
+len(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b9edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010cedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010cedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "fd95edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ffedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d002edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d002edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: d0022f62-b56b-4204-a47f-ada9758ebf82, real: d0022f62-b56b-4204-a47f-ada9758ebf82, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+++++++ expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, score: 1
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5148964
+len(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1141, 'completion_tokens': 73, 'total_tokens': 1214}
+Usage: {'prompt_tokens': 1141, 'completion_tokens': 73, 'total_tokens': 1214}
+Usage: {'prompt_tokens': 1139, 'completion_tokens': 70, 'total_tokens': 1209}
+Usage: {'prompt_tokens': 1145, 'completion_tokens': 72, 'total_tokens': 1217}
+Usage: {'prompt_tokens': 1139, 'completion_tokens': 72, 'total_tokens': 1211}
+Usage: {'prompt_tokens': 1139, 'completion_tokens': 70, 'total_tokens': 1209}
+Usage: {'prompt_tokens': 1143, 'completion_tokens': 74, 'total_tokens': 1217}
+Usage: {'prompt_tokens': 1139, 'completion_tokens': 70, 'total_tokens': 1209}
+Usage: {'prompt_tokens': 1139, 'completion_tokens': 69, 'total_tokens': 1208}
+Usage: {'prompt_tokens': 1145, 'completion_tokens': 72, 'total_tokens': 1217}
+Usage: {'prompt_tokens': 1141, 'completion_tokens': 73, 'total_tokens': 1214}
+Usage: {'prompt_tokens': 1141, 'completion_tokens': 71, 'total_tokens': 1212}
+Usage: {'prompt_tokens': 1141, 'completion_tokens': 71, 'total_tokens': 1212}
+total_score:13, full_score:13, accuracy:1.0
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5
+len(raw_json_graph)=10
+
+{
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "<key>=385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "<key>=eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "<key>=a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b9edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "<key>=010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010cedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010cedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "<key>=3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "<key>=9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "<key>=fd956936-3d44-4567-8066-341b51489641": {
+    "fd95edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "<key>=42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ffedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "<key>=d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d002edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d002edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, score: 1
+++++++ expected: d0022f62-b56b-4204-a47f-ada9758ebf82, real: d0022f62-b56b-4204-a47f-ada9758ebf82, score: 1
+++++++ expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, score: 1
+++++++ expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, score: 1
+++++++ expected: fd956936-3d44-4567-8066-341b51489641, real: fd956936-3d44-4567-8066-341b51489641, score: 1
+++++++ expected: 385bc026-4da6-4fea-89e8-999e796d5a72, real: 385bc026-4da6-4fea-89e8-999e796d5a72, score: 1
+++++++ expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5
+len(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1161, 'completion_tokens': 73, 'total_tokens': 1234}
+Usage: {'prompt_tokens': 1161, 'completion_tokens': 73, 'total_tokens': 1234}
+Usage: {'prompt_tokens': 1159, 'completion_tokens': 70, 'total_tokens': 1229}
+Usage: {'prompt_tokens': 1165, 'completion_tokens': 72, 'total_tokens': 1237}
+Usage: {'prompt_tokens': 1159, 'completion_tokens': 72, 'total_tokens': 1231}
+Usage: {'prompt_tokens': 1159, 'completion_tokens': 70, 'total_tokens': 1229}
+Usage: {'prompt_tokens': 1163, 'completion_tokens': 74, 'total_tokens': 1237}
+Usage: {'prompt_tokens': 1159, 'completion_tokens': 70, 'total_tokens': 1229}
+Usage: {'prompt_tokens': 1159, 'completion_tokens': 69, 'total_tokens': 1228}
+Usage: {'prompt_tokens': 1165, 'completion_tokens': 72, 'total_tokens': 1237}
+Usage: {'prompt_tokens': 1161, 'completion_tokens': 73, 'total_tokens': 1234}
+Usage: {'prompt_tokens': 1161, 'completion_tokens': 71, 'total_tokens': 1232}
+Usage: {'prompt_tokens': 1161, 'completion_tokens': 71, 'total_tokens': 1232}
+total_score:13, full_score:13, accuracy:1.0
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+ 
+LEN(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+    ++++++ Raw output: {"010ce2f9-278a-4104-a5fd-cb424bf248f1": "fd956936-3d44-4567-8066-341b51489641,385bc026-4da6-4fea-89e8-999e796d5a72"}
+    ++++++ Parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': 'fd956936-3d44-4567-8066-341b51489641,385bc026-4da6-4fea-89e8-999e796d5a72'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641,385bc026-4da6-4fea-89e8-999e796d5a72, Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: d0022f62-b56b-4204-a47f-ada9758ebf82, Real: d0022f62-b56b-4204-a47f-ada9758ebf82, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+ 
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1092, 'completion_tokens': 73, 'total_tokens': 1165}
+Usage: {'prompt_tokens': 1092, 'completion_tokens': 73, 'total_tokens': 1165}
+Usage: {'prompt_tokens': 1090, 'completion_tokens': 70, 'total_tokens': 1160}
+Usage: {'prompt_tokens': 1096, 'completion_tokens': 72, 'total_tokens': 1168}
+Usage: {'prompt_tokens': 1090, 'completion_tokens': 106, 'total_tokens': 1196}
+Usage: {'prompt_tokens': 1090, 'completion_tokens': 70, 'total_tokens': 1160}
+Usage: {'prompt_tokens': 1094, 'completion_tokens': 74, 'total_tokens': 1168}
+Usage: {'prompt_tokens': 1090, 'completion_tokens': 70, 'total_tokens': 1160}
+Usage: {'prompt_tokens': 1090, 'completion_tokens': 69, 'total_tokens': 1159}
+Usage: {'prompt_tokens': 1096, 'completion_tokens': 72, 'total_tokens': 1168}
+Usage: {'prompt_tokens': 1092, 'completion_tokens': 73, 'total_tokens': 1165}
+Usage: {'prompt_tokens': 1092, 'completion_tokens': 71, 'total_tokens': 1163}
+Usage: {'prompt_tokens': 1092, 'completion_tokens': 71, 'total_tokens': 1163}
+Total_score:12, Full_score:13, Accuracy:0.9230769230769231
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "5a72edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "1360edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "262cedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "48f1edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "48f1edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3e12edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "10b3edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "10b3edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "9641edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "9f28edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "bf82edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "bf82edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+    ++++++ Raw output: {"010ce2f9-278a-4104-a5fd-cb424bf248f1": ["fd956936-3d44-4567-8066-341b51489641", "385bc026-4da6-4fea-89e8-999e796d5a72"]}
+    ++++++ Parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72']}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72'], Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: d0022f62-b56b-4204-a47f-ada9758ebf82, Real: d0022f62-b56b-4204-a47f-ada9758ebf82, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+    ++++++ Raw output: {"fd956936-3d44-4567-8066-341b51489641": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"}
+    ++++++ Parsed answer:{'fd956936-3d44-4567-8066-341b51489641': '42ff35c9-eb6a-4493-bfc0-2c66f3689f28'}
+    ++++++ Expected:eee6a39e-e6f3-43f7-acc9-975d7bb41360
+    ++++++ Got Score:0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 0
+    ++++++ Raw output: {"42ff35c9-eb6a-4493-bfc0-2c66f3689f28": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}
+    ++++++ Parsed answer:{'42ff35c9-eb6a-4493-bfc0-2c66f3689f28': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1142, 'completion_tokens': 73, 'total_tokens': 1215}
+Usage: {'prompt_tokens': 1142, 'completion_tokens': 73, 'total_tokens': 1215}
+Usage: {'prompt_tokens': 1140, 'completion_tokens': 70, 'total_tokens': 1210}
+Usage: {'prompt_tokens': 1146, 'completion_tokens': 72, 'total_tokens': 1218}
+Usage: {'prompt_tokens': 1140, 'completion_tokens': 108, 'total_tokens': 1248}
+Usage: {'prompt_tokens': 1140, 'completion_tokens': 70, 'total_tokens': 1210}
+Usage: {'prompt_tokens': 1144, 'completion_tokens': 74, 'total_tokens': 1218}
+Usage: {'prompt_tokens': 1140, 'completion_tokens': 70, 'total_tokens': 1210}
+Usage: {'prompt_tokens': 1140, 'completion_tokens': 69, 'total_tokens': 1209}
+Usage: {'prompt_tokens': 1146, 'completion_tokens': 73, 'total_tokens': 1219}
+Usage: {'prompt_tokens': 1142, 'completion_tokens': 70, 'total_tokens': 1212}
+Usage: {'prompt_tokens': 1142, 'completion_tokens': 71, 'total_tokens': 1213}
+Usage: {'prompt_tokens': 1142, 'completion_tokens': 71, 'total_tokens': 1213}
+Total_score:10, Full_score:13, Accuracy:0.7692307692307693
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd9
+LEN(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bc026-4da6-4fea-89e8-999e796d5a72edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6a39e-e6f3-43f7-acc9-975d7bb41360edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b91299-f0e2-491c-8f1f-05dfb8a7262cedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010ce2f9-278a-4104-a5fd-cb424bf248f1edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010ce2f9-278a-4104-a5fd-cb424bf248f1edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53e08a-6edb-4f82-80d2-9c46b3de3e12edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fa540-6578-4573-a489-6aff13be10b3edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fa540-6578-4573-a489-6aff13be10b3edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "fd956936-3d44-4567-8066-341b51489641edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ff35c9-eb6a-4493-bfc0-2c66f3689f28edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d0022f62-b56b-4204-a47f-ada9758ebf82edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d0022f62-b56b-4204-a47f-ada9758ebf82edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: d0022f62-b56b-4204-a47f-ada9758ebf82, Real: d0022f62-b56b-4204-a47f-ada9758ebf82, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd9
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1521, 'completion_tokens': 73, 'total_tokens': 1594}
+Usage: {'prompt_tokens': 1521, 'completion_tokens': 73, 'total_tokens': 1594}
+Usage: {'prompt_tokens': 1519, 'completion_tokens': 70, 'total_tokens': 1589}
+Usage: {'prompt_tokens': 1525, 'completion_tokens': 72, 'total_tokens': 1597}
+Usage: {'prompt_tokens': 1519, 'completion_tokens': 72, 'total_tokens': 1591}
+Usage: {'prompt_tokens': 1519, 'completion_tokens': 70, 'total_tokens': 1589}
+Usage: {'prompt_tokens': 1523, 'completion_tokens': 74, 'total_tokens': 1597}
+Usage: {'prompt_tokens': 1519, 'completion_tokens': 70, 'total_tokens': 1589}
+Usage: {'prompt_tokens': 1519, 'completion_tokens': 69, 'total_tokens': 1588}
+Usage: {'prompt_tokens': 1525, 'completion_tokens': 72, 'total_tokens': 1597}
+Usage: {'prompt_tokens': 1521, 'completion_tokens': 73, 'total_tokens': 1594}
+Usage: {'prompt_tokens': 1521, 'completion_tokens': 71, 'total_tokens': 1592}
+Usage: {'prompt_tokens': 1521, 'completion_tokens': 71, 'total_tokens': 1592}
+Total_score:13, Full_score:13, Accuracy:1.0
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "urqqedge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "urqqedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "gwsyedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "umvxedge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "dkekedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "qlgbedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "qlgbedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "taopedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "xnbuedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "xnbuedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "plkuedge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "qspoedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "nuvhedge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "nuvhedge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+    ++++++ Raw output: {"010ce2f9-278a-4104-a5fd-cb424bf248f1": ["fd956936-3d44-4567-8066-341b51489641", "385bc026-4da6-4fea-89e8-999e796d5a72"]}
+    ++++++ Parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72']}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72'], Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: d0022f62-b56b-4204-a47f-ada9758ebf82, Real: d0022f62-b56b-4204-a47f-ada9758ebf82, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+    ++++++ Raw output: {"fd956936-3d44-4567-8066-341b51489641": "plkuedge_0: eee6a39e-e6f3-43f7-acc9-975d7bb41360"}
+    ++++++ Parsed answer:{'fd956936-3d44-4567-8066-341b51489641': 'plkuedge_0: eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:eee6a39e-e6f3-43f7-acc9-975d7bb41360
+    ++++++ Got Score:0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: plkuedge_0: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "urqqedge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 73, 'total_tokens': 1202}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 73, 'total_tokens': 1202}
+Usage: {'prompt_tokens': 1127, 'completion_tokens': 70, 'total_tokens': 1197}
+Usage: {'prompt_tokens': 1133, 'completion_tokens': 72, 'total_tokens': 1205}
+Usage: {'prompt_tokens': 1127, 'completion_tokens': 108, 'total_tokens': 1235}
+Usage: {'prompt_tokens': 1127, 'completion_tokens': 70, 'total_tokens': 1197}
+Usage: {'prompt_tokens': 1131, 'completion_tokens': 74, 'total_tokens': 1205}
+Usage: {'prompt_tokens': 1127, 'completion_tokens': 70, 'total_tokens': 1197}
+Usage: {'prompt_tokens': 1127, 'completion_tokens': 69, 'total_tokens': 1196}
+Usage: {'prompt_tokens': 1133, 'completion_tokens': 79, 'total_tokens': 1212}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 73, 'total_tokens': 1202}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 71, 'total_tokens': 1200}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 71, 'total_tokens': 1200}
+Total_score:11, Full_score:13, Accuracy:0.8461538461538461
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+LEN(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "<edge_0>": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "<edge_0>": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "<edge_0>": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641",
+    "<edge_1>": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "<edge_0>": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "<edge_0>": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "<edge_1>": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "<edge_0>": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "<edge_0>": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "<edge_1>": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+    ++++++ Raw output: {"010ce2f9-278a-4104-a5fd-cb424bf248f1": ["fd956936-3d44-4567-8066-341b51489641", "385bc026-4da6-4fea-89e8-999e796d5a72"]}
+    ++++++ Parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72']}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: ['fd956936-3d44-4567-8066-341b51489641', '385bc026-4da6-4fea-89e8-999e796d5a72'], Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: d0022f62-b56b-4204-a47f-ada9758ebf82, Real: d0022f62-b56b-4204-a47f-ada9758ebf82, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: ['eee6a39e-e6f3-43f7-acc9-975d7bb41360'], Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1105, 'completion_tokens': 73, 'total_tokens': 1178}
+Usage: {'prompt_tokens': 1105, 'completion_tokens': 73, 'total_tokens': 1178}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 70, 'total_tokens': 1173}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 72, 'total_tokens': 1181}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 108, 'total_tokens': 1211}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 70, 'total_tokens': 1173}
+Usage: {'prompt_tokens': 1107, 'completion_tokens': 74, 'total_tokens': 1181}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 70, 'total_tokens': 1173}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 69, 'total_tokens': 1172}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 73, 'total_tokens': 1182}
+Usage: {'prompt_tokens': 1105, 'completion_tokens': 73, 'total_tokens': 1178}
+Usage: {'prompt_tokens': 1105, 'completion_tokens': 71, 'total_tokens': 1176}
+Usage: {'prompt_tokens': 1105, 'completion_tokens': 71, 'total_tokens': 1176}
+Total_score:12, Full_score:13, Accuracy:0.9230769230769231
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b9edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010cedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010cedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "fd95edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ffedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d002edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d002edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: d0022f62-b56b-4204-a47f-ada9758ebf82, Real: d0022f62-b56b-4204-a47f-ada9758ebf82, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1141, 'completion_tokens': 73, 'total_tokens': 1214}
+Usage: {'prompt_tokens': 1141, 'completion_tokens': 73, 'total_tokens': 1214}
+Usage: {'prompt_tokens': 1139, 'completion_tokens': 70, 'total_tokens': 1209}
+Usage: {'prompt_tokens': 1145, 'completion_tokens': 72, 'total_tokens': 1217}
+Usage: {'prompt_tokens': 1139, 'completion_tokens': 72, 'total_tokens': 1211}
+Usage: {'prompt_tokens': 1139, 'completion_tokens': 70, 'total_tokens': 1209}
+Usage: {'prompt_tokens': 1143, 'completion_tokens': 74, 'total_tokens': 1217}
+Usage: {'prompt_tokens': 1139, 'completion_tokens': 70, 'total_tokens': 1209}
+Usage: {'prompt_tokens': 1139, 'completion_tokens': 69, 'total_tokens': 1208}
+Usage: {'prompt_tokens': 1145, 'completion_tokens': 72, 'total_tokens': 1217}
+Usage: {'prompt_tokens': 1141, 'completion_tokens': 73, 'total_tokens': 1214}
+Usage: {'prompt_tokens': 1141, 'completion_tokens': 71, 'total_tokens': 1212}
+Usage: {'prompt_tokens': 1141, 'completion_tokens': 71, 'total_tokens': 1212}
+Total_score:13, Full_score:13, Accuracy:1.0
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5
+LEN(raw_json_graph)=10
+
+{
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "<key>=385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "<key>=eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "<key>=a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b9edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "<key>=010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010cedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010cedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "<key>=3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "<key>=9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "<key>=fd956936-3d44-4567-8066-341b51489641": {
+    "fd95edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "<key>=42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ffedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "<key>=d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d002edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d002edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+
+Please extract the $FINAL_VALUE for "83c1fd75-b258-478b-a461-712bc5fcb5d2" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"83c1fd75-b258-478b-a461-712bc5fcb5d2": $FINAL_VALUE}.
+    
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: d0022f62-b56b-4204-a47f-ada9758ebf82, Real: d0022f62-b56b-4204-a47f-ada9758ebf82, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1161, 'completion_tokens': 73, 'total_tokens': 1234}
+Usage: {'prompt_tokens': 1161, 'completion_tokens': 73, 'total_tokens': 1234}
+Usage: {'prompt_tokens': 1159, 'completion_tokens': 70, 'total_tokens': 1229}
+Usage: {'prompt_tokens': 1165, 'completion_tokens': 72, 'total_tokens': 1237}
+Usage: {'prompt_tokens': 1159, 'completion_tokens': 72, 'total_tokens': 1231}
+Usage: {'prompt_tokens': 1159, 'completion_tokens': 70, 'total_tokens': 1229}
+Usage: {'prompt_tokens': 1163, 'completion_tokens': 74, 'total_tokens': 1237}
+Usage: {'prompt_tokens': 1159, 'completion_tokens': 70, 'total_tokens': 1229}
+Usage: {'prompt_tokens': 1159, 'completion_tokens': 69, 'total_tokens': 1228}
+Usage: {'prompt_tokens': 1165, 'completion_tokens': 72, 'total_tokens': 1237}
+Usage: {'prompt_tokens': 1161, 'completion_tokens': 73, 'total_tokens': 1234}
+Usage: {'prompt_tokens': 1161, 'completion_tokens': 71, 'total_tokens': 1232}
+Usage: {'prompt_tokens': 1161, 'completion_tokens': 71, 'total_tokens': 1232}
+Total_score:13, Full_score:13, Accuracy:1.0
+
+
+
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n10_p20, baseline, shot_num=0, query_hop_num=1
+Total failed_num=1, wrong_edge_problem=0, possibly_not_found=0, total_score=12, full_score=13
+Summary Token Usage: {'prompt_tokens': 9375, 'completion_tokens': 587, 'total_tokens': 9962}
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n10_p20, node_id[-4:]+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=3, wrong_edge_problem=0, possibly_not_found=0, total_score=10, full_score=13
+Summary Token Usage: {'prompt_tokens': 1142, 'completion_tokens': 74, 'total_tokens': 1216}
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n10_p20, node_id+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=2, wrong_edge_problem=0, possibly_not_found=0, total_score=11, full_score=13
+Summary Token Usage: {'prompt_tokens': 1129, 'completion_tokens': 74, 'total_tokens': 1203}
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n10_p20, randomStr+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=1, wrong_edge_problem=0, possibly_not_found=0, total_score=12, full_score=13
+Summary Token Usage: {'prompt_tokens': 850, 'completion_tokens': 57, 'total_tokens': 907}
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n10_p20, <edge_id>, shot_num=0, query_hop_num=1
+Total failed_num=0, wrong_edge_problem=0, possibly_not_found=0, total_score=13, full_score=13
+Summary Token Usage: {'prompt_tokens': 1161, 'completion_tokens': 71, 'total_tokens': 1232}

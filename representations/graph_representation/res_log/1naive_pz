@@ -1,0 +1,55 @@
+Available models:  [LLAMA3, LLAMA3_1_70B, MIXTRAL]
+HTTP Request: GET https://api.gradio.app/gradio-messaging/en "HTTP/1.1 200 OK"
+Error parsing LLM answer: Expecting value: line 2 column 15 (char 16)
+Error parsing LLM answer: Expecting value: line 2 column 18 (char 19)
+Error parsing LLM answer: Expecting value: line 2 column 13 (char 14)
+LOGICAL PLANS: 1
+INITIAL PLANS: 3
+/Users/chjun/anaconda3/lib/python3.11/site-packages/palimpzest/execution/cost_estimator.py:229: UserWarning: Unable to sort modes: '<' not supported between instances of 'dict' and 'dict'
+  all_models_most_common_answer = record_df.answer.mode()
+/Users/chjun/anaconda3/lib/python3.11/site-packages/palimpzest/execution/cost_estimator.py:229: UserWarning: Unable to sort modes: '<' not supported between instances of 'dict' and 'dict'
+  all_models_most_common_answer = record_df.answer.mode()
+DEDUP PLANS: 2
+PARETO PLANS: 1
+Available models:  [LLAMA3, LLAMA3_1_70B, MIXTRAL]
+LOGICAL PLANS: 1
+INITIAL PLANS: 3
+/Users/chjun/anaconda3/lib/python3.11/site-packages/palimpzest/execution/cost_estimator.py:229: UserWarning: Unable to sort modes: '<' not supported between instances of 'dict' and 'dict'
+  all_models_most_common_answer = record_df.answer.mode()
+DEDUP PLANS: 2
+PARETO PLANS: 1
+Error parsing LLM answer: Expecting value: line 2 column 18 (char 19)
+filename /Users/chjun/Documents/GitHub/code/palimpzest/experiments/testdata/movie_business_report.txt
+budget 5000000
+genre Action
+global_gross {'$numberInt': '1205466151'}
+name The Shawshank Redemption
+releaseYear 2010
+score 7.4
+user_reviews The movie has received mixed reviews from users, with an overall score that reflects this. Some users have praised the movie for its unique storyline and strong performances, while others have criticized it for its pacing and lack of character development.
+filename /Users/chjun/Documents/GitHub/code/palimpzest/experiments/testdata/movie_business_report.txt
+budget 5000000
+genre Sci-Fi
+global_gross {'$numberInt': '1205466151'}
+name The Dark Knight
+releaseYear 2010
+score 7.4
+user_reviews The movie has received mixed reviews from users. While some have praised its unique storyline and impressive visuals, others have criticized its slow pace and lack of character development. The overall score of the movie reflects this mixed reception.
+=====================================
+filename /Users/chjun/Documents/GitHub/code/palimpzest/experiments/testdata/movie_reviews.txt
+budget $50,000,000
+genre Action
+global_gross 1,836,611,118
+name The Shawshank Redemption
+releaseYear 2010
+score 7.4
+user_reviews The movie has generally positive reviews, with users praising its engaging plot and strong performances. However, some users have criticized the pacing and lack of character development. The movie's score reflects this mixed reception.
+filename /Users/chjun/Documents/GitHub/code/palimpzest/experiments/testdata/movie_reviews.txt
+budget $50,000,000
+genre Action
+global_gross 1,836,631,212
+name The Shawshank Redemption
+releaseYear []
+score 7.4
+user_reviews The movie has received mixed reviews from users, with an overall score that reflects the mixed opinions.
+

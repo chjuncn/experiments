@@ -1,0 +1,1326 @@
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+ 
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"a1b91299-f0e2-491c-8f1f-05dfb8a7262c": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}.
+    ++++++ Parsed answer:{'a1b91299-f0e2-491c-8f1f-05dfb8a7262c': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"010ce2f9-278a-4104-a5fd-cb424bf248f1": "fd956936-3d44-4567-8066-341b51489641"}.
+    ++++++ Parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': 'fd956936-3d44-4567-8066-341b51489641'}
+    ++++++ Expected:eee6a39e-e6f3-43f7-acc9-975d7bb41360
+    ++++++ Got Score:0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: fd956936-3d44-4567-8066-341b51489641, Score: 0
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:385bc026-4da6-4fea-89e8-999e796d5a72
+    ++++++ Got Score:0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "385bc026-4da6-4fea-89e8-999e796d5a72"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': '385bc026-4da6-4fea-89e8-999e796d5a72'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "385bc026-4da6-4fea-89e8-999e796d5a72"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': '385bc026-4da6-4fea-89e8-999e796d5a72'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"fd956936-3d44-4567-8066-341b51489641": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'fd956936-3d44-4567-8066-341b51489641': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"d0022f62-b56b-4204-a47f-ada9758ebf82": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}. 
+
+Here's the step-by-step process:
+1. Extract the value for "d0022f62-b56b-4204-a47f-ada9758ebf82" from the given dictionary D, the value is dic_value_1={
+    "edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+}.
+2. Extract the value for edge "edge_1" from dic_value_1, the value is "42ff35c9-eb6a-4493-bfc0-2c66f3689f28".
+3. Extract the value for "42ff35c9-eb6a-4493-bfc0-2c66f3689f28" from D, the value is dic_value_2={
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+}.
+4. Extract the value for edge "edge_0" from dic_value_2, the value is "fd956936-3d44-4567-8066-341b51489641".
+5. Extract the value for "fd956936-3d44-4567-8066-341b51489641" from D, the value is dic_value_3={
+    "edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+}.
+6. Extract the value for edge "edge_0" from dic_value_3, the value is "eee6a39e-e6f3-43f7-acc9-975d7bb41360".
+7. Extract the value for "eee6a39e-e6f3-43f7-acc9-975d7bb41360" from D, the value is dic_value_4={
+    "edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+}.
+8. Extract the value for edge "edge_0" from dic_value_4, the value is "42ff35c9-eb6a-4493-bfc0-2c66f3689f28".
+9. Extract the value for "42ff35c9-eb6a-4493-bfc0-2c66f3689f28" from D, the value is dic_value_5={
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+}.
+10. Extract the value for edge "edge_0" from dic_value_5, the value is "fd956936-3d44-4567-8066-341b51489641".
+11. Extract the value for "fd956936-3d44-4567-8066-341b51489641" from D, the value is dic_value_6={
+    "edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360",
+    "edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+}.
+12. Extract the value for edge "edge_1" from dic_value_6, the value is "385bc026-4da6-4fea-89e8-999e796d5a72".
+13. Extract the value for "385bc026-4da6-4fea-89e8-999e796d5a72" from D, the value is dic_value_7={
+    "edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+}.
+14. Extract the value for edge "edge_0" from dic_value_7, the value is "a1b91299-f0e2-491c-8f1f-05dfb8a7262c".
+15. Extract the value for "a1b91299-f0e2-491c-8f1f-05dfb8a7262c" from D, the value is dic_value_8={
+    "edge_0
+    ++++++ Parsed answer:{'edge_0': 'a1b91299-f0e2-491c-8f1f-05dfb8a7262c'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 0
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+ 
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1075, 'completion_tokens': 57, 'total_tokens': 1132}
+Usage: {'prompt_tokens': 1076, 'completion_tokens': 56, 'total_tokens': 1132}
+Usage: {'prompt_tokens': 1077, 'completion_tokens': 55, 'total_tokens': 1132}
+Usage: {'prompt_tokens': 1080, 'completion_tokens': 60, 'total_tokens': 1140}
+Usage: {'prompt_tokens': 1080, 'completion_tokens': 321, 'total_tokens': 1401}
+Usage: {'prompt_tokens': 1075, 'completion_tokens': 53, 'total_tokens': 1128}
+Usage: {'prompt_tokens': 1075, 'completion_tokens': 326, 'total_tokens': 1401}
+Usage: {'prompt_tokens': 1081, 'completion_tokens': 61, 'total_tokens': 1142}
+Usage: {'prompt_tokens': 1075, 'completion_tokens': 57, 'total_tokens': 1132}
+Usage: {'prompt_tokens': 1075, 'completion_tokens': 56, 'total_tokens': 1131}
+Usage: {'prompt_tokens': 1075, 'completion_tokens': 56, 'total_tokens': 1131}
+Usage: {'prompt_tokens': 1075, 'completion_tokens': 56, 'total_tokens': 1131}
+Usage: {'prompt_tokens': 1073, 'completion_tokens': 55, 'total_tokens': 1128}
+Usage: {'prompt_tokens': 1078, 'completion_tokens': 60, 'total_tokens': 1138}
+Usage: {'prompt_tokens': 1075, 'completion_tokens': 331, 'total_tokens': 1406}
+Usage: {'prompt_tokens': 1075, 'completion_tokens': 1000, 'total_tokens': 2075}
+Total_score:9, Full_score:16, Accuracy:0.5625
+
+
+
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "5a72edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "1360edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "262cedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "48f1edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "48f1edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3e12edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "10b3edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "10b3edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "9641edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "9f28edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "bf82edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "bf82edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"010ce2f9-278a-4104-a5fd-cb424bf248f1": "fd956936-3d44-4567-8066-341b51489641"}.
+    ++++++ Parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': 'fd956936-3d44-4567-8066-341b51489641'}
+    ++++++ Expected:eee6a39e-e6f3-43f7-acc9-975d7bb41360
+    ++++++ Got Score:0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: fd956936-3d44-4567-8066-341b51489641, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"010ce2f9-278a-4104-a5fd-cb424bf248f1": "385bc026-4da6-4fea-89e8-999e796d5a72"}.
+    ++++++ Parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': '385bc026-4da6-4fea-89e8-999e796d5a72'}
+    ++++++ Expected:a1b91299-f0e2-491c-8f1f-05dfb8a7262c
+    ++++++ Got Score:0
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 0
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:385bc026-4da6-4fea-89e8-999e796d5a72
+    ++++++ Got Score:0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "385bc026-4da6-4fea-89e8-999e796d5a72"}. 
+
+Here's the step-by-step process:
+
+1. Extract the value for "9e0fa540-6578-4573-a489-6aff13be10b3", which is dic_value_1 = {
+    "10b3edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "10b3edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+}.
+
+2. Extract the value for edge "edge_0" from dic_value_1, which is "d0022f62-b56b-4204-a47f-ada9758ebf82".
+
+3. Extract the value for "d0022f62-b56b-4204-a47f-ada9758ebf82" from the DataSource, which is dic_value_2 = {
+    "bf82edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "bf82edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+}.
+
+4. Extract the value for edge "edge_1" from dic_value_2, which is not present. However, we can see that the value for "edge_0" is "385bc026-4da6-4fea-89e8-999e796d5a72", which is the final answer.
+    ++++++ Parsed answer:{'bf82edge_0': '385bc026-4da6-4fea-89e8-999e796d5a72', 'bf82edge_1': '42ff35c9-eb6a-4493-bfc0-2c66f3689f28'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: [], Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"}. 
+
+Here's the step-by-step process:
+1. Extract the value for "9e0fa540-6578-4573-a489-6aff13be10b3", which is dic_value_1 = {
+    "10b3edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "10b3edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+}.
+2. Extract the value for edge "edge_1" from dic_value_1, which is "010ce2f9-278a-4104-a5fd-cb424bf248f1".
+3. Extract the value for "010ce2f9-278a-4104-a5fd-cb424bf248f1" from the DataSource, which is dic_value_2 = {
+    "48f1edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "48f1edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+}.
+4. Extract the value for edge "edge_0" from dic_value_2, which is "fd956936-3d44-4567-8066-341b51489641".
+5. However, the problem statement asks for the final value, which is not "fd956936-3d44-4567-8066-341b51489641". 
+6. Go back to dic_value_2 and extract the value for edge "edge_1" from dic_value_2, which is "385bc026-4da6-4fea-89e8-999e796d5a72".
+7. Extract the value for "385bc026-4da6-4fea-89e8-999e796d5a72" from the DataSource, which is dic_value_3 = {
+    "5a72edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+}.
+8. Extract the value for edge "edge_0" from dic_value_3, which is "a1b91299-f0e2-491c-8f1f-05dfb8a7262c".
+9. The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': 'a1b91299-f0e2-491c-8f1f-05dfb8a7262c'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"fd956936-3d44-4567-8066-341b51489641": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'fd956936-3d44-4567-8066-341b51489641': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"d0022f62-b56b-4204-a47f-ada9758ebf82": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}. 
+
+Here's the step-by-step process:
+
+1. Extract the value for "d0022f62-b56b-4204-a47f-ada9758ebf82" from the given dictionary D, the value is dic_value_1={
+    "bf82edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "bf82edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+}, then extract value for edge "edge_0" from dic_value_1, the value is "385bc026-4da6-4fea-89e8-999e796d5a72".
+
+2. Extract the value for "385bc026-4da6-4fea-89e8-999e796d5a72" from D, the value is dic_value_2={
+    "5a72edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+}, then extract value for edge "edge_0" from dic_value_2, the value is "a1b91299-f0e2-491c-8f1f-05dfb8a7262c".
+
+3. Extract the value for "a1b91299-f0e2-491c-8f1f-05dfb8a7262c" from D, the value is dic_value_3={
+    "262cedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+}, then extract value for edge "edge_0" from dic_value_3, the value is "010ce2f9-278a-4104-a5fd-cb424bf248f1".
+
+4. Extract the value for "010ce2f9-278a-4104-a5fd-cb424bf248f1" from D, the value is dic_value_4={
+    "48f1edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "48f1edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+}, then extract value for edge "edge_0" from dic_value_4, the value is "fd956936-3d44-4567-8066-341b51489641".
+
+5. Extract the value for "fd956936-3d44-4567-8066-341b51489641" from D, the value is dic_value_5={
+    "9641edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+}, then extract value for edge "edge_0" from dic_value_5, the value is "eee6a39e-e6f3-43f7-acc9-975d7bb41360". 
+
+So the final answer is {"d0022f62-b56b-4204-a47f-ada9758ebf82": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'d0022f62-b56b-4204-a47f-ada9758ebf82': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:a1b91299-f0e2-491c-8f1f-05dfb8a7262c
+    ++++++ Got Score:0
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"d0022f62-b56b-4204-a47f-ada9758ebf82": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"}. 
+
+Here's the step-by-step process:
+1. Extract the value for "d0022f62-b56b-4204-a47f-ada9758ebf82", which is dic_value_1 = {
+    "bf82edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "bf82edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+}.
+2. Extract the value for edge "edge_1" from dic_value_1, which is "42ff35c9-eb6a-4493-bfc0-2c66f3689f28".
+3. Extract the value for "42ff35c9-eb6a-4493-bfc0-2c66f3689f28" from the DataSource, which is dic_value_2 = {
+    "9f28edge_0": "fd956936-3d44-4567-8066-341b51489641"
+}.
+4. Extract the value for edge "edge_0" from dic_value_2, which is "fd956936-3d44-4567-8066-341b51489641".
+5. Extract the value for "fd956936-3d44-4567-8066-341b51489641" from the DataSource, which is dic_value_3 = {
+    "9641edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+}.
+6. Extract the value for edge "edge_0" from dic_value_3, which is "eee6a39e-e6f3-43f7-acc9-975d7bb41360".
+7. Extract the value for "eee6a39e-e6f3-43f7-acc9-975d7bb41360" from the DataSource, which is dic_value_4 = {
+    "1360edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+}.
+8. Extract the value for edge "edge_0" from dic_value_4, which is "42ff35c9-eb6a-4493-bfc0-2c66f3689f28".
+9. Extract the value for "42ff35c9-eb6a-4493-bfc0-2c66f3689f28" from the DataSource, which is dic_value_5 = {
+    "9f28edge_0": "fd956936-3d44-4567-8066-341b51489641"
+}.
+10. Extract the value for edge "edge_0" from dic_value_5, which is "fd956936-3d44-4567-8066-341b51489641".
+11. Extract the value for "fd956936-3d44-4567-8066-341b51489641" from the DataSource, which is dic_value_6 = {
+    "9641edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+}.
+12. Extract the value for edge "edge_0" from dic_value_6, which is "eee6a39e-e6f3-43f7-acc9-975d7bb41360".
+13. Extract the value for "eee6a39e-e6f3-43f7-acc9-975d7bb41360" from the DataSource, which is dic_value_7 = {
+    "1360edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+}.
+14. Extract the value for edge "edge_0" from dic_value_7, which is "42ff35c9-eb6a-4493-bfc0-2c66f3689f28".
+15. Extract the value for "42ff35c9-eb6a-4493-bfc0-2c66f3689f28" from the DataSource, which is dic_value_8 = {
+    "9f28edge_0": "fd956936-3d44-4567-806
+    ++++++ Parsed answer:{'1360edge_0': '42ff35c9-eb6a-4493-bfc0-2c66f3689f28'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1110, 'completion_tokens': 57, 'total_tokens': 1167}
+Usage: {'prompt_tokens': 1111, 'completion_tokens': 56, 'total_tokens': 1167}
+Usage: {'prompt_tokens': 1112, 'completion_tokens': 55, 'total_tokens': 1167}
+Usage: {'prompt_tokens': 1115, 'completion_tokens': 323, 'total_tokens': 1438}
+Usage: {'prompt_tokens': 1115, 'completion_tokens': 329, 'total_tokens': 1444}
+Usage: {'prompt_tokens': 1110, 'completion_tokens': 53, 'total_tokens': 1163}
+Usage: {'prompt_tokens': 1110, 'completion_tokens': 56, 'total_tokens': 1166}
+Usage: {'prompt_tokens': 1116, 'completion_tokens': 61, 'total_tokens': 1177}
+Usage: {'prompt_tokens': 1110, 'completion_tokens': 57, 'total_tokens': 1167}
+Usage: {'prompt_tokens': 1110, 'completion_tokens': 388, 'total_tokens': 1498}
+Usage: {'prompt_tokens': 1110, 'completion_tokens': 636, 'total_tokens': 1746}
+Usage: {'prompt_tokens': 1110, 'completion_tokens': 415, 'total_tokens': 1525}
+Usage: {'prompt_tokens': 1108, 'completion_tokens': 55, 'total_tokens': 1163}
+Usage: {'prompt_tokens': 1113, 'completion_tokens': 292, 'total_tokens': 1405}
+Usage: {'prompt_tokens': 1110, 'completion_tokens': 779, 'total_tokens': 1889}
+Usage: {'prompt_tokens': 1110, 'completion_tokens': 1000, 'total_tokens': 2110}
+Total_score:8, Full_score:16, Accuracy:0.5
+
+
+
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd9
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bc026-4da6-4fea-89e8-999e796d5a72edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6a39e-e6f3-43f7-acc9-975d7bb41360edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b91299-f0e2-491c-8f1f-05dfb8a7262cedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010ce2f9-278a-4104-a5fd-cb424bf248f1edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010ce2f9-278a-4104-a5fd-cb424bf248f1edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53e08a-6edb-4f82-80d2-9c46b3de3e12edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fa540-6578-4573-a489-6aff13be10b3edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fa540-6578-4573-a489-6aff13be10b3edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "fd956936-3d44-4567-8066-341b51489641edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ff35c9-eb6a-4493-bfc0-2c66f3689f28edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d0022f62-b56b-4204-a47f-ada9758ebf82edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d0022f62-b56b-4204-a47f-ada9758ebf82edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"a1b91299-f0e2-491c-8f1f-05dfb8a7262c": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}.
+    ++++++ Parsed answer:{'a1b91299-f0e2-491c-8f1f-05dfb8a7262c': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"010ce2f9-278a-4104-a5fd-cb424bf248f1": "fd956936-3d44-4567-8066-341b51489641"}.
+    ++++++ Parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': 'fd956936-3d44-4567-8066-341b51489641'}
+    ++++++ Expected:eee6a39e-e6f3-43f7-acc9-975d7bb41360
+    ++++++ Got Score:0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: fd956936-3d44-4567-8066-341b51489641, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"010ce2f9-278a-4104-a5fd-cb424bf248f1": "385bc026-4da6-4fea-89e8-999e796d5a72"}.
+    ++++++ Parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': '385bc026-4da6-4fea-89e8-999e796d5a72'}
+    ++++++ Expected:a1b91299-f0e2-491c-8f1f-05dfb8a7262c
+    ++++++ Got Score:0
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 0
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "385bc026-4da6-4fea-89e8-999e796d5a72"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': '385bc026-4da6-4fea-89e8-999e796d5a72'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}. 
+
+Here's the step-by-step process:
+1. Extract the value for "9e0fa540-6578-4573-a489-6aff13be10b3" from the given dictionary D, the value is dic_value_1={
+    "9e0fa540-6578-4573-a489-6aff13be10b3edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fa540-6578-4573-a489-6aff13be10b3edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+}.
+2. Extract the value for edge "edge_1" from dic_value_1, the value is "010ce2f9-278a-4104-a5fd-cb424bf248f1".
+3. Since there's no further edge to traverse, the final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"fd956936-3d44-4567-8066-341b51489641": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'fd956936-3d44-4567-8066-341b51489641': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"42ff35c9-eb6a-4493-bfc0-2c66f3689f28": "fd956936-3d44-4567-8066-341b51489641"}.
+    ++++++ Parsed answer:{'42ff35c9-eb6a-4493-bfc0-2c66f3689f28': 'fd956936-3d44-4567-8066-341b51489641'}
+    ++++++ Expected:eee6a39e-e6f3-43f7-acc9-975d7bb41360
+    ++++++ Got Score:0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: fd956936-3d44-4567-8066-341b51489641, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"d0022f62-b56b-4204-a47f-ada9758ebf82": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}.
+    ++++++ Parsed answer:{'d0022f62-b56b-4204-a47f-ada9758ebf82': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    ++++++ Expected:a1b91299-f0e2-491c-8f1f-05dfb8a7262c
+    ++++++ Got Score:0
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"d0022f62-b56b-4204-a47f-ada9758ebf82": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}.
+    ++++++ Parsed answer:{'d0022f62-b56b-4204-a47f-ada9758ebf82': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 0
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd9
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1363, 'completion_tokens': 57, 'total_tokens': 1420}
+Usage: {'prompt_tokens': 1364, 'completion_tokens': 56, 'total_tokens': 1420}
+Usage: {'prompt_tokens': 1365, 'completion_tokens': 55, 'total_tokens': 1420}
+Usage: {'prompt_tokens': 1368, 'completion_tokens': 60, 'total_tokens': 1428}
+Usage: {'prompt_tokens': 1368, 'completion_tokens': 61, 'total_tokens': 1429}
+Usage: {'prompt_tokens': 1363, 'completion_tokens': 53, 'total_tokens': 1416}
+Usage: {'prompt_tokens': 1363, 'completion_tokens': 56, 'total_tokens': 1419}
+Usage: {'prompt_tokens': 1369, 'completion_tokens': 61, 'total_tokens': 1430}
+Usage: {'prompt_tokens': 1363, 'completion_tokens': 56, 'total_tokens': 1419}
+Usage: {'prompt_tokens': 1363, 'completion_tokens': 56, 'total_tokens': 1419}
+Usage: {'prompt_tokens': 1363, 'completion_tokens': 314, 'total_tokens': 1677}
+Usage: {'prompt_tokens': 1363, 'completion_tokens': 56, 'total_tokens': 1419}
+Usage: {'prompt_tokens': 1361, 'completion_tokens': 55, 'total_tokens': 1416}
+Usage: {'prompt_tokens': 1366, 'completion_tokens': 56, 'total_tokens': 1422}
+Usage: {'prompt_tokens': 1363, 'completion_tokens': 55, 'total_tokens': 1418}
+Usage: {'prompt_tokens': 1363, 'completion_tokens': 55, 'total_tokens': 1418}
+Total_score:7, Full_score:16, Accuracy:0.4375
+
+
+
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "fwlyedge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "fwlyedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "zygledge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "nvkledge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "tnwqedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "cabuedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "cabuedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "gfixedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "tmrxedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "tmrxedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "qjpmedge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "duzkedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "fbueedge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "fbueedge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"eee6a39e-e6f3-43f7-acc9-975d7bb41360": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}.
+    ++++++ Parsed answer:{'eee6a39e-e6f3-43f7-acc9-975d7bb41360': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"a1b91299-f0e2-491c-8f1f-05dfb8a7262c": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}.
+    ++++++ Parsed answer:{'a1b91299-f0e2-491c-8f1f-05dfb8a7262c': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"010ce2f9-278a-4104-a5fd-cb424bf248f1": "fd956936-3d44-4567-8066-341b51489641"}.
+    ++++++ Parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': 'fd956936-3d44-4567-8066-341b51489641'}
+    ++++++ Expected:eee6a39e-e6f3-43f7-acc9-975d7bb41360
+    ++++++ Got Score:0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: fd956936-3d44-4567-8066-341b51489641, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"010ce2f9-278a-4104-a5fd-cb424bf248f1": "385bc026-4da6-4fea-89e8-999e796d5a72"}.
+    ++++++ Parsed answer:{'010ce2f9-278a-4104-a5fd-cb424bf248f1': '385bc026-4da6-4fea-89e8-999e796d5a72'}
+    ++++++ Expected:a1b91299-f0e2-491c-8f1f-05dfb8a7262c
+    ++++++ Got Score:0
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 0
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:385bc026-4da6-4fea-89e8-999e796d5a72
+    ++++++ Got Score:0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "385bc026-4da6-4fea-89e8-999e796d5a72"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': '385bc026-4da6-4fea-89e8-999e796d5a72'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"fd956936-3d44-4567-8066-341b51489641": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'fd956936-3d44-4567-8066-341b51489641': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"d0022f62-b56b-4204-a47f-ada9758ebf82": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}. 
+
+Here's the step-by-step process:
+1. Extract the value for "d0022f62-b56b-4204-a47f-ada9758ebf82" from the given dictionary D, the value is dic_value_1={
+    "fbueedge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "fbueedge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+}.
+2. Extract the value for edge "edge_1" from dic_value_1, the value is "42ff35c9-eb6a-4493-bfc0-2c66f3689f28".
+3. Extract the value for "42ff35c9-eb6a-4493-bfc0-2c66f3689f28" from D, the value is dic_value_2={
+    "duzkedge_0": "fd956936-3d44-4567-8066-341b51489641"
+}.
+4. Extract the value for edge "edge_0" from dic_value_2, the value is "fd956936-3d44-4567-8066-341b51489641".
+5. Extract the value for "fd956936-3d44-4567-8066-341b51489641" from D, the value is dic_value_3={
+    "qjpmedge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+}.
+6. Extract the value for "eee6a39e-e6f3-43f7-acc9-975d7bb41360" from D, the value is dic_value_4={
+    "nvkledge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+}.
+7. Extract the value for "42ff35c9-eb6a-4493-bfc0-2c66f3689f28" from D, the value is dic_value_5={
+    "duzkedge_0": "fd956936-3d44-4567-8066-341b51489641"
+}.
+8. Extract the value for "fd956936-3d44-4567-8066-341b51489641" from D, the value is dic_value_6={
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+        "fwlyedge_0": "fd956936-3d44-4567-8066-341b51489641"
+    }
+}.
+9. Extract the value for "83c1fd75-b258-478b-a461-712bc5fcb5d2" from D, the value is dic_value_7={
+    "fwlyedge_0": "fd956936-3d44-4567-8066-341b51489641"
+}.
+10. Extract the value for "010ce2f9-278a-4104-a5fd-cb424bf248f1" from D, the value is dic_value_8={
+    "cabuedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "cabuedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+}.
+11. Extract the value for edge "edge_0" from dic_value_8, the value is "fd956936-3d44-4567-8066-341b51489641".
+12. Extract the value for "9e0fa540-6578-4573-a489-6aff13be10b3" from D, the value is dic_value_9={
+    "tmrxedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "tmrxedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+}.
+13. Extract the value for edge "edge_1" from dic_value_9, the value is "010ce2f9-278a
+    ++++++ Parsed answer:{'tmrxedge_0': 'd0022f62-b56b-4204-a47f-ada9758ebf82', 'tmrxedge_1': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "fwlyedge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 57, 'total_tokens': 1160}
+Usage: {'prompt_tokens': 1104, 'completion_tokens': 56, 'total_tokens': 1160}
+Usage: {'prompt_tokens': 1105, 'completion_tokens': 57, 'total_tokens': 1162}
+Usage: {'prompt_tokens': 1108, 'completion_tokens': 60, 'total_tokens': 1168}
+Usage: {'prompt_tokens': 1108, 'completion_tokens': 61, 'total_tokens': 1169}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 53, 'total_tokens': 1156}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 56, 'total_tokens': 1159}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 61, 'total_tokens': 1170}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 57, 'total_tokens': 1160}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 56, 'total_tokens': 1159}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 57, 'total_tokens': 1160}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 56, 'total_tokens': 1159}
+Usage: {'prompt_tokens': 1101, 'completion_tokens': 55, 'total_tokens': 1156}
+Usage: {'prompt_tokens': 1106, 'completion_tokens': 292, 'total_tokens': 1398}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 337, 'total_tokens': 1440}
+Usage: {'prompt_tokens': 1103, 'completion_tokens': 1000, 'total_tokens': 2103}
+Total_score:7, Full_score:16, Accuracy:0.4375
+
+
+
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "<edge_0>": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "<edge_0>": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "<edge_0>": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641",
+    "<edge_1>": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "<edge_0>": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "<edge_0>": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "<edge_1>": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "<edge_0>": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "<edge_0>": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "<edge_1>": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"385bc026-4da6-4fea-89e8-999e796d5a72": "fd956936-3d44-4567-8066-341b51489641"}.
+    ++++++ Parsed answer:{'385bc026-4da6-4fea-89e8-999e796d5a72': 'fd956936-3d44-4567-8066-341b51489641'}
+    ++++++ Expected:010ce2f9-278a-4104-a5fd-cb424bf248f1
+    ++++++ Got Score:0
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: fd956936-3d44-4567-8066-341b51489641, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"eee6a39e-e6f3-43f7-acc9-975d7bb41360": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'eee6a39e-e6f3-43f7-acc9-975d7bb41360': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"fd956936-3d44-4567-8066-341b51489641": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'fd956936-3d44-4567-8066-341b51489641': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1088, 'completion_tokens': 57, 'total_tokens': 1145}
+Usage: {'prompt_tokens': 1089, 'completion_tokens': 54, 'total_tokens': 1143}
+Usage: {'prompt_tokens': 1090, 'completion_tokens': 59, 'total_tokens': 1149}
+Usage: {'prompt_tokens': 1093, 'completion_tokens': 318, 'total_tokens': 1411}
+Usage: {'prompt_tokens': 1093, 'completion_tokens': 324, 'total_tokens': 1417}
+Usage: {'prompt_tokens': 1088, 'completion_tokens': 314, 'total_tokens': 1402}
+Usage: {'prompt_tokens': 1088, 'completion_tokens': 329, 'total_tokens': 1417}
+Usage: {'prompt_tokens': 1094, 'completion_tokens': 310, 'total_tokens': 1404}
+Usage: {'prompt_tokens': 1088, 'completion_tokens': 349, 'total_tokens': 1437}
+Usage: {'prompt_tokens': 1088, 'completion_tokens': 353, 'total_tokens': 1441}
+Usage: {'prompt_tokens': 1088, 'completion_tokens': 338, 'total_tokens': 1426}
+Usage: {'prompt_tokens': 1088, 'completion_tokens': 344, 'total_tokens': 1432}
+Usage: {'prompt_tokens': 1086, 'completion_tokens': 55, 'total_tokens': 1141}
+Usage: {'prompt_tokens': 1091, 'completion_tokens': 60, 'total_tokens': 1151}
+Usage: {'prompt_tokens': 1088, 'completion_tokens': 334, 'total_tokens': 1422}
+Usage: {'prompt_tokens': 1088, 'completion_tokens': 317, 'total_tokens': 1405}
+Total_score:13, Full_score:16, Accuracy:0.8125
+
+
+
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b9edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010cedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010cedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "fd95edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ffedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d002edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d002edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "fd956936-3d44-4567-8066-341b51489641"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': 'fd956936-3d44-4567-8066-341b51489641'}
+    ++++++ Expected:385bc026-4da6-4fea-89e8-999e796d5a72
+    ++++++ Got Score:0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: fd956936-3d44-4567-8066-341b51489641, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "385bc026-4da6-4fea-89e8-999e796d5a72"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': '385bc026-4da6-4fea-89e8-999e796d5a72'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}. 
+
+Here's the step-by-step process:
+1. Extract the value for "9e0fa540-6578-4573-a489-6aff13be10b3", which is dic_value_1 = {
+    "9e0fedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+}.
+2. Extract the value for edge "edge_1" from dic_value_1, which is "010ce2f9-278a-4104-a5fd-cb424bf248f1".
+3. Extract the value for "010ce2f9-278a-4104-a5fd-cb424bf248f1" from the original dictionary, which is dic_value_2 = {
+    "010cedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010cedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+}.
+4. Extract the value for edge "edge_0" from dic_value_2, which is "fd956936-3d44-4567-8066-341b51489641". However, this is not the final answer. The problem asks for the final value, which is the original key "010ce2f9-278a-4104-a5fd-cb424bf248f1". Therefore, the final answer is {"9e0fa540-6578-4573-a489-6aff13be10b3": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}.
+    ++++++ Parsed answer:{'9e0fa540-6578-4573-a489-6aff13be10b3': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 0
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+    ++++++ Raw output: 
+
+A: The final answer is {"d0022f62-b56b-4204-a47f-ada9758ebf82": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}.
+    ++++++ Parsed answer:{'d0022f62-b56b-4204-a47f-ada9758ebf82': 'eee6a39e-e6f3-43f7-acc9-975d7bb41360'}
+    ++++++ Expected:a1b91299-f0e2-491c-8f1f-05dfb8a7262c
+    ++++++ Got Score:0
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 0
+    ++++++ Raw output: 
+
+A: The final answer is {"d0022f62-b56b-4204-a47f-ada9758ebf82": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}. 
+
+Here's the step-by-step process:
+1. Extract the value for "d0022f62-b56b-4204-a47f-ada9758ebf82" from the given dictionary D, the value is dic_value_1={
+    "d002edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d002edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+}.
+2. Extract the value for edge "edge_1" from dic_value_1, the value is "42ff35c9-eb6a-4493-bfc0-2c66f3689f28".
+3. Extract the value for "42ff35c9-eb6a-4493-bfc0-2c66f3689f28" from D, the value is dic_value_2={
+    "42ffedge_0": "fd956936-3d44-4567-8066-341b51489641"
+}.
+4. Extract the value for edge "edge_0" from dic_value_2, the value is "fd956936-3d44-4567-8066-341b51489641".
+5. Extract the value for "fd956936-3d44-4567-8066-341b51489641" from D, the value is dic_value_3={
+    "fd95edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+}.
+6. Extract the value for edge "edge_0" from dic_value_3, the value is "eee6a39e-e6f3-43f7-acc9-975d7bb41360".
+7. Extract the value for "eee6a39e-e6f3-43f7-acc9-975d7bb41360" from D, the value is dic_value_4={
+    "eee6edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+}.
+8. Extract the value for edge "edge_0" from dic_value_4, the value is "42ff35c9-eb6a-4493-bfc0-2c66f3689f28".
+9. Extract the value for "42ff35c9-eb6a-4493-bfc0-2c66f3689f28" from D, the value is dic_value_5={
+    "42ffedge_0": "fd956936-3d44-4567-8066-341b51489641"
+}.
+10. Extract the value for edge "edge_0" from dic_value_5, the value is "fd956936-3d44-4567-8066-341b51489641".
+11. Extract the value for "fd956936-3d44-4567-8066-341b51489641" from D, the value is dic_value_6={
+    "fd95edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360",
+    "fd95edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+}.
+12. Extract the value for edge "edge_1" from dic_value_6, the value is "385bc026-4da6-4fea-89e8-999e796d5a72".
+13. Extract the value for "385bc026-4da6-4fea-89e8-999e796d5a72" from D, the value is dic_value_7={
+    "385bedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+}.
+14. Extract the value for edge "edge_0" from dic_value_7, the value is "a1b91299-f0e2-491c-8f1f-05dfb8a7262c".
+15. Extract the value for "a1b91299-f0e2-491c-8f1f-05dfb8a7262
+    ++++++ Parsed answer:{'385bedge_0': 'a1b91299-f0e2-491c-8f1f-05dfb8a7262c'}
+    ++++++ Expected:fd956936-3d44-4567-8066-341b51489641
+    ++++++ Got Score:0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: [], Score: 0
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 57, 'total_tokens': 1166}
+Usage: {'prompt_tokens': 1110, 'completion_tokens': 56, 'total_tokens': 1166}
+Usage: {'prompt_tokens': 1111, 'completion_tokens': 55, 'total_tokens': 1166}
+Usage: {'prompt_tokens': 1114, 'completion_tokens': 323, 'total_tokens': 1437}
+Usage: {'prompt_tokens': 1114, 'completion_tokens': 329, 'total_tokens': 1443}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 317, 'total_tokens': 1426}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 332, 'total_tokens': 1441}
+Usage: {'prompt_tokens': 1115, 'completion_tokens': 315, 'total_tokens': 1430}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 53, 'total_tokens': 1162}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 56, 'total_tokens': 1165}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 454, 'total_tokens': 1563}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 415, 'total_tokens': 1524}
+Usage: {'prompt_tokens': 1107, 'completion_tokens': 296, 'total_tokens': 1403}
+Usage: {'prompt_tokens': 1112, 'completion_tokens': 60, 'total_tokens': 1172}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 57, 'total_tokens': 1166}
+Usage: {'prompt_tokens': 1109, 'completion_tokens': 1000, 'total_tokens': 2109}
+Total_score:11, Full_score:16, Accuracy:0.6875
+
+
+
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "<key>=385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "<key>=eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "<key>=a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b9edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "<key>=010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010cedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010cedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "<key>=3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "<key>=9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "<key>=fd956936-3d44-4567-8066-341b51489641": {
+    "fd95edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "<key>=42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ffedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "<key>=d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d002edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d002edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+    ++++++ Raw output: 
+
+A: In the given dictionary D, extract the value for "<key>=385bc026-4da6-4fea-89e8-999e796d5a72", dic_value_1={
+  "385bedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+}, then extract value for edge "edge_0" from dic_value_1, the value is "a1b91299-f0e2-491c-8f1f-05dfb8a7262c". The next step is to extract value for "<key>=a1b91299-f0e2-491c-8f1f-05dfb8a7262c" from D, the value is dic_value_2={
+  "a1b9edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+}, finally extract value for edge "edge_0" from dic_value_2, the value is "010ce2f9-278a-4104-a5fd-cb424bf248f1". 
+
+So the final answer is {"<key>=385bc026-4da6-4fea-89e8-999e796d5a72": "010ce2f9-278a-4104-a5fd-cb424bf248f1"}.
+    ++++++ Parsed answer:{'<key>=385bc026-4da6-4fea-89e8-999e796d5a72': '010ce2f9-278a-4104-a5fd-cb424bf248f1'}
+    ++++++ Expected:010ce2f9-278a-4104-a5fd-cb424bf248f1
+    ++++++ Got Score:0
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: [], Score: 0
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+Model=meta-llama/Meta-Llama-3-70B-Instruct-Lite
+Graph={
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 283, 'total_tokens': 1412}
+Usage: {'prompt_tokens': 1130, 'completion_tokens': 311, 'total_tokens': 1441}
+Usage: {'prompt_tokens': 1131, 'completion_tokens': 55, 'total_tokens': 1186}
+Usage: {'prompt_tokens': 1134, 'completion_tokens': 323, 'total_tokens': 1457}
+Usage: {'prompt_tokens': 1134, 'completion_tokens': 329, 'total_tokens': 1463}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 317, 'total_tokens': 1446}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 332, 'total_tokens': 1461}
+Usage: {'prompt_tokens': 1135, 'completion_tokens': 375, 'total_tokens': 1510}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 357, 'total_tokens': 1486}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 361, 'total_tokens': 1490}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 346, 'total_tokens': 1475}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 352, 'total_tokens': 1481}
+Usage: {'prompt_tokens': 1127, 'completion_tokens': 296, 'total_tokens': 1423}
+Usage: {'prompt_tokens': 1132, 'completion_tokens': 291, 'total_tokens': 1423}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 337, 'total_tokens': 1466}
+Usage: {'prompt_tokens': 1129, 'completion_tokens': 320, 'total_tokens': 1449}
+Total_score:15, Full_score:16, Accuracy:0.9375
+
+
+
+
+     Basic info: MetaLlama370BInstructLite.log, gnp_n10_p20, baseline, shot_num=1, query_hop_num=2
+Total failed_num=7, wrong_edge_problem=2, possibly_not_found=0, total_score=9, full_score=16
+Summary Token Usage: {'prompt_tokens': 1076, 'completion_tokens': 166, 'total_tokens': 1242}
+
+     Basic info: MetaLlama370BInstructLite.log, gnp_n10_p20, node_id[-4:]+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=8, wrong_edge_problem=0, possibly_not_found=1, total_score=8, full_score=16
+Summary Token Usage: {'prompt_tokens': 1111, 'completion_tokens': 288, 'total_tokens': 1399}
+
+     Basic info: MetaLlama370BInstructLite.log, gnp_n10_p20, node_id+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=9, wrong_edge_problem=1, possibly_not_found=0, total_score=7, full_score=16
+Summary Token Usage: {'prompt_tokens': 1364, 'completion_tokens': 72, 'total_tokens': 1436}
+
+     Basic info: MetaLlama370BInstructLite.log, gnp_n10_p20, randomStr+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=9, wrong_edge_problem=0, possibly_not_found=1, total_score=7, full_score=16
+Summary Token Usage: {'prompt_tokens': 1104, 'completion_tokens': 148, 'total_tokens': 1252}
+
+     Basic info: MetaLlama370BInstructLite.log, gnp_n10_p20, <edge_id>, shot_num=1, query_hop_num=2
+Total failed_num=3, wrong_edge_problem=0, possibly_not_found=0, total_score=13, full_score=16
+Summary Token Usage: {'prompt_tokens': 1089, 'completion_tokens': 244, 'total_tokens': 1333}
+
+     Basic info: MetaLlama370BInstructLite.log, gnp_n10_p20, node_id[:4]+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=5, wrong_edge_problem=0, possibly_not_found=1, total_score=11, full_score=16
+Summary Token Usage: {'prompt_tokens': 1110, 'completion_tokens': 260, 'total_tokens': 1371}
+
+     Basic info: MetaLlama370BInstructLite.log, gnp_n10_p20, <key=>node_id AND node_id[:4]+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=1, wrong_edge_problem=0, possibly_not_found=0, total_score=15, full_score=16
+Summary Token Usage: {'prompt_tokens': 1130, 'completion_tokens': 311, 'total_tokens': 1441}

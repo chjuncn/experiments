@@ -1,0 +1,2418 @@
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "edge_0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+ 
+LEN(raw_json_graph)=20
+
+{
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "edge_0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "9b76292e-83b6-44d0-927d-9d3c4ac0973d": {
+    "edge_0": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "edge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec",
+    "edge_2": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": {
+    "edge_0": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "edge_3": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "edge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "c7a957fa-990e-4462-8a47-e66888725ae3": {
+    "edge_0": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": {
+    "edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d"
+  },
+  "a2878670-0571-4d2e-8a6e-f2baa768d30e": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "edge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"
+  },
+  "12b6dd39-8a3b-4845-bd6a-c1487e646056": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "edge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"
+  },
+  "66c988b8-bc33-42ae-b946-10de63599e6d": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "edge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "edge_4": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "ac587166-e004-4d7c-8b0d-3e2dae2c1fce": {
+    "edge_0": "c7a957fa-990e-4462-8a47-e66888725ae3"
+  },
+  "9724a9cb-85fb-46e0-b85c-6bff9edc74ec": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"
+  },
+  "505f0933-9494-47c2-a1ff-db93e5e3501f": {
+    "edge_0": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "edge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "9ba52921-3573-44af-a8e7-8dd5084eb253": {
+    "edge_0": "12b6dd39-8a3b-4845-bd6a-c1487e646056",
+    "edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5e49653b-6c6f-4899-90b6-902fd4d4ca49": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "edge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "edge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "edge_4": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "4dddd26b-2b1c-40fd-a965-3eece97cc9f4": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "edge_2": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge_3": "a2878670-0571-4d2e-8a6e-f2baa768d30e"
+  },
+  "dcdb7910-0be9-402d-b14b-420926059615": {
+    "edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "edge_2": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "edge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "131a10b0-71d7-4803-871e-32c1d4d88c42": {
+    "edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "13cdcc23-bdcb-4b57-a14a-90f9a15eed75": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "edge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "7f426851-06b3-4505-90eb-eb9f349851f1": {
+    "edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": {
+    "edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "edge_1": "9b76292e-83b6-44d0-927d-9d3c4ac0973d",
+    "edge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9",
+    "edge_3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83",
+    "edge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "558568a2-31d6-4d05-b4fc-e32caa3c43a9": {
+    "edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "edge_1": "dcdb7910-0be9-402d-b14b-420926059615",
+    "edge_2": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4",
+    "edge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "b04cde07-c401-4de1-b8a9-88365d85862d" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"b04cde07-c401-4de1-b8a9-88365d85862d": $FINAL_VALUE}.
+    
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:9ba52921-3573-44af-a8e7-8dd5084eb253
+    ++++++ Got Score:0
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 7f426851-06b3-4505-90eb-eb9f349851f1, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': 'a2878670-0571-4d2e-8a6e-f2baa768d30e'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 1
+    ++++++ Raw output: {"c7a957fa-990e-4462-8a47-e66888725ae3": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'c7a957fa-990e-4462-8a47-e66888725ae3': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:505f0933-9494-47c2-a1ff-db93e5e3501f
+    ++++++ Got Score:0
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+    ++++++ Raw output: {"a2878670-0571-4d2e-8a6e-f2baa768d30e": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+    ++++++ Parsed answer:{'a2878670-0571-4d2e-8a6e-f2baa768d30e': '13cdcc23-bdcb-4b57-a14a-90f9a15eed75'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 0
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+    ++++++ Raw output: {"a2878670-0571-4d2e-8a6e-f2baa768d30e": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'a2878670-0571-4d2e-8a6e-f2baa768d30e': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+    ++++++ Raw output: {"12b6dd39-8a3b-4845-bd6a-c1487e646056": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'12b6dd39-8a3b-4845-bd6a-c1487e646056': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': 'c7a957fa-990e-4462-8a47-e66888725ae3'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 0
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': 'c7a957fa-990e-4462-8a47-e66888725ae3'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 0
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '5e49653b-6c6f-4899-90b6-902fd4d4ca49'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+    ++++++ Raw output: {"505f0933-9494-47c2-a1ff-db93e5e3501f": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+    ++++++ Parsed answer:{'505f0933-9494-47c2-a1ff-db93e5e3501f': '13cdcc23-bdcb-4b57-a14a-90f9a15eed75'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 0
+++++++ Expected: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Real: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Score: 1
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f'}
+    ++++++ Expected:7f426851-06b3-4505-90eb-eb9f349851f1
+    ++++++ Got Score:0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+    ++++++ Raw output: {"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'13cdcc23-bdcb-4b57-a14a-90f9a15eed75': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+    ++++++ Raw output: {"7f426851-06b3-4505-90eb-eb9f349851f1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+    ++++++ Parsed answer:{'7f426851-06b3-4505-90eb-eb9f349851f1': '4dddd26b-2b1c-40fd-a965-3eece97cc9f4'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "902fd4d4ca49"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '902fd4d4ca49'}
+    ++++++ Expected:5e49653b-6c6f-4899-90b6-902fd4d4ca49
+    ++++++ Got Score:0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 902fd4d4ca49, Score: 0
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: dcdb7910-0be9-402d-b14b-420926059615, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 1
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "edge_0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+ 
+LEN(raw_json_graph)=20
+
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 71, 'total_tokens': 3505}
+Usage: {'prompt_tokens': 3436, 'completion_tokens': 74, 'total_tokens': 3510}
+Usage: {'prompt_tokens': 3436, 'completion_tokens': 74, 'total_tokens': 3510}
+Usage: {'prompt_tokens': 3436, 'completion_tokens': 71, 'total_tokens': 3507}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 73, 'total_tokens': 3507}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 75, 'total_tokens': 3509}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 74, 'total_tokens': 3508}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 73, 'total_tokens': 3507}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 73, 'total_tokens': 3507}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 75, 'total_tokens': 3509}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 75, 'total_tokens': 3509}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 73, 'total_tokens': 3507}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 72, 'total_tokens': 3506}
+Usage: {'prompt_tokens': 3436, 'completion_tokens': 70, 'total_tokens': 3506}
+Usage: {'prompt_tokens': 3436, 'completion_tokens': 70, 'total_tokens': 3506}
+Usage: {'prompt_tokens': 3436, 'completion_tokens': 76, 'total_tokens': 3512}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 75, 'total_tokens': 3509}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 73, 'total_tokens': 3507}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 66, 'total_tokens': 3500}
+Usage: {'prompt_tokens': 3432, 'completion_tokens': 74, 'total_tokens': 3506}
+Usage: {'prompt_tokens': 3432, 'completion_tokens': 74, 'total_tokens': 3506}
+Usage: {'prompt_tokens': 3432, 'completion_tokens': 72, 'total_tokens': 3504}
+Usage: {'prompt_tokens': 3432, 'completion_tokens': 72, 'total_tokens': 3504}
+Usage: {'prompt_tokens': 3432, 'completion_tokens': 72, 'total_tokens': 3504}
+Usage: {'prompt_tokens': 3432, 'completion_tokens': 72, 'total_tokens': 3504}
+Usage: {'prompt_tokens': 3428, 'completion_tokens': 70, 'total_tokens': 3498}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 69, 'total_tokens': 3503}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 69, 'total_tokens': 3503}
+Usage: {'prompt_tokens': 3430, 'completion_tokens': 71, 'total_tokens': 3501}
+Usage: {'prompt_tokens': 3430, 'completion_tokens': 67, 'total_tokens': 3497}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 70, 'total_tokens': 3504}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 73, 'total_tokens': 3507}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 66, 'total_tokens': 3500}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 74, 'total_tokens': 3508}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 74, 'total_tokens': 3508}
+Usage: {'prompt_tokens': 3426, 'completion_tokens': 69, 'total_tokens': 3495}
+Usage: {'prompt_tokens': 3426, 'completion_tokens': 69, 'total_tokens': 3495}
+Usage: {'prompt_tokens': 3426, 'completion_tokens': 69, 'total_tokens': 3495}
+Usage: {'prompt_tokens': 3426, 'completion_tokens': 70, 'total_tokens': 3496}
+Usage: {'prompt_tokens': 3432, 'completion_tokens': 71, 'total_tokens': 3503}
+Usage: {'prompt_tokens': 3432, 'completion_tokens': 74, 'total_tokens': 3506}
+Usage: {'prompt_tokens': 3432, 'completion_tokens': 72, 'total_tokens': 3504}
+Usage: {'prompt_tokens': 3432, 'completion_tokens': 73, 'total_tokens': 3505}
+Usage: {'prompt_tokens': 3438, 'completion_tokens': 74, 'total_tokens': 3512}
+Usage: {'prompt_tokens': 3438, 'completion_tokens': 72, 'total_tokens': 3510}
+Usage: {'prompt_tokens': 3426, 'completion_tokens': 69, 'total_tokens': 3495}
+Usage: {'prompt_tokens': 3426, 'completion_tokens': 69, 'total_tokens': 3495}
+Usage: {'prompt_tokens': 3426, 'completion_tokens': 69, 'total_tokens': 3495}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 69, 'total_tokens': 3503}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 69, 'total_tokens': 3503}
+Usage: {'prompt_tokens': 3420, 'completion_tokens': 67, 'total_tokens': 3487}
+Usage: {'prompt_tokens': 3420, 'completion_tokens': 67, 'total_tokens': 3487}
+Usage: {'prompt_tokens': 3420, 'completion_tokens': 67, 'total_tokens': 3487}
+Usage: {'prompt_tokens': 3420, 'completion_tokens': 66, 'total_tokens': 3486}
+Usage: {'prompt_tokens': 3420, 'completion_tokens': 42, 'total_tokens': 3462}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 72, 'total_tokens': 3506}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 72, 'total_tokens': 3506}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 72, 'total_tokens': 3506}
+Usage: {'prompt_tokens': 3434, 'completion_tokens': 74, 'total_tokens': 3508}
+Total_score:35, Full_score:59, Accuracy:0.5932203389830508
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "862dedge_0": "9ba52921-3573-44af-a8e7-8dd5084eb25
+LEN(raw_json_graph)=20
+
+{
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "862dedge_0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "9b76292e-83b6-44d0-927d-9d3c4ac0973d": {
+    "973dedge_0": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "973dedge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec",
+    "973dedge_2": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": {
+    "6d9fedge_0": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "6d9fedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "6d9fedge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "6d9fedge_3": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "6d9fedge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "c7a957fa-990e-4462-8a47-e66888725ae3": {
+    "5ae3edge_0": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "5ae3edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "5ae3edge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": {
+    "3e83edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d"
+  },
+  "a2878670-0571-4d2e-8a6e-f2baa768d30e": {
+    "d30eedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "d30eedge_1": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "d30eedge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"
+  },
+  "12b6dd39-8a3b-4845-bd6a-c1487e646056": {
+    "6056edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "6056edge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "6056edge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"
+  },
+  "66c988b8-bc33-42ae-b946-10de63599e6d": {
+    "9e6dedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "9e6dedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "9e6dedge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "9e6dedge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "9e6dedge_4": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "ac587166-e004-4d7c-8b0d-3e2dae2c1fce": {
+    "1fceedge_0": "c7a957fa-990e-4462-8a47-e66888725ae3"
+  },
+  "9724a9cb-85fb-46e0-b85c-6bff9edc74ec": {
+    "74ecedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"
+  },
+  "505f0933-9494-47c2-a1ff-db93e5e3501f": {
+    "501fedge_0": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "501fedge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "9ba52921-3573-44af-a8e7-8dd5084eb253": {
+    "b253edge_0": "12b6dd39-8a3b-4845-bd6a-c1487e646056",
+    "b253edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5e49653b-6c6f-4899-90b6-902fd4d4ca49": {
+    "ca49edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "ca49edge_1": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "ca49edge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "ca49edge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "ca49edge_4": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "4dddd26b-2b1c-40fd-a965-3eece97cc9f4": {
+    "c9f4edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "c9f4edge_1": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "c9f4edge_2": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "c9f4edge_3": "a2878670-0571-4d2e-8a6e-f2baa768d30e"
+  },
+  "dcdb7910-0be9-402d-b14b-420926059615": {
+    "9615edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "9615edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "9615edge_2": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "9615edge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "131a10b0-71d7-4803-871e-32c1d4d88c42": {
+    "8c42edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "8c42edge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "13cdcc23-bdcb-4b57-a14a-90f9a15eed75": {
+    "ed75edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "ed75edge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "ed75edge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "7f426851-06b3-4505-90eb-eb9f349851f1": {
+    "51f1edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "51f1edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": {
+    "cee8edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "cee8edge_1": "9b76292e-83b6-44d0-927d-9d3c4ac0973d",
+    "cee8edge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9",
+    "cee8edge_3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83",
+    "cee8edge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "558568a2-31d6-4d05-b4fc-e32caa3c43a9": {
+    "43a9edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "43a9edge_1": "dcdb7910-0be9-402d-b14b-420926059615",
+    "43a9edge_2": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4",
+    "43a9edge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "b04cde07-c401-4de1-b8a9-88365d85862d" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"b04cde07-c401-4de1-b8a9-88365d85862d": $FINAL_VALUE}.
+    
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:9ba52921-3573-44af-a8e7-8dd5084eb253
+    ++++++ Got Score:0
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 7f426851-06b3-4505-90eb-eb9f349851f1, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '66c988b8-bc33-42ae-b946-10de63599e6d'}
+    ++++++ Expected:c7a957fa-990e-4462-8a47-e66888725ae3
+    ++++++ Got Score:0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 1
+    ++++++ Raw output: {"c7a957fa-990e-4462-8a47-e66888725ae3": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+    ++++++ Parsed answer:{'c7a957fa-990e-4462-8a47-e66888725ae3': '66c988b8-bc33-42ae-b946-10de63599e6d'}
+    ++++++ Expected:505f0933-9494-47c2-a1ff-db93e5e3501f
+    ++++++ Got Score:0
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 0
+    ++++++ Raw output: {"c7a957fa-990e-4462-8a47-e66888725ae3": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+    ++++++ Parsed answer:{'c7a957fa-990e-4462-8a47-e66888725ae3': '66c988b8-bc33-42ae-b946-10de63599e6d'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 0
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+    ++++++ Raw output: {"a2878670-0571-4d2e-8a6e-f2baa768d30e": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+    ++++++ Parsed answer:{'a2878670-0571-4d2e-8a6e-f2baa768d30e': '66c988b8-bc33-42ae-b946-10de63599e6d'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "9e6dedge_0"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9e6dedge_0'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 9e6dedge_0, Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "9e6dedge_2"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9e6dedge_2'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 9e6dedge_2, Score: 0
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "9e6dedge_3"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9e6dedge_3'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 9e6dedge_3, Score: 0
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "9e6dedge_4"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9e6dedge_4'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9e6dedge_4, Score: 0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+    ++++++ Raw output: {"505f0933-9494-47c2-a1ff-db93e5e3501f": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+    ++++++ Parsed answer:{'505f0933-9494-47c2-a1ff-db93e5e3501f': '13cdcc23-bdcb-4b57-a14a-90f9a15eed75'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 0
+++++++ Expected: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Real: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Score: 1
+    ++++++ Raw output: {"9ba52921-3573-44af-a8e7-8dd5084eb253": "12b6dd39-8a3b-4845-bd6a-c1487e646056"}
+    ++++++ Parsed answer:{'9ba52921-3573-44af-a8e7-8dd5084eb253': '12b6dd39-8a3b-4845-bd6a-c1487e646056'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Score: 0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:505f0933-9494-47c2-a1ff-db93e5e3501f
+    ++++++ Got Score:0
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "973dedge_4"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '973dedge_4'}
+    ++++++ Expected:9b76292e-83b6-44d0-927d-9d3c4ac0973d
+    ++++++ Got Score:0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 973dedge_4, Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:7f426851-06b3-4505-90eb-eb9f349851f1
+    ++++++ Got Score:0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+    ++++++ Raw output: {"dcdb7910-0be9-402d-b14b-420926059615": "9615edge_1"}
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': '9615edge_1'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 9615edge_1, Score: 0
+    ++++++ Raw output: {"dcdb7910-0be9-402d-b14b-420926059615": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:c7a957fa-990e-4462-8a47-e66888725ae3
+    ++++++ Got Score:0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+    ++++++ Raw output: {"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'13cdcc23-bdcb-4b57-a14a-90f9a15eed75': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+    ++++++ Raw output: {"7f426851-06b3-4505-90eb-eb9f349851f1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+    ++++++ Parsed answer:{'7f426851-06b3-4505-90eb-eb9f349851f1': '4dddd26b-2b1c-40fd-a965-3eece97cc9f4'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "6d9fedge_1"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '6d9fedge_1'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 6d9fedge_1, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9ba52921-3573-44af-a8e7-8dd5084eb253"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9ba52921-3573-44af-a8e7-8dd5084eb253'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 0
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9ba52921-3573-44af-a8e7-8dd5084eb253"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9ba52921-3573-44af-a8e7-8dd5084eb253'}
+    ++++++ Expected:2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+    ++++++ Got Score:0
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 0
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9e6dedge_4"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9e6dedge_4'}
+    ++++++ Expected:5e49653b-6c6f-4899-90b6-902fd4d4ca49
+    ++++++ Got Score:0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 9e6dedge_4, Score: 0
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: dcdb7910-0be9-402d-b14b-420926059615, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 1
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "862dedge_0": "9ba52921-3573-44af-a8e7-8dd5084eb25
+LEN(raw_json_graph)=20
+
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 71, 'total_tokens': 3723}
+Usage: {'prompt_tokens': 3654, 'completion_tokens': 74, 'total_tokens': 3728}
+Usage: {'prompt_tokens': 3654, 'completion_tokens': 74, 'total_tokens': 3728}
+Usage: {'prompt_tokens': 3654, 'completion_tokens': 74, 'total_tokens': 3728}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 73, 'total_tokens': 3725}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 75, 'total_tokens': 3727}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 75, 'total_tokens': 3727}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 72, 'total_tokens': 3724}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 73, 'total_tokens': 3725}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 72, 'total_tokens': 3724}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 72, 'total_tokens': 3724}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 73, 'total_tokens': 3725}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 72, 'total_tokens': 3724}
+Usage: {'prompt_tokens': 3654, 'completion_tokens': 74, 'total_tokens': 3728}
+Usage: {'prompt_tokens': 3654, 'completion_tokens': 70, 'total_tokens': 3724}
+Usage: {'prompt_tokens': 3654, 'completion_tokens': 73, 'total_tokens': 3727}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 73, 'total_tokens': 3725}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 73, 'total_tokens': 3725}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 66, 'total_tokens': 3718}
+Usage: {'prompt_tokens': 3650, 'completion_tokens': 45, 'total_tokens': 3695}
+Usage: {'prompt_tokens': 3650, 'completion_tokens': 74, 'total_tokens': 3724}
+Usage: {'prompt_tokens': 3650, 'completion_tokens': 45, 'total_tokens': 3695}
+Usage: {'prompt_tokens': 3650, 'completion_tokens': 45, 'total_tokens': 3695}
+Usage: {'prompt_tokens': 3650, 'completion_tokens': 45, 'total_tokens': 3695}
+Usage: {'prompt_tokens': 3650, 'completion_tokens': 72, 'total_tokens': 3722}
+Usage: {'prompt_tokens': 3646, 'completion_tokens': 70, 'total_tokens': 3716}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 69, 'total_tokens': 3721}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 69, 'total_tokens': 3721}
+Usage: {'prompt_tokens': 3648, 'completion_tokens': 71, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3648, 'completion_tokens': 71, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 73, 'total_tokens': 3725}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 66, 'total_tokens': 3718}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 66, 'total_tokens': 3718}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 66, 'total_tokens': 3718}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 46, 'total_tokens': 3698}
+Usage: {'prompt_tokens': 3644, 'completion_tokens': 71, 'total_tokens': 3715}
+Usage: {'prompt_tokens': 3644, 'completion_tokens': 71, 'total_tokens': 3715}
+Usage: {'prompt_tokens': 3644, 'completion_tokens': 71, 'total_tokens': 3715}
+Usage: {'prompt_tokens': 3644, 'completion_tokens': 71, 'total_tokens': 3715}
+Usage: {'prompt_tokens': 3650, 'completion_tokens': 71, 'total_tokens': 3721}
+Usage: {'prompt_tokens': 3650, 'completion_tokens': 45, 'total_tokens': 3695}
+Usage: {'prompt_tokens': 3650, 'completion_tokens': 69, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3650, 'completion_tokens': 73, 'total_tokens': 3723}
+Usage: {'prompt_tokens': 3656, 'completion_tokens': 74, 'total_tokens': 3730}
+Usage: {'prompt_tokens': 3656, 'completion_tokens': 72, 'total_tokens': 3728}
+Usage: {'prompt_tokens': 3644, 'completion_tokens': 69, 'total_tokens': 3713}
+Usage: {'prompt_tokens': 3644, 'completion_tokens': 69, 'total_tokens': 3713}
+Usage: {'prompt_tokens': 3644, 'completion_tokens': 69, 'total_tokens': 3713}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 69, 'total_tokens': 3721}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 69, 'total_tokens': 3721}
+Usage: {'prompt_tokens': 3638, 'completion_tokens': 39, 'total_tokens': 3677}
+Usage: {'prompt_tokens': 3638, 'completion_tokens': 67, 'total_tokens': 3705}
+Usage: {'prompt_tokens': 3638, 'completion_tokens': 64, 'total_tokens': 3702}
+Usage: {'prompt_tokens': 3638, 'completion_tokens': 64, 'total_tokens': 3702}
+Usage: {'prompt_tokens': 3638, 'completion_tokens': 39, 'total_tokens': 3677}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 72, 'total_tokens': 3724}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 72, 'total_tokens': 3724}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 72, 'total_tokens': 3724}
+Usage: {'prompt_tokens': 3652, 'completion_tokens': 74, 'total_tokens': 3726}
+Total_score:30, Full_score:59, Accuracy:0.5084745762711864
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04cde07-c401-4de1-b8a9-88365d85862dedge_0": "9ba
+LEN(raw_json_graph)=20
+
+{
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04cde07-c401-4de1-b8a9-88365d85862dedge_0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "9b76292e-83b6-44d0-927d-9d3c4ac0973d": {
+    "9b76292e-83b6-44d0-927d-9d3c4ac0973dedge_0": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "9b76292e-83b6-44d0-927d-9d3c4ac0973dedge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec",
+    "9b76292e-83b6-44d0-927d-9d3c4ac0973dedge_2": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": {
+    "f42e7d9c-af4b-4b6d-84e6-df87a5916d9fedge_0": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "f42e7d9c-af4b-4b6d-84e6-df87a5916d9fedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "f42e7d9c-af4b-4b6d-84e6-df87a5916d9fedge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "f42e7d9c-af4b-4b6d-84e6-df87a5916d9fedge_3": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "f42e7d9c-af4b-4b6d-84e6-df87a5916d9fedge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "c7a957fa-990e-4462-8a47-e66888725ae3": {
+    "c7a957fa-990e-4462-8a47-e66888725ae3edge_0": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "c7a957fa-990e-4462-8a47-e66888725ae3edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "c7a957fa-990e-4462-8a47-e66888725ae3edge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": {
+    "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d"
+  },
+  "a2878670-0571-4d2e-8a6e-f2baa768d30e": {
+    "a2878670-0571-4d2e-8a6e-f2baa768d30eedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "a2878670-0571-4d2e-8a6e-f2baa768d30eedge_1": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "a2878670-0571-4d2e-8a6e-f2baa768d30eedge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"
+  },
+  "12b6dd39-8a3b-4845-bd6a-c1487e646056": {
+    "12b6dd39-8a3b-4845-bd6a-c1487e646056edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "12b6dd39-8a3b-4845-bd6a-c1487e646056edge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "12b6dd39-8a3b-4845-bd6a-c1487e646056edge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"
+  },
+  "66c988b8-bc33-42ae-b946-10de63599e6d": {
+    "66c988b8-bc33-42ae-b946-10de63599e6dedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "66c988b8-bc33-42ae-b946-10de63599e6dedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "66c988b8-bc33-42ae-b946-10de63599e6dedge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "66c988b8-bc33-42ae-b946-10de63599e6dedge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "66c988b8-bc33-42ae-b946-10de63599e6dedge_4": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "ac587166-e004-4d7c-8b0d-3e2dae2c1fce": {
+    "ac587166-e004-4d7c-8b0d-3e2dae2c1fceedge_0": "c7a957fa-990e-4462-8a47-e66888725ae3"
+  },
+  "9724a9cb-85fb-46e0-b85c-6bff9edc74ec": {
+    "9724a9cb-85fb-46e0-b85c-6bff9edc74ecedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"
+  },
+  "505f0933-9494-47c2-a1ff-db93e5e3501f": {
+    "505f0933-9494-47c2-a1ff-db93e5e3501fedge_0": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "505f0933-9494-47c2-a1ff-db93e5e3501fedge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "9ba52921-3573-44af-a8e7-8dd5084eb253": {
+    "9ba52921-3573-44af-a8e7-8dd5084eb253edge_0": "12b6dd39-8a3b-4845-bd6a-c1487e646056",
+    "9ba52921-3573-44af-a8e7-8dd5084eb253edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5e49653b-6c6f-4899-90b6-902fd4d4ca49": {
+    "5e49653b-6c6f-4899-90b6-902fd4d4ca49edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "5e49653b-6c6f-4899-90b6-902fd4d4ca49edge_1": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "5e49653b-6c6f-4899-90b6-902fd4d4ca49edge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "5e49653b-6c6f-4899-90b6-902fd4d4ca49edge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "5e49653b-6c6f-4899-90b6-902fd4d4ca49edge_4": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "4dddd26b-2b1c-40fd-a965-3eece97cc9f4": {
+    "4dddd26b-2b1c-40fd-a965-3eece97cc9f4edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "4dddd26b-2b1c-40fd-a965-3eece97cc9f4edge_1": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "4dddd26b-2b1c-40fd-a965-3eece97cc9f4edge_2": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "4dddd26b-2b1c-40fd-a965-3eece97cc9f4edge_3": "a2878670-0571-4d2e-8a6e-f2baa768d30e"
+  },
+  "dcdb7910-0be9-402d-b14b-420926059615": {
+    "dcdb7910-0be9-402d-b14b-420926059615edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "dcdb7910-0be9-402d-b14b-420926059615edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "dcdb7910-0be9-402d-b14b-420926059615edge_2": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "dcdb7910-0be9-402d-b14b-420926059615edge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "131a10b0-71d7-4803-871e-32c1d4d88c42": {
+    "131a10b0-71d7-4803-871e-32c1d4d88c42edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "131a10b0-71d7-4803-871e-32c1d4d88c42edge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "13cdcc23-bdcb-4b57-a14a-90f9a15eed75": {
+    "13cdcc23-bdcb-4b57-a14a-90f9a15eed75edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "13cdcc23-bdcb-4b57-a14a-90f9a15eed75edge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "13cdcc23-bdcb-4b57-a14a-90f9a15eed75edge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "7f426851-06b3-4505-90eb-eb9f349851f1": {
+    "7f426851-06b3-4505-90eb-eb9f349851f1edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "7f426851-06b3-4505-90eb-eb9f349851f1edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": {
+    "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8edge_1": "9b76292e-83b6-44d0-927d-9d3c4ac0973d",
+    "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8edge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9",
+    "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8edge_3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83",
+    "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8edge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "558568a2-31d6-4d05-b4fc-e32caa3c43a9": {
+    "558568a2-31d6-4d05-b4fc-e32caa3c43a9edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "558568a2-31d6-4d05-b4fc-e32caa3c43a9edge_1": "dcdb7910-0be9-402d-b14b-420926059615",
+    "558568a2-31d6-4d05-b4fc-e32caa3c43a9edge_2": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4",
+    "558568a2-31d6-4d05-b4fc-e32caa3c43a9edge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "b04cde07-c401-4de1-b8a9-88365d85862d" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"b04cde07-c401-4de1-b8a9-88365d85862d": $FINAL_VALUE}.
+    
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 7f426851-06b3-4505-90eb-eb9f349851f1, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '2f78a7f4-a64e-42e3-b2ca-c75441ba3e83'}
+    ++++++ Expected:c7a957fa-990e-4462-8a47-e66888725ae3
+    ++++++ Got Score:0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 1
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"c7a957fa-990e-4462-8a47-e66888725ae3": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'c7a957fa-990e-4462-8a47-e66888725ae3': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+    ++++++ Got Score:0
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+    ++++++ Raw output: {"a287670-0571-4d2e-8a6e-f2baa768d30e": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+    ++++++ Parsed answer:{'a287670-0571-4d2e-8a6e-f2baa768d30e': '13cdcc23-bdcb-4b57-a14a-90f9a15eed75'}
+    ++++++ Expected:13cdcc23-bdcb-4b57-a14a-90f9a15eed75
+    ++++++ Got Score:0
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: [], Score: 0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "9b76292e-83b6-44d0-927d-9d3c4ac0973dedge_4"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9b76292e-83b6-44d0-927d-9d3c4ac0973dedge_4'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973dedge_4, Score: 0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+    ++++++ Raw output: {"9ba5293-3573-44af-a8e7-8dd5084eb253": "12b6dd39-8a3b-4845-bd6a-c1487e646056"}
+    ++++++ Parsed answer:{'9ba5293-3573-44af-a8e7-8dd5084eb253': '12b6dd39-8a3b-4845-bd6a-c1487e646056'}
+    ++++++ Expected:12b6dd39-8a3b-4845-bd6a-c1487e646056
+    ++++++ Got Score:0
+++++++ Expected: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Real: [], Score: 0
+    ++++++ Raw output: {"9ba5293-3573-44af-a8e7-8dd5084eb253": "12b6dd39-8a3b-4845-bd6a-c1487e646056"}
+    ++++++ Parsed answer:{'9ba5293-3573-44af-a8e7-8dd5084eb253': '12b6dd39-8a3b-4845-bd6a-c1487e646056'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: [], Score: 0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "9ba52921-3573-44af-a8e7-8dd5084eb253"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '9ba52921-3573-44af-a8e7-8dd5084eb253'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 0
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '2f78a7f4-a64e-42e3-b2ca-c75441ba3e83'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:7f426851-06b3-4505-90eb-eb9f349851f1
+    ++++++ Got Score:0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+    ++++++ Raw output: {"dcdb7910-0be9-402d-b14b-420926059615": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+    ++++++ Raw output: {"131a10b0-71d7-4803-871e-32c1d4d88c42": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'131a10b0-71d7-4803-871e-32c1d4d88c42': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+    ++++++ Raw output: {"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'13cdcc23-bdcb-4b57-a14a-90f9a15eed75': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+    ++++++ Raw output: {"7f426851-06b3-4505-90eb-eb9f349851f1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+    ++++++ Parsed answer:{'7f426851-06b3-4505-90eb-eb9f349851f1': '4dddd26b-2b1c-40fd-a965-3eece97cc9f4'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+    ++++++ Raw output: {"5db4c759-6c6f-4899-90b6-902fd4d4ca49": "9ba52921-3573-44af-a8e7-8dd5084eb253"}
+    ++++++ Parsed answer:{'5db4c759-6c6f-4899-90b6-902fd4d4ca49': '9ba52921-3573-44af-a8e7-8dd5084eb253'}
+    ++++++ Expected:5e49653b-6c6f-4899-90b6-902fd4d4ca49
+    ++++++ Got Score:0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: [], Score: 0
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: dcdb7910-0be9-402d-b14b-420926059615, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 1
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04cde07-c401-4de1-b8a9-88365d85862dedge_0": "9ba
+LEN(raw_json_graph)=20
+
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 71, 'total_tokens': 5441}
+Usage: {'prompt_tokens': 5372, 'completion_tokens': 74, 'total_tokens': 5446}
+Usage: {'prompt_tokens': 5372, 'completion_tokens': 74, 'total_tokens': 5446}
+Usage: {'prompt_tokens': 5372, 'completion_tokens': 72, 'total_tokens': 5444}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 73, 'total_tokens': 5443}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 75, 'total_tokens': 5445}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 66, 'total_tokens': 5436}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 73, 'total_tokens': 5443}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 73, 'total_tokens': 5443}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 73, 'total_tokens': 5443}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 75, 'total_tokens': 5445}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 75, 'total_tokens': 5445}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 72, 'total_tokens': 5442}
+Usage: {'prompt_tokens': 5372, 'completion_tokens': 74, 'total_tokens': 5446}
+Usage: {'prompt_tokens': 5372, 'completion_tokens': 69, 'total_tokens': 5441}
+Usage: {'prompt_tokens': 5372, 'completion_tokens': 74, 'total_tokens': 5446}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 73, 'total_tokens': 5443}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 73, 'total_tokens': 5443}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 66, 'total_tokens': 5436}
+Usage: {'prompt_tokens': 5368, 'completion_tokens': 72, 'total_tokens': 5440}
+Usage: {'prompt_tokens': 5368, 'completion_tokens': 74, 'total_tokens': 5442}
+Usage: {'prompt_tokens': 5368, 'completion_tokens': 65, 'total_tokens': 5433}
+Usage: {'prompt_tokens': 5368, 'completion_tokens': 65, 'total_tokens': 5433}
+Usage: {'prompt_tokens': 5368, 'completion_tokens': 76, 'total_tokens': 5444}
+Usage: {'prompt_tokens': 5368, 'completion_tokens': 72, 'total_tokens': 5440}
+Usage: {'prompt_tokens': 5364, 'completion_tokens': 70, 'total_tokens': 5434}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 69, 'total_tokens': 5439}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 70, 'total_tokens': 5440}
+Usage: {'prompt_tokens': 5366, 'completion_tokens': 70, 'total_tokens': 5436}
+Usage: {'prompt_tokens': 5366, 'completion_tokens': 70, 'total_tokens': 5436}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 73, 'total_tokens': 5443}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 73, 'total_tokens': 5443}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 71, 'total_tokens': 5441}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 73, 'total_tokens': 5443}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 74, 'total_tokens': 5444}
+Usage: {'prompt_tokens': 5362, 'completion_tokens': 69, 'total_tokens': 5431}
+Usage: {'prompt_tokens': 5362, 'completion_tokens': 69, 'total_tokens': 5431}
+Usage: {'prompt_tokens': 5362, 'completion_tokens': 66, 'total_tokens': 5428}
+Usage: {'prompt_tokens': 5362, 'completion_tokens': 70, 'total_tokens': 5432}
+Usage: {'prompt_tokens': 5368, 'completion_tokens': 71, 'total_tokens': 5439}
+Usage: {'prompt_tokens': 5368, 'completion_tokens': 69, 'total_tokens': 5437}
+Usage: {'prompt_tokens': 5368, 'completion_tokens': 72, 'total_tokens': 5440}
+Usage: {'prompt_tokens': 5368, 'completion_tokens': 73, 'total_tokens': 5441}
+Usage: {'prompt_tokens': 5374, 'completion_tokens': 74, 'total_tokens': 5448}
+Usage: {'prompt_tokens': 5374, 'completion_tokens': 75, 'total_tokens': 5449}
+Usage: {'prompt_tokens': 5362, 'completion_tokens': 69, 'total_tokens': 5431}
+Usage: {'prompt_tokens': 5362, 'completion_tokens': 69, 'total_tokens': 5431}
+Usage: {'prompt_tokens': 5362, 'completion_tokens': 69, 'total_tokens': 5431}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 69, 'total_tokens': 5439}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 69, 'total_tokens': 5439}
+Usage: {'prompt_tokens': 5356, 'completion_tokens': 67, 'total_tokens': 5423}
+Usage: {'prompt_tokens': 5356, 'completion_tokens': 67, 'total_tokens': 5423}
+Usage: {'prompt_tokens': 5356, 'completion_tokens': 67, 'total_tokens': 5423}
+Usage: {'prompt_tokens': 5356, 'completion_tokens': 66, 'total_tokens': 5422}
+Usage: {'prompt_tokens': 5356, 'completion_tokens': 70, 'total_tokens': 5426}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 72, 'total_tokens': 5442}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 72, 'total_tokens': 5442}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 72, 'total_tokens': 5442}
+Usage: {'prompt_tokens': 5370, 'completion_tokens': 74, 'total_tokens': 5444}
+Total_score:37, Full_score:59, Accuracy:0.6271186440677966
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "tsyeedge_0": "9ba52921-3573-44af-a8e7-8dd5084eb25
+LEN(raw_json_graph)=20
+
+{
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "tsyeedge_0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "9b76292e-83b6-44d0-927d-9d3c4ac0973d": {
+    "gqweedge_0": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "gqweedge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec",
+    "gqweedge_2": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": {
+    "sqgnedge_0": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "sqgnedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "sqgnedge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "sqgnedge_3": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "sqgnedge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "c7a957fa-990e-4462-8a47-e66888725ae3": {
+    "fkyqedge_0": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "fkyqedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "fkyqedge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": {
+    "bdeiedge_0": "66c988b8-bc33-42ae-b946-10de63599e6d"
+  },
+  "a2878670-0571-4d2e-8a6e-f2baa768d30e": {
+    "cfmxedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "cfmxedge_1": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "cfmxedge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"
+  },
+  "12b6dd39-8a3b-4845-bd6a-c1487e646056": {
+    "znqoedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "znqoedge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "znqoedge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"
+  },
+  "66c988b8-bc33-42ae-b946-10de63599e6d": {
+    "awiyedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "awiyedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "awiyedge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "awiyedge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "awiyedge_4": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "ac587166-e004-4d7c-8b0d-3e2dae2c1fce": {
+    "qbdpedge_0": "c7a957fa-990e-4462-8a47-e66888725ae3"
+  },
+  "9724a9cb-85fb-46e0-b85c-6bff9edc74ec": {
+    "ckgeedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"
+  },
+  "505f0933-9494-47c2-a1ff-db93e5e3501f": {
+    "kcgtedge_0": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "kcgtedge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "9ba52921-3573-44af-a8e7-8dd5084eb253": {
+    "eockedge_0": "12b6dd39-8a3b-4845-bd6a-c1487e646056",
+    "eockedge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5e49653b-6c6f-4899-90b6-902fd4d4ca49": {
+    "fvaeedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "fvaeedge_1": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "fvaeedge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "fvaeedge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "fvaeedge_4": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "4dddd26b-2b1c-40fd-a965-3eece97cc9f4": {
+    "klmaedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "klmaedge_1": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "klmaedge_2": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "klmaedge_3": "a2878670-0571-4d2e-8a6e-f2baa768d30e"
+  },
+  "dcdb7910-0be9-402d-b14b-420926059615": {
+    "rurvedge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "rurvedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "rurvedge_2": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "rurvedge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "131a10b0-71d7-4803-871e-32c1d4d88c42": {
+    "wjpuedge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "wjpuedge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "13cdcc23-bdcb-4b57-a14a-90f9a15eed75": {
+    "mozuedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "mozuedge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "mozuedge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "7f426851-06b3-4505-90eb-eb9f349851f1": {
+    "gijsedge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "gijsedge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": {
+    "cviuedge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "cviuedge_1": "9b76292e-83b6-44d0-927d-9d3c4ac0973d",
+    "cviuedge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9",
+    "cviuedge_3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83",
+    "cviuedge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "558568a2-31d6-4d05-b4fc-e32caa3c43a9": {
+    "pfhmedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "pfhmedge_1": "dcdb7910-0be9-402d-b14b-420926059615",
+    "pfhmedge_2": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4",
+    "pfhmedge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "b04cde07-c401-4de1-b8a9-88365d85862d" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"b04cde07-c401-4de1-b8a9-88365d85862d": $FINAL_VALUE}.
+    
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:9ba52921-3573-44af-a8e7-8dd5084eb253
+    ++++++ Got Score:0
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 7f426851-06b3-4505-90eb-eb9f349851f1, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '5e49653b-6c6f-4899-90b6-902fd4d4ca49'}
+    ++++++ Expected:c7a957fa-990e-4462-8a47-e66888725ae3
+    ++++++ Got Score:0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 1
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+    ++++++ Raw output: {"a2878670-0571-4d2e-8a6e-f2baa768d30e": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+    ++++++ Parsed answer:{'a2878670-0571-4d2e-8a6e-f2baa768d30e': '13cdcc23-bdcb-4b57-a14a-90f9a15eed75'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": ["wjpuedge_0", "rurvedge_0", "gijsedge_0"]}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': ['wjpuedge_0', 'rurvedge_0', 'gijsedge_0']}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: ['wjpuedge_0', 'rurvedge_0', 'gijsedge_0'], Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': 'c7a957fa-990e-4462-8a47-e66888725ae3'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 0
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '5e49653b-6c6f-4899-90b6-902fd4d4ca49'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+    ++++++ Raw output: {"505f0933-9494-47c2-a1ff-db93e5e3501f": "kcgtedge_1"}
+    ++++++ Parsed answer:{'505f0933-9494-47c2-a1ff-db93e5e3501f': 'kcgtedge_1'}
+    ++++++ Expected:13cdcc23-bdcb-4b57-a14a-90f9a15eed75
+    ++++++ Got Score:0
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: kcgtedge_1, Score: 0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+    ++++++ Raw output: {"9ba52931-3573-44af-a8e7-8dd5084eb253": "12b6dd39-8a3b-4845-bd6a-c1487e646056"}
+    ++++++ Parsed answer:{'9ba52931-3573-44af-a8e7-8dd5084eb253': '12b6dd39-8a3b-4845-bd6a-c1487e646056'}
+    ++++++ Expected:12b6dd39-8a3b-4845-bd6a-c1487e646056
+    ++++++ Got Score:0
+++++++ Expected: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Real: [], Score: 0
+    ++++++ Raw output: {"9ba5293-3573-44af-a8e7-8dd5084eb253": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+    ++++++ Parsed answer:{'9ba5293-3573-44af-a8e7-8dd5084eb253': '4dddd26b-2b1c-40fd-a965-3eece97cc9f4'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: [], Score: 0
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": ["fvaeedge_0", "fvaeedge_1", "fvaeedge_2", "fvaeedge_3", "fvaeedge_4"]}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': ['fvaeedge_0', 'fvaeedge_1', 'fvaeedge_2', 'fvaeedge_3', 'fvaeedge_4']}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: ['fvaeedge_0', 'fvaeedge_1', 'fvaeedge_2', 'fvaeedge_3', 'fvaeedge_4'], Score: 0
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:505f0933-9494-47c2-a1ff-db93e5e3501f
+    ++++++ Got Score:0
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:7f426851-06b3-4505-90eb-eb9f349851f1
+    ++++++ Got Score:0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 1
+    ++++++ Raw output: {"dcdb7910-0be9-402d-b14b-420926059615": ["66c988b8-bc33-42ae-b946-10de63599e6d", "131a10b0-71d7-4803-871e-32c1d4d88c42", "c7a957fa-990e-4462-8a47-e66888725ae3", "9b76292e-83b6-44d0-927d-9d3c4ac0973d"]}
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': ['66c988b8-bc33-42ae-b946-10de63599e6d', '131a10b0-71d7-4803-871e-32c1d4d88c42', 'c7a957fa-990e-4462-8a47-e66888725ae3', '9b76292e-83b6-44d0-927d-9d3c4ac0973d']}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: ['66c988b8-bc33-42ae-b946-10de63599e6d', '131a10b0-71d7-4803-871e-32c1d4d88c42', 'c7a957fa-990e-4462-8a47-e66888725ae3', '9b76292e-83b6-44d0-927d-9d3c4ac0973d'], Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"dcdb7910-0be9-402d-b14b-420926059615": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:c7a957fa-990e-4462-8a47-e66888725ae3
+    ++++++ Got Score:0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+    ++++++ Raw output: {"dcdb7910-0be9-402d-b14b-420926059615": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': 'c7a957fa-990e-4462-8a47-e66888725ae3'}
+    ++++++ Expected:9b76292e-83b6-44d0-927d-9d3c4ac0973d
+    ++++++ Got Score:0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 0
+    ++++++ Raw output: {"131a10b0-71d7-4803-871e-32c1d4d88c42": "wjpuedge_1"}
+    ++++++ Parsed answer:{'131a10b0-71d7-4803-871e-32c1d4d88c42': 'wjpuedge_1'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: wjpuedge_1, Score: 0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+    ++++++ Raw output: {"7f426851-06b3-4505-90eb-eb9f349851f1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+    ++++++ Parsed answer:{'7f426851-06b3-4505-90eb-eb9f349851f1': '4dddd26b-2b1c-40fd-a965-3eece97cc9f4'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "cviuedge_1"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': 'cviuedge_1'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: cviuedge_1, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "cviuedge_3"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': 'cviuedge_3'}
+    ++++++ Expected:2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+    ++++++ Got Score:0
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: cviuedge_3, Score: 0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 1
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: dcdb7910-0be9-402d-b14b-420926059615, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 1
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "tsyeedge_0": "9ba52921-3573-44af-a8e7-8dd5084eb25
+LEN(raw_json_graph)=20
+
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 71, 'total_tokens': 3658}
+Usage: {'prompt_tokens': 3589, 'completion_tokens': 74, 'total_tokens': 3663}
+Usage: {'prompt_tokens': 3589, 'completion_tokens': 74, 'total_tokens': 3663}
+Usage: {'prompt_tokens': 3589, 'completion_tokens': 74, 'total_tokens': 3663}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 73, 'total_tokens': 3660}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 75, 'total_tokens': 3662}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 75, 'total_tokens': 3662}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 73, 'total_tokens': 3660}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 73, 'total_tokens': 3660}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 73, 'total_tokens': 3660}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 75, 'total_tokens': 3662}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 73, 'total_tokens': 3660}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 72, 'total_tokens': 3659}
+Usage: {'prompt_tokens': 3589, 'completion_tokens': 74, 'total_tokens': 3663}
+Usage: {'prompt_tokens': 3589, 'completion_tokens': 70, 'total_tokens': 3659}
+Usage: {'prompt_tokens': 3589, 'completion_tokens': 70, 'total_tokens': 3659}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 73, 'total_tokens': 3660}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 73, 'total_tokens': 3660}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 66, 'total_tokens': 3653}
+Usage: {'prompt_tokens': 3585, 'completion_tokens': 62, 'total_tokens': 3647}
+Usage: {'prompt_tokens': 3585, 'completion_tokens': 74, 'total_tokens': 3659}
+Usage: {'prompt_tokens': 3585, 'completion_tokens': 74, 'total_tokens': 3659}
+Usage: {'prompt_tokens': 3585, 'completion_tokens': 72, 'total_tokens': 3657}
+Usage: {'prompt_tokens': 3585, 'completion_tokens': 72, 'total_tokens': 3657}
+Usage: {'prompt_tokens': 3585, 'completion_tokens': 72, 'total_tokens': 3657}
+Usage: {'prompt_tokens': 3581, 'completion_tokens': 70, 'total_tokens': 3651}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 44, 'total_tokens': 3631}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 70, 'total_tokens': 3657}
+Usage: {'prompt_tokens': 3583, 'completion_tokens': 71, 'total_tokens': 3654}
+Usage: {'prompt_tokens': 3583, 'completion_tokens': 66, 'total_tokens': 3649}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 78, 'total_tokens': 3665}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 66, 'total_tokens': 3653}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 66, 'total_tokens': 3653}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 66, 'total_tokens': 3653}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 74, 'total_tokens': 3661}
+Usage: {'prompt_tokens': 3579, 'completion_tokens': 71, 'total_tokens': 3650}
+Usage: {'prompt_tokens': 3579, 'completion_tokens': 71, 'total_tokens': 3650}
+Usage: {'prompt_tokens': 3579, 'completion_tokens': 71, 'total_tokens': 3650}
+Usage: {'prompt_tokens': 3579, 'completion_tokens': 70, 'total_tokens': 3649}
+Usage: {'prompt_tokens': 3585, 'completion_tokens': 183, 'total_tokens': 3768}
+Usage: {'prompt_tokens': 3585, 'completion_tokens': 74, 'total_tokens': 3659}
+Usage: {'prompt_tokens': 3585, 'completion_tokens': 74, 'total_tokens': 3659}
+Usage: {'prompt_tokens': 3585, 'completion_tokens': 72, 'total_tokens': 3657}
+Usage: {'prompt_tokens': 3591, 'completion_tokens': 48, 'total_tokens': 3639}
+Usage: {'prompt_tokens': 3591, 'completion_tokens': 72, 'total_tokens': 3663}
+Usage: {'prompt_tokens': 3579, 'completion_tokens': 69, 'total_tokens': 3648}
+Usage: {'prompt_tokens': 3579, 'completion_tokens': 69, 'total_tokens': 3648}
+Usage: {'prompt_tokens': 3579, 'completion_tokens': 69, 'total_tokens': 3648}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 69, 'total_tokens': 3656}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 69, 'total_tokens': 3656}
+Usage: {'prompt_tokens': 3573, 'completion_tokens': 38, 'total_tokens': 3611}
+Usage: {'prompt_tokens': 3573, 'completion_tokens': 67, 'total_tokens': 3640}
+Usage: {'prompt_tokens': 3573, 'completion_tokens': 67, 'total_tokens': 3640}
+Usage: {'prompt_tokens': 3573, 'completion_tokens': 38, 'total_tokens': 3611}
+Usage: {'prompt_tokens': 3573, 'completion_tokens': 66, 'total_tokens': 3639}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 72, 'total_tokens': 3659}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 72, 'total_tokens': 3659}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 72, 'total_tokens': 3659}
+Usage: {'prompt_tokens': 3587, 'completion_tokens': 74, 'total_tokens': 3661}
+Total_score:32, Full_score:59, Accuracy:0.5423728813559322
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "<edge_0>": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+LEN(raw_json_graph)=20
+
+{
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "<edge_0>": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "9b76292e-83b6-44d0-927d-9d3c4ac0973d": {
+    "<edge_0>": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "<edge_1>": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec",
+    "<edge_2>": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": {
+    "<edge_0>": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "<edge_1>": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "<edge_2>": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "<edge_3>": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "<edge_4>": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "c7a957fa-990e-4462-8a47-e66888725ae3": {
+    "<edge_0>": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "<edge_1>": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "<edge_2>": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": {
+    "<edge_0>": "66c988b8-bc33-42ae-b946-10de63599e6d"
+  },
+  "a2878670-0571-4d2e-8a6e-f2baa768d30e": {
+    "<edge_0>": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "<edge_1>": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "<edge_2>": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"
+  },
+  "12b6dd39-8a3b-4845-bd6a-c1487e646056": {
+    "<edge_0>": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "<edge_1>": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "<edge_2>": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"
+  },
+  "66c988b8-bc33-42ae-b946-10de63599e6d": {
+    "<edge_0>": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "<edge_1>": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "<edge_2>": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "<edge_3>": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "<edge_4>": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "ac587166-e004-4d7c-8b0d-3e2dae2c1fce": {
+    "<edge_0>": "c7a957fa-990e-4462-8a47-e66888725ae3"
+  },
+  "9724a9cb-85fb-46e0-b85c-6bff9edc74ec": {
+    "<edge_0>": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"
+  },
+  "505f0933-9494-47c2-a1ff-db93e5e3501f": {
+    "<edge_0>": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "<edge_1>": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "9ba52921-3573-44af-a8e7-8dd5084eb253": {
+    "<edge_0>": "12b6dd39-8a3b-4845-bd6a-c1487e646056",
+    "<edge_1>": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5e49653b-6c6f-4899-90b6-902fd4d4ca49": {
+    "<edge_0>": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "<edge_1>": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "<edge_2>": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "<edge_3>": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "<edge_4>": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "4dddd26b-2b1c-40fd-a965-3eece97cc9f4": {
+    "<edge_0>": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "<edge_1>": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "<edge_2>": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "<edge_3>": "a2878670-0571-4d2e-8a6e-f2baa768d30e"
+  },
+  "dcdb7910-0be9-402d-b14b-420926059615": {
+    "<edge_0>": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "<edge_1>": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "<edge_2>": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "<edge_3>": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "131a10b0-71d7-4803-871e-32c1d4d88c42": {
+    "<edge_0>": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "<edge_1>": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "13cdcc23-bdcb-4b57-a14a-90f9a15eed75": {
+    "<edge_0>": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "<edge_1>": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "<edge_2>": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "7f426851-06b3-4505-90eb-eb9f349851f1": {
+    "<edge_0>": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "<edge_1>": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": {
+    "<edge_0>": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "<edge_1>": "9b76292e-83b6-44d0-927d-9d3c4ac0973d",
+    "<edge_2>": "558568a2-31d6-4d05-b4fc-e32caa3c43a9",
+    "<edge_3>": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83",
+    "<edge_4>": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "558568a2-31d6-4d05-b4fc-e32caa3c43a9": {
+    "<edge_0>": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "<edge_1>": "dcdb7910-0be9-402d-b14b-420926059615",
+    "<edge_2>": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4",
+    "<edge_3>": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "b04cde07-c401-4de1-b8a9-88365d85862d" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"b04cde07-c401-4de1-b8a9-88365d85862d": $FINAL_VALUE}.
+    
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, 9ba52921-3573-44af-a8e7-8dd5084eb253"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': 'b04cde07-c401-4de1-b8a9-88365d85862d, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, 9ba52921-3573-44af-a8e7-8dd5084eb253'}
+    ++++++ Expected:b04cde07-c401-4de1-b8a9-88365d85862d
+    ++++++ Got Score:0
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 0
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, 9ba52921-3573-44af-a8e7-8dd5084eb253"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': 'b04cde07-c401-4de1-b8a9-88365d85862d, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, 9ba52921-3573-44af-a8e7-8dd5084eb253'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: b04cde07-c401-4de1-b8a9-88365d85862d, 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 0
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:9ba52921-3573-44af-a8e7-8dd5084eb253
+    ++++++ Got Score:0
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": ["7f426851-06b3-4505-90eb-eb9f349851f1", "131a10b0-71d7-4803-871e-32c1d4d88c42", "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8", "c7a957fa-990e-4462-8a47-e66888725ae3", "5e49653b-6c6f-4899-90b6-902fd4d4ca49"]}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': ['7f426851-06b3-4505-90eb-eb9f349851f1', '131a10b0-71d7-4803-871e-32c1d4d88c42', '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8', 'c7a957fa-990e-4462-8a47-e66888725ae3', '5e49653b-6c6f-4899-90b6-902fd4d4ca49']}
+    ++++++ Expected:7f426851-06b3-4505-90eb-eb9f349851f1
+    ++++++ Got Score:0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: ['7f426851-06b3-4505-90eb-eb9f349851f1', '131a10b0-71d7-4803-871e-32c1d4d88c42', '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8', 'c7a957fa-990e-4462-8a47-e66888725ae3', '5e49653b-6c6f-4899-90b6-902fd4d4ca49'], Score: 0
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': 'a2878670-0571-4d2e-8a6e-f2baa768d30e'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:5e49653b-6c6f-4899-90b6-902fd4d4ca49
+    ++++++ Got Score:0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+    ++++++ Raw output: {"c7a957fa-990e-4462-8a47-e66888725ae3": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+    ++++++ Parsed answer:{'c7a957fa-990e-4462-8a47-e66888725ae3': '13cdcc23-bdcb-4b57-a14a-90f9a15eed75'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 0
+    ++++++ Raw output: {"c7a957fa-990e-4462-8a47-e66888725ae3": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+    ++++++ Parsed answer:{'c7a957fa-990e-4462-8a47-e66888725ae3': '13cdcc23-bdcb-4b57-a14a-90f9a15eed75'}
+    ++++++ Expected:2f78a7f4-a64e-42e3-b2ca-c75441ba3e83
+    ++++++ Got Score:0
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+    ++++++ Raw output: {"a2878670-0571-4d2e-8a6e-f2baa768d30e": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'a2878670-0571-4d2e-8a6e-f2baa768d30e': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": ["131a10b0-71d7-4803-871e-32c1d4d88c42", "9724a9cb-85fb-46e0-b85c-6bff9edc74ec", "c7a957fa-990e-4462-8a47-e66888725ae3"]}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': ['131a10b0-71d7-4803-871e-32c1d4d88c42', '9724a9cb-85fb-46e0-b85c-6bff9edc74ec', 'c7a957fa-990e-4462-8a47-e66888725ae3']}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: ['131a10b0-71d7-4803-871e-32c1d4d88c42', '9724a9cb-85fb-46e0-b85c-6bff9edc74ec', 'c7a957fa-990e-4462-8a47-e66888725ae3'], Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': 'c7a957fa-990e-4462-8a47-e66888725ae3'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 0
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': 'c7a957fa-990e-4462-8a47-e66888725ae3'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 0
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '5e49653b-6c6f-4899-90b6-902fd4d4ca49'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 0
+    ++++++ Raw output: {"ac587166-e004-4d7c-8b0d-3e2dae2c1fce": null}
+    ++++++ Parsed answer:{'ac587166-e004-4d7c-8b0d-3e2dae2c1fce': None}
+    ++++++ Expected:c7a957fa-990e-4462-8a47-e66888725ae3
+    ++++++ Got Score:0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: None, Score: 0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+    ++++++ Raw output: {"505f0933-9494-47c2-a1ff-db93e5e3501f": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+    ++++++ Parsed answer:{'505f0933-9494-47c2-a1ff-db93e5e3501f': '13cdcc23-bdcb-4b57-a14a-90f9a15eed75'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 0
+    ++++++ Raw output: {"9ba5293-3573-44af-a8e7-8dd5084eb253": "12b6dd39-8a3b-4845-bd6a-c1487e646056"}
+    ++++++ Parsed answer:{'9ba5293-3573-44af-a8e7-8dd5084eb253': '12b6dd39-8a3b-4845-bd6a-c1487e646056'}
+    ++++++ Expected:12b6dd39-8a3b-4845-bd6a-c1487e646056
+    ++++++ Got Score:0
+++++++ Expected: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Real: [], Score: 0
+    ++++++ Raw output: {"9ba5293-3573-44af-a8e7-8dd5084eb253": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+    ++++++ Parsed answer:{'9ba5293-3573-44af-a8e7-8dd5084eb253': '4dddd26b-2b1c-40fd-a965-3eece97cc9f4'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: [], Score: 0
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": ["9b76292e-83b6-44d0-927d-9d3c4ac0973d", "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"]}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': ['9b76292e-83b6-44d0-927d-9d3c4ac0973d', '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8']}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: ['9b76292e-83b6-44d0-927d-9d3c4ac0973d', '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'], Score: 0
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": ["f42e7d9c-af4b-4b6d-84e6-df87a5916d9f", "7f426851-06b3-4505-90eb-eb9f349851f1", "131a10b0-71d7-4803-871e-32c1d4d88c42", "a2878670-0571-4d2e-8a6e-f2baa768d30e"]}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': ['f42e7d9c-af4b-4b6d-84e6-df87a5916d9f', '7f426851-06b3-4505-90eb-eb9f349851f1', '131a10b0-71d7-4803-871e-32c1d4d88c42', 'a2878670-0571-4d2e-8a6e-f2baa768d30e']}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: ['f42e7d9c-af4b-4b6d-84e6-df87a5916d9f', '7f426851-06b3-4505-90eb-eb9f349851f1', '131a10b0-71d7-4803-871e-32c1d4d88c42', 'a2878670-0571-4d2e-8a6e-f2baa768d30e'], Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f'}
+    ++++++ Expected:7f426851-06b3-4505-90eb-eb9f349851f1
+    ++++++ Got Score:0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "a2878670-0571-4d2e-8a6e-f2baa768d30e"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'a2878670-0571-4d2e-8a6e-f2baa768d30e'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+    ++++++ Raw output: {"dcdb7910-0be9-402d-b14b-420926059615": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+    ++++++ Raw output: {"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'13cdcc23-bdcb-4b57-a14a-90f9a15eed75': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+    ++++++ Raw output: {"7f426851-06b3-4505-90eb-eb9f349851f1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+    ++++++ Parsed answer:{'7f426851-06b3-4505-90eb-eb9f349851f1': '4dddd26b-2b1c-40fd-a965-3eece97cc9f4'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "902fd4d4ca49"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '902fd4d4ca49'}
+    ++++++ Expected:5e49653b-6c6f-4899-90b6-902fd4d4ca49
+    ++++++ Got Score:0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 902fd4d4ca49, Score: 0
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: dcdb7910-0be9-402d-b14b-420926059615, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 1
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "<edge_0>": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+LEN(raw_json_graph)=20
+
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 71, 'total_tokens': 3564}
+Usage: {'prompt_tokens': 3495, 'completion_tokens': 141, 'total_tokens': 3636}
+Usage: {'prompt_tokens': 3495, 'completion_tokens': 141, 'total_tokens': 3636}
+Usage: {'prompt_tokens': 3495, 'completion_tokens': 74, 'total_tokens': 3569}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 213, 'total_tokens': 3706}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 70, 'total_tokens': 3563}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 74, 'total_tokens': 3567}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 73, 'total_tokens': 3566}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 74, 'total_tokens': 3567}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 73, 'total_tokens': 3566}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 69, 'total_tokens': 3562}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 69, 'total_tokens': 3562}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 72, 'total_tokens': 3565}
+Usage: {'prompt_tokens': 3495, 'completion_tokens': 74, 'total_tokens': 3569}
+Usage: {'prompt_tokens': 3495, 'completion_tokens': 70, 'total_tokens': 3565}
+Usage: {'prompt_tokens': 3495, 'completion_tokens': 76, 'total_tokens': 3571}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 73, 'total_tokens': 3566}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 73, 'total_tokens': 3566}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 66, 'total_tokens': 3559}
+Usage: {'prompt_tokens': 3491, 'completion_tokens': 144, 'total_tokens': 3635}
+Usage: {'prompt_tokens': 3491, 'completion_tokens': 74, 'total_tokens': 3565}
+Usage: {'prompt_tokens': 3491, 'completion_tokens': 72, 'total_tokens': 3563}
+Usage: {'prompt_tokens': 3491, 'completion_tokens': 72, 'total_tokens': 3563}
+Usage: {'prompt_tokens': 3491, 'completion_tokens': 72, 'total_tokens': 3563}
+Usage: {'prompt_tokens': 3491, 'completion_tokens': 38, 'total_tokens': 3529}
+Usage: {'prompt_tokens': 3487, 'completion_tokens': 70, 'total_tokens': 3557}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 69, 'total_tokens': 3562}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 69, 'total_tokens': 3562}
+Usage: {'prompt_tokens': 3489, 'completion_tokens': 70, 'total_tokens': 3559}
+Usage: {'prompt_tokens': 3489, 'completion_tokens': 66, 'total_tokens': 3555}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 104, 'total_tokens': 3597}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 73, 'total_tokens': 3566}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 66, 'total_tokens': 3559}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 66, 'total_tokens': 3559}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 74, 'total_tokens': 3567}
+Usage: {'prompt_tokens': 3485, 'completion_tokens': 181, 'total_tokens': 3666}
+Usage: {'prompt_tokens': 3485, 'completion_tokens': 69, 'total_tokens': 3554}
+Usage: {'prompt_tokens': 3485, 'completion_tokens': 70, 'total_tokens': 3555}
+Usage: {'prompt_tokens': 3485, 'completion_tokens': 70, 'total_tokens': 3555}
+Usage: {'prompt_tokens': 3491, 'completion_tokens': 71, 'total_tokens': 3562}
+Usage: {'prompt_tokens': 3491, 'completion_tokens': 73, 'total_tokens': 3564}
+Usage: {'prompt_tokens': 3491, 'completion_tokens': 72, 'total_tokens': 3563}
+Usage: {'prompt_tokens': 3491, 'completion_tokens': 73, 'total_tokens': 3564}
+Usage: {'prompt_tokens': 3497, 'completion_tokens': 74, 'total_tokens': 3571}
+Usage: {'prompt_tokens': 3497, 'completion_tokens': 72, 'total_tokens': 3569}
+Usage: {'prompt_tokens': 3485, 'completion_tokens': 69, 'total_tokens': 3554}
+Usage: {'prompt_tokens': 3485, 'completion_tokens': 69, 'total_tokens': 3554}
+Usage: {'prompt_tokens': 3485, 'completion_tokens': 69, 'total_tokens': 3554}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 69, 'total_tokens': 3562}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 69, 'total_tokens': 3562}
+Usage: {'prompt_tokens': 3479, 'completion_tokens': 67, 'total_tokens': 3546}
+Usage: {'prompt_tokens': 3479, 'completion_tokens': 67, 'total_tokens': 3546}
+Usage: {'prompt_tokens': 3479, 'completion_tokens': 67, 'total_tokens': 3546}
+Usage: {'prompt_tokens': 3479, 'completion_tokens': 66, 'total_tokens': 3545}
+Usage: {'prompt_tokens': 3479, 'completion_tokens': 42, 'total_tokens': 3521}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 72, 'total_tokens': 3565}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 72, 'total_tokens': 3565}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 72, 'total_tokens': 3565}
+Usage: {'prompt_tokens': 3493, 'completion_tokens': 74, 'total_tokens': 3567}
+Total_score:28, Full_score:59, Accuracy:0.4745762711864407
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04cedge_0": "9ba52921-3573-44af-a8e7-8dd5084eb25
+LEN(raw_json_graph)=20
+
+{
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04cedge_0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "9b76292e-83b6-44d0-927d-9d3c4ac0973d": {
+    "9b76edge_0": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "9b76edge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec",
+    "9b76edge_2": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": {
+    "f42eedge_0": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "f42eedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "f42eedge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "f42eedge_3": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "f42eedge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "c7a957fa-990e-4462-8a47-e66888725ae3": {
+    "c7a9edge_0": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "c7a9edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "c7a9edge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": {
+    "2f78edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d"
+  },
+  "a2878670-0571-4d2e-8a6e-f2baa768d30e": {
+    "a287edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "a287edge_1": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "a287edge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"
+  },
+  "12b6dd39-8a3b-4845-bd6a-c1487e646056": {
+    "12b6edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "12b6edge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "12b6edge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"
+  },
+  "66c988b8-bc33-42ae-b946-10de63599e6d": {
+    "66c9edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "66c9edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "66c9edge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "66c9edge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "66c9edge_4": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "ac587166-e004-4d7c-8b0d-3e2dae2c1fce": {
+    "ac58edge_0": "c7a957fa-990e-4462-8a47-e66888725ae3"
+  },
+  "9724a9cb-85fb-46e0-b85c-6bff9edc74ec": {
+    "9724edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"
+  },
+  "505f0933-9494-47c2-a1ff-db93e5e3501f": {
+    "505fedge_0": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "505fedge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "9ba52921-3573-44af-a8e7-8dd5084eb253": {
+    "9ba5edge_0": "12b6dd39-8a3b-4845-bd6a-c1487e646056",
+    "9ba5edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5e49653b-6c6f-4899-90b6-902fd4d4ca49": {
+    "5e49edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "5e49edge_1": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "5e49edge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "5e49edge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "5e49edge_4": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "4dddd26b-2b1c-40fd-a965-3eece97cc9f4": {
+    "4dddedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "4dddedge_1": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "4dddedge_2": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "4dddedge_3": "a2878670-0571-4d2e-8a6e-f2baa768d30e"
+  },
+  "dcdb7910-0be9-402d-b14b-420926059615": {
+    "dcdbedge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "dcdbedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "dcdbedge_2": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "dcdbedge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "131a10b0-71d7-4803-871e-32c1d4d88c42": {
+    "131aedge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "131aedge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "13cdcc23-bdcb-4b57-a14a-90f9a15eed75": {
+    "13cdedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "13cdedge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "13cdedge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "7f426851-06b3-4505-90eb-eb9f349851f1": {
+    "7f42edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "7f42edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": {
+    "5db4edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "5db4edge_1": "9b76292e-83b6-44d0-927d-9d3c4ac0973d",
+    "5db4edge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9",
+    "5db4edge_3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83",
+    "5db4edge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "558568a2-31d6-4d05-b4fc-e32caa3c43a9": {
+    "5585edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "5585edge_1": "dcdb7910-0be9-402d-b14b-420926059615",
+    "5585edge_2": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4",
+    "5585edge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "b04cde07-c401-4de1-b8a9-88365d85862d" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"b04cde07-c401-4de1-b8a9-88365d85862d": $FINAL_VALUE}.
+    
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 7f426851-06b3-4505-90eb-eb9f349851f1, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '558568a2-31d6-4d05-b4fc-e32caa3c43a9'}
+    ++++++ Expected:c7a957fa-990e-4462-8a47-e66888725ae3
+    ++++++ Got Score:0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Score: 0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 1
+    ++++++ Raw output: {"c7a957fa-990e-4462-8a47-e66888725ae3": "66c988b8-bc33-42ae-b946-10de63599e6d"}
+    ++++++ Parsed answer:{'c7a957fa-990e-4462-8a47-e66888725ae3': '66c988b8-bc33-42ae-b946-10de63599e6d'}
+    ++++++ Expected:505f0933-9494-47c2-a1ff-db93e5e3501f
+    ++++++ Got Score:0
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+    ++++++ Raw output: {"a2878670-0571-4d2e-8a6e-f2baa768d30e": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+    ++++++ Parsed answer:{'a2878670-0571-4d2e-8a6e-f2baa768d30e': '13cdcc23-bdcb-4b57-a14a-90f9a15eed75'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "66c9edge_1"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '66c9edge_1'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 66c9edge_1, Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "66c9edge_3"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '66c9edge_3'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 66c9edge_3, Score: 0
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "66c9edge_3"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '66c9edge_3'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 66c9edge_3, Score: 0
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+    ++++++ Raw output: {"505f0933-9494-47c2-a1ff-db93e5e3501f": "505fedge_1"}
+    ++++++ Parsed answer:{'505f0933-9494-47c2-a1ff-db93e5e3501f': '505fedge_1'}
+    ++++++ Expected:13cdcc23-bdcb-4b57-a14a-90f9a15eed75
+    ++++++ Got Score:0
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 505fedge_1, Score: 0
+    ++++++ Raw output: {"505f0933-9494-47c2-a1ff-db93e5e3501f": "505fedge_1"}
+    ++++++ Parsed answer:{'505f0933-9494-47c2-a1ff-db93e5e3501f': '505fedge_1'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 505fedge_1, Score: 0
+++++++ Expected: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Real: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Score: 1
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f,505f0933-9494-47c2-a1ff-db93e5e3501f,a2878670-0571-4d2e-8a6e-f2baa768d30e,5db4c76a-ea72-42e5-8fee-cf6ddfcacee8,9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': 'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f,505f0933-9494-47c2-a1ff-db93e5e3501f,a2878670-0571-4d2e-8a6e-f2baa768d30e,5db4c76a-ea72-42e5-8fee-cf6ddfcacee8,9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f,505f0933-9494-47c2-a1ff-db93e5e3501f,a2878670-0571-4d2e-8a6e-f2baa768d30e,5db4c76a-ea72-42e5-8fee-cf6ddfcacee8,9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:505f0933-9494-47c2-a1ff-db93e5e3501f
+    ++++++ Got Score:0
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:7f426851-06b3-4505-90eb-eb9f349851f1
+    ++++++ Got Score:0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': '2f78a7f4-a64e-42e3-b2ca-c75441ba3e83'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+    ++++++ Raw output: {"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'13cdcc23-bdcb-4b57-a14a-90f9a15eed75': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+    ++++++ Raw output: {"7f426851-06b3-4505-90eb-eb9f349851f1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+    ++++++ Parsed answer:{'7f426851-06b3-4505-90eb-eb9f349851f1': '4dddd26b-2b1c-40fd-a965-3eece97cc9f4'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9ba52921-3573-44af-a8e7-8dd5084eb253"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9ba52921-3573-44af-a8e7-8dd5084eb253'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 1
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: dcdb7910-0be9-402d-b14b-420926059615, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 1
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04cedge_0": "9ba52921-3573-44af-a8e7-8dd5084eb25
+LEN(raw_json_graph)=20
+
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 71, 'total_tokens': 3718}
+Usage: {'prompt_tokens': 3649, 'completion_tokens': 74, 'total_tokens': 3723}
+Usage: {'prompt_tokens': 3649, 'completion_tokens': 74, 'total_tokens': 3723}
+Usage: {'prompt_tokens': 3649, 'completion_tokens': 72, 'total_tokens': 3721}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 73, 'total_tokens': 3720}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 75, 'total_tokens': 3722}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 75, 'total_tokens': 3722}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 73, 'total_tokens': 3720}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 73, 'total_tokens': 3720}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 72, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 75, 'total_tokens': 3722}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 73, 'total_tokens': 3720}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 72, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3649, 'completion_tokens': 74, 'total_tokens': 3723}
+Usage: {'prompt_tokens': 3649, 'completion_tokens': 70, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3649, 'completion_tokens': 70, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 73, 'total_tokens': 3720}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 73, 'total_tokens': 3720}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 66, 'total_tokens': 3713}
+Usage: {'prompt_tokens': 3645, 'completion_tokens': 45, 'total_tokens': 3690}
+Usage: {'prompt_tokens': 3645, 'completion_tokens': 74, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3645, 'completion_tokens': 45, 'total_tokens': 3690}
+Usage: {'prompt_tokens': 3645, 'completion_tokens': 45, 'total_tokens': 3690}
+Usage: {'prompt_tokens': 3645, 'completion_tokens': 73, 'total_tokens': 3718}
+Usage: {'prompt_tokens': 3645, 'completion_tokens': 72, 'total_tokens': 3717}
+Usage: {'prompt_tokens': 3641, 'completion_tokens': 70, 'total_tokens': 3711}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 46, 'total_tokens': 3693}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 46, 'total_tokens': 3693}
+Usage: {'prompt_tokens': 3643, 'completion_tokens': 71, 'total_tokens': 3714}
+Usage: {'prompt_tokens': 3643, 'completion_tokens': 67, 'total_tokens': 3710}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 208, 'total_tokens': 3855}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 66, 'total_tokens': 3713}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 66, 'total_tokens': 3713}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 66, 'total_tokens': 3713}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 74, 'total_tokens': 3721}
+Usage: {'prompt_tokens': 3639, 'completion_tokens': 71, 'total_tokens': 3710}
+Usage: {'prompt_tokens': 3639, 'completion_tokens': 69, 'total_tokens': 3708}
+Usage: {'prompt_tokens': 3639, 'completion_tokens': 69, 'total_tokens': 3708}
+Usage: {'prompt_tokens': 3639, 'completion_tokens': 70, 'total_tokens': 3709}
+Usage: {'prompt_tokens': 3645, 'completion_tokens': 71, 'total_tokens': 3716}
+Usage: {'prompt_tokens': 3645, 'completion_tokens': 74, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3645, 'completion_tokens': 72, 'total_tokens': 3717}
+Usage: {'prompt_tokens': 3645, 'completion_tokens': 73, 'total_tokens': 3718}
+Usage: {'prompt_tokens': 3651, 'completion_tokens': 74, 'total_tokens': 3725}
+Usage: {'prompt_tokens': 3651, 'completion_tokens': 72, 'total_tokens': 3723}
+Usage: {'prompt_tokens': 3639, 'completion_tokens': 69, 'total_tokens': 3708}
+Usage: {'prompt_tokens': 3639, 'completion_tokens': 69, 'total_tokens': 3708}
+Usage: {'prompt_tokens': 3639, 'completion_tokens': 69, 'total_tokens': 3708}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 69, 'total_tokens': 3716}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 69, 'total_tokens': 3716}
+Usage: {'prompt_tokens': 3633, 'completion_tokens': 64, 'total_tokens': 3697}
+Usage: {'prompt_tokens': 3633, 'completion_tokens': 67, 'total_tokens': 3700}
+Usage: {'prompt_tokens': 3633, 'completion_tokens': 67, 'total_tokens': 3700}
+Usage: {'prompt_tokens': 3633, 'completion_tokens': 66, 'total_tokens': 3699}
+Usage: {'prompt_tokens': 3633, 'completion_tokens': 66, 'total_tokens': 3699}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 72, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 72, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 72, 'total_tokens': 3719}
+Usage: {'prompt_tokens': 3647, 'completion_tokens': 74, 'total_tokens': 3721}
+Total_score:36, Full_score:59, Accuracy:0.6101694915254238
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "<key>=b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04cedge_0": "9ba52921-3573-44af-a8e7-8dd50
+LEN(raw_json_graph)=20
+
+{
+  "<key>=b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04cedge_0": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "<key>=9b76292e-83b6-44d0-927d-9d3c4ac0973d": {
+    "9b76edge_0": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "9b76edge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec",
+    "9b76edge_2": "9ba52921-3573-44af-a8e7-8dd5084eb253"
+  },
+  "<key>=f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": {
+    "f42eedge_0": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "f42eedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "f42eedge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "f42eedge_3": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "f42eedge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "<key>=c7a957fa-990e-4462-8a47-e66888725ae3": {
+    "c7a9edge_0": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "c7a9edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "c7a9edge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "<key>=2f78a7f4-a64e-42e3-b2ca-c75441ba3e83": {
+    "2f78edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d"
+  },
+  "<key>=a2878670-0571-4d2e-8a6e-f2baa768d30e": {
+    "a287edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "a287edge_1": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "a287edge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"
+  },
+  "<key>=12b6dd39-8a3b-4845-bd6a-c1487e646056": {
+    "12b6edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "12b6edge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "12b6edge_2": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"
+  },
+  "<key>=66c988b8-bc33-42ae-b946-10de63599e6d": {
+    "66c9edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "66c9edge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "66c9edge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "66c9edge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "66c9edge_4": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "<key>=ac587166-e004-4d7c-8b0d-3e2dae2c1fce": {
+    "ac58edge_0": "c7a957fa-990e-4462-8a47-e66888725ae3"
+  },
+  "<key>=9724a9cb-85fb-46e0-b85c-6bff9edc74ec": {
+    "9724edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f"
+  },
+  "<key>=505f0933-9494-47c2-a1ff-db93e5e3501f": {
+    "505fedge_0": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75",
+    "505fedge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "<key>=9ba52921-3573-44af-a8e7-8dd5084eb253": {
+    "9ba5edge_0": "12b6dd39-8a3b-4845-bd6a-c1487e646056",
+    "9ba5edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "<key>=5e49653b-6c6f-4899-90b6-902fd4d4ca49": {
+    "5e49edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "5e49edge_1": "505f0933-9494-47c2-a1ff-db93e5e3501f",
+    "5e49edge_2": "a2878670-0571-4d2e-8a6e-f2baa768d30e",
+    "5e49edge_3": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8",
+    "5e49edge_4": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "<key>=4dddd26b-2b1c-40fd-a965-3eece97cc9f4": {
+    "4dddedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "4dddedge_1": "7f426851-06b3-4505-90eb-eb9f349851f1",
+    "4dddedge_2": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "4dddedge_3": "a2878670-0571-4d2e-8a6e-f2baa768d30e"
+  },
+  "<key>=dcdb7910-0be9-402d-b14b-420926059615": {
+    "dcdbedge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "dcdbedge_1": "131a10b0-71d7-4803-871e-32c1d4d88c42",
+    "dcdbedge_2": "c7a957fa-990e-4462-8a47-e66888725ae3",
+    "dcdbedge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  },
+  "<key>=131a10b0-71d7-4803-871e-32c1d4d88c42": {
+    "131aedge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "131aedge_1": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"
+  },
+  "<key>=13cdcc23-bdcb-4b57-a14a-90f9a15eed75": {
+    "13cdedge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "13cdedge_1": "b04cde07-c401-4de1-b8a9-88365d85862d",
+    "13cdedge_2": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83"
+  },
+  "<key>=7f426851-06b3-4505-90eb-eb9f349851f1": {
+    "7f42edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "7f42edge_1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"
+  },
+  "<key>=5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": {
+    "5db4edge_0": "66c988b8-bc33-42ae-b946-10de63599e6d",
+    "5db4edge_1": "9b76292e-83b6-44d0-927d-9d3c4ac0973d",
+    "5db4edge_2": "558568a2-31d6-4d05-b4fc-e32caa3c43a9",
+    "5db4edge_3": "2f78a7f4-a64e-42e3-b2ca-c75441ba3e83",
+    "5db4edge_4": "5e49653b-6c6f-4899-90b6-902fd4d4ca49"
+  },
+  "<key>=558568a2-31d6-4d05-b4fc-e32caa3c43a9": {
+    "5585edge_0": "f42e7d9c-af4b-4b6d-84e6-df87a5916d9f",
+    "5585edge_1": "dcdb7910-0be9-402d-b14b-420926059615",
+    "5585edge_2": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4",
+    "5585edge_3": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"
+  }
+}
+
+Please extract the $FINAL_VALUE for "b04cde07-c401-4de1-b8a9-88365d85862d" following edge "edge_0" from the DataSource above. 
+
+Please only return the results in JSON format and NO explanations. For example: {"b04cde07-c401-4de1-b8a9-88365d85862d": $FINAL_VALUE}.
+    
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+    ++++++ Raw output: {"9b76292e-83b6-44d0-927d-9d3c4ac0973d": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'9b76292e-83b6-44d0-927d-9d3c4ac0973d': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: 9ba52921-3573-44af-a8e7-8dd5084eb253, Real: 9ba52921-3573-44af-a8e7-8dd5084eb253, Score: 1
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: 7f426851-06b3-4505-90eb-eb9f349851f1, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:5db4c76a-ea72-42e5-8fee-cf6ddfcacee8
+    ++++++ Got Score:0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+    ++++++ Raw output: {"f42e7d9c-af4b-4b6d-84e6-df87a5916d9f": "558568a2-31d6-4d05-b4fc-e32caa3c43a9"}
+    ++++++ Parsed answer:{'f42e7d9c-af4b-4b6d-84e6-df87a5916d9f': '558568a2-31d6-4d05-b4fc-e32caa3c43a9'}
+    ++++++ Expected:c7a957fa-990e-4462-8a47-e66888725ae3
+    ++++++ Got Score:0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Score: 0
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 1
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 505f0933-9494-47c2-a1ff-db93e5e3501f, Score: 1
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+    ++++++ Raw output: {"a2878670-0571-4d2e-8a6e-f2baa768d30e": "13cdcc23-bdcb-4b57-a14a-90f9a15eed75"}
+    ++++++ Parsed answer:{'a2878670-0571-4d2e-8a6e-f2baa768d30e': '13cdcc23-bdcb-4b57-a14a-90f9a15eed75'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+    ++++++ Raw output: {"66c988b8-bc33-42ae-b946-10de63599e6d": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'66c988b8-bc33-42ae-b946-10de63599e6d': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:9724a9cb-85fb-46e0-b85c-6bff9edc74ec
+    ++++++ Got Score:0
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Score: 1
+++++++ Expected: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Real: 13cdcc23-bdcb-4b57-a14a-90f9a15eed75, Score: 1
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+++++++ Expected: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Real: 12b6dd39-8a3b-4845-bd6a-c1487e646056, Score: 1
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:505f0933-9494-47c2-a1ff-db93e5e3501f
+    ++++++ Got Score:0
+++++++ Expected: 505f0933-9494-47c2-a1ff-db93e5e3501f, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "5db4c76a-ea72-42e5-8fee-cf6ddfcacee8"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '5db4c76a-ea72-42e5-8fee-cf6ddfcacee8'}
+    ++++++ Expected:a2878670-0571-4d2e-8a6e-f2baa768d30e
+    ++++++ Got Score:0
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 0
+++++++ Expected: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Real: 5db4c76a-ea72-42e5-8fee-cf6ddfcacee8, Score: 1
+    ++++++ Raw output: {"5e49653b-6c6f-4899-90b6-902fd4d4ca49": "9724a9cb-85fb-46e0-b85c-6bff9edc74ec"}
+    ++++++ Parsed answer:{'5e49653b-6c6f-4899-90b6-902fd4d4ca49': '9724a9cb-85fb-46e0-b85c-6bff9edc74ec'}
+    ++++++ Expected:9b76292e-83b6-44d0-927d-9d3c4ac0973d
+    ++++++ Got Score:0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "131a10b0-71d7-4803-871e-32c1d4d88c42"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': '131a10b0-71d7-4803-871e-32c1d4d88c42'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 0
+    ++++++ Raw output: {"4dddd26b-2b1c-40fd-a965-3eece97cc9f4": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'4dddd26b-2b1c-40fd-a965-3eece97cc9f4': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:7f426851-06b3-4505-90eb-eb9f349851f1
+    ++++++ Got Score:0
+++++++ Expected: 7f426851-06b3-4505-90eb-eb9f349851f1, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 131a10b0-71d7-4803-871e-32c1d4d88c42, Score: 1
+++++++ Expected: a2878670-0571-4d2e-8a6e-f2baa768d30e, Real: a2878670-0571-4d2e-8a6e-f2baa768d30e, Score: 1
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+    ++++++ Raw output: {"dcdb7910-0be9-402d-b14b-420926059615": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:131a10b0-71d7-4803-871e-32c1d4d88c42
+    ++++++ Got Score:0
+++++++ Expected: 131a10b0-71d7-4803-871e-32c1d4d88c42, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: c7a957fa-990e-4462-8a47-e66888725ae3, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 1
+    ++++++ Raw output: {"dcdb7910-0be9-402d-b14b-420926059615": "c7a957fa-990e-4462-8a47-e66888725ae3"}
+    ++++++ Parsed answer:{'dcdb7910-0be9-402d-b14b-420926059615': 'c7a957fa-990e-4462-8a47-e66888725ae3'}
+    ++++++ Expected:9b76292e-83b6-44d0-927d-9d3c4ac0973d
+    ++++++ Got Score:0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: c7a957fa-990e-4462-8a47-e66888725ae3, Score: 0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 66c988b8-bc33-42ae-b946-10de63599e6d, Score: 1
+++++++ Expected: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Real: 9724a9cb-85fb-46e0-b85c-6bff9edc74ec, Score: 1
+    ++++++ Raw output: {"13cdcc23-bdcb-4b57-a14a-90f9a15eed75": "b04cde07-c401-4de1-b8a9-88365d85862d"}
+    ++++++ Parsed answer:{'13cdcc23-bdcb-4b57-a14a-90f9a15eed75': 'b04cde07-c401-4de1-b8a9-88365d85862d'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 0
+++++++ Expected: b04cde07-c401-4de1-b8a9-88365d85862d, Real: b04cde07-c401-4de1-b8a9-88365d85862d, Score: 1
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+    ++++++ Raw output: {"7f426851-06b3-4505-90eb-eb9f349851f1": "4dddd26b-2b1c-40fd-a965-3eece97cc9f4"}
+    ++++++ Parsed answer:{'7f426851-06b3-4505-90eb-eb9f349851f1': '4dddd26b-2b1c-40fd-a965-3eece97cc9f4'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:66c988b8-bc33-42ae-b946-10de63599e6d
+    ++++++ Got Score:0
+++++++ Expected: 66c988b8-bc33-42ae-b946-10de63599e6d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+    ++++++ Raw output: {"5db4c76a-ea72-42e5-8fee-cf6ddfcacee8": "9b76292e-83b6-44d0-927d-9d3c4ac0973d"}
+    ++++++ Parsed answer:{'5db4c76a-ea72-42e5-8fee-cf6ddfcacee8': '9b76292e-83b6-44d0-927d-9d3c4ac0973d'}
+    ++++++ Expected:558568a2-31d6-4d05-b4fc-e32caa3c43a9
+    ++++++ Got Score:0
+++++++ Expected: 558568a2-31d6-4d05-b4fc-e32caa3c43a9, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 0
+++++++ Expected: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Real: 2f78a7f4-a64e-42e3-b2ca-c75441ba3e83, Score: 1
+++++++ Expected: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Real: 5e49653b-6c6f-4899-90b6-902fd4d4ca49, Score: 1
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:f42e7d9c-af4b-4b6d-84e6-df87a5916d9f
+    ++++++ Got Score:0
+++++++ Expected: f42e7d9c-af4b-4b6d-84e6-df87a5916d9f, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: dcdb7910-0be9-402d-b14b-420926059615, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 1
+    ++++++ Raw output: {"558568a2-31d6-4d05-b4fc-e32caa3c43a9": "dcdb7910-0be9-402d-b14b-420926059615"}
+    ++++++ Parsed answer:{'558568a2-31d6-4d05-b4fc-e32caa3c43a9': 'dcdb7910-0be9-402d-b14b-420926059615'}
+    ++++++ Expected:4dddd26b-2b1c-40fd-a965-3eece97cc9f4
+    ++++++ Got Score:0
+++++++ Expected: 4dddd26b-2b1c-40fd-a965-3eece97cc9f4, Real: dcdb7910-0be9-402d-b14b-420926059615, Score: 0
+++++++ Expected: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Real: 9b76292e-83b6-44d0-927d-9d3c4ac0973d, Score: 1
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "<key>=b04cde07-c401-4de1-b8a9-88365d85862d": {
+    "b04cedge_0": "9ba52921-3573-44af-a8e7-8dd50
+LEN(raw_json_graph)=20
+
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 71, 'total_tokens': 3758}
+Usage: {'prompt_tokens': 3689, 'completion_tokens': 74, 'total_tokens': 3763}
+Usage: {'prompt_tokens': 3689, 'completion_tokens': 74, 'total_tokens': 3763}
+Usage: {'prompt_tokens': 3689, 'completion_tokens': 72, 'total_tokens': 3761}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 73, 'total_tokens': 3760}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 75, 'total_tokens': 3762}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 75, 'total_tokens': 3762}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 73, 'total_tokens': 3760}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 73, 'total_tokens': 3760}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 73, 'total_tokens': 3760}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 75, 'total_tokens': 3762}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 73, 'total_tokens': 3760}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 72, 'total_tokens': 3759}
+Usage: {'prompt_tokens': 3689, 'completion_tokens': 74, 'total_tokens': 3763}
+Usage: {'prompt_tokens': 3689, 'completion_tokens': 70, 'total_tokens': 3759}
+Usage: {'prompt_tokens': 3689, 'completion_tokens': 70, 'total_tokens': 3759}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 73, 'total_tokens': 3760}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 73, 'total_tokens': 3760}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 66, 'total_tokens': 3753}
+Usage: {'prompt_tokens': 3685, 'completion_tokens': 74, 'total_tokens': 3759}
+Usage: {'prompt_tokens': 3685, 'completion_tokens': 74, 'total_tokens': 3759}
+Usage: {'prompt_tokens': 3685, 'completion_tokens': 74, 'total_tokens': 3759}
+Usage: {'prompt_tokens': 3685, 'completion_tokens': 65, 'total_tokens': 3750}
+Usage: {'prompt_tokens': 3685, 'completion_tokens': 73, 'total_tokens': 3758}
+Usage: {'prompt_tokens': 3685, 'completion_tokens': 72, 'total_tokens': 3757}
+Usage: {'prompt_tokens': 3681, 'completion_tokens': 70, 'total_tokens': 3751}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 69, 'total_tokens': 3756}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 70, 'total_tokens': 3757}
+Usage: {'prompt_tokens': 3683, 'completion_tokens': 71, 'total_tokens': 3754}
+Usage: {'prompt_tokens': 3683, 'completion_tokens': 67, 'total_tokens': 3750}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 66, 'total_tokens': 3753}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 66, 'total_tokens': 3753}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 66, 'total_tokens': 3753}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 66, 'total_tokens': 3753}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 70, 'total_tokens': 3757}
+Usage: {'prompt_tokens': 3679, 'completion_tokens': 71, 'total_tokens': 3750}
+Usage: {'prompt_tokens': 3679, 'completion_tokens': 69, 'total_tokens': 3748}
+Usage: {'prompt_tokens': 3679, 'completion_tokens': 71, 'total_tokens': 3750}
+Usage: {'prompt_tokens': 3679, 'completion_tokens': 70, 'total_tokens': 3749}
+Usage: {'prompt_tokens': 3685, 'completion_tokens': 71, 'total_tokens': 3756}
+Usage: {'prompt_tokens': 3685, 'completion_tokens': 73, 'total_tokens': 3758}
+Usage: {'prompt_tokens': 3685, 'completion_tokens': 72, 'total_tokens': 3757}
+Usage: {'prompt_tokens': 3685, 'completion_tokens': 72, 'total_tokens': 3757}
+Usage: {'prompt_tokens': 3691, 'completion_tokens': 74, 'total_tokens': 3765}
+Usage: {'prompt_tokens': 3691, 'completion_tokens': 72, 'total_tokens': 3763}
+Usage: {'prompt_tokens': 3679, 'completion_tokens': 69, 'total_tokens': 3748}
+Usage: {'prompt_tokens': 3679, 'completion_tokens': 69, 'total_tokens': 3748}
+Usage: {'prompt_tokens': 3679, 'completion_tokens': 69, 'total_tokens': 3748}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 69, 'total_tokens': 3756}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 69, 'total_tokens': 3756}
+Usage: {'prompt_tokens': 3673, 'completion_tokens': 67, 'total_tokens': 3740}
+Usage: {'prompt_tokens': 3673, 'completion_tokens': 67, 'total_tokens': 3740}
+Usage: {'prompt_tokens': 3673, 'completion_tokens': 67, 'total_tokens': 3740}
+Usage: {'prompt_tokens': 3673, 'completion_tokens': 66, 'total_tokens': 3739}
+Usage: {'prompt_tokens': 3673, 'completion_tokens': 66, 'total_tokens': 3739}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 72, 'total_tokens': 3759}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 72, 'total_tokens': 3759}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 72, 'total_tokens': 3759}
+Usage: {'prompt_tokens': 3687, 'completion_tokens': 74, 'total_tokens': 3761}
+Total_score:38, Full_score:59, Accuracy:0.6440677966101694
+
+
+
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n20_p20, baseline, shot_num=0, query_hop_num=1
+Total failed_num=24, wrong_edge_problem=20, possibly_not_found=0, total_score=35, full_score=59
+Summary Token Usage: {'prompt_tokens': 3431, 'completion_tokens': 70, 'total_tokens': 3502}
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n20_p20, node_id[-4:]+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=29, wrong_edge_problem=17, possibly_not_found=0, total_score=30, full_score=59
+Summary Token Usage: {'prompt_tokens': 3649, 'completion_tokens': 67, 'total_tokens': 3716}
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n20_p20, node_id+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=22, wrong_edge_problem=13, possibly_not_found=4, total_score=37, full_score=59
+Summary Token Usage: {'prompt_tokens': 5367, 'completion_tokens': 71, 'total_tokens': 5438}
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n20_p20, randomStr+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=27, wrong_edge_problem=17, possibly_not_found=2, total_score=32, full_score=59
+Summary Token Usage: {'prompt_tokens': 3584, 'completion_tokens': 71, 'total_tokens': 3655}
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n20_p20, <edge_id>, shot_num=0, query_hop_num=1
+Total failed_num=31, wrong_edge_problem=16, possibly_not_found=2, total_score=28, full_score=59
+Summary Token Usage: {'prompt_tokens': 3490, 'completion_tokens': 78, 'total_tokens': 3568}
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n20_p20, node_id[:4]+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=23, wrong_edge_problem=12, possibly_not_found=0, total_score=36, full_score=59
+Summary Token Usage: {'prompt_tokens': 3644, 'completion_tokens': 71, 'total_tokens': 3715}
+
+     Basic info: Mistral7BInstructv0.3.log, gnp_n20_p20, <key=>node_id AND node_id[:4]+edge_id, shot_num=0, query_hop_num=1
+Total failed_num=21, wrong_edge_problem=17, possibly_not_found=0, total_score=38, full_score=59
+Summary Token Usage: {'prompt_tokens': 3684, 'completion_tokens': 70, 'total_tokens': 3755}

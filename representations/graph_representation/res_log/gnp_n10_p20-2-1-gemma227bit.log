@@ -1,0 +1,863 @@
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+ 
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output:
+A: In the given dictionary D, extract the value for "fd956936-3d44-4567-8066-341b51489641", dic_value_1={"edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"}, then extract value for edge "edge_0" from dic_value_1, the value is "eee6a39e-e6f3-43f7-acc9-975d7bb41360". The next step is to extract value for "eee6a39e-e6f3-43f7-acc9-975d7bb41360" from D, the value is dic_value_2={"edge_0": "fd956936-3d44-4567-8066-341b51489641"}, finally extract value for edge "edge_0" from dic_value_2, the value is "fd956936-3d44-4567-8066-341b51489641". 
+
+So the final answer is {"fd956936-3d44-4567-8066-341b51489641": "fd956936-3d44-4567-8066-341b51489641"}.
+    ++++++ Parsed answer:{'fd956936-3d44-4567-8066-341b51489641': 'fd956936-3d44-4567-8066-341b51489641'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: fd956936-3d44-4567-8066-341b51489641, Score: 0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "edge_0": "fd956936-3d44-4567-8066-341b51489641"
+ 
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1428, 'completion_tokens': 376, 'total_tokens': 1804}
+Usage: {'prompt_tokens': 1427, 'completion_tokens': 389, 'total_tokens': 1816}
+Usage: {'prompt_tokens': 1426, 'completion_tokens': 390, 'total_tokens': 1816}
+Usage: {'prompt_tokens': 1430, 'completion_tokens': 422, 'total_tokens': 1852}
+Usage: {'prompt_tokens': 1430, 'completion_tokens': 428, 'total_tokens': 1858}
+Usage: {'prompt_tokens': 1427, 'completion_tokens': 425, 'total_tokens': 1852}
+Usage: {'prompt_tokens': 1427, 'completion_tokens': 431, 'total_tokens': 1858}
+Usage: {'prompt_tokens': 1428, 'completion_tokens': 379, 'total_tokens': 1807}
+Usage: {'prompt_tokens': 1427, 'completion_tokens': 464, 'total_tokens': 1891}
+Usage: {'prompt_tokens': 1427, 'completion_tokens': 466, 'total_tokens': 1893}
+Usage: {'prompt_tokens': 1427, 'completion_tokens': 470, 'total_tokens': 1897}
+Usage: {'prompt_tokens': 1427, 'completion_tokens': 464, 'total_tokens': 1891}
+Usage: {'prompt_tokens': 1430, 'completion_tokens': 380, 'total_tokens': 1810}
+Usage: {'prompt_tokens': 1428, 'completion_tokens': 376, 'total_tokens': 1804}
+Usage: {'prompt_tokens': 1428, 'completion_tokens': 433, 'total_tokens': 1861}
+Usage: {'prompt_tokens': 1428, 'completion_tokens': 433, 'total_tokens': 1861}
+Total_score:15, Full_score:16, Accuracy:0.9375
+
+
+
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "5a72edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "1360edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "262cedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "48f1edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "48f1edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3e12edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "10b3edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "10b3edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "9641edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "9f28edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "bf82edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "bf82edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "b5d2edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1478, 'completion_tokens': 404, 'total_tokens': 1882}
+Usage: {'prompt_tokens': 1477, 'completion_tokens': 405, 'total_tokens': 1882}
+Usage: {'prompt_tokens': 1476, 'completion_tokens': 398, 'total_tokens': 1874}
+Usage: {'prompt_tokens': 1480, 'completion_tokens': 448, 'total_tokens': 1928}
+Usage: {'prompt_tokens': 1480, 'completion_tokens': 442, 'total_tokens': 1922}
+Usage: {'prompt_tokens': 1477, 'completion_tokens': 439, 'total_tokens': 1916}
+Usage: {'prompt_tokens': 1477, 'completion_tokens': 445, 'total_tokens': 1922}
+Usage: {'prompt_tokens': 1478, 'completion_tokens': 387, 'total_tokens': 1865}
+Usage: {'prompt_tokens': 1477, 'completion_tokens': 480, 'total_tokens': 1957}
+Usage: {'prompt_tokens': 1477, 'completion_tokens': 482, 'total_tokens': 1959}
+Usage: {'prompt_tokens': 1477, 'completion_tokens': 486, 'total_tokens': 1963}
+Usage: {'prompt_tokens': 1477, 'completion_tokens': 480, 'total_tokens': 1957}
+Usage: {'prompt_tokens': 1480, 'completion_tokens': 394, 'total_tokens': 1874}
+Usage: {'prompt_tokens': 1478, 'completion_tokens': 384, 'total_tokens': 1862}
+Usage: {'prompt_tokens': 1478, 'completion_tokens': 443, 'total_tokens': 1921}
+Usage: {'prompt_tokens': 1478, 'completion_tokens': 445, 'total_tokens': 1923}
+Total_score:16, Full_score:16, Accuracy:1.0
+
+
+
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd9
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bc026-4da6-4fea-89e8-999e796d5a72edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6a39e-e6f3-43f7-acc9-975d7bb41360edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b91299-f0e2-491c-8f1f-05dfb8a7262cedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010ce2f9-278a-4104-a5fd-cb424bf248f1edge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010ce2f9-278a-4104-a5fd-cb424bf248f1edge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53e08a-6edb-4f82-80d2-9c46b3de3e12edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fa540-6578-4573-a489-6aff13be10b3edge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fa540-6578-4573-a489-6aff13be10b3edge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "fd956936-3d44-4567-8066-341b51489641edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ff35c9-eb6a-4493-bfc0-2c66f3689f28edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d0022f62-b56b-4204-a47f-ada9758ebf82edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d0022f62-b56b-4204-a47f-ada9758ebf82edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1fd75-b258-478b-a461-712bc5fcb5d2edge_0": "fd9
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1854, 'completion_tokens': 456, 'total_tokens': 2310}
+Usage: {'prompt_tokens': 1853, 'completion_tokens': 456, 'total_tokens': 2309}
+Usage: {'prompt_tokens': 1852, 'completion_tokens': 454, 'total_tokens': 2306}
+Usage: {'prompt_tokens': 1856, 'completion_tokens': 535, 'total_tokens': 2391}
+Usage: {'prompt_tokens': 1856, 'completion_tokens': 529, 'total_tokens': 2385}
+Usage: {'prompt_tokens': 1853, 'completion_tokens': 524, 'total_tokens': 2377}
+Usage: {'prompt_tokens': 1853, 'completion_tokens': 527, 'total_tokens': 2380}
+Usage: {'prompt_tokens': 1854, 'completion_tokens': 447, 'total_tokens': 2301}
+Usage: {'prompt_tokens': 1853, 'completion_tokens': 594, 'total_tokens': 2447}
+Usage: {'prompt_tokens': 1853, 'completion_tokens': 596, 'total_tokens': 2449}
+Usage: {'prompt_tokens': 1853, 'completion_tokens': 598, 'total_tokens': 2451}
+Usage: {'prompt_tokens': 1853, 'completion_tokens': 592, 'total_tokens': 2445}
+Usage: {'prompt_tokens': 1856, 'completion_tokens': 450, 'total_tokens': 2306}
+Usage: {'prompt_tokens': 1854, 'completion_tokens': 444, 'total_tokens': 2298}
+Usage: {'prompt_tokens': 1854, 'completion_tokens': 529, 'total_tokens': 2383}
+Usage: {'prompt_tokens': 1854, 'completion_tokens': 532, 'total_tokens': 2386}
+Total_score:16, Full_score:16, Accuracy:1.0
+
+
+
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "fwlyedge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "fwlyedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "zygledge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "nvkledge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "tnwqedge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "cabuedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "cabuedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "gfixedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "tmrxedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "tmrxedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "qjpmedge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "duzkedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "fbueedge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "fbueedge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "fwlyedge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1457, 'completion_tokens': 398, 'total_tokens': 1855}
+Usage: {'prompt_tokens': 1456, 'completion_tokens': 395, 'total_tokens': 1851}
+Usage: {'prompt_tokens': 1455, 'completion_tokens': 400, 'total_tokens': 1855}
+Usage: {'prompt_tokens': 1459, 'completion_tokens': 432, 'total_tokens': 1891}
+Usage: {'prompt_tokens': 1459, 'completion_tokens': 426, 'total_tokens': 1885}
+Usage: {'prompt_tokens': 1456, 'completion_tokens': 434, 'total_tokens': 1890}
+Usage: {'prompt_tokens': 1456, 'completion_tokens': 436, 'total_tokens': 1892}
+Usage: {'prompt_tokens': 1457, 'completion_tokens': 387, 'total_tokens': 1844}
+Usage: {'prompt_tokens': 1456, 'completion_tokens': 474, 'total_tokens': 1930}
+Usage: {'prompt_tokens': 1456, 'completion_tokens': 476, 'total_tokens': 1932}
+Usage: {'prompt_tokens': 1456, 'completion_tokens': 480, 'total_tokens': 1936}
+Usage: {'prompt_tokens': 1456, 'completion_tokens': 474, 'total_tokens': 1930}
+Usage: {'prompt_tokens': 1459, 'completion_tokens': 391, 'total_tokens': 1850}
+Usage: {'prompt_tokens': 1457, 'completion_tokens': 382, 'total_tokens': 1839}
+Usage: {'prompt_tokens': 1457, 'completion_tokens': 438, 'total_tokens': 1895}
+Usage: {'prompt_tokens': 1457, 'completion_tokens': 442, 'total_tokens': 1899}
+Total_score:16, Full_score:16, Accuracy:1.0
+
+
+
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "<edge_0>": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "<edge_0>": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "<edge_0>": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641",
+    "<edge_1>": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "<edge_0>": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "<edge_0>": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "<edge_1>": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "<edge_0>": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "<edge_0>": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "<edge_1>": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+    ++++++ Raw output:
+A: In the given dictionary D, extract the value for "fd956936-3d44-4567-8066-341b51489641", dic_value_1={
+        "<edge_0>": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+    }, then extract value for edge "<edge_0>" from dic_value_1, the value is "eee6a39e-e6f3-43f7-acc9-975d7bb41360". The next step is to extract value for "eee6a39e-e6f3-43f7-acc9-975d7bb41360" from D, the value is dic_value_2={
+        "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+    }, finally extract value for edge "<edge_0>" from dic_value_2, the value is "fd956936-3d44-4567-8066-341b51489641". 
+
+So the final answer is {"fd956936-3d44-4567-8066-341b51489641": "fd956936-3d44-4567-8066-341b51489641"}.
+    ++++++ Parsed answer:{'fd956936-3d44-4567-8066-341b51489641': 'fd956936-3d44-4567-8066-341b51489641'}
+    ++++++ Expected:42ff35c9-eb6a-4493-bfc0-2c66f3689f28
+    ++++++ Got Score:0
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: fd956936-3d44-4567-8066-341b51489641, Score: 0
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "<edge_0>": "fd956936-3d44-4567-8066-341b51489641"
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1441, 'completion_tokens': 390, 'total_tokens': 1831}
+Usage: {'prompt_tokens': 1440, 'completion_tokens': 391, 'total_tokens': 1831}
+Usage: {'prompt_tokens': 1439, 'completion_tokens': 392, 'total_tokens': 1831}
+Usage: {'prompt_tokens': 1443, 'completion_tokens': 427, 'total_tokens': 1870}
+Usage: {'prompt_tokens': 1443, 'completion_tokens': 433, 'total_tokens': 1876}
+Usage: {'prompt_tokens': 1440, 'completion_tokens': 430, 'total_tokens': 1870}
+Usage: {'prompt_tokens': 1440, 'completion_tokens': 434, 'total_tokens': 1874}
+Usage: {'prompt_tokens': 1441, 'completion_tokens': 383, 'total_tokens': 1824}
+Usage: {'prompt_tokens': 1440, 'completion_tokens': 470, 'total_tokens': 1910}
+Usage: {'prompt_tokens': 1440, 'completion_tokens': 472, 'total_tokens': 1912}
+Usage: {'prompt_tokens': 1440, 'completion_tokens': 476, 'total_tokens': 1916}
+Usage: {'prompt_tokens': 1440, 'completion_tokens': 468, 'total_tokens': 1908}
+Usage: {'prompt_tokens': 1443, 'completion_tokens': 394, 'total_tokens': 1837}
+Usage: {'prompt_tokens': 1441, 'completion_tokens': 380, 'total_tokens': 1821}
+Usage: {'prompt_tokens': 1441, 'completion_tokens': 436, 'total_tokens': 1877}
+Usage: {'prompt_tokens': 1441, 'completion_tokens': 436, 'total_tokens': 1877}
+Total_score:15, Full_score:16, Accuracy:0.9375
+
+
+
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b9edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010cedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010cedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "fd956936-3d44-4567-8066-341b51489641": {
+    "fd95edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ffedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d002edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d002edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+Model=google/gemma-2-27b-it
+Graph={
+  "83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5148964
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1476, 'completion_tokens': 402, 'total_tokens': 1878}
+Usage: {'prompt_tokens': 1475, 'completion_tokens': 397, 'total_tokens': 1872}
+Usage: {'prompt_tokens': 1474, 'completion_tokens': 395, 'total_tokens': 1869}
+Usage: {'prompt_tokens': 1478, 'completion_tokens': 448, 'total_tokens': 1926}
+Usage: {'prompt_tokens': 1478, 'completion_tokens': 442, 'total_tokens': 1920}
+Usage: {'prompt_tokens': 1475, 'completion_tokens': 438, 'total_tokens': 1913}
+Usage: {'prompt_tokens': 1475, 'completion_tokens': 445, 'total_tokens': 1920}
+Usage: {'prompt_tokens': 1476, 'completion_tokens': 387, 'total_tokens': 1863}
+Usage: {'prompt_tokens': 1475, 'completion_tokens': 482, 'total_tokens': 1957}
+Usage: {'prompt_tokens': 1475, 'completion_tokens': 484, 'total_tokens': 1959}
+Usage: {'prompt_tokens': 1475, 'completion_tokens': 486, 'total_tokens': 1961}
+Usage: {'prompt_tokens': 1475, 'completion_tokens': 482, 'total_tokens': 1957}
+Usage: {'prompt_tokens': 1478, 'completion_tokens': 391, 'total_tokens': 1869}
+Usage: {'prompt_tokens': 1476, 'completion_tokens': 382, 'total_tokens': 1858}
+Usage: {'prompt_tokens': 1476, 'completion_tokens': 445, 'total_tokens': 1921}
+Usage: {'prompt_tokens': 1476, 'completion_tokens': 446, 'total_tokens': 1922}
+Total_score:16, Full_score:16, Accuracy:1.0
+
+
+
+Model=google/gemma-2-27b-it
+Graph={
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5
+LEN(raw_json_graph)=10
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "83c1fd75-b258-478b-a461-712bc5fcb5d2" --> edge "edge_0" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "<key>=385bc026-4da6-4fea-89e8-999e796d5a72": {
+    "385bedge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "<key>=eee6a39e-e6f3-43f7-acc9-975d7bb41360": {
+    "eee6edge_0": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  },
+  "<key>=a1b91299-f0e2-491c-8f1f-05dfb8a7262c": {
+    "a1b9edge_0": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "<key>=010ce2f9-278a-4104-a5fd-cb424bf248f1": {
+    "010cedge_0": "fd956936-3d44-4567-8066-341b51489641",
+    "010cedge_1": "385bc026-4da6-4fea-89e8-999e796d5a72"
+  },
+  "<key>=3c53e08a-6edb-4f82-80d2-9c46b3de3e12": {
+    "3c53edge_0": "a1b91299-f0e2-491c-8f1f-05dfb8a7262c"
+  },
+  "<key>=9e0fa540-6578-4573-a489-6aff13be10b3": {
+    "9e0fedge_0": "d0022f62-b56b-4204-a47f-ada9758ebf82",
+    "9e0fedge_1": "010ce2f9-278a-4104-a5fd-cb424bf248f1"
+  },
+  "<key>=fd956936-3d44-4567-8066-341b51489641": {
+    "fd95edge_0": "eee6a39e-e6f3-43f7-acc9-975d7bb41360"
+  },
+  "<key>=42ff35c9-eb6a-4493-bfc0-2c66f3689f28": {
+    "42ffedge_0": "fd956936-3d44-4567-8066-341b51489641"
+  },
+  "<key>=d0022f62-b56b-4204-a47f-ada9758ebf82": {
+    "d002edge_0": "385bc026-4da6-4fea-89e8-999e796d5a72",
+    "d002edge_1": "42ff35c9-eb6a-4493-bfc0-2c66f3689f28"
+  }
+}
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Real: 010ce2f9-278a-4104-a5fd-cb424bf248f1, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+++++++ Expected: 385bc026-4da6-4fea-89e8-999e796d5a72, Real: 385bc026-4da6-4fea-89e8-999e796d5a72, Score: 1
+++++++ Expected: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Real: 42ff35c9-eb6a-4493-bfc0-2c66f3689f28, Score: 1
+++++++ Expected: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Real: eee6a39e-e6f3-43f7-acc9-975d7bb41360, Score: 1
+++++++ Expected: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Real: a1b91299-f0e2-491c-8f1f-05dfb8a7262c, Score: 1
+++++++ Expected: fd956936-3d44-4567-8066-341b51489641, Real: fd956936-3d44-4567-8066-341b51489641, Score: 1
+Model=google/gemma-2-27b-it
+Graph={
+  "<key>=83c1fd75-b258-478b-a461-712bc5fcb5d2": {
+    "83c1edge_0": "fd956936-3d44-4567-8066-341b5
+LEN(raw_json_graph)=10
+
+Usage: {'prompt_tokens': 1496, 'completion_tokens': 402, 'total_tokens': 1898}
+Usage: {'prompt_tokens': 1495, 'completion_tokens': 397, 'total_tokens': 1892}
+Usage: {'prompt_tokens': 1494, 'completion_tokens': 395, 'total_tokens': 1889}
+Usage: {'prompt_tokens': 1498, 'completion_tokens': 448, 'total_tokens': 1946}
+Usage: {'prompt_tokens': 1498, 'completion_tokens': 442, 'total_tokens': 1940}
+Usage: {'prompt_tokens': 1495, 'completion_tokens': 438, 'total_tokens': 1933}
+Usage: {'prompt_tokens': 1495, 'completion_tokens': 445, 'total_tokens': 1940}
+Usage: {'prompt_tokens': 1496, 'completion_tokens': 387, 'total_tokens': 1883}
+Usage: {'prompt_tokens': 1495, 'completion_tokens': 482, 'total_tokens': 1977}
+Usage: {'prompt_tokens': 1495, 'completion_tokens': 482, 'total_tokens': 1977}
+Usage: {'prompt_tokens': 1495, 'completion_tokens': 486, 'total_tokens': 1981}
+Usage: {'prompt_tokens': 1495, 'completion_tokens': 480, 'total_tokens': 1975}
+Usage: {'prompt_tokens': 1498, 'completion_tokens': 389, 'total_tokens': 1887}
+Usage: {'prompt_tokens': 1496, 'completion_tokens': 382, 'total_tokens': 1878}
+Usage: {'prompt_tokens': 1496, 'completion_tokens': 445, 'total_tokens': 1941}
+Usage: {'prompt_tokens': 1496, 'completion_tokens': 446, 'total_tokens': 1942}
+Total_score:16, Full_score:16, Accuracy:1.0
+
+
+
+
+     Basic info: gemma227bit.log, gnp_n10_p20, baseline, shot_num=1, query_hop_num=2
+Total failed_num=1, wrong_edge_problem=0, possibly_not_found=0, total_score=15, full_score=16
+Summary Token Usage: {'prompt_tokens': 1427, 'completion_tokens': 420, 'total_tokens': 1848}
+
+     Basic info: gemma227bit.log, gnp_n10_p20, node_id[-4:]+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=0, wrong_edge_problem=0, possibly_not_found=0, total_score=16, full_score=16
+Summary Token Usage: {'prompt_tokens': 1477, 'completion_tokens': 435, 'total_tokens': 1912}
+
+     Basic info: gemma227bit.log, gnp_n10_p20, node_id+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=0, wrong_edge_problem=0, possibly_not_found=0, total_score=16, full_score=16
+Summary Token Usage: {'prompt_tokens': 1853, 'completion_tokens': 516, 'total_tokens': 2370}
+
+     Basic info: gemma227bit.log, gnp_n10_p20, randomStr+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=1, wrong_edge_problem=0, possibly_not_found=0, total_score=15, full_score=16
+Summary Token Usage: {'prompt_tokens': 1440, 'completion_tokens': 425, 'total_tokens': 1866}
+
+     Basic info: gemma227bit.log, gnp_n10_p20, <edge_id>, shot_num=1, query_hop_num=2
+Total failed_num=0, wrong_edge_problem=0, possibly_not_found=0, total_score=16, full_score=16
+Summary Token Usage: {'prompt_tokens': 1475, 'completion_tokens': 434, 'total_tokens': 1910}
+
+     Basic info: gemma227bit.log, gnp_n10_p20, node_id[:4]+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=0, wrong_edge_problem=0, possibly_not_found=0, total_score=16, full_score=16
+Summary Token Usage: {'prompt_tokens': 1495, 'completion_tokens': 434, 'total_tokens': 1929}

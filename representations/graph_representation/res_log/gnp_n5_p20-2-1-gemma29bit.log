@@ -1,0 +1,458 @@
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+ 
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Score: 1
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+ 
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 761, 'completion_tokens': 429, 'total_tokens': 1190}
+Total_score:1, Full_score:1, Accuracy:1.0
+
+
+
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "1ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "1ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Score: 1
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 775, 'completion_tokens': 445, 'total_tokens': 1220}
+Total_score:1, Full_score:1, Accuracy:1.0
+
+
+
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc59f11-23a7-468d-bf6a-d6e78f851ac8edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daa350b-c036-4a8a-9e7c-49915d2a6321edge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Score: 1
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6da25d-65b5-44a3-8d6a-27bb874d7c5fedge_0": "585
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 894, 'completion_tokens': 528, 'total_tokens': 1422}
+Total_score:1, Full_score:1, Accuracy:1.0
+
+
+
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "scenedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "scenedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "dnfiedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "dnfiedge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "xdfeedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Score: 1
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "scenedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 769, 'completion_tokens': 437, 'total_tokens': 1206}
+Total_score:1, Full_score:1, Accuracy:1.0
+
+
+
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "<edge_1>": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "<edge_0>": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Score: 1
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "<edge_0>": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 765, 'completion_tokens': 434, 'total_tokens': 1199}
+Total_score:1, Full_score:1, Accuracy:1.0
+
+
+
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Score: 1
+Model=google/gemma-2-9b-it
+Graph={
+  "ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24f
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 772, 'completion_tokens': 441, 'total_tokens': 1213}
+Total_score:1, Full_score:1, Accuracy:1.0
+
+
+
+Model=google/gemma-2-9b-it
+Graph={
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7
+LEN(raw_json_graph)=3
+
+
+<example>
+Q: Please extract the final value for key "node_30" --> edge "edge_4" --> edge "edge_32", please put the final answer in JSON format.
+DataSource:
+{
+    "node_30": {
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    },
+    "node_42": {
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    },
+    "node_34": {
+        "edge_11": "node_23",
+        "edge_25": "node_30",
+        "edge_2": "node_8"
+    }
+}
+A: In the given dictionary D, extract the value for "node_30", dic_value_1={
+        "edge_15": "node_34",
+        "edge_4": "node_42",
+        "edge_10": "node_7"
+    }, then extract value for edge "edge_4" from dic_value_1, the value is "node_42". The next step is to extract value for "node_42" from D, the value is dic_value_2={
+        "edge_5": "node_25",
+        "edge_32": "node_3"
+    }, finally extract value for edge "edge_32" from dic_value_2, the value is "node_3". 
+
+So the final answer is {"node_30": "node_3"}.
+</example>
+    
+Q: Please extract the final value for key "8bc59f11-23a7-468d-bf6a-d6e78f851ac8" --> edge "edge_1" --> edge "edge_0", please put the final answer in JSON format.
+DataSource:
+{
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe"
+  },
+  "<key>=8bc59f11-23a7-468d-bf6a-d6e78f851ac8": {
+    "8bc5edge_0": "585690f9-37d8-486d-89cd-df9a7dfe24fe",
+    "8bc5edge_1": "0daa350b-c036-4a8a-9e7c-49915d2a6321"
+  },
+  "<key>=0daa350b-c036-4a8a-9e7c-49915d2a6321": {
+    "0daaedge_0": "1e301885-ff50-43aa-80a1-7e9e781a2f3d"
+  }
+}
+++++++ Expected: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Real: 1e301885-ff50-43aa-80a1-7e9e781a2f3d, Score: 1
+Model=google/gemma-2-9b-it
+Graph={
+  "<key>=ad6da25d-65b5-44a3-8d6a-27bb874d7c5f": {
+    "ad6dedge_0": "585690f9-37d8-486d-89cd-df9a7
+LEN(raw_json_graph)=3
+
+Usage: {'prompt_tokens': 778, 'completion_tokens': 440, 'total_tokens': 1218}
+Total_score:1, Full_score:1, Accuracy:1.0
+
+
+
+
+     Basic info: gemma29bit.log, gnp_n5_p20, baseline, shot_num=1, query_hop_num=2
+Total failed_num=0, wrong_edge_problem=0, possibly_not_found=0, total_score=1, full_score=1
+Summary Token Usage: {'prompt_tokens': 761, 'completion_tokens': 429, 'total_tokens': 1190}
+
+     Basic info: gemma29bit.log, gnp_n5_p20, node_id[-4:]+edge_id, shot_num=1, query_hop_num=2
+Total failed_num=0, wrong_edge_problem=0, possibly_not_found=0, total_score=1, full_score=1
+Summary Token Usage: {'prompt_tokens': 769, 'completion_tokens': 437, 'total_tokens': 1206}

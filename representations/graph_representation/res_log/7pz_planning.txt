@@ -1,0 +1,51 @@
+///////////////////////////////////////////////// logical_plan:  LogicalPlan:
+0. BaseScan(biofabric-tiny,XLSFile(contents, filename, number_sheets, sheet_names))
+1. ConvertScan(XLSFile(contents, filename, number_sheets, sheet_names) -> Table(filename, header, name, rows),None)
+2. FilteredScan(Table(filename, header, name, rows), Filter(The rows of the table contain the patient age.))
+3. ConvertScan(Table(filename, header, name, rows) -> Rows(age_bucket, gender, id, others),None)
+INITIAL PLANS: 1
+///////////////////// real physical_plan:  PhysicalPlan:
+0. dir -> MarshalAndScanDataOp -> XLSFile(contents, filename, number_sheets, sheet_names)
+(contents,filename,number_sheet) 
+
+1. XLSFile -> ConvertXLSToTable -> Table
+(contents,filename,number_sheet) -> (filename,header,name,rows) 
+
+2. Table -> LLMFilter -> Table
+(filename,header,name,rows) -> (filename,header,name,rows) 
+Using model: Model.MIXTRAL
+Filter: Filter(The rows of the table contain the patient age.)
+3. Table -> LLMConvertConventional -> Rows
+(filename,header,name,rows) -> (age_bucket,gender,id,others) 
+Using model: Model.MIXTRAL
+Prompt strategy: PromptStrategy.DSPY_COT_QA
+Query strategy: QueryStrategy.BONDED_WITH_FALLBACK
+
+/////////////////////////////////////////////////logical_plan:  LogicalPlan:
+0. BaseScan(biofabric-tiny,XLSFile(contents, filename, number_sheets, sheet_names))
+1. ConvertScan(XLSFile(contents, filename, number_sheets, sheet_names) -> Table(filename, header, name, rows),None)
+2. ConvertScan(Table(filename, header, name, rows) -> Rows(age_bucket, gender, id, others),None)
+3. FilteredScan(Rows(age_bucket, gender, id, others), Filter(The rows of the table contain the patient age.))
+INITIAL PLANS: 1
+///////////////////// real physical_plan:  PhysicalPlan:
+0. dir -> MarshalAndScanDataOp -> XLSFile(contents, filename, number_sheets, sheet_names)
+(contents,filename,number_sheet) 
+
+1. XLSFile -> ConvertXLSToTable -> Table
+(contents,filename,number_sheet) -> (filename,header,name,rows) 
+
+2. Table -> LLMConvertConventional -> Rows
+(filename,header,name,rows) -> (age_bucket,gender,id,others) 
+Using model: Model.MIXTRAL
+Prompt strategy: PromptStrategy.DSPY_COT_QA
+Query strategy: QueryStrategy.BONDED_WITH_FALLBACK
+
+3. Rows -> LLMFilter -> Rows
+(age_bucket,gender,id,others) -> (age_bucket,gender,id,others) 
+Using model: Model.MIXTRAL
+Filter: Filter(The rows of the table contain the patient age.)
+
+Two problems with this task: 1. cannot convert table to rows; 2. choose the non-optimal physical plan.
+
+
+(1) how to split the data and feed to the operator
