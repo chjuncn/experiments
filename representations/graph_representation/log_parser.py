@@ -75,8 +75,8 @@ def parse_file(unnormal_files, f):
 
     summary_json = []
     print("Analyzing: "+f)
-    graph_file = labels[0]
-    graph = LoadJsonGraphFromFile("experiments/res_log/"+graph_file+".txt")
+    graph_file = labels[0].split("/")[-1]
+    graph = LoadJsonGraphFromFile("representations/graph_representation/res_log/"+graph_file+".txt")
     query_hop_num = int(labels[1])
     shot_num = int(labels[2])
     model_name = labels[3]
@@ -227,7 +227,7 @@ def analyze_log_files(directory, output_file):
     print(unnormal_files)
     print("Total files: "+str(total_files))
 
-analyze_log_files(".", "test_summary.json")
+analyze_log_files("representations", "test_summary.json")
 
 # def summarize_error_reason(less_res, more_res, file):
 #     if not os.path.isfile(file):

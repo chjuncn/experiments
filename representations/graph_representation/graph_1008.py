@@ -58,7 +58,7 @@ def different_tokens_edge(file_name, representation_names, position="before"):
     raw_keys = list(json_graph.keys())
 
     final_list = []
-    for representation_name in representation_names:
+    for representation_name in representation_names.values():
         if representation_name == "baseline":
             final_list.append(json_graph.copy())
         elif representation_name == "node_id[-4:]+edge_id":

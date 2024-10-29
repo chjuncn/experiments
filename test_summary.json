@@ -1,0 +1,1822 @@
+[
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 25,
+    "wrong_edge_problem": 7,
+    "possibly_not_found": 14,
+    "total_score": 23,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 1978,
+      "completion_tokens": 982,
+      "total_tokens": 2961
+    },
+    "prompt_token_utilization": 0.24142560722568046,
+    "completion_token_utilization": 0.982,
+    "accuracy": 0.4791666666666667
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 22,
+    "wrong_edge_problem": 7,
+    "possibly_not_found": 12,
+    "total_score": 26,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2093,
+      "completion_tokens": 1000,
+      "total_tokens": 3093
+    },
+    "prompt_token_utilization": 0.2554619797388014,
+    "completion_token_utilization": 1.0,
+    "accuracy": 0.5416666666666666
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 25,
+    "wrong_edge_problem": 5,
+    "possibly_not_found": 19,
+    "total_score": 23,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2189,
+      "completion_tokens": 1000,
+      "total_tokens": 3189
+    },
+    "prompt_token_utilization": 0.26717929940192847,
+    "completion_token_utilization": 1.0,
+    "accuracy": 0.4791666666666667
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:8]-edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 19,
+    "wrong_edge_problem": 3,
+    "possibly_not_found": 14,
+    "total_score": 29,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2215,
+      "completion_tokens": 3000,
+      "total_tokens": 5215
+    },
+    "prompt_token_utilization": 0.2703527401440254,
+    "completion_token_utilization": 3.0,
+    "accuracy": 0.6041666666666666
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 31,
+    "wrong_edge_problem": 1,
+    "possibly_not_found": 17,
+    "total_score": 28,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 2506,
+      "completion_tokens": 933,
+      "total_tokens": 3439
+    },
+    "prompt_token_utilization": 0.3058708653728793,
+    "completion_token_utilization": 0.933,
+    "accuracy": 0.4745762711864407
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 30,
+    "wrong_edge_problem": 3,
+    "possibly_not_found": 24,
+    "total_score": 29,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 2662,
+      "completion_tokens": 889,
+      "total_tokens": 3551
+    },
+    "prompt_token_utilization": 0.32491150982546074,
+    "completion_token_utilization": 0.889,
+    "accuracy": 0.4915254237288136
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 21,
+    "wrong_edge_problem": 5,
+    "possibly_not_found": 13,
+    "total_score": 38,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 2780,
+      "completion_tokens": 868,
+      "total_tokens": 3649
+    },
+    "prompt_token_utilization": 0.3393140485780544,
+    "completion_token_utilization": 0.868,
+    "accuracy": 0.6440677966101694
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 18,
+    "wrong_edge_problem": 13,
+    "possibly_not_found": 2,
+    "total_score": 30,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2627,
+      "completion_tokens": 71,
+      "total_tokens": 2698
+    },
+    "prompt_token_utilization": 0.32063957036494567,
+    "completion_token_utilization": 0.071,
+    "accuracy": 0.625
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 15,
+    "wrong_edge_problem": 13,
+    "possibly_not_found": 0,
+    "total_score": 33,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2963,
+      "completion_tokens": 72,
+      "total_tokens": 3035
+    },
+    "prompt_token_utilization": 0.36165018918589037,
+    "completion_token_utilization": 0.072,
+    "accuracy": 0.6875
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 13,
+    "wrong_edge_problem": 12,
+    "possibly_not_found": 0,
+    "total_score": 35,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 3011,
+      "completion_tokens": 71,
+      "total_tokens": 3083
+    },
+    "prompt_token_utilization": 0.3675088490174539,
+    "completion_token_utilization": 0.071,
+    "accuracy": 0.7291666666666666
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:8]-edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 11,
+    "wrong_edge_problem": 9,
+    "possibly_not_found": 0,
+    "total_score": 37,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 3131,
+      "completion_tokens": 71,
+      "total_tokens": 3203
+    },
+    "prompt_token_utilization": 0.3821554985963628,
+    "completion_token_utilization": 0.071,
+    "accuracy": 0.7708333333333334
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n15_p50",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 69,
+    "wrong_edge_problem": 36,
+    "possibly_not_found": 32,
+    "total_score": 34,
+    "full_score": 103,
+    "token_usage": {
+      "prompt_tokens": 3530,
+      "completion_tokens": 977,
+      "total_tokens": 4507
+    },
+    "prompt_token_utilization": 0.4308556084462346,
+    "completion_token_utilization": 0.977,
+    "accuracy": 0.3300970873786408
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n15_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 66,
+    "wrong_edge_problem": 11,
+    "possibly_not_found": 55,
+    "total_score": 37,
+    "full_score": 103,
+    "token_usage": {
+      "prompt_tokens": 3820,
+      "completion_tokens": 992,
+      "total_tokens": 4812
+    },
+    "prompt_token_utilization": 0.4662516782619309,
+    "completion_token_utilization": 0.992,
+    "accuracy": 0.3592233009708738
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n15_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 55,
+    "wrong_edge_problem": 22,
+    "possibly_not_found": 30,
+    "total_score": 48,
+    "full_score": 103,
+    "token_usage": {
+      "prompt_tokens": 4026,
+      "completion_tokens": 991,
+      "total_tokens": 5018
+    },
+    "prompt_token_utilization": 0.49139509337239107,
+    "completion_token_utilization": 0.991,
+    "accuracy": 0.46601941747572817
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 2,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 11,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1063,
+      "completion_tokens": 77,
+      "total_tokens": 1140
+    },
+    "prompt_token_utilization": 0.12974490418650067,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.8461538461538461
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 1,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 12,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1124,
+      "completion_tokens": 77,
+      "total_tokens": 1201
+    },
+    "prompt_token_utilization": 0.13719028438911265,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.9230769230769231
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 1,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 12,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1137,
+      "completion_tokens": 77,
+      "total_tokens": 1214
+    },
+    "prompt_token_utilization": 0.1387770047601611,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.9230769230769231
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 8,
+    "wrong_edge_problem": 8,
+    "possibly_not_found": 0,
+    "total_score": 40,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2704,
+      "completion_tokens": 76,
+      "total_tokens": 2780
+    },
+    "prompt_token_utilization": 0.33003783717807883,
+    "completion_token_utilization": 0.076,
+    "accuracy": 0.8333333333333334
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 5,
+    "wrong_edge_problem": 5,
+    "possibly_not_found": 0,
+    "total_score": 43,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2924,
+      "completion_tokens": 77,
+      "total_tokens": 3001
+    },
+    "prompt_token_utilization": 0.356890028072745,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.8958333333333334
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 5,
+    "wrong_edge_problem": 5,
+    "possibly_not_found": 0,
+    "total_score": 43,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2972,
+      "completion_tokens": 76,
+      "total_tokens": 3049
+    },
+    "prompt_token_utilization": 0.36274868790430853,
+    "completion_token_utilization": 0.076,
+    "accuracy": 0.8958333333333334
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n15_p50",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 36,
+    "wrong_edge_problem": 36,
+    "possibly_not_found": 0,
+    "total_score": 67,
+    "full_score": 103,
+    "token_usage": {
+      "prompt_tokens": 4905,
+      "completion_tokens": 76,
+      "total_tokens": 4981
+    },
+    "prompt_token_utilization": 0.5986818015378982,
+    "completion_token_utilization": 0.076,
+    "accuracy": 0.6504854368932039
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n15_p50",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 32,
+    "wrong_edge_problem": 32,
+    "possibly_not_found": 0,
+    "total_score": 71,
+    "full_score": 103,
+    "token_usage": {
+      "prompt_tokens": 4905,
+      "completion_tokens": 76,
+      "total_tokens": 4981
+    },
+    "prompt_token_utilization": 0.5986818015378982,
+    "completion_token_utilization": 0.076,
+    "accuracy": 0.6893203883495146
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n15_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 25,
+    "wrong_edge_problem": 25,
+    "possibly_not_found": 0,
+    "total_score": 78,
+    "full_score": 103,
+    "token_usage": {
+      "prompt_tokens": 5392,
+      "completion_tokens": 75,
+      "total_tokens": 5468
+    },
+    "prompt_token_utilization": 0.6581227877456365,
+    "completion_token_utilization": 0.075,
+    "accuracy": 0.7572815533980582
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n15_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 25,
+    "wrong_edge_problem": 25,
+    "possibly_not_found": 0,
+    "total_score": 78,
+    "full_score": 103,
+    "token_usage": {
+      "prompt_tokens": 5495,
+      "completion_tokens": 75,
+      "total_tokens": 5571
+    },
+    "prompt_token_utilization": 0.6706944953008666,
+    "completion_token_utilization": 0.075,
+    "accuracy": 0.7572815533980582
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 12,
+    "wrong_edge_problem": 11,
+    "possibly_not_found": 0,
+    "total_score": 47,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3330,
+      "completion_tokens": 76,
+      "total_tokens": 3407
+    },
+    "prompt_token_utilization": 0.4064445258147199,
+    "completion_token_utilization": 0.076,
+    "accuracy": 0.7966101694915254
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 10,
+    "wrong_edge_problem": 10,
+    "possibly_not_found": 0,
+    "total_score": 49,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3598,
+      "completion_tokens": 76,
+      "total_tokens": 3675
+    },
+    "prompt_token_utilization": 0.4391553765409496,
+    "completion_token_utilization": 0.076,
+    "accuracy": 0.8305084745762712
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 10,
+    "wrong_edge_problem": 10,
+    "possibly_not_found": 0,
+    "total_score": 49,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3657,
+      "completion_tokens": 76,
+      "total_tokens": 3734
+    },
+    "prompt_token_utilization": 0.44635664591724644,
+    "completion_token_utilization": 0.076,
+    "accuracy": 0.8305084745762712
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n15_p50",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 67,
+    "wrong_edge_problem": 66,
+    "possibly_not_found": 0,
+    "total_score": 36,
+    "full_score": 103,
+    "token_usage": {
+      "prompt_tokens": 4971,
+      "completion_tokens": 70,
+      "total_tokens": 5042
+    },
+    "prompt_token_utilization": 0.606737458806298,
+    "completion_token_utilization": 0.07,
+    "accuracy": 0.34951456310679613
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n15_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 39,
+    "wrong_edge_problem": 39,
+    "possibly_not_found": 0,
+    "total_score": 64,
+    "full_score": 103,
+    "token_usage": {
+      "prompt_tokens": 5463,
+      "completion_tokens": 70,
+      "total_tokens": 5534
+    },
+    "prompt_token_utilization": 0.6667887220798242,
+    "completion_token_utilization": 0.07,
+    "accuracy": 0.6213592233009708
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n15_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 39,
+    "wrong_edge_problem": 39,
+    "possibly_not_found": 0,
+    "total_score": 64,
+    "full_score": 103,
+    "token_usage": {
+      "prompt_tokens": 5566,
+      "completion_tokens": 70,
+      "total_tokens": 5637
+    },
+    "prompt_token_utilization": 0.6793604296350543,
+    "completion_token_utilization": 0.07,
+    "accuracy": 0.6213592233009708
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 29,
+    "wrong_edge_problem": 22,
+    "possibly_not_found": 1,
+    "total_score": 30,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3371,
+      "completion_tokens": 74,
+      "total_tokens": 3445
+    },
+    "prompt_token_utilization": 0.4114487977541804,
+    "completion_token_utilization": 0.074,
+    "accuracy": 0.5084745762711864
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 21,
+    "wrong_edge_problem": 14,
+    "possibly_not_found": 0,
+    "total_score": 38,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3643,
+      "completion_tokens": 70,
+      "total_tokens": 3713
+    },
+    "prompt_token_utilization": 0.4446478701330404,
+    "completion_token_utilization": 0.07,
+    "accuracy": 0.6440677966101694
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 26,
+    "wrong_edge_problem": 18,
+    "possibly_not_found": 3,
+    "total_score": 33,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3702,
+      "completion_tokens": 70,
+      "total_tokens": 3772
+    },
+    "prompt_token_utilization": 0.45184913950933725,
+    "completion_token_utilization": 0.07,
+    "accuracy": 0.559322033898305
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 1,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 12,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1063,
+      "completion_tokens": 77,
+      "total_tokens": 1140
+    },
+    "prompt_token_utilization": 0.12974490418650067,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.9230769230769231
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 0,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 13,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1124,
+      "completion_tokens": 77,
+      "total_tokens": 1201
+    },
+    "prompt_token_utilization": 0.13719028438911265,
+    "completion_token_utilization": 0.077,
+    "accuracy": 1.0
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 0,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 13,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1137,
+      "completion_tokens": 77,
+      "total_tokens": 1214
+    },
+    "prompt_token_utilization": 0.1387770047601611,
+    "completion_token_utilization": 0.077,
+    "accuracy": 1.0
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 31,
+    "wrong_edge_problem": 13,
+    "possibly_not_found": 18,
+    "total_score": 21,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 1924,
+      "completion_tokens": 1000,
+      "total_tokens": 2924
+    },
+    "prompt_token_utilization": 0.2348346149151715,
+    "completion_token_utilization": 1.0,
+    "accuracy": 0.40384615384615385
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 23,
+    "wrong_edge_problem": 9,
+    "possibly_not_found": 14,
+    "total_score": 29,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2089,
+      "completion_tokens": 1000,
+      "total_tokens": 3089
+    },
+    "prompt_token_utilization": 0.2549737580861711,
+    "completion_token_utilization": 1.0,
+    "accuracy": 0.5576923076923077
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 25,
+    "wrong_edge_problem": 4,
+    "possibly_not_found": 21,
+    "total_score": 27,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2193,
+      "completion_tokens": 981,
+      "total_tokens": 3175
+    },
+    "prompt_token_utilization": 0.26766752105455877,
+    "completion_token_utilization": 0.981,
+    "accuracy": 0.5192307692307693
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 8,
+    "wrong_edge_problem": 1,
+    "possibly_not_found": 5,
+    "total_score": 5,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 759,
+      "completion_tokens": 934,
+      "total_tokens": 1693
+    },
+    "prompt_token_utilization": 0.09264005858659831,
+    "completion_token_utilization": 0.934,
+    "accuracy": 0.38461538461538464
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 8,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 7,
+    "total_score": 5,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 793,
+      "completion_tokens": 1000,
+      "total_tokens": 1793
+    },
+    "prompt_token_utilization": 0.09678994263395582,
+    "completion_token_utilization": 1.0,
+    "accuracy": 0.38461538461538464
+  },
+  {
+    "model_name": "MetaLlama3.18BInstructTurbo.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 7,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 6,
+    "total_score": 6,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 819,
+      "completion_tokens": 1000,
+      "total_tokens": 1819
+    },
+    "prompt_token_utilization": 0.09996338337605273,
+    "completion_token_utilization": 1.0,
+    "accuracy": 0.46153846153846156
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 23,
+    "wrong_edge_problem": 18,
+    "possibly_not_found": 0,
+    "total_score": 36,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3375,
+      "completion_tokens": 77,
+      "total_tokens": 3452
+    },
+    "prompt_token_utilization": 0.4119370194068107,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.6101694915254238
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 14,
+    "wrong_edge_problem": 11,
+    "possibly_not_found": 0,
+    "total_score": 45,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3647,
+      "completion_tokens": 78,
+      "total_tokens": 3725
+    },
+    "prompt_token_utilization": 0.4451360917856707,
+    "completion_token_utilization": 0.078,
+    "accuracy": 0.7627118644067796
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 12,
+    "wrong_edge_problem": 7,
+    "possibly_not_found": 0,
+    "total_score": 47,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3706,
+      "completion_tokens": 78,
+      "total_tokens": 3785
+    },
+    "prompt_token_utilization": 0.45233736116196754,
+    "completion_token_utilization": 0.078,
+    "accuracy": 0.7966101694915254
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 9,
+    "wrong_edge_problem": 9,
+    "possibly_not_found": 0,
+    "total_score": 43,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2675,
+      "completion_tokens": 77,
+      "total_tokens": 2752
+    },
+    "prompt_token_utilization": 0.3264982301965092,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.8269230769230769
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 3,
+    "wrong_edge_problem": 3,
+    "possibly_not_found": 0,
+    "total_score": 49,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2911,
+      "completion_tokens": 77,
+      "total_tokens": 2988
+    },
+    "prompt_token_utilization": 0.35530330770169655,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.9423076923076923
+  },
+  {
+    "model_name": "gemma29bit.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 6,
+    "wrong_edge_problem": 5,
+    "possibly_not_found": 1,
+    "total_score": 46,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2963,
+      "completion_tokens": 77,
+      "total_tokens": 3040
+    },
+    "prompt_token_utilization": 0.36165018918589037,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.8846153846153846
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 9,
+    "wrong_edge_problem": 8,
+    "possibly_not_found": 0,
+    "total_score": 39,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2704,
+      "completion_tokens": 77,
+      "total_tokens": 2781
+    },
+    "prompt_token_utilization": 0.33003783717807883,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.8125
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 4,
+    "wrong_edge_problem": 4,
+    "possibly_not_found": 0,
+    "total_score": 44,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2924,
+      "completion_tokens": 77,
+      "total_tokens": 3001
+    },
+    "prompt_token_utilization": 0.356890028072745,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.9166666666666666
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 2,
+    "wrong_edge_problem": 2,
+    "possibly_not_found": 0,
+    "total_score": 46,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2972,
+      "completion_tokens": 77,
+      "total_tokens": 3049
+    },
+    "prompt_token_utilization": 0.36274868790430853,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.9583333333333334
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "[node_id[:8]]_edge_id",
+    "shot_num": 0,
+    "failed_num": 5,
+    "wrong_edge_problem": 3,
+    "possibly_not_found": 0,
+    "total_score": 43,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 3141,
+      "completion_tokens": 77,
+      "total_tokens": 3218
+    },
+    "prompt_token_utilization": 0.3833760527279385,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.8958333333333334
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:8]-edge_id",
+    "shot_num": 0,
+    "failed_num": 4,
+    "wrong_edge_problem": 4,
+    "possibly_not_found": 0,
+    "total_score": 44,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 3141,
+      "completion_tokens": 76,
+      "total_tokens": 3218
+    },
+    "prompt_token_utilization": 0.3833760527279385,
+    "completion_token_utilization": 0.076,
+    "accuracy": 0.9166666666666666
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:8]-edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 5,
+    "wrong_edge_problem": 4,
+    "possibly_not_found": 0,
+    "total_score": 43,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 3092,
+      "completion_tokens": 77,
+      "total_tokens": 3169
+    },
+    "prompt_token_utilization": 0.3773953374832174,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.8958333333333334
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 1,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 12,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1078,
+      "completion_tokens": 74,
+      "total_tokens": 1152
+    },
+    "prompt_token_utilization": 0.13157573538386427,
+    "completion_token_utilization": 0.074,
+    "accuracy": 0.9230769230769231
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 2,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 11,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1140,
+      "completion_tokens": 74,
+      "total_tokens": 1214
+    },
+    "prompt_token_utilization": 0.13914317099963383,
+    "completion_token_utilization": 0.074,
+    "accuracy": 0.8461538461538461
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 2,
+    "wrong_edge_problem": 1,
+    "possibly_not_found": 0,
+    "total_score": 11,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1153,
+      "completion_tokens": 71,
+      "total_tokens": 1224
+    },
+    "prompt_token_utilization": 0.1407298913706823,
+    "completion_token_utilization": 0.071,
+    "accuracy": 0.8461538461538461
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 5,
+    "wrong_edge_problem": 5,
+    "possibly_not_found": 0,
+    "total_score": 47,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 1924,
+      "completion_tokens": 56,
+      "total_tokens": 1980
+    },
+    "prompt_token_utilization": 0.2348346149151715,
+    "completion_token_utilization": 0.056,
+    "accuracy": 0.9038461538461539
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 4,
+    "wrong_edge_problem": 4,
+    "possibly_not_found": 0,
+    "total_score": 48,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2089,
+      "completion_tokens": 57,
+      "total_tokens": 2146
+    },
+    "prompt_token_utilization": 0.2549737580861711,
+    "completion_token_utilization": 0.057,
+    "accuracy": 0.9230769230769231
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 4,
+    "wrong_edge_problem": 4,
+    "possibly_not_found": 0,
+    "total_score": 48,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2193,
+      "completion_tokens": 56,
+      "total_tokens": 2250
+    },
+    "prompt_token_utilization": 0.26766752105455877,
+    "completion_token_utilization": 0.056,
+    "accuracy": 0.9230769230769231
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 11,
+    "wrong_edge_problem": 8,
+    "possibly_not_found": 0,
+    "total_score": 48,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3330,
+      "completion_tokens": 76,
+      "total_tokens": 3407
+    },
+    "prompt_token_utilization": 0.4064445258147199,
+    "completion_token_utilization": 0.076,
+    "accuracy": 0.8135593220338984
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 3,
+    "wrong_edge_problem": 3,
+    "possibly_not_found": 0,
+    "total_score": 56,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3598,
+      "completion_tokens": 76,
+      "total_tokens": 3675
+    },
+    "prompt_token_utilization": 0.4391553765409496,
+    "completion_token_utilization": 0.076,
+    "accuracy": 0.9491525423728814
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 4,
+    "wrong_edge_problem": 3,
+    "possibly_not_found": 0,
+    "total_score": 55,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 3657,
+      "completion_tokens": 76,
+      "total_tokens": 3734
+    },
+    "prompt_token_utilization": 0.44635664591724644,
+    "completion_token_utilization": 0.076,
+    "accuracy": 0.9322033898305084
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 14,
+    "wrong_edge_problem": 14,
+    "possibly_not_found": 0,
+    "total_score": 38,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2675,
+      "completion_tokens": 77,
+      "total_tokens": 2752
+    },
+    "prompt_token_utilization": 0.3264982301965092,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.7307692307692307
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 11,
+    "wrong_edge_problem": 11,
+    "possibly_not_found": 0,
+    "total_score": 41,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2911,
+      "completion_tokens": 77,
+      "total_tokens": 2988
+    },
+    "prompt_token_utilization": 0.35530330770169655,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.7884615384615384
+  },
+  {
+    "model_name": "gemma227bit.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 5,
+    "wrong_edge_problem": 5,
+    "possibly_not_found": 0,
+    "total_score": 47,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2963,
+      "completion_tokens": 77,
+      "total_tokens": 3040
+    },
+    "prompt_token_utilization": 0.36165018918589037,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.9038461538461539
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 2,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 11,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1082,
+      "completion_tokens": 103,
+      "total_tokens": 1185
+    },
+    "prompt_token_utilization": 0.13206395703649457,
+    "completion_token_utilization": 0.103,
+    "accuracy": 0.8461538461538461
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 1,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 12,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1144,
+      "completion_tokens": 96,
+      "total_tokens": 1240
+    },
+    "prompt_token_utilization": 0.13963139265226412,
+    "completion_token_utilization": 0.096,
+    "accuracy": 0.9230769230769231
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 2,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 11,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 1157,
+      "completion_tokens": 96,
+      "total_tokens": 1253
+    },
+    "prompt_token_utilization": 0.14121811302331258,
+    "completion_token_utilization": 0.096,
+    "accuracy": 0.8461538461538461
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 14,
+    "wrong_edge_problem": 13,
+    "possibly_not_found": 0,
+    "total_score": 38,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2686,
+      "completion_tokens": 83,
+      "total_tokens": 2769
+    },
+    "prompt_token_utilization": 0.3278408397412425,
+    "completion_token_utilization": 0.083,
+    "accuracy": 0.7307692307692307
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 6,
+    "wrong_edge_problem": 6,
+    "possibly_not_found": 0,
+    "total_score": 46,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2927,
+      "completion_tokens": 88,
+      "total_tokens": 3016
+    },
+    "prompt_token_utilization": 0.3572561943122177,
+    "completion_token_utilization": 0.088,
+    "accuracy": 0.8846153846153846
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 5,
+    "wrong_edge_problem": 5,
+    "possibly_not_found": 0,
+    "total_score": 47,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2979,
+      "completion_tokens": 89,
+      "total_tokens": 3068
+    },
+    "prompt_token_utilization": 0.36360307579641155,
+    "completion_token_utilization": 0.089,
+    "accuracy": 0.9038461538461539
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 22,
+    "wrong_edge_problem": 22,
+    "possibly_not_found": 0,
+    "total_score": 30,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2682,
+      "completion_tokens": 71,
+      "total_tokens": 2753
+    },
+    "prompt_token_utilization": 0.3273526180886122,
+    "completion_token_utilization": 0.071,
+    "accuracy": 0.5769230769230769
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 10,
+    "wrong_edge_problem": 9,
+    "possibly_not_found": 0,
+    "total_score": 42,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2923,
+      "completion_tokens": 70,
+      "total_tokens": 2994
+    },
+    "prompt_token_utilization": 0.35676797265958743,
+    "completion_token_utilization": 0.07,
+    "accuracy": 0.8076923076923077
+  },
+  {
+    "model_name": "Mistral7BInstructv0.3.log",
+    "graph_file": "gnp_n10_p50",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 10,
+    "wrong_edge_problem": 9,
+    "possibly_not_found": 0,
+    "total_score": 42,
+    "full_score": 52,
+    "token_usage": {
+      "prompt_tokens": 2975,
+      "completion_tokens": 70,
+      "total_tokens": 3045
+    },
+    "prompt_token_utilization": 0.36311485414378125,
+    "completion_token_utilization": 0.07,
+    "accuracy": 0.8076923076923077
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 16,
+    "wrong_edge_problem": 16,
+    "possibly_not_found": 0,
+    "total_score": 32,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2745,
+      "completion_tokens": 85,
+      "total_tokens": 2831
+    },
+    "prompt_token_utilization": 0.33504210911753934,
+    "completion_token_utilization": 0.085,
+    "accuracy": 0.6666666666666666
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 11,
+    "wrong_edge_problem": 10,
+    "possibly_not_found": 0,
+    "total_score": 37,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2967,
+      "completion_tokens": 83,
+      "total_tokens": 3051
+    },
+    "prompt_token_utilization": 0.36213841083852066,
+    "completion_token_utilization": 0.083,
+    "accuracy": 0.7708333333333334
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 12,
+    "wrong_edge_problem": 10,
+    "possibly_not_found": 1,
+    "total_score": 36,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 3015,
+      "completion_tokens": 102,
+      "total_tokens": 3118
+    },
+    "prompt_token_utilization": 0.3679970706700842,
+    "completion_token_utilization": 0.102,
+    "accuracy": 0.75
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "[node_id[:8]]_edge_id",
+    "shot_num": 0,
+    "failed_num": 10,
+    "wrong_edge_problem": 9,
+    "possibly_not_found": 0,
+    "total_score": 38,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 3232,
+      "completion_tokens": 77,
+      "total_tokens": 3310
+    },
+    "prompt_token_utilization": 0.3944830953252777,
+    "completion_token_utilization": 0.077,
+    "accuracy": 0.7916666666666666
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:8]-edge_id",
+    "shot_num": 0,
+    "failed_num": 10,
+    "wrong_edge_problem": 8,
+    "possibly_not_found": 0,
+    "total_score": 38,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 3184,
+      "completion_tokens": 75,
+      "total_tokens": 3260
+    },
+    "prompt_token_utilization": 0.38862443549371417,
+    "completion_token_utilization": 0.075,
+    "accuracy": 0.7916666666666666
+  },
+  {
+    "model_name": "Mixtral8x7BInstructv0.1.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:8]-edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 9,
+    "wrong_edge_problem": 8,
+    "possibly_not_found": 0,
+    "total_score": 39,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 3135,
+      "completion_tokens": 84,
+      "total_tokens": 3220
+    },
+    "prompt_token_utilization": 0.38264372024899307,
+    "completion_token_utilization": 0.084,
+    "accuracy": 0.8125
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 2,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 11,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 759,
+      "completion_tokens": 55,
+      "total_tokens": 814
+    },
+    "prompt_token_utilization": 0.09264005858659831,
+    "completion_token_utilization": 0.055,
+    "accuracy": 0.8461538461538461
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 1,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 12,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 793,
+      "completion_tokens": 54,
+      "total_tokens": 848
+    },
+    "prompt_token_utilization": 0.09678994263395582,
+    "completion_token_utilization": 0.054,
+    "accuracy": 0.9230769230769231
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n10_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 1,
+    "wrong_edge_problem": 0,
+    "possibly_not_found": 0,
+    "total_score": 12,
+    "full_score": 13,
+    "token_usage": {
+      "prompt_tokens": 819,
+      "completion_tokens": 54,
+      "total_tokens": 874
+    },
+    "prompt_token_utilization": 0.09996338337605273,
+    "completion_token_utilization": 0.054,
+    "accuracy": 0.9230769230769231
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 4,
+    "wrong_edge_problem": 4,
+    "possibly_not_found": 0,
+    "total_score": 44,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 1978,
+      "completion_tokens": 57,
+      "total_tokens": 2036
+    },
+    "prompt_token_utilization": 0.24142560722568046,
+    "completion_token_utilization": 0.057,
+    "accuracy": 0.9166666666666666
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 3,
+    "wrong_edge_problem": 3,
+    "possibly_not_found": 0,
+    "total_score": 45,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2093,
+      "completion_tokens": 57,
+      "total_tokens": 2151
+    },
+    "prompt_token_utilization": 0.2554619797388014,
+    "completion_token_utilization": 0.057,
+    "accuracy": 0.9375
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 2,
+    "wrong_edge_problem": 2,
+    "possibly_not_found": 0,
+    "total_score": 46,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2189,
+      "completion_tokens": 57,
+      "total_tokens": 2247
+    },
+    "prompt_token_utilization": 0.26717929940192847,
+    "completion_token_utilization": 0.057,
+    "accuracy": 0.9583333333333334
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n15_p20",
+    "query_hop_num": 1,
+    "representation": "[node_id[:8]]_edge_id",
+    "shot_num": 0,
+    "failed_num": 2,
+    "wrong_edge_problem": 2,
+    "possibly_not_found": 0,
+    "total_score": 46,
+    "full_score": 48,
+    "token_usage": {
+      "prompt_tokens": 2360,
+      "completion_tokens": 57,
+      "total_tokens": 2418
+    },
+    "prompt_token_utilization": 0.28805077505187354,
+    "completion_token_utilization": 0.057,
+    "accuracy": 0.9583333333333334
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "baseline_v2",
+    "shot_num": 0,
+    "failed_num": 10,
+    "wrong_edge_problem": 8,
+    "possibly_not_found": 0,
+    "total_score": 49,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 2506,
+      "completion_tokens": 59,
+      "total_tokens": 2565
+    },
+    "prompt_token_utilization": 0.3058708653728793,
+    "completion_token_utilization": 0.059,
+    "accuracy": 0.8305084745762712
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_edge_id_v2",
+    "shot_num": 0,
+    "failed_num": 4,
+    "wrong_edge_problem": 3,
+    "possibly_not_found": 0,
+    "total_score": 55,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 2662,
+      "completion_tokens": 58,
+      "total_tokens": 2721
+    },
+    "prompt_token_utilization": 0.32491150982546074,
+    "completion_token_utilization": 0.058,
+    "accuracy": 0.9322033898305084
+  },
+  {
+    "model_name": "MetaLlama370BInstructLite.log",
+    "graph_file": "gnp_n20_p20",
+    "query_hop_num": 1,
+    "representation": "node_id[:4]_[edge_id]_v2",
+    "shot_num": 0,
+    "failed_num": 7,
+    "wrong_edge_problem": 5,
+    "possibly_not_found": 0,
+    "total_score": 52,
+    "full_score": 59,
+    "token_usage": {
+      "prompt_tokens": 2780,
+      "completion_tokens": 58,
+      "total_tokens": 2839
+    },
+    "prompt_token_utilization": 0.3393140485780544,
+    "completion_token_utilization": 0.058,
+    "accuracy": 0.8813559322033898
+  }
+]

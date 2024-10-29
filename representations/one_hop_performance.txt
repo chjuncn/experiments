@@ -58540,3 +58540,128 @@ Total_score:46, Full_score:48, Accuracy:0.9583333333333334
 
 
 
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "dadca0c7-f963-4cba-8c3c-cfd5e37eda12": {
+    "edge_0": "f26331e4-b5db-4572-961d-043da8d4847b",
+
+LEN(raw_json_graph)=15
+
+Representation: baseline
+Token Usage:{'prompt_tokens': 2790, 'completion_tokens': 72, 'total_tokens': 2862}
+Total_score:31, Full_score:48, Accuracy:0.6458333333333334
+
+
+
+Model=mistralai/Mistral-7B-Instruct-v0.3
+Graph={
+  "dadca0c7-f963-4cba-8c3c-cfd5e37eda12": {
+    "dadcedge_0": "f26331e4-b5db-4572-961d-043da8d4847
+LEN(raw_json_graph)=15
+
+Representation: node_id[:4]+edge_id
+Token Usage:{'prompt_tokens': 2964, 'completion_tokens': 71, 'total_tokens': 3036}
+Total_score:37, Full_score:48, Accuracy:0.7708333333333334
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "dadca0c7-f963-4cba-8c3c-cfd5e37eda12": {
+    "edge_0": "f26331e4-b5db-4572-961d-043da8d4847b",
+
+LEN(raw_json_graph)=15
+
+Representation: baseline
+Token Usage:{'prompt_tokens': 2027, 'completion_tokens': 981, 'total_tokens': 3009}
+Total_score:24, Full_score:48, Accuracy:0.5
+
+
+
+Model=meta-llama/Meta-Llama-3.1-8B-Instruct-Turbo
+Graph={
+  "dadca0c7-f963-4cba-8c3c-cfd5e37eda12": {
+    "dadcedge_0": "f26331e4-b5db-4572-961d-043da8d4847
+LEN(raw_json_graph)=15
+
+Representation: node_id[:4]+edge_id
+Token Usage:{'prompt_tokens': 2146, 'completion_tokens': 1000, 'total_tokens': 3146}
+Total_score:25, Full_score:48, Accuracy:0.5208333333333334
+
+
+
+Model=google/gemma-2-9b-it
+Graph={
+  "dadca0c7-f963-4cba-8c3c-cfd5e37eda12": {
+    "edge_0": "f26331e4-b5db-4572-961d-043da8d4847b",
+
+LEN(raw_json_graph)=15
+
+Representation: baseline
+Token Usage:{'prompt_tokens': 2753, 'completion_tokens': 76, 'total_tokens': 2830}
+Total_score:41, Full_score:48, Accuracy:0.8541666666666666
+
+
+
+Model=google/gemma-2-9b-it
+Graph={
+  "dadca0c7-f963-4cba-8c3c-cfd5e37eda12": {
+    "dadcedge_0": "f26331e4-b5db-4572-961d-043da8d4847
+LEN(raw_json_graph)=15
+
+Representation: node_id[:4]+edge_id
+Token Usage:{'prompt_tokens': 2925, 'completion_tokens': 76, 'total_tokens': 3002}
+Total_score:40, Full_score:48, Accuracy:0.8333333333333334
+
+
+
+Model=google/gemma-2-27b-it
+Graph={
+  "dadca0c7-f963-4cba-8c3c-cfd5e37eda12": {
+    "edge_0": "f26331e4-b5db-4572-961d-043da8d4847b",
+
+LEN(raw_json_graph)=15
+
+Representation: baseline
+Token Usage:{'prompt_tokens': 2753, 'completion_tokens': 77, 'total_tokens': 2830}
+Total_score:39, Full_score:48, Accuracy:0.8125
+
+
+
+Model=google/gemma-2-27b-it
+Graph={
+  "dadca0c7-f963-4cba-8c3c-cfd5e37eda12": {
+    "dadcedge_0": "f26331e4-b5db-4572-961d-043da8d4847
+LEN(raw_json_graph)=15
+
+Representation: node_id[:4]+edge_id
+Token Usage:{'prompt_tokens': 2925, 'completion_tokens': 77, 'total_tokens': 3002}
+Total_score:44, Full_score:48, Accuracy:0.9166666666666666
+
+
+
+Model=Model.MIXTRAL
+Graph={
+  "dadca0c7-f963-4cba-8c3c-cfd5e37eda12": {
+    "edge_0": "f26331e4-b5db-4572-961d-043da8d4847b",
+
+LEN(raw_json_graph)=15
+
+Representation: baseline
+Token Usage:{'prompt_tokens': 2794, 'completion_tokens': 76, 'total_tokens': 2871}
+Total_score:33, Full_score:48, Accuracy:0.6875
+
+
+
+Model=Model.MIXTRAL
+Graph={
+  "dadca0c7-f963-4cba-8c3c-cfd5e37eda12": {
+    "dadcedge_0": "f26331e4-b5db-4572-961d-043da8d4847
+LEN(raw_json_graph)=15
+
+Representation: node_id[:4]+edge_id
+Token Usage:{'prompt_tokens': 2968, 'completion_tokens': 85, 'total_tokens': 3053}
+Total_score:36, Full_score:48, Accuracy:0.75
+
+
+
