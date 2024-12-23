@@ -95,6 +95,13 @@ def process_parquet_files(file_patterns, query_template, output_path="output.csv
         file_patterns (list): List of S3 path patterns to process.
         output_path (str): Path to save the results.
     """
+
+    logger.info("EXPERIMENT_CONFIG: {{" + 
+                "'max_workers': None, " +
+                "'chunk_size': None, " +
+                "'duckdb_threads': duckdb.sql('SELECT current_setting(''threads'')').fetchone()[0]" +
+                "}}")
+
     start_time = time.time()
     # Create S3 filesystem with explicit credentials
     s3 = s3fs.S3FileSystem(
@@ -143,9 +150,11 @@ def process_parquet_files(file_patterns, query_template, output_path="output.csv
 
         # Log final statistics
         total_time = time.time() - start_time
-        logger.info("Processing Summary:")
-        logger.info(f"Total files processed: {total_files}")
-        logger.info(f"Total processing time: {total_time:.2f} seconds")
+        logger.info("PERFORMANCE_METRICS: {" +
+                   f"'total_time': {total_time:.2f}, " +
+                   f"'total_files': {total_files}, " +
+                   f"'files_per_second': {total_files/total_time:.2f}" +
+                   "}")
         
     except Exception as e:
         logger.error(f"Error during processing: {str(e)}")
@@ -154,22 +163,26 @@ def process_parquet_files(file_patterns, query_template, output_path="output.csv
 if __name__ == "__main__":
     # Configure number of threads based on CPU cores
     logger = setup_logger()
-    cpu_count = 6
-    print(f"Using {cpu_count} threads for DuckDB processing")
-    
-    # Configure DuckDB
-    duckdb.sql(f"SET threads={cpu_count}")
-    
     # Define S3 paths
     bucket_name = "chjun-bucket1"
     s3_papers_path = f"s3://{bucket_name}/papers_parquets/*.parquet"
     s3_electron_path = f"s3://{bucket_name}/electron_parquets/*.parquet"
     
+    experiments = [
+        {'cpu_count': 6, 'query_template': PARQUET_QUERY_TEMPLATE_FULLTEXT},
+        {'cpu_count': 10, 'query_template': PARQUET_QUERY_TEMPLATE_FULLTEXT},
+    ]
+    output_path = f"duckdb_parquet_fulltext_output_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
     # Process files
     file_paths = [s3_papers_path, s3_electron_path]
-    process_parquet_files(
-        file_paths,
-        PARQUET_QUERY_TEMPLATE_FULLTEXT,
-        logger=logger,
-        output_path="duckdb_parquet_s3_output.csv"
-    )
+    for experiment in experiments:
+        logger.info(f"\nSTART_EXPERIMENT: Running with {experiment['cpu_count']} CPU threads")
+
+        duckdb.sql(f"SET threads={experiment['cpu_count']}")
+        process_parquet_files(
+            file_paths,
+            experiment['query_template'],
+            logger=logger,
+            output_path=output_path
+        )
+        logger.info("END_EXPERIMENT")
