@@ -1,0 +1,11 @@
+2024-12-23 15:55:10,949 - parquet_processor - INFO - Listing all files...
+2024-12-23 15:55:10,950 - parquet_processor - INFO - Listing files for pattern: s3://chjun-bucket1/papers_parquets/*.parquet
+2024-12-23 15:55:12,108 - parquet_processor - INFO - Listing files for pattern: s3://chjun-bucket1/electron_parquets/*.parquet
+2024-12-23 15:55:12,387 - parquet_processor - INFO - File listing completed. Total files found: 15
+2024-12-23 15:55:12,388 - parquet_processor - INFO - Time taken for file listing: 1.44 seconds
+2024-12-23 15:55:23,188 - parquet_processor - INFO - Total time for the files (loading + execution): 10.76 seconds
+2024-12-23 15:55:23,188 - parquet_processor - INFO - Memory usage: 303.19 MB
+2024-12-23 15:55:23,188 - parquet_processor - INFO - ----------------------------------------
+2024-12-23 15:55:23,189 - parquet_processor - INFO - Processing Summary:
+2024-12-23 15:55:23,189 - parquet_processor - INFO - Total files processed: 15
+2024-12-23 15:55:23,189 - parquet_processor - INFO - Total processing time: 12.24 seconds

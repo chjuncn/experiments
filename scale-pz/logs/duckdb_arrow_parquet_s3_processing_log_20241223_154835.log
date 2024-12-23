@@ -1,0 +1,18 @@
+2024-12-23 15:48:35,287 - parquet_processor - INFO - Listing files for pattern: s3://chjun-bucket1/papers_parquets/*.parquet
+2024-12-23 15:48:36,370 - parquet_processor - INFO - Listing files for pattern: s3://chjun-bucket1/electron_parquets/*.parquet
+2024-12-23 15:48:36,656 - parquet_processor - INFO - File listing completed. Total files found: 15
+2024-12-23 15:48:36,656 - parquet_processor - INFO - Time taken for file listing: 1.37 seconds
+2024-12-23 15:48:36,671 - parquet_processor - INFO - Processing chunk 1/1 (files 1 to 15)
+2024-12-23 15:48:49,376 - parquet_processor - INFO - Time taken for loading chunk: 12.70 seconds
+2024-12-23 15:48:49,446 - parquet_processor - INFO - Time taken for querying chunk: 0.07 seconds
+2024-12-23 15:48:49,465 - parquet_processor - INFO - Total time for this chunk: 12.80 seconds
+2024-12-23 15:48:49,466 - parquet_processor - INFO - ----------------------------------------
+2024-12-23 15:48:49,466 - parquet_processor - INFO - Memory usage: 298.75 MB
+2024-12-23 15:48:49,661 - parquet_processor - INFO - Results saved to duckdb_arrow_parquet_s3_output.csv
+2024-12-23 15:48:49,661 - parquet_processor - INFO - Total processing time: 14.37 seconds
+2024-12-23 15:48:49,661 - parquet_processor - INFO - Performance Summary:
+2024-12-23 15:48:49,661 - parquet_processor - INFO - Chunks processed: 1
+2024-12-23 15:48:49,661 - parquet_processor - INFO - Files processed: 15
+2024-12-23 15:48:49,661 - parquet_processor - INFO - Average load time per chunk: 12.70s
+2024-12-23 15:48:49,661 - parquet_processor - INFO - Average query time per chunk: 0.07s
+2024-12-23 15:48:49,661 - parquet_processor - INFO - Failed chunks: 0
