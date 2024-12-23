@@ -87,6 +87,12 @@ def process_files_in_chunks(file_patterns, query_template, chunk_size=5, max_wor
     """
     Processes Parquet files in chunks using Apache Arrow and DuckDB.
     """
+    logger.info("EXPERIMENT_CONFIG: {{" + 
+                f"'max_workers': {max_workers}, " +
+                f"'chunk_size': {chunk_size}, " +
+                "'duckdb_threads': duckdb.sql('SELECT current_setting(''threads'')').fetchone()[0]" +
+                "}}")
+    
     combined_results = None
     s3 = s3fs.S3FileSystem()
     
@@ -109,7 +115,7 @@ def process_files_in_chunks(file_patterns, query_template, chunk_size=5, max_wor
         'total_query_time': 0,
         'failures': 0
     }
-    
+    con = duckdb.connect()
     # Use ProcessPoolExecutor instead of ThreadPoolExecutor
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
         for i in range(0, len(all_files), chunk_size):
@@ -142,12 +148,10 @@ def process_files_in_chunks(file_patterns, query_template, chunk_size=5, max_wor
 
                     # Step 2: Query with DuckDB
                     query_start_time = time.time()
-                    con = duckdb.connect()
+                    
                     con.register('arrow_table', arrow_table)
                     
-                    query = query_template
-
-                    result = con.execute(query).df()
+                    result = [con.execute(q).df() for q in query_template]
                     query_time = time.time() - query_start_time
                     logger.info(f"Time taken for querying chunk: {query_time:.2f} seconds")
                     performance_stats['total_query_time'] += query_time
@@ -162,7 +166,6 @@ def process_files_in_chunks(file_patterns, query_template, chunk_size=5, max_wor
                     del tables
                     del arrow_table
                     del result
-                    con.close()
                     gc.collect()  # Force garbage collection
                     
                     performance_stats['chunks_processed'] += 1
@@ -180,6 +183,7 @@ def process_files_in_chunks(file_patterns, query_template, chunk_size=5, max_wor
 
             log_memory_usage(logger)  # Add before and after processing each chunk
 
+    con.close()
     # Save results
     if combined_results is not None:
         # combined_results.to_csv(output_path, index=False)
@@ -187,30 +191,42 @@ def process_files_in_chunks(file_patterns, query_template, chunk_size=5, max_wor
 
     logger.info(f"Total processing time: {time.time() - start_time:.2f} seconds")
     
-    # Log performance summary
-    logger.info(f"Performance Summary:")
-    logger.info(f"Chunks processed: {performance_stats['chunks_processed']}")
-    logger.info(f"Files processed: {performance_stats['files_processed']}")
-    logger.info(f"Average load time per chunk: {performance_stats['total_load_time']/performance_stats['chunks_processed']:.2f}s")
-    logger.info(f"Average query time per chunk: {performance_stats['total_query_time']/performance_stats['chunks_processed']:.2f}s")
-    logger.info(f"Failed chunks: {performance_stats['failures']}")
+    logger.info("PERFORMANCE_METRICS: {" +
+                f"'total_time': {time.time() - start_time:.2f}, " +
+                f"'chunks_processed': {performance_stats['chunks_processed']}, " +
+                f"'files_processed': {performance_stats['files_processed']}, " +
+                f"'avg_load_time': {performance_stats['total_load_time']/performance_stats['chunks_processed']:.2f}, " +
+                f"'avg_query_time': {performance_stats['total_query_time']/performance_stats['chunks_processed']:.2f}, " +
+                f"'failures': {performance_stats['failures']}" +
+                "}")
 
 if __name__ == "__main__":
     logger = setup_logger()
     # Configure processing
-    cpu_count = 10
-    print(f"Using {cpu_count} workers for processing")
+    # Add experiment description
+    logger.info("EXPERIMENT_SERIES: Testing different CPU counts and worker configurations")
+    
+    experiments = [
+        {'cpu_count': 6, 'max_workers': 12, 'query_template': [PARQUET_QUERY_TEMPLATE_FULLTEXT], 'chunk_size': 100},
+        {'cpu_count': 10, 'max_workers': 12, 'query_template': [PARQUET_QUERY_TEMPLATE_FULLTEXT], 'chunk_size': 100},
+        {'cpu_count': 10, 'max_workers': 20, 'query_template': [PARQUET_QUERY_TEMPLATE_FULLTEXT], 'chunk_size': 100},
+    ]
+    output_path = f"duckdb_arrow_parquet_fulltext_output_{datetime.now().strftime('%Y%m%d_%H%M%S')}.csv"
 
-    # Update DuckDB configuration
-    duckdb.sql(f"SET threads={cpu_count}")
+    for exp in experiments:
+        logger.info(f"\nSTART_EXPERIMENT: Running with {exp['cpu_count']} CPU threads and {exp['max_workers']} workers")
+        
+        # Update DuckDB configuration
+        duckdb.sql(f"SET threads={exp['cpu_count']}")
 
-    # Process files
-    file_paths = [s3_papers_path, s3_electron_path]
-    process_files_in_chunks(
-        file_paths, 
-        PARQUET_QUERY_TEMPLATE_FULLTEXT,
-        chunk_size=100,  # Reduced chunk size
-        max_workers=20,
-        logger=logger,
-        output_path="duckdb_arrow_parquet_s3_output.csv"
-    )
+        # Process files
+        process_files_in_chunks(
+            [s3_papers_path, s3_electron_path],
+            exp['query_template'],
+            chunk_size=exp['chunk_size'],
+            max_workers=exp['max_workers'],
+            logger=logger,
+            output_path=output_path
+        )
+        
+        logger.info("END_EXPERIMENT")
