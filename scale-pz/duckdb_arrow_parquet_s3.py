@@ -11,14 +11,36 @@ import concurrent.futures
 from functools import partial
 import multiprocessing
 from concurrent.futures import ProcessPoolExecutor
+from concurrent.futures import ThreadPoolExecutor
 import gc
 import psutil
 import glob
 import os   
+import threading
 
 bucket_name = "chjun-bucket1"
 s3_papers_path = f"s3://{bucket_name}/papers_parquets/*.parquet"
 s3_electron_path = f"s3://{bucket_name}/electron_parquets/*.parquet"
+
+PARQUET_QUERY_TEMPLATE = """
+SELECT 
+    filename,
+    LEFT(full_text, 100) as first_100_chars
+FROM arrow_table
+"""
+
+PARQUET_QUERY_TEMPLATE_FULLTEXT = """
+SELECT 
+    filename,
+    full_text
+FROM arrow_table
+"""
+
+PARQUET_QUERY_TEMPLATE_FILENAMES = """
+SELECT
+   filename
+FROM arrow_table
+"""
 
 # Set up logger
 def setup_logger():
@@ -49,11 +71,15 @@ def setup_logger():
     return logger
 
 
-def load_parquet_file(file_path):
+def load_parquet_file(file_path, logger):
     """Helper function to load a single parquet file"""
     try:
-        # Read only specific columns if possible to reduce memory usage
-        return pq.read_table(file_path, columns=['filename','full_text'])  # Adjust columns as needed
+        table = pq.read_table(
+            file_path,
+            columns=['filename','full_text'],
+            use_threads=True  # Can use internal threading safely
+        )
+        return table
     except Exception as e:
         return None
 
@@ -63,25 +89,6 @@ def log_memory_usage(logger):
     memory_info = process.memory_info()
     logger.info(f"Memory usage: {memory_info.rss / 1024 / 1024:.2f} MB")
 
-PARQUET_QUERY_TEMPLATE = """
-SELECT 
-    filename,
-    LEFT(full_text, 100) as first_100_chars
-FROM arrow_table
-"""
-
-PARQUET_QUERY_TEMPLATE_FULLTEXT = """
-SELECT 
-    filename,
-    full_text
-FROM arrow_table
-"""
-
-PARQUET_QUERY_TEMPLATE_FILENAMES = """
-SELECT
-   filename
-FROM arrow_table
-"""
 
 def process_files_in_chunks(file_patterns, query_template, chunk_size=5, max_workers=4, output_path="output.csv", logger=None):
     """
@@ -116,7 +123,8 @@ def process_files_in_chunks(file_patterns, query_template, chunk_size=5, max_wor
         'failures': 0
     }
     con = duckdb.connect()
-    # Use ProcessPoolExecutor instead of ThreadPoolExecutor
+    # pa.set_cpu_count(12)
+    # pa.set_io_thread_count(12)
     with ProcessPoolExecutor(max_workers=max_workers) as executor:
         for i in range(0, len(all_files), chunk_size):
             chunk = all_files[i:i + chunk_size]
@@ -128,10 +136,12 @@ def process_files_in_chunks(file_patterns, query_template, chunk_size=5, max_wor
                 # Step 1: Load chunk into Arrow Table
                 load_start_time = time.time()
                 # Parallel file loading
-                future_to_file = {executor.submit(load_parquet_file, file): file for file in chunk}
+                futures = []
+                for file in chunk:
+                    futures.append((executor.submit(load_parquet_file, file, logger), file))
                 
                 tables = []
-                for future in concurrent.futures.as_completed(future_to_file):
+                for future, file in futures:
                     try:
                         table = future.result()
                         if table is not None:
@@ -155,6 +165,8 @@ def process_files_in_chunks(file_patterns, query_template, chunk_size=5, max_wor
                     query_time = time.time() - query_start_time
                     logger.info(f"Time taken for querying chunk: {query_time:.2f} seconds")
                     performance_stats['total_query_time'] += query_time
+                    performance_stats['chunks_processed'] += 1
+                    performance_stats['files_processed'] += len(chunk)
 
                     # Step 3: Append Results
                     if combined_results is None:
@@ -163,13 +175,10 @@ def process_files_in_chunks(file_patterns, query_template, chunk_size=5, max_wor
                         combined_results = pd.concat([combined_results, result], ignore_index=True)
 
                     # Cleanup
+                    con.unregister('arrow_table')
                     del tables
                     del arrow_table
                     del result
-                    gc.collect()  # Force garbage collection
-                    
-                    performance_stats['chunks_processed'] += 1
-                    performance_stats['files_processed'] += len(chunk)
 
             except Exception as e:
                 logger.error(f"Error processing chunk: {str(e)}")
